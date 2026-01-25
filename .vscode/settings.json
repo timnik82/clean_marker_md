@@ -1,4 +1,10 @@
 {
     "editor.accessibilitySupport": "off",
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "chat.tools.terminal.autoApprove": {
+        "/^python3 /home/timnik/coding/Reviews/extract_abstracts\\.py --input-dir /home/timnik/coding/Reviews/out_clean/papers --output /home/timnik/coding/Reviews/out_clean/abstracts\\.md$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
 }
