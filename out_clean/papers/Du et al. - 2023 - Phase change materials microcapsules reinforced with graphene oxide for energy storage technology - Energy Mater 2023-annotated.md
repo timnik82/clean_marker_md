@@ -107,33 +107,3 @@ The majority of phase change microcapsules are used as energy storage materials 
 The configuration of phase change microcapsules added with GO was reviewed, and the effects of the position and content of GO in the microcapsules structure on the thermal properties of phase change microcapsules, such as latent heat and thermal conductivity, were studied and compared. The most common fabrication method for PCM/GO microcapsules is *in-situ* polymerization, and the thermal conductivity of phase change microcapsules has been greatly improved after embedding GO in the capsule shell structure. Due to the amphiphilic nature of GO, it can be used as an emulsifier or stabilizer for Pickering emulsion, and the addition of GO also decreases the leakage rate of phase change microcapsules. However, adding GO in phase change microcapsules can slightly decrease latent heat because it will lead to a lower core-shell ratio. Moreover, this paper also reviews the method of adding GO in phase change microcapsules, which is divided into two types, physical and chemical methods. The results show that the formation of chemical bonds between polymer matrix and thermal conducting materials is one of the effective strategies to enhance the interaction between the two and greatly improve thermal conductivity. Finally, the applications of PCM/GO microcapsules in energy storage, building, thermal management, textile, and military were presented with conductivity.
 
 At present, most of the research studies mainly concentrate on the enhancement of the thermal conductivity of PCM/GO microcapsules. Nevertheless, the other properties, such as latent heat, morphology, encapsulation efficiency, and photothermal conversion of PCM/GO microcapsules, were poor. Thus, it is necessary to utilize the merits of different synthesis methods for PCM/GO microcapsules to exploit highquality phase change microcapsules. The majority of the properties of PCM/GO microcapsules are largely dependent on the reagents and synthesis processes used. By controlling these factors, the properties of phase change microcapsules can be further optimized. In addition, it is important to investigate the interaction mechanism between thermal conducting additives, polymers, and PCMs. It is still a huge challenge to develop new PCM microcapsules that can maintain thermal conductivity and minimize the content of filling materials added to gain reinforced thermal efficiency. We believe that the construction of a threedimensional thermal network is the ultimate solution to increase the thermal conductivity of composite phase change microcapsules. Additionally, previous studies have demonstrated that GO can be integrated into phase change microcapsules at various positions, but two-phase and multiphase distributions are rarely studied. Therefore, adjusting and modifying the simultaneous distribution of GO in the capsule shell and core structure may become a key area of research in the future.
-
-### **Authors' contributions**
-
-Writing-original draft preparation: Du B Reviewed the Manuscript: Hu X, Wang M
-
-Supervision: Ding S
-
-#### **Availability of data and materials**
-
-Not applicable.
-
-#### **Financial support and sponsorship**
-
-This work was supported by the Science and Technology Project of Beilin District, Xi'an (No. GX2224), and the Open Funds from the Key Laboratory of Advanced Energy Materials Chemistry (Ministry of Education) of Nankai University. Hu X. also acknowledges the "Young Talent Support Plan" of Xi'an Jiaotong University and the National Natural Science Foundation of China (Grant No. 52201278).
-
-### **Conflicts of interest**
-
-All authors declared that there are no conflicts of interest.
-
-### **Ethical approval and consent to participate**
-
-Not applicable.
-
-#### **Consent for publication**
-
-Not applicable.
-
-### **Copyright**
-
-© The Author(s) 2023.

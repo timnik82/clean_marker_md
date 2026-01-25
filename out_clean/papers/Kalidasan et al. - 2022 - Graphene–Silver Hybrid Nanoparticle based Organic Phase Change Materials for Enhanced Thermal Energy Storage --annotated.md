@@ -131,27 +131,3 @@ In the current experimental study, five sample of graphene silver hybrid nanopar
 - Gr:Ag dispersed at a 0.8 wt% with PCM exhibits decent chemical and thermal stability after 500 cycles. Spectral peaks are constant before and after the thermal cycles, the decomposition points are further increased after the thermal cycling tests, and the latent heat value is almost the same before and after the thermal cycles, which indicates the PCMs suitability for energy storage applications.
 
 From the obtained results, it can be seen that the dispersion of the hybrid nanoparticle with a PCM at a 0.8% weight concentration ratio exhibits better chemical, optical, and thermal energy storage characteristics. In addition, we also recommend the usage of this composite PCM for any thermal system that generates waste heat at low temperatures.
-
-**Author Contributions:** Conceptualization, B.K. and A.K.P.; Data curation, B.K.; Formal analysis, B.K. and A.Y.; Funding acquisition, S.R.; Investigation, B.K., A.K.P. and V.V.T.; Methodology, B.K.; Project administration, A.K.P., S.R. and M.S.; Resources, A.K.P.; Supervision, S.R., M.S. and V.V.T.; Validation, B.K.; Writing—original draft, B.K. and A.Y.; Writing—review & editing, A.K.P. and V.V.T. All authors have read and agreed to the published version of the manuscript.
-
-*Sustainability* **2022**, *14*, 13240 15 of 16
-
-**Funding:** This research has been funded by Sunway University through Sunway University's Internal Grant Scheme 2022 (GRTIN-IGS-RCNMET[S]-15-2022)) for conducting this research.
-
-**Institutional Review Board Statement:** Not Applicable.
-
-**Informed Consent Statement:** Not Applicable.
-
-**Data Availability Statement:** The data presented in this study is available within the article.
-
-**Acknowledgments:** All authors duly acknowledges the laboratory support and assistance of Sunway University for conducting the current research investigation.
-
-**Conflicts of Interest:** The authors declare no conflict of interest.
-
-#### **Abbreviations**
-
-#### **Composite Code**
-
-RT50 Rubitherm organic PCM with melting point 50 ◦C
-
-Gr:Ag Graphene silver nanopowder RT50-0.2Gr:Ag RT50 with 0.2% Gr:Ag nanopowder RT50-0.4Gr:Ag RT50 with 0.4% Gr:Ag nanopowder RT50-0.6Gr:Ag RT50 with 0.6% Gr:Ag nanopowder RT50-0.8Gr:Ag RT50 with 0.8% Gr:Ag nanopowder RT50-1.0Gr:Ag RT50 with 1.0% Gr:Ag nanopowder

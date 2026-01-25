@@ -234,11 +234,3 @@ Currently investigated applications are mainly related to the harvesting of rene
 *Nanomaterials* **2024**, *14*, 1077 24 of 28
 
 is anticipated that hydrated salt composites should have the potential for a broader range of applications beyond what have been explored so far. More interdisciplinary research and development is encouraged to be carried out to promote widespread applications. For example, considering the biocompatibility of hydrated salts and their suitable phase change temperatures, carbon-enhanced hydrated salt PCM composites might find use in popular biomedical applications, such as therapeutic hypothermia, surgical procedures, regulated drug delivery, wound dressings, cold chain logistics, medical imaging, hyperthermia treatment, prosthetics and orthotics, space and military medicine and cardiac and vascular procedures [\[122](#page-27-21)[–124\]](#page-27-22).
-
-**Author Contributions:** Conceptualization, Y.L. and P.T.; methodology, X.L.; formal analysis, Y.L. and Y.X. (Yangzhe Xu); investigation, Y.L. and T.H.; resources, Y.X. (Yixuan Xie); data curation, Y.L.; writing—original draft preparation, Y.L.; writing—review and editing, P.T.; visualization, Y.L. and P.T.; supervision, P.T.; project administration, P.T.; funding acquisition, P.T. All authors have read and agreed to the published version of the manuscript.
-
-**Funding:** The authors are sincerely grateful for the support from National Key R&D Program of China (2022YFA1203100), the National Natural Science Foundation of China (Grant No: 51873105) and the Top Young Talents of Ten Thousand Talents Plan.
-
-**Data Availability Statement:** The original contributions presented in the study are included in the article, further inquiries can be directed to the corresponding author.
-
-**Conflicts of Interest:** The authors declare no conflict of interest.

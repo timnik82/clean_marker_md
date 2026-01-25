@@ -115,7 +115,3 @@ The correlations between thermal performance (charging time, discharging time, a
 
 - on known mass flow rates and volume concentrations.
 - � The study's meticulous step-wise methodology ensured robustness in the development of these correlations, providing a reliable framework for further investigations and real-world applications in systems involving similar parameters.
-
-#### **ORCID**
-
-Aayush Gupta http://orcid.org/0000-0001-8677-7643

@@ -191,21 +191,3 @@ According to the obtained results, the greatest decrease in complete melting tim
 #### **4. Conclusion**
 
 Surface modification of nanoparticles is a practical approach to improve the thermal properties and stability as well as the heat storage performance of composite phase change materials (PCMs). In the present work, for the first time, graphene oxide nanoparticles were modified with a silane component and used for the preparation of paraffinbased composite PCM. Different amount of modified and unmodified GO nanoparticles including 0.25, 0.5, and 1 wt% were added to paraffin and the properties of the resulting nanocomposites were evaluated by many techniques. FTIR spectrum confirmed the successful formation of silane component on the GO surface. XRD pattern revealed the main crystalline peak at 2θ = 12.16◦ with d-spacing of 0.73 nm and crystallite size of 3.77 nm. AFM image showed that the modified nanoparticles have a thickness of 1–2 nm, slightly more than the thickness of a singlelayer GO. DSC thermograms disclosed that melting enthalpy decreases by 6–10 % in nanocomposites with unmodified GO, while it increases by 0–8 % in nanocomposites with modified GO compared to pure paraffin. TGA curves indicated that initial degradation temperature increases about 13–17 ◦C and 22–26 ◦C for nanocomposites with unmodified and modified GO, respectively. Thermal conductivity measurement showed that the thermal conductivity of nanocomposites is higher than that of pure paraffin and the thermal reproducibility of the modified sample is higher than that of the unmodified and pure samples. Viscosity measurement substantiated that the surface modification of nanoparticles prevents the sedimentation of nanoparticle and improves the viscosity stability. Melting fraction evaluation verified that the time required for complete melting in the nanocomposite with 0.25 % GO is reduced by 12–25 % compared to the pristine paraffin. To sum up, the nanocomposite comprising 0.25 % modified GO represented superior thermal properties and stability and can be considered as a good choice for developing a practical phase change material.
-
-# **Research ethics**
-
-We further confirm that any aspect of the work covered in this manuscript that has involved human patients has been conducted with the ethical approval of all relevant bodies and that such approvals are acknowledged within the manuscript.
-
-IRB approval was obtained (required for studies and series of 3 or more cases).
-
-Written consent to publish potentially identifying information, such as details or the case and photographs, was obtained from the patient(s) or their legal guardian(s).
-
-#### **Author agreement statement**
-
-We the undersigned declare that this manuscript is original, has not been published before and is not currently being considered for publication elsewhere.
-
-We confirm that the manuscript has been read and approved by all named authors and that there are no other persons who satisfied the criteria for authorship but are not listed. We further confirm that the order of authors listed in the manuscript has been approved by all of us.
-
-We understand that the Corresponding Author is the sole contact for the Editorial process.
-
-He is responsible for communicating with the other authors about progress, submissions of revisions and final approval of proofs.

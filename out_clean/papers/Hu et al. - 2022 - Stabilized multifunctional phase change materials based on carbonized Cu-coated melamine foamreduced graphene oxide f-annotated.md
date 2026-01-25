@@ -137,11 +137,3 @@ Service life, which is strongly associated with stability, is a significant para
 # 4 | CONCLUSION
 
 An MF/rGO/Cu‐C framework for fabricating stabilized multifunctional PCMs was synthesized through the carbonization of a network consisting of MF, rGO, and Cu particles. PEG was selected as a thermal energy storage material and was impregnated into the framework through a vacuum‐assisted impregnation method. The obtained PEG@MF/rGO/Cu‐C composite showed a high maximum loading (86.1%) without leakage. This revealed the great encapsulation ability of the framework, which was attributed to the optimization of the pore structure of MF brought by the introduction of rGO and the carbonization process. The phase change enthalpies for melting and crystallization of the PEG@MF/rGO/Cu‐C composite were 148.3 and 143.9 J g−<sup>1</sup> , respectively. The calculated energy storage capability was 92.7%, which demonstrated that the introduction of the MF/rGO/Cu‐C framework did not have a considerable effect on the crystalline behavior of PEG. Due to the 3D‐connected thermally conductive network composed of carbonized MF, rGO, and Cu particles, the composite had an enhanced thermal conductivity equal to 0.4621 W m−<sup>1</sup> K−<sup>1</sup> , which was 463% higher than that of PEG@MF. The composite also displayed great light‐to‐thermal and electric‐to‐thermal conversion capabilities owing to the synergistic effect of the introduction of rGO and Cu, where rGO served as a photon harvester and Cu acted as an electrically conductive reinforcer. Moreover, the framework also conferred excellent thermal cycle, light‐ to‐thermal cycle, and shape stability to the PEG@MF/ rGO/Cu‐C composite, which further demonstrated the excellent encapsulation ability of MF/rGO/Cu‐C. Thus, this study provided a promising strategy for the preparation of stabilized multifunctional PCMs that show great potential for various applications.
-
-#### CONFLICTS OF INTEREST
-
-The authors declare no conflicts of interest.
-
-#### ORCID
-
-Yongjin Zou <https://orcid.org/0000-0002-9012-2639>
