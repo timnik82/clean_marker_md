@@ -1,8 +1,5 @@
 # **A comprehensive review on enhanced phase change materials (PCMs) for high‑performance thermal energy storage: progress, challenges, and future perspectives**
 
-**Anjan Nandi1 · Nirmalendu Biswas<sup>1</sup>  [·](http://orcid.org/0000-0001-6304-6303) Aparesh Datta<sup>2</sup>  [·](http://orcid.org/0000-0001-5293-8533) Nirmal K. Manna<sup>3</sup> · Dipak Kumar Mandal<sup>4</sup>  [·](http://orcid.org/0000-0001-6361-2408) Samarendu Biswas2**
-
-Received: 2 December 2024 / Accepted: 11 April 2025 / Published online: 26 May 2025 © Akadémiai Kiadó Zrt 2025
 
 #### **Abstract**
 

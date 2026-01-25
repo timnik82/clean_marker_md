@@ -8,12 +8,7 @@ journal homepage: [www.elsevier.com/locate/est](https://www.elsevier.com/locate/
 
 # A review on carbon-based phase change materials for thermal energy storage
 
-Raghvendra Kumar Mishra <sup>a</sup> , Kartikey Verma b,\* , Vinayak Mishra <sup>c</sup> , Babulal Chaudhary <sup>d</sup>
 
-- <sup>a</sup> *IMDEA Materials Institute, Madrid 28906, Spain*
-- <sup>b</sup> *Department of Chemical Engineering, Indian Institute of Technology Kanpur, Kalyanpur, Kanpur, Uttar Pradesh 208016, India*
-- <sup>c</sup> *International Institute of Information Technology, Hyderabad 500032, India*
-- <sup>d</sup> *Indo-US Science and Technology Forum, New Delhi 10001, India*
 
 #### ARTICLE INFO
 

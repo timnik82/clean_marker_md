@@ -6,17 +6,9 @@ Image /page/0/Picture/1 description: The image is the Elsevier logo, featuring a
 
 journal homepage: [www.elsevier.com/locate/energy](https://www.elsevier.com/locate/energy)
 
-Image /page/0/Picture/5 description: This image is the cover of a journal titled 'ENERGY'. The cover is divided into two horizontal sections: a reddish-brown top half and a white bottom half. In the top left corner of the reddish-brown section is the Elsevier logo. The word 'ENERGY' is displayed prominently in the center in a large, white, vertically-striped font. Above the title are the words 'TECHNOLOGIES', 'RESOURCES', 'RESERVES', and 'DEMAND'. Below the title are the words 'IMPACT', 'CONSERVATION', 'MANAGEMENT', and 'POLICY'. Further down, it says 'The International Journal'. The bottom white section contains the text 'Available online at www.sciencedirect.com' and the 'ScienceDirect' logo at the very bottom.
-
-Image /page/0/Picture/6 description: A square button with rounded corners and a light gray gradient background. At the top center is a circular icon with a border split into a blue arc on the top right and a yellow arc on the bottom left. Inside the circle is a red ribbon or bookmark shape. Below the icon, the text 'Check for updates' is written in a dark gray, sans-serif font.
 
 # Shape stabilized phase change materials based on different support structures for thermal energy storage applications–A review
 
-Veerakumar Chinnasamy <sup>a</sup> , Jaehyeok Heo <sup>b</sup> , Sungyong Jung <sup>a</sup> , Hoseong Lee <sup>c</sup> , Honghyun Cho a,\*
-
-- <sup>a</sup> *Department of Mechanical Engineering, Chosun University, 309 Pilmundaero, Dong-gu, Gwangju, 61452, Republic of Korea*
-- <sup>b</sup> *Renewable Heat Integration Laboratory, New and Renewable Energy Institute, Korea Institute of Energy Research, Yuseong-gu Daejeon, 305-343, Republic of Korea*
-- <sup>c</sup> *Department of Mechanical Engineering, Korea University, 409 Innovation Hall Bldg., Anam-Dong, Sungbuk-Gu, Seoul, Republic of Korea*
 
 ## ARTICLE INFO
 

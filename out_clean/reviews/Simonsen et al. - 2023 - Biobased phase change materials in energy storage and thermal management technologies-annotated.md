@@ -6,10 +6,7 @@ journal homepage: [www.elsevier.com/locate/rser](https://www.elsevier.com/locate
 
 # Biobased phase change materials in energy storage and thermal management technologies
 
-Galina Simonsen a,\* , Rebecca Ravotti <sup>b</sup> , Poppy O'Neill <sup>b</sup> , Anastasia Stamatiou <sup>b</sup>
 
-- <sup>a</sup> *Department of Process Technology, SINTEF Industry, 7034, Trondheim, Norway*
-- <sup>b</sup> *Competence Centre Thermal Energy Storage (CCTES), Lucerne University of Applied Sciences and Arts, 6048, Horw, Switzerland*
 
 # ARTICLE INFO
 

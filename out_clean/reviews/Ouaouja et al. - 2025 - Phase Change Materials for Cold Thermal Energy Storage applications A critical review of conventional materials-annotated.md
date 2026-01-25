@@ -8,10 +8,6 @@ journal homepage: [www.elsevier.com/locate/est](https://www.elsevier.com/locate/
 
 # Phase Change Materials for Cold Thermal Energy Storage applications: A critical review of conventional materials and the potential of bio-based alternatives
 
-Zakaria Ouaouja a,b,\* , Abdellah Ousegui <sup>b</sup> , Cyril Toublanc <sup>a</sup> , Olivier Rouaud <sup>a</sup> , Michel Havet <sup>a</sup>
-
-- <sup>a</sup> *Oniris, Nantes Universit*´*e, CNRS, GEPEA, UMR 6144, F-44000 Nantes, France*
-- <sup>b</sup> *RIPA, D*´*epartement de Physique, Facult*´*e des Sciences, Universit*´*e Moulay Ismail, Mekn*`*es, Morocco*
 
 ### ARTICLE INFO
 

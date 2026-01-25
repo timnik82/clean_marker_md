@@ -2,9 +2,7 @@
 
 # **Nanofluids in Thermal Energy Storage Systems: A Comprehensive Review**
 
-**Mohamed Shameer Peer [,](https://orcid.org/0000-0002-3311-5889) Mario Cascetta [,](https://orcid.org/0000-0003-1413-9014) Luca Migliari and Mario Petrollese [\\*](https://orcid.org/0000-0001-5394-1419)**
 
-Department of Mechanical, Chemical and Materials Engineering, University of Cagliari, 09123 Cagliari, Italy; mohameds.peermohamed@unica.it (M.S.P.); mario.cascetta@unica.it (M.C.); luca.migliari@unica.it (L.M.) **\*** Correspondence: mario.petrollese@unica.it; Tel.: +39-0706755118
 
 **Abstract:** Nanofluids, which consist of nanosized particles dispersed in a base fluid, represent a promising solution to improve the performance of thermal energy storage systems. This review offers a comprehensive overview of nanofluids and their applications in thermal energy storage systems, discussing their thermal properties, heat transfer mechanisms, synthesis techniques, and application in latent heat storage systems. Various types of nanofluids are examined, including metal oxide, carbon-based, and metallic nanofluids, highlighting their effects on thermal conductivity, latent heat and the phase change temperature. A review of experimental and numerical studies showcases the performance of thermal energy storage systems incorporating nanofluids and the factors influencing their thermophysical characteristics and energy storage capacity. Finally, the key findings of current research are summarized, as well as the challenges and the potential future directions in nanofluid-based thermal energy storage systems research, emphasizing the need to optimize nanoparticle concentration and long-term durability.
 

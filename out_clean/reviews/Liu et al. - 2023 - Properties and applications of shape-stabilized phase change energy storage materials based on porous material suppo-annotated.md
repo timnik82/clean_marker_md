@@ -2,15 +2,9 @@ Contents lists available at [ScienceDirect](www.sciencedirect.com/science/journa
 
 # Materials Today Sustainability
 
-journal homepage: [https://www.journals.elsevier.com/](https://www.journals.elsevier.com/materials-today-sustainability) [materials-today-sustainability](https://www.journals.elsevier.com/materials-today-sustainability)
 
 # Properties and applications of shape-stabilized phase change energy storage materials based on porous material supportdA review
 
-K. Liu [a](#page-0-0) , Z.F. Yuan [a,](#page-0-0) [\\*](#page-0-1) , H.X Zhao [b,](#page-0-2) [\\*\\*](#page-0-3), C.H. Shi [c](#page-0-4) , F. Zhao [a](#page-0-0)
-
-- <sup>a</sup> Collaborative Innovation Center of Steel Technology, University of Science and Technology Beijing, No.30 Xueyuan Road, Haidian District, Beijing, 100083, China
-- <sup>b</sup> National Engineering Research Center of Green Recycling for Strategic Metal Resources, Institute of Process Engineering, Chinese Academy of Sciences, Beijing 100190, China
-- <sup>c</sup> School of Energy and Environmental Engineering, University of Science and Technology Beijing, No.30 Xueyuan Road, Haidian District, Beijing, 100083, China
 
 #### article info
 

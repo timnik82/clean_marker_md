@@ -6,13 +6,7 @@ journal homepage: [www.elsevier.com/locate/solmat](https://www.elsevier.com/loca
 
 # Evaluation of carbon based-supporting materials for developing form-stable organic phase change materials for thermal energy storage: A review
 
-P. Singh <sup>a</sup> , R.K. Sharma a,\* , M. Khalid <sup>b</sup> , R. Goyal <sup>a</sup> , A. Sarı c,d , V.V. Tyagi <sup>e</sup>
 
-- <sup>a</sup> *Department of Mechanical Engineering, Manipal University Jaipur, Rajasthan, 303007, India*
-- <sup>b</sup> *Graphene & Advanced 2D Materials Research Group (GAMRG), School of Engineering and Technology, Sunway University, No. 5, Jalan Universiti, Bandar Sunway, 47500, Petaling Jaya, Selangor, Malaysia*
-- <sup>c</sup> *Department of Metallurgical and Material Engineering, Karadeniz Technical University, 61080, Trabzon, Turkey*
-- <sup>d</sup> *Center of Research Excellence in Renewable Energy (CORERE), Research Institute, King Fahd University of Petroleum & Minerals (KFUPM), 31261, Saudi Arabia*
-- <sup>e</sup> *School of Energy Management, Shri Mata Vaishno Devi University, Kakryal, Katra, J&K, 182320, India*
 
 #### ARTICLE INFO
 

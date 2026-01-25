@@ -6,20 +6,7 @@ journal homepage: [www.elsevier.com/locate/seta](https://www.elsevier.com/locate
 
 # Recent advancements in latent heat phase change materials and their applications for thermal energy storage and buildings: A state of the art review
 
-Faisal Hassan <sup>a</sup> , Furqan Jamil <sup>b</sup> , Abid Hussain <sup>a</sup> , Hafiz Muhammad Ali c,d,\* , Muhammad Mansoor Janjua <sup>e</sup> , Shahab Khushnood <sup>b</sup> , Muhammad Farhan <sup>f</sup> , Khurram Altaf <sup>g</sup> , Zafar Said h,i , Changhe Li <sup>j</sup>
 
-- <sup>a</sup> *Mechanical Engineering Department, University of Engineering and Technology, 47050 Taxila, Pakistan*
-- <sup>b</sup> *Mechanical Engineering Department, University of Wah, Wah Cantonment 47040, Pakistan*
-- <sup>c</sup> *Mechanical Engineering Department, King Fahd University of Petroleum and Minerals, Dhahran 31261, Saudi Arabia*
-- <sup>d</sup> *Interdisciplinary Research Center for Renewable Energy and Power Systems (IRC-REPS), King Fahd University of Petroleum and Minerals, Dhahran 31261, Saudi Arabia*
-- <sup>e</sup> *Department of Mechanical and Mechatronics Engineering, Higher Colleges of Technology, P.O. Box 15825, Dubai, United Arab Emirates*
-- <sup>f</sup> *Mechanical Engineering Department, University of Management and Technology, 51310 Sialkot Campus, Lahore, Pakistan*
-- <sup>g</sup> *Mechanical Engineering Department, Universiti Teknologi Petronas, Bandar Seri Iskandar, Perak 32610, Malaysia*
-- <sup>h</sup> *Sustainable and Renewable Energy Engineering Department, University of Sharjah, P.O. Box, 27272 Sharjah, United Arab Emirates*
-- <sup>i</sup> *U.S.-Pakistan Center for Advanced Studies in Energy (USPCAS-E), National University of Sciences and Technology (NUST), Islamabad, Pakistan*
-- <sup>j</sup> *School of Mechanical and Automotive Engineering, Qingdao University of Technology, Qingdao 266520, China*
-
-#### ARTICLE INFO
 
 #### *Keywords:* Phase change materials (PCMs) Advanced PCMs Thermal Energy Storage PCM Applications
 
