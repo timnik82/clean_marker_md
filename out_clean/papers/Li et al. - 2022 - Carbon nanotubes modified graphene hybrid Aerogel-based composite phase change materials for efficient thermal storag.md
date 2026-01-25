@@ -8,11 +8,6 @@ Xin Li, Yajing Zhao, Xin Min ⇑ , Jun Xiao, Xiaowen Wu, Ruiyu Mi, Yan'gai Liu, 
 
 Beijing Key Laboratory of Materials Utilization of Nonmetallic Minerals and Solid Wastes, National Laboratory of Mineral Materials, School of Materials Science and Technology, China University of Geosciences (Beijing), Beijing 100083, PR China
 
-#### article info
-
-Article history: Received 10 May 2022 Revised 31 July 2022 Accepted 11 August 2022 Available online 13 August 2022
-
-Keywords: CNTs Graphene Aerogel Polyethylene glycol Phase change materials
 
 #### abstract
 

@@ -6,7 +6,7 @@
 
 Zihua Wu, School of Energy and Materials, Shanghai Polytechnic University, Shanghai 201209, China. Email: [wuzihua@sspu.edu.cn](mailto:wuzihua@sspu.edu.cn)
 
-#### Summary
+#### Abstract
 
 The preparation of phase change materials (PCMs) with high energy storage, thermal conductivity, and photothermal conversion capability is essential for improving solar energy conversion and storage. In this study, graphene oxide (GO) was incorporated into polyurethane (PU) prepared from 4,4<sup>0</sup> diphenylmethane diissyanate (MDI) and polyethylene glycol (PEG). PU/GO composite PCMs exhibit enhanced thermal conductivity (0.972Wm-<sup>1</sup> K-1 ) because the isocyanate in MDI can covalently graft with GO. The composite solid–solid PCMs has outstanding stability and thermal reliability. It can stay stable at 80C for more than 15 min without leaking and has good thermoregulation regulation performance. The thermal energy storage density and photothermal conversion efficiency of PU/GO increase as the amount of PEG and GO increases. The PU/GO composite with 89 wt% PEG and 1.72 wt% GO has a phase change enthalpy of 150.7 J/g and a high photothermal conversion efficiency (95.3%). The composite PU/GO solid–solid PCMs have great potentials for effective energy storage and solar energy utilization.
 

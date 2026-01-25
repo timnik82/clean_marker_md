@@ -2,11 +2,8 @@ Contents lists available at [ScienceDirect](www.sciencedirect.com/science/journa
 
 # Chemical Engineering Journal
 
-journal homepage: [www.elsevier.com/locate/cej](https://www.elsevier.com/locate/cej)
-
 # Enhancement of thermal and mechanical properties of microencapsulated phase change materials with graphene oxide
 
-- <sup>f</sup> *Tianjin Key Laboratory of Integrated Design and On-line Monitoring for Light Industry & Food Machinery and Equipment, College of Mechanical Engineering, Tianjin University of Science and Technology, 300222 Tianjin, China*
 
 #### ARTICLE INFO
 

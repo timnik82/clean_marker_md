@@ -1,8 +1,5 @@
 # **Hierarchical graphene foam-based phase change materials with enhanced thermal conductivity and shape stability for efficient solar-to-thermal energy conversion and storage**
 
-Guoqiang Qi1,2, Jie Yang2 , Ruiying Bao<sup>2</sup> , Dongyun Xia1 , Min Cao<sup>1</sup> , Wei Yang<sup>2</sup> (), Mingbo Yang<sup>2</sup> , and Dacheng Wei1 ()
-
-**Received:** 14 September 2016 **Revised:** 10 October 2016 **Accepted:** 12 October 2016
 
 © Tsinghua University Press and Springer-Verlag Berlin Heidelberg 2016
 

@@ -2,7 +2,9 @@
 
 # Superhydrophilic Modified Elastomeric RGO Aerogel Based Hydrated Salt Phase Change Materials for Effective Solar Thermal Conversion and Storage
 
-ABSTRACT: As a typical phase-change material (PCM) with high heat storage capacity and wide distribution, hydrated salts play broad and critical roles in solar energy utilization in recent years. However, the leakage and supercooling problems of hydrated salts have been a constraint to their further practical applications. In the current work, the super-hydrophilic reduced graphene oxide (RGO) aerogels modified by konjac glucomannan (KGM) as supporting structural materials are prepared by the hydrothermal reaction-freeze-drying, which can effectively absorb and convert visible sunlight energy into thermal energy. In addition, the super-hydrophilic aerogels compounded with PCMs can ameliorate the shortcoming of leakage and suppress the supercooling temperature as low
+### ABSTRACT 
+
+As a typical phase-change material (PCM) with high heat storage capacity and wide distribution, hydrated salts play broad and critical roles in solar energy utilization in recent years. However, the leakage and supercooling problems of hydrated salts have been a constraint to their further practical applications. In the current work, the super-hydrophilic reduced graphene oxide (RGO) aerogels modified by konjac glucomannan (KGM) as supporting structural materials are prepared by the hydrothermal reaction-freeze-drying, which can effectively absorb and convert visible sunlight energy into thermal energy. In addition, the super-hydrophilic aerogels compounded with PCMs can ameliorate the shortcoming of leakage and suppress the supercooling temperature as low
 
 about 0.2−1.5 °C in the freezing process. Under 1 sun irradiation, the prepared sodium acetate trihydrate/KGM-modified graphene oxide aerogel (SAT/KRGO) composite PCM achieves a high photothermal conversion efficiency (86.3%) due to its good light absorption property. The number of cycles has no apparent effect on the supercooling of the composite materials, suggesting their stable thermal cycles and thermal storage.
 

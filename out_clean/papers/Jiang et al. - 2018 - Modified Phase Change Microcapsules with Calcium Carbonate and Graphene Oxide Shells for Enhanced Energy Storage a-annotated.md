@@ -1,12 +1,10 @@
-Cite This: [ACS Sustainable Chem. Eng.](http://pubs.acs.org/action/showCitFormats?doi=10.1021/acssuschemeng.7b04834) 2018, 6, 5182−5191 <pubs.acs.org/journal/ascecg>
 
 # Modified Phase Change Microcapsules with Calcium Carbonate and Graphene Oxide Shells for Enhanced Energy Storage and Leakage Prevention
 
-Zhuoni Jiang,[†](#page-8-0) Wenbin Yang,[\\*](#page-8-0),† Fangfang He,† Changqiong Xie,† Jinghui Fan,‡ Juying Wu,‡ and Kai Zhang‡
 
-[\\*](#page-8-0)<sup>S</sup> [Supporting Information](#page-8-0)
+#### ABSTRACT: 
 
-ABSTRACT: Environmentally friendly microencapsulated phase change materials (MEPCMs) with calcium carbonate (CaCO3) shells were modified with graphene oxide (GO), and the effects of GO content and methodology on MEPCMs were examined. The core−shell structure of MEPCMs and crystal structure of CaCO3 shells were confirmed by scanning electron microscopy (SEM), Fourier-transform infrared spectroscopy (FTIR), and Xray diffractometer (XRD). The thermal properties and stability of MEPCMs were investigated by differential scanning calorimetry (DSC) and thermogravimetric analysis (TGA), suggesting that the addition of GO contributed to improving the heat storage capacity and thermal stability of MEPCMs. When the GO content was 1.0 wt %, the encapsulation ratio of MEPCMs was as
+Environmentally friendly microencapsulated phase change materials (MEPCMs) with calcium carbonate (CaCO3) shells were modified with graphene oxide (GO), and the effects of GO content and methodology on MEPCMs were examined. The core−shell structure of MEPCMs and crystal structure of CaCO3 shells were confirmed by scanning electron microscopy (SEM), Fourier-transform infrared spectroscopy (FTIR), and Xray diffractometer (XRD). The thermal properties and stability of MEPCMs were investigated by differential scanning calorimetry (DSC) and thermogravimetric analysis (TGA), suggesting that the addition of GO contributed to improving the heat storage capacity and thermal stability of MEPCMs. When the GO content was 1.0 wt %, the encapsulation ratio of MEPCMs was as
 
 high as 73.19%, and the leakage rate was reduced by 89.6% compared to the MEPCMs without GO. Furthermore, the thermal conductivity and mechanical properties of GO modified MEPCMs were improved significantly. The considerable latent heat storage, thermal stability, thermal conductivity, leakage-prevention, and mechanical properties of GO modified paraffin@CaCO3 MEPCMs offer potential in green energy applications.
 

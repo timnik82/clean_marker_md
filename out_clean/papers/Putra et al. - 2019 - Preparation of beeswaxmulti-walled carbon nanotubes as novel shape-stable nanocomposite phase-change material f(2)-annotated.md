@@ -1,9 +1,5 @@
 #### Contents lists available at [ScienceDirect](http://www.sciencedirect.com/science/journal/2352152X)
 
-# Journal of Energy Storage
-
-journal homepage: [www.elsevier.com/locate/est](https://www.elsevier.com/locate/est)
-
 # Preparation of beeswax/multi-walled carbon nanotubes as novel shapestable nanocomposite phase-change material for thermal energy storage
 
 

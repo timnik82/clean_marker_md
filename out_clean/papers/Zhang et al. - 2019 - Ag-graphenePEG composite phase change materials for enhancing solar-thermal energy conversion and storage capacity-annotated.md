@@ -14,12 +14,6 @@ journal homepage: [www.elsevier.com/locate/apenergy](https://www.elsevier.com/lo
 - The composites exhibit high phase change enthalpies (166.1–177.2 J/g).
 - The composites show enhanced thermal conductivities and shape-stabilities.
 
-#### GRAPHICAL ABSTRACTS
-
-Enhanced light absorption capacity, reduced thermal radiation and high solar-to-thermal energy storage efficiency can be achieved by using of Ag–GNS/PEG composites.
-
-#### ARTICLE INFO
-
 #### Keywords: Ag–GNS Phase change materials Photothermal conversion Sunlight-driven
 
 ### ABSTRACT

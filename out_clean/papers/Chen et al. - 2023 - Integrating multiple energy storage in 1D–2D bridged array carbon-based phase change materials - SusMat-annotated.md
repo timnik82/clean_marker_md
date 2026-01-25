@@ -2,19 +2,6 @@
 
 # **Integrating multiple energy storage in 1D–2D bridged array carbon-based phase change materials**
 
-**Xiao Chen<sup>1</sup> Jianhang Xu<sup>2</sup> Yang Li<sup>1</sup> Yan Gao<sup>2</sup> Ge Wang<sup>2</sup>**
-
-1 Institute of Advanced Materials, Beijing Normal University, Beijing, China
-
-2Beijing Advanced Innovation Center for Materials Genome Engineering, Beijing Key Laboratory of Function Materials for Molecule & Structure Construction, School of Materials Science and Engineering, University of Science and Technology Beijing, Beijing, China
-
-#### **Correspondence**
-
-Xiao Chen, Institute of Advanced Materials, Beijing Normal University, Beijing 100875, China.
-
-Email: [xiaochen@bnu.edu.cn](mailto:xiaochen@bnu.edu.cn)
-
-Ge Wang, Beijing Advanced Innovation Center for Materials Genome Engineering, Beijing Key Laboratory of Function Materials for Molecule & Structure Construction, School of Materials Science and Engineering, University of Science and Technology Beijing, Beijing 100083, China. Email: [gewang@ustb.edu.cn](mailto:gewang@ustb.edu.cn)
 
 #### **Abstract**
 

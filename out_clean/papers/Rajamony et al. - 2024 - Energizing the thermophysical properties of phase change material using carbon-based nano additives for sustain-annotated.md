@@ -2,8 +2,6 @@ Contents lists available at [ScienceDirect](www.sciencedirect.com/science/journa
 
 # Materials Today Sustainability
 
-journal homepage: [www.journals.elsevier.com/materials-today-sustainability](https://www.journals.elsevier.com/materials-today-sustainability)
-
 # Energizing the thermophysical properties of phase change material using carbon-based nano additives for sustainable thermal energy storage application in photovoltaic thermal systems
 
 #### ARTICLE INFO

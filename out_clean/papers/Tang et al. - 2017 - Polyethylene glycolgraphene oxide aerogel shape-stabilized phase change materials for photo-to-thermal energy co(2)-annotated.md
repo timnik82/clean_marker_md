@@ -14,7 +14,7 @@ Article history: Received 18 March 2017 Received in revised form 13 May 2017 Acc
 
 Keywords: Oxidation level Graphene oxide aerogel Composite phase change materials Shape-stabilization Photo-to-thermal energy conversion and storage
 
-#### abstract
+#### Abstract
 
 Polyethylene glycol (PEG)/graphene oxide aerogel (GA) composite phase change materials (PCMs) were prepared by introducing PEG into GAs from graphene oxide (GO) with different oxidation degree via vacuum impregnation. The structures of GAs were tuned by the oxidation levels of GO. A series of characterizations were used to analyze the chemical structure of GOs, including X-ray diffraction (XRD), Fourier transform infrared spectrum (FTIR), X-ray photoelectron spectroscopy (XPS) and Raman spectroscopy analysis. Structural analyses confirmed that the oxygenated functional groups increased and the hydroxyl groups were transformed into carboxyl and epoxy groups with increasing oxidation level. In addition, the graphitic nature of GO decreased while the sp<sup>3</sup> domains of GOs increased owing to the disruption of the graphitic stacking order. Morphology analysis showed that the breakage of graphene sheet became more serious with the oxidation level increasing. When GAs prepared with GOs of higher oxidation levels were used, the composite PCMs showed excellent shape-stability during phase change and excellent thermal repeatability. The change of dimension for PGA6-40 heated from 35 C to 150 C was negligible under the load of a constant force (7 N). Efficient photo-to-thermal energy conversion and storage was realized in the composite PCMs.
 

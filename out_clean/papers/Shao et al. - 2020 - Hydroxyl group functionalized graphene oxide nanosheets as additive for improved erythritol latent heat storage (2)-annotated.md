@@ -1,4 +1,4 @@
-Contents lists available at [ScienceDirect](www.sciencedirect.com/science/journal/09270248)
+
 
 # Solar Energy Materials and Solar Cells
 

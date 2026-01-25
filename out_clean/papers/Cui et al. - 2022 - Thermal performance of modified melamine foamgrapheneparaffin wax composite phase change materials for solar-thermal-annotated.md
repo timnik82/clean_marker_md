@@ -7,10 +7,8 @@ journal homepage: [www.elsevier.com/locate/jclepro](https://www.elsevier.com/loc
 # Thermal performance of modified melamine foam/graphene/paraffin wax composite phase change materials for solar-thermal energy conversion and storage☆
 
 
-
 ## ARTICLE INFO
 
-Handling Editor: Cecilia Maria Villas Boas ˆ de Almeida
 
 *Keywords:*  Melamine foam Graphene Phase change materials Thermal performance Solar-thermal energy conversion and storage
 

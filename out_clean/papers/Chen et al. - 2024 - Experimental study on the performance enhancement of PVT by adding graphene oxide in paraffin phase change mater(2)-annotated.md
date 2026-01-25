@@ -2,7 +2,6 @@ Contents lists available at [ScienceDirect](www.sciencedirect.com/science/journa
 
 # Solar Energy Materials and Solar Cells
 
-journal homepage: [www.elsevier.com/locate/solmat](https://www.elsevier.com/locate/solmat)
 
 # Experimental study on the performance enhancement of PV/T by adding graphene oxide in paraffin phase change material emulsions
 

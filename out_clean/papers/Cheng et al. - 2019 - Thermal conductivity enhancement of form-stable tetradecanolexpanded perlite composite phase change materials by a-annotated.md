@@ -1,14 +1,6 @@
-Contents lists available at [ScienceDirect](http://www.sciencedirect.com/science/journal/13594311)
 
 # Applied Thermal Engineering
 
-journal homepage: [www.elsevier.com/locate/apthermeng](https://www.elsevier.com/locate/apthermeng)
-
-# Research Paper
-
-Fei Cheng, Xiaoguang Zhang, Ruilong Wen, Zhaohui Huang[⁎](#page-0-0) , Minghao Fang, Yan'gai Liu, Xiaowen Wu, Xin Min[⁎](#page-0-0)
-
-Beijing Key Laboratory of Materials Utilization of Nonmetallic Minerals and Solid Wastes, National Laboratory of Mineral Materials, School of Materials Science and Technology, China University of Geosciences (Beijing), Beijing 100083, PR China
 
 #### HIGHLIGHTS
 

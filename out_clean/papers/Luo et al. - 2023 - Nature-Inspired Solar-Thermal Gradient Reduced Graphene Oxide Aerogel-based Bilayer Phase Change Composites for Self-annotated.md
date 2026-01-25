@@ -4,6 +4,8 @@
 
 *Zhuo Luo, Dongzhi Yang,\* Ji Liu, Hao-Yu Zhao, Tianyu Zhao, Bai-Xue Li, Wei-Guang Yang, and Zhong-Zhen Yu\**
 
+## Abstract
+
 **Although personal thermal management (PTM) materials for daily routine environments are widely investigated, the exploration of multifunctional PTM materials with excellent feasibility in complex and outdoor scenarios is still in its infancy. Herein, inspired by the temperature regulation effect of the atmosphere, a novel design for fabricating solar-thermal gradient reduced graphene oxide (RGO) aerogel-based bilayer phase change composite (GRGC) featuring "energy regulation" and "energy inverse compensation" is proposed for selfadaptive PTM applications. By integrating the solar-thermal energy conversion ability of RGO, the heat regulation of the aerogel/octadecane bilayer structure with the unique gradient RGO framework inside, and the latent-heat compensation of octadecane, the bilayer GRGC can serve as an efficient PTM device to mitigate drastic temperature changes of human skin in harsh environments. This multifunctional PTM device can not only keep a warm skin surface microclimate in a frigid environment of −5 °C via the synergistic effect of the solar-thermal conversion, the aerogel thermal insulation, and the phase-change latent heat release, but also provide efficient thermal buffering to prevent hyperthermia in hot environments through its phase-change behavior and its thermal insulation. This gradient and bilayer design opens a new avenue for fabricating self-adaptive PTM devices for applications in harsh environments.**
 
 The ORCID identification number(s) for the author(s) of this article can be found under https://doi.org/10.1002/adfm.202212032.

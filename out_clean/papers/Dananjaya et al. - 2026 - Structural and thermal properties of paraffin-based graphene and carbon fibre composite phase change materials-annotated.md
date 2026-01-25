@@ -6,11 +6,6 @@ journal homepage: [www.elsevier.com/locate/ijhmt](https://www.elsevier.com/locat
 
 # Structural and thermal properties of paraffin-based graphene and carbon fibre composite phase change materials
 
-Vimukthi Dananjaya <sup>a</sup> , Xu Bao <sup>b</sup> , Nethmi Hansika <sup>c</sup> , Chamil Abeykoon b,[\\*](https://orcid.org/0000-0002-6797-776X)
-
-- <sup>a</sup> *School of Engineering, Swinburne University of Technology, Hawthorn, VIC 3122, Australia*
-- <sup>b</sup> *Northwest Composites Centre, Henry Royce Institute, National Graphene Institute, and Department of Materials, Faculty of Science and Engineering, The University of Manchester, Oxford Road, M13 9PL, Manchester, UK*
-- <sup>c</sup> *Department of Computer Engineering, Faculty of Engineering, Open University, Nawala, Sri Lanka*
 
 # ARTICLE INFO
 

@@ -1,8 +1,5 @@
 # **Phase change materials microcapsules reinforced with graphene oxide for energy storage technology**
 
-**Bowei Du1,2,3,4, Mingyue Wang1,2,3,4, Qing Zhao<sup>4</sup> , Xiaofei Hu1,2,3,4,[\\*](https://orcid.org/0000-0002-9924-2776); Shujiang Ding(0000-0002-5683-0973) , Shujiang Ding1,2,3,\***
-
-
 
 ### **Abstract**
 

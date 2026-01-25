@@ -1,8 +1,7 @@
-Contents lists available at [ScienceDirect](http://www.sciencedirect.com/science/journal/09270248)
+
 
 # Solar Energy Materials and Solar Cells
 
-journal homepage: [www.elsevier.com/locate/solmat](https://www.elsevier.com/locate/solmat)
 
 # Enhanced thermal conductivity of microencapsulated phase change materials based on graphene oxide and carbon nanotube hybrid filler
 
