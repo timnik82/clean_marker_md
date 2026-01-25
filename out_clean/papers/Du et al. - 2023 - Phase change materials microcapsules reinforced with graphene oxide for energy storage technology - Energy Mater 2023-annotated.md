@@ -2,11 +2,7 @@
 
 **Bowei Du1,2,3,4, Mingyue Wang1,2,3,4, Qing Zhao<sup>4</sup> , Xiaofei Hu1,2,3,4,[\\*](https://orcid.org/0000-0002-9924-2776); Shujiang Ding(0000-0002-5683-0973) , Shujiang Ding1,2,3,\***
 
-**How to cite this article:** Du B, Wang M, Zhao Q, Hu X, Ding S. Phase change materials microcapsules reinforced with graphene oxide for energy storage technology. *Energy Mater* 2023;3:300026.<https://dx.doi.org/10.20517/energymater.2023.04>
 
-**Received:** 2 Feb 2023 **First Decision:** 1 Mar 2023 **Revised:** 4 Apr 2023 **Accepted:** 9 May 2023 **Published:** 29 May 2023
-
-**Academic Editors:** Yuping Wu, Bingqing Wei **Copy Editor:** Fangling Lan **Production Editor:** Fangling Lan
 
 ### **Abstract**
 

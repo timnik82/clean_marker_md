@@ -2,14 +2,6 @@
 
 # Superhydrophilic Modified Elastomeric RGO Aerogel Based Hydrated Salt Phase Change Materials for Effective Solar Thermal Conversion and Storage
 
-[Shaobo Xi,](https://pubs.acs.org/action/doSearch?field1=Contrib&text1="Shaobo+Xi"&field2=AllField&text2=&publication=&accessType=allContent&Earliest=&ref=pdf) [Lingling Wang,](https://pubs.acs.org/action/doSearch?field1=Contrib&text1="Lingling+Wang"&field2=AllField&text2=&publication=&accessType=allContent&Earliest=&ref=pdf)[\\*](#page-7-0) [Huaqing Xie,](https://pubs.acs.org/action/doSearch?field1=Contrib&text1="Huaqing+Xie"&field2=AllField&text2=&publication=&accessType=allContent&Earliest=&ref=pdf) [and Wei Yu](https://pubs.acs.org/action/doSearch?field1=Contrib&text1="Wei+Yu"&field2=AllField&text2=&publication=&accessType=allContent&Earliest=&ref=pdf)[\\*](#page-7-0)
-
-Downloaded via UNIVERSIDADE DE COIMBRA 00500 on January 23, 2026 at 09:57:11 (UTC). See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
-
-Cite This: ACS Nano [2022, 16, 3843](https://pubs.acs.org/action/showCitFormats?doi=10.1021/acsnano.1c08581&ref=pdf)−3851 [Read Online](https://pubs.acs.org/doi/10.1021/acsnano.1c08581?ref=pdf)
-
-ACCESS [Metrics & More](https://pubs.acs.org/doi/10.1021/acsnano.1c08581?goto=articleMetrics&ref=pdf) [Article Recommendations](https://pubs.acs.org/doi/10.1021/acsnano.1c08581?goto=recommendations&?ref=pdf) \*s<sup>ı</sup> [Supporting Information](https://pubs.acs.org/doi/10.1021/acsnano.1c08581?goto=supporting-info&ref=pdf)
-
 ABSTRACT: As a typical phase-change material (PCM) with high heat storage capacity and wide distribution, hydrated salts play broad and critical roles in solar energy utilization in recent years. However, the leakage and supercooling problems of hydrated salts have been a constraint to their further practical applications. In the current work, the super-hydrophilic reduced graphene oxide (RGO) aerogels modified by konjac glucomannan (KGM) as supporting structural materials are prepared by the hydrothermal reaction-freeze-drying, which can effectively absorb and convert visible sunlight energy into thermal energy. In addition, the super-hydrophilic aerogels compounded with PCMs can ameliorate the shortcoming of leakage and suppress the supercooling temperature as low
 
 about 0.2−1.5 °C in the freezing process. Under 1 sun irradiation, the prepared sodium acetate trihydrate/KGM-modified graphene oxide aerogel (SAT/KRGO) composite PCM achieves a high photothermal conversion efficiency (86.3%) due to its good light absorption property. The number of cycles has no apparent effect on the supercooling of the composite materials, suggesting their stable thermal cycles and thermal storage.

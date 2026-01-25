@@ -6,8 +6,6 @@
 
 **Amit Kumar, Gaurav Bharadwaj, Aayush Gupta & Kamal Sharma**
 
-**To cite this article:** Amit Kumar, Gaurav Bharadwaj, Aayush Gupta & Kamal Sharma (2024) Correlation study of thermal charging, discharging, and efficiency of graphene oxide-reinforced paraffin wax for thermal energy storage system, Chemical Engineering Communications, 211:9, 1336-1342, DOI: [10.1080/00986445.2024.2341275](https://www.tandfonline.com/action/showCitFormats?doi=10.1080/00986445.2024.2341275)
-
 **To link to this article:** <https://doi.org/10.1080/00986445.2024.2341275>
 
 ## **Correlation study of thermal charging, discharging, and efficiency of graphene oxide-reinforced paraffin wax for thermal energy storage system**

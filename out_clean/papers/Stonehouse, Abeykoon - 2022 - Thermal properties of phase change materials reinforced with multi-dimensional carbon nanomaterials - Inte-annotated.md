@@ -6,15 +6,6 @@ journal homepage: [www.elsevier.com/locate/hmt](http://www.elsevier.com/locate/h
 
 # Thermal properties of phase change materials reinforced with multi-dimensional carbon nanomaterials
 
-Alex Stonehouse, Chamil Abeykoon<sup>∗</sup>
-
-*North West Composites Centre and Aerospace Research Institute, Department of Materials, Faculty of Science and Engineering, University of Manchester, Manchester, M13 9PL, UK*
-
-#### a r t i c l e i n f o
-
-*Article history:* Received 23 June 2021 Revised 24 September 2021 Accepted 19 October 2021 Available online 2 December 2021
-
-*Keywords:* Phase change materials Composites Thermal properties Multi-dimensional carbon nano-materials Thermal stability Encapsulation Functionalization Crystallization Percolation threshold Graphene Thermal conductivity Latent heat Enthalpy
 
 #### a b s t r a c t
 
@@ -30,73 +21,7 @@ Most of today's world is reliant on non-renewable energy sources, creating undes
 
 prices of non-renewable sources of energy will increase due to their scarcity [\[5\],](#page-24-0) it would be wise to prepare for a future where we must conserve energy and rely on renewable energies, as many countries are currently doing [\[6\].](#page-24-0) To do this, new technologies should be devised and/or optimised to facilitate renewable energy usage and energy conservation.
 
-Many areas of energy use require heat removal or containment for energy conservation or for performance improvement. Solar heat storage, building insulation, thermal recycling and many more are areas that could benefit from thermal energy storage (TES) devices [\[7–9\].](#page-24-0) Thermal energy storage is based on the principle that thermal energy is absorbed and stored in a medium so that it can later be released and used for other purposes. These storage systems have the potential to reduce the amount of thermal energy waste. Phase change materials (PCMs) have therefore got a lot of attention recently due to their high heat capacity and thermal storage potential as evident from the data presented in **[Fig.](#page-2-0) 2**. Phase
-
-<sup>∗</sup> Corresponding author.
-
-## **List of abbreviations**
-
-BNNT Boron nitride nanotube BNNS Boron nitride nanosheet CNF Carbon nanofiller CNT Carbon nanotube
-
-CTAB Hexadecyltrimethylammonium bromide
-
-CVD Chemical vapour deposition
-
-EmPEG Epoxidized methoxy polyethylene glycol f-GNPs Functionalized graphene nanoplatelets
-
-FLG Few layer graphene
-
-f-MWCNT Functionalized multi-walled carbon nanotube
-
-GNP Graphene nanoplatelet GO Graphene oxide HDA Hexadecyl acrylate Impreg Impregnation
-
-MCMS Mesoporous carbon microspheres MWCNT Multi-walled carbon nanotube
-
-NDPCM Nano-dispersed phase change material
-
-OA Oleylamine
-
-OI Octadecyl isocyanate PCM Phase change material PUB Polyurethane binder
-
-Ref Reference
-
-rGO Reduced graphene oxide
-
-SDBS Sodium dodecyl benzene sulfonate
-
-SDS Sodium dodecyl sulfonate SEM Scanning electron microscopy SWCNT Single walled carbon nanotube TCE Thermal conductivity enhancement
-
-TES Thermal energy storage TGA Thermogravimetric analysis xGNP Exfoliated graphene nanoplatelet
-
-XRD X-ray diffraction
-
-#### *Symbol definitions*
-
-A Particle shape coefficient c Speed of sound (m s−1)
-
-keff Effective thermal conductivity (W m−1K−1)
-
-Keff Effective thermal conductivity of the material
-
-(W m−1K−1)
-
-tAB Transmission coefficient of normal phonon energy
-
-between material interface A to B
-
-v Volume fraction w Mass fraction λ Conductivity ratio ρ Density (kg m−3)
-
-#### *Subscripts*
-
-A Material A B Material B C Composite f Particle/filler m Matrix
-
-M Maximum filler fraction
-
-*Units*
-
-μm Micrometres nm Nanometres
-
-change materials are materials that have a high specific heat capacity, and latent heat capacity which is the measure of heat capacity associated with a phase change. An interesting area of application is the enhancement of the cycle life of Li-ion batteries, which can be improved by managing the temperatures of the cells closely, using composite phase change materials (CPCMs) [\[10,11\]](#page-24-0).
+Many areas of energy use require heat removal or containment for energy conservation or for performance improvement. Solar heat storage, building insulation, thermal recycling and many more are areas that could benefit from thermal energy storage (TES) devices [\[7–9\].](#page-24-0) Thermal energy storage is based on the principle that thermal energy is absorbed and stored in a medium so that it can later be released and used for other purposes. These storage systems have the potential to reduce the amount of thermal energy waste. Phase change materials (PCMs) have therefore got a lot of attention recently due to their high heat capacity and thermal storage potential as evident from the data presented in **[Fig.](#page-2-0) 2**. Phase change materials are materials that have a high specific heat capacity, and latent heat capacity which is the measure of heat capacity associated with a phase change. An interesting area of application is the enhancement of the cycle life of Li-ion batteries, which can be improved by managing the temperatures of the cells closely, using composite phase change materials (CPCMs) [\[10,11\]](#page-24-0).
 
 The majority of current PCMs do no exhibit all of the key properties (see **Section 2. Desirable thermal properties of phase change materials** for more details) needed for useful and effective thermal energy storage systems, therefore enhancements need to be made via compositing the PCM with other materials, such as making composite phase change materials (CPCMs) [\[12,13\]](#page-24-0). Some methods that are used to improve the conductive and convective heat transport in PCMs are displayed in a hierarchical graphic in *[Fig.](#page-3-0) 3*.
 

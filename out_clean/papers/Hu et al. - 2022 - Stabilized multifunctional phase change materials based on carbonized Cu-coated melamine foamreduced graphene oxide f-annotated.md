@@ -2,9 +2,6 @@
 
 # Stabilized multifunctional phase change materials based on carbonized Cu‐coated melamine foam/reduced graphene oxide framework for multiple energy conversion and storage
 
-Zhicong Hu1,2 | Yongjin Zou1,2 | Cuili Xiang1,2 | Lixian Sun1,2 | Fen Xu1,2 | Menghe Jiang<sup>1</sup> | Sensen Yu<sup>1</sup>
-
-1 Guangxi Key Laboratory of Information Materials, Guilin University of Electronic Technology, Guilin, Guangxi, PR China 2 Guangxi Collaborative Innovation Center of Structure and Property for New Energy Materials, Guilin, Guangxi, PR
 
 #### Correspondence
 

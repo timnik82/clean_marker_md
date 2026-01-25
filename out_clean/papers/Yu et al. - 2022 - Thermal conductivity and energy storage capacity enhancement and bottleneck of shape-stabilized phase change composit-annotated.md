@@ -6,10 +6,6 @@ journal homepage: [www.elsevier.com/locate/compositesa](https://www.elsevier.com
 
 # Thermal conductivity and energy storage capacity enhancement and bottleneck of shape-stabilized phase change composites with graphene foam and carbon nanotubes
 
-Zepei Yu <sup>a</sup> , Daili Feng a,b,\* , Yanhui Feng a,b,\* , Xinxin Zhang <sup>a</sup>
-
-- <sup>a</sup> *School of Energy & Environmental Engineering, University of Science and Technology Beijing, Beijing 100083, China*
-- <sup>b</sup> *Beijing Key Laboratory of Energy Saving and Emission Reduction for Metallurgical Industry, University of Science and Technology, Beijing, Beijing 100083, China*
 
 ## ARTICLE INFO
 

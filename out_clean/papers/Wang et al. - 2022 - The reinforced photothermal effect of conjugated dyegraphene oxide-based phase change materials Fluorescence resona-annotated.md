@@ -6,14 +6,6 @@ journal homepage: [www.elsevier.com/locate/cej](https://www.elsevier.com/locate/
 
 # The reinforced photothermal effect of conjugated dye/graphene oxide-based phase change materials: Fluorescence resonance energy transfer and applications in solar-thermal energy storage
 
-Chen Wang <sup>a</sup> , Wenjun Dong a,\* , Ang Li <sup>b</sup> , Dimberu G. Atinafu <sup>c</sup> , Ge Wang a,d,\* , Yunfeng Lu <sup>e</sup>
-
-- <sup>a</sup> *Beijing Key Laboratory of Function Materials for Molecule & Structure Construction, School of Materials Science and Engineering, University of Science and Technology Beijing, Beijing 100083, PR China*
-- <sup>b</sup> *School of Materials Science and Engineering, Suzhou University of Science and Technology, Suzhou 215009, PR China*
-- <sup>c</sup> *Department of Architecture and Architectural Engineering, Yonsei University, Seoul 03722, Republic of Korea*
-- <sup>d</sup> *Shunde Graduate School, University of Science and Technology Beijing, Shunde 528399, PR China*
-- <sup>e</sup> *Department of Chemical and Biomolecular Engineering, University of California, Los Angeles, CA, USA*
-
 #### ARTICLE INFO
 
 #### *Keywords:*

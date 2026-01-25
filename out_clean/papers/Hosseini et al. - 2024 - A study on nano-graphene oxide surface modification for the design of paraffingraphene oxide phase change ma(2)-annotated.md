@@ -2,13 +2,6 @@ Contents lists available at [ScienceDirect](www.sciencedirect.com/science/journa
 
 # Journal of Energy Storage
 
-journal homepage: [www.elsevier.com/locate/est](https://www.elsevier.com/locate/est)
-
-# Research Papers
-
-- <sup>a</sup> *Department of Polymer Engineering, Faculty of Engineering, Golestan University, Gorgan, Iran*
-- <sup>b</sup> *Department of Mechanical Engineering, Faculty of Engineering, Golestan University, Gorgan, Iran*
-- <sup>c</sup> *Department of Mechanical Engineering, K.N.Toosi University of Technology, Tehran, Iran*
 
 #### ARTICLE INFO
 

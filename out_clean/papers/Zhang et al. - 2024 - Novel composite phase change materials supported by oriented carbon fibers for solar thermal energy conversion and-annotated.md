@@ -6,11 +6,6 @@ journal homepage: [www.elsevier.com/locate/apenergy](https://www.elsevier.com/lo
 
 # Novel composite phase change materials supported by oriented carbon fibers for solar thermal energy conversion and storage
 
-Pengfei Zhang a,1 , Yilin Wang a,1 , Yu Qiu a,\* , Hongjie Yan <sup>a</sup> , Zhaolong Wang <sup>b</sup> , Qing Li a,\*
-
-- <sup>a</sup> *School of Energy Science and Engineering, Central South University, Changsha, Hunan 410083, China*
-- <sup>b</sup> *Interdisciplinary Research Center of Low-carbon Technology and Equipment, College of Mechanical and Vehicle Engineering, Hunan University, Changsha, Hunan 410082, China*
-
 #### HIGHLIGHTS
 
 - Novel composite phase change materials supported by oriented carbon fibers are proposed

@@ -6,11 +6,6 @@ journal homepage: [www.elsevier.com/locate/est](https://www.elsevier.com/locate/
 
 # Preparation, thermal characterization and examination of phase change materials (PCMs) enhanced by carbon-based nanoparticles for solar thermal energy storage
 
-Meizhi He[a](#page-0-0)[,b](#page-0-1) , Luwei Yang[a](#page-0-0),[b](#page-0-1) , Wenye Lin[c](#page-0-2),[⁎](#page-0-3) , Jiaxiang Che[na](#page-0-0),[b](#page-0-1) , Xiang Mao[a](#page-0-0),[b](#page-0-1) , Zhenjun Ma[c](#page-0-2)
-
-- <sup>a</sup> CAS Key Laboratory of Cryogenics, Technical Institute of Physics and Chemistry, Beijing, 100190, China
-- <sup>b</sup> University of Chinese Academy of Sciences, Beijing, 100049, China
-- <sup>c</sup> Sustainable Buildings Research Centre (SBRC), University of Wollongong, 2522, Australia
 
 #### ARTICLE INFO
 

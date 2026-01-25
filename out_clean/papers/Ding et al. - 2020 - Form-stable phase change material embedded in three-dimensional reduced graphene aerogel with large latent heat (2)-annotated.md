@@ -6,12 +6,6 @@ journal homepage: [www.elsevier.com/locate/apsusc](https://www.elsevier.com/loca
 
 # Form-stable phase change material embedded in three-dimensional reduced graphene aerogel with large latent heat for thermal energy management
 
-Jie Ding[a,](#page-0-0)[b](#page-0-1),[c](#page-0-2) , Xiaodong W[ua](#page-0-0),[b](#page-0-1)[,c,](#page-0-2)[⁎](#page-0-3) , Xiaodong She[na](#page-0-0)[,c](#page-0-2) , Sheng Cu[ia](#page-0-0)[,c](#page-0-2) , Xiangbao Chen[d](#page-0-4)
-
-- <sup>a</sup> *College of Materials Science and Engineering, Nanjing Tech University, Nanjing 210009, China*
-- <sup>b</sup> *School of Chemical & Biomedical Engineering, Nanyang Technological University, 62 Nanyang Drive, Singapore 637459, Singapore*
-- <sup>c</sup> *Jiangsu Collaborative Innovation Center for Advanced Inorganic Function Composites, Nanjing Tech University, Nanjing 210009, China*
-- <sup>d</sup> *Beijing Institute of Aeronautic Materials, Beijing 100095, China*
 
 #### ARTICLE INFO
 

@@ -6,10 +6,6 @@ journal homepage: [www.elsevier.com/locate/apthermeng](https://www.elsevier.com/
 
 # Honeycomb carbon fibers strengthened composite phase change materials for superior thermal energy storage
 
-Nan Sheng[a](#page-0-0) , Zhonghao Rao[a](#page-0-0) , Chunyu Zhu[a](#page-0-0),[b](#page-0-1),[⁎](#page-0-2) , Hiroki Habazaki[b](#page-0-1)
-
-- <sup>a</sup> Jiangsu Province Engineering Laboratory of High Efficient Energy Storage Technology and Equipments & School of Electrical and Power Engineering, China University of Mining and Technology, Xuzhou 221116, China
-- <sup>b</sup> Faculty of Engineering, Hokkaido University, Sapporo 060-8628, Japan
 
 ## HIGHLIGHTS
 

@@ -6,10 +6,6 @@ journal homepage: [http://www.elsevier.com/locate/compscitech](https://http://ww
 
 # Graphene-CoO/PEG composite phase change materials with enhanced solar-to-thermal energy conversion and storage capacity
 
-Yang Li <sup>1</sup> , Yaqiong Li <sup>1</sup> , Xiubing Huang \* , Haiyan Zheng , Guilong Lu , Zuoshuai Xi , Ge Wang \*\*
-
-*Beijing Advanced Innovation Center for Materials Genome Engineering, Beijing Key Laboratory of Function Materials for Molecule & Structure Construction, School of Materials Science and Engineering, University of Science and Technology Beijing, Beijing, 100083, People's Republic of China*
-
 #### ARTICLE INFO
 
 #### *Keywords:* Phase change materials Reduced graphene oxide Solar-to-thermal conversion CoO nanoparticles

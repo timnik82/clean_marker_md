@@ -6,11 +6,6 @@ journal homepage: [www.elsevier.com/locate/solmat](https://www.elsevier.com/loca
 
 # Enhanced thermal conductivity of microencapsulated phase change materials based on graphene oxide and carbon nanotube hybrid filler
 
-Zhifang Liu[a](#page-0-0) , Zhonghua Chen[a](#page-0-0),[⁎](#page-0-1) , Fei Y[ub,](#page-0-2)[⁎](#page-0-1)
-
-- <sup>a</sup> College of Materials Science and Engineering, South China University of Technology, Guangzhou 510640, China
-- <sup>b</sup> The Key Laboratory of Polymer Processing Engineering, Ministry of Education, China (South China University of Technology), Guangzhou 510640, China
-
 # ARTICLE INFO
 
 #### Keywords: Microencapsulated phase change material Graphene oxide Carbon nanotube Hybrid filler Thermal conductivity Photo-thermal conversion performance

@@ -6,11 +6,6 @@ journal homepage: [www.elsevier.com/locate/est](https://www.elsevier.com/locate/
 
 # Preparation of beeswax/multi-walled carbon nanotubes as novel shapestable nanocomposite phase-change material for thermal energy storage
 
-Nandy Putra[a,](#page-0-0)[⁎](#page-0-1) , Stephanie Rawi[a](#page-0-0) , Muhammad Amin[a](#page-0-0) , Eny Kusrin[ib](#page-0-2) , Engkos A. Kosasih[a](#page-0-0) , Teuku Meurah Indra Mahlia[c](#page-0-3)
-
-- <sup>a</sup> *Applied Heat Transfer Research Group, Department of Mechanical Engineering, Faculty of Engineering, Universitas Indonesia, Kampus Baru-Depok, Jawa Barat, 16424, Indonesia*
-- <sup>b</sup> *Department of Chemical Engineering, Faculty of Engineering, Universitas Indonesia, 16424 Depok, Indonesia Kampus Baru-Depok, Jawa Barat, 16424, Indonesia*
-- <sup>c</sup> *School of lnformation, Systems and Modelling, Faculty of Engineering and Information Technology, University of Technology Sydney, NSW 2007, Australia*
 
 ## ARTICLE INFO
 

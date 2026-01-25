@@ -6,14 +6,6 @@ journal homepage: [www.elsevier.com/locate/solmat](https://www.elsevier.com/loca
 
 # Experimental study on the performance enhancement of PV/T by adding graphene oxide in paraffin phase change material emulsions
 
-Hongbing Chen <sup>a</sup> , Xuening Gao <sup>a</sup> , Congcong Wang a,\* , Lizhi Jia <sup>b</sup> , Rui Zhao <sup>c</sup> , Junhui Sun <sup>d</sup> , Meibo Xing <sup>a</sup> , Pingjun Nie <sup>e</sup>
-
-- <sup>a</sup> *School of Environment and Energy Engineering, Beijing University of Civil Engineering and Architecture, Beijing, 100044, China*
-- <sup>b</sup> *Tianjin Key Laboratory of Refrigeration Technology, Tianjin University of Commerce, Tianjin, 300134, China*
-- <sup>c</sup> *State Key Laboratory of Building Safety and Environment, China Academy of Building Research, Beijing, 101119, China*
-- <sup>d</sup> *China Construction Sixth Engineering Bureau Limited, Tianjin, 530000, China*
-- <sup>e</sup> *Grammar School, Beijing University of Civil Engineering and Architecture, Beijing, 100044, China*
-
 #### ARTICLE INFO
 
 #### *Keywords:* PCME Nanoparticles Paraffin/GO emulsion PV/T system Thermoelectric properties

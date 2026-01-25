@@ -6,20 +6,6 @@ journal homepage: [www.journals.elsevier.com/materials-today-sustainability](htt
 
 # Energizing the thermophysical properties of phase change material using carbon-based nano additives for sustainable thermal energy storage application in photovoltaic thermal systems
 
-Reji Kumar Rajamony a,b,\* , Johnny Koh Siaw Paw <sup>a</sup> , A.K. Pandey c,d,e,\*\*, Yaw Chong Tak <sup>a</sup> , Jagadeesh Pasupuleti <sup>a</sup> , Sieh Kiong Tiong <sup>a</sup> , Talal Yusaf f,g , M. Samykano <sup>h</sup> , A.G.N. Sofiah <sup>a</sup> , B. Kalidasan <sup>c</sup> , Oday A. Ahmed <sup>i</sup> , K. Kadirgama h,j,k
-
-- <sup>a</sup> *Institute of Sustainable Energy, Universiti Tenaga Nasional (The Energy University), Jalan Ikram-Uniten, Kajang 43000, Selangor, Malaysia*
-- <sup>b</sup> *Division of Research and Development, Lovely Professional University, Phagwara, Punjab, 144411, India*
-- <sup>c</sup> *Research Centre for Nano-Materials and Energy Technology (RCNMET), School of Engineering and Technology, Sunway University, No. 5, Jalan Universiti, Bandar Sunway, Petaling Jaya, 47500 Selangor Darul Ehsan, Malaysia*
-- <sup>d</sup> *Center for Transdisciplinary Research, Saveetha Institute of Medical and Technical Sciences, Saveetha University, Chennai 602105, India*
-- <sup>e</sup> *CoE for Energy and Eco-Sustainability Research, Uttaranchal University, Dehradun, India*
-- <sup>f</sup> *School of Engineering and Technology, Central Queensland University, Brisbane, QLD 4009, Australia*
-- <sup>g</sup> *College of Engineering, Almaaqal University, Basra 61003, Iraq*
-- <sup>h</sup> *Faculty of Mechanical and Automotive Engineering Technology, Universiti Malaysia Pahang Al-Sultan Abdullah, 26600 Pekan, Pahang, Malaysia*
-- <sup>i</sup> *Department of Electrical Engineering, University of Technology- Iraq, 35299 Baghdad, Iraq*
-- <sup>j</sup> *Advance Nano Coolant Lubricant (ANCL), College of Engineering, Universiti Malaysia Pahang Al-Sultan Abdullah, Pekan 26600, Malaysia*
-- <sup>k</sup> *Centre for Research in Advanced Fluid and Processes, Universiti Malaysia Pahang Al-Sultan Abdullah, Pekan 26600, Malaysia*
-
 #### ARTICLE INFO
 
 #### *Keywords:* Phase change materials Graphene Thermal conductivity Thermal energy storage Photovoltaic thermal system Energy

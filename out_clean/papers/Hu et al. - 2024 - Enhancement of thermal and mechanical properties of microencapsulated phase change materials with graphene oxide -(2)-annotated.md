@@ -6,13 +6,6 @@ journal homepage: [www.elsevier.com/locate/cej](https://www.elsevier.com/locate/
 
 # Enhancement of thermal and mechanical properties of microencapsulated phase change materials with graphene oxide
 
-Meiyong Hu a,b , Dawei Wang a,b , Georgios Kokogiannakis <sup>c</sup> , Jo Darkwa <sup>d</sup> , Yilin Li <sup>e</sup> , Li Wang a,b,\* , Qing Xu f,\* , Weiguang Su a,b,\*
-
-- <sup>a</sup> *School of Mechanical Engineering, Qilu University of Technology (Shandong Academy of Sciences), 250353 Jinan, China*
-- <sup>b</sup> *Shandong Mechanical Design and Research Institute, 250353 Jinan, China*
-- <sup>c</sup> *Sustainable Buildings Research Centre, University of Wollongong, NSW 2519, Wollongong, Australia*
-- <sup>d</sup> *Faculty of Engineering, University of Nottingham. University Park, Nottingham, NG7 2RD, UK*
-- <sup>e</sup> *School of Environment and Architecture, University of Shanghai for Science and Technology, 200093 Shanghai, China*
 - <sup>f</sup> *Tianjin Key Laboratory of Integrated Design and On-line Monitoring for Light Industry & Food Machinery and Equipment, College of Mechanical Engineering, Tianjin University of Science and Technology, 300222 Tianjin, China*
 
 #### ARTICLE INFO

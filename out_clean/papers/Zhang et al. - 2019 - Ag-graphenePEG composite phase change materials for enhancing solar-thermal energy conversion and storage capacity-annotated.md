@@ -6,15 +6,9 @@ journal homepage: [www.elsevier.com/locate/apenergy](https://www.elsevier.com/lo
 
 # Ag-graphene/PEG composite phase change materials for enhancing solarthermal energy conversion and storage capacity
 
-Yuang Zhang[a](#page-0-0) , Jiasheng Wang[a](#page-0-0) , Jinjing Qiu[a](#page-0-0) , Xin Jin[b](#page-0-1) , Malik Muhammad Umair[a](#page-0-0) , Rongwen Lu[a](#page-0-0) , Shufen Zhang[a](#page-0-0) , Bingtao Tan[ga](#page-0-0),[c](#page-0-2),[⁎](#page-0-3)
-
-- <sup>a</sup> State Key Laboratory of Fine Chemicals, Dalian University of Technology, Dalian 116024, PR China
-- <sup>b</sup> Department of Chemical Engineering, Qingdao University of Science and Technology, Qingdao 266042, PR China
-- <sup>c</sup> Eco-chemical Engineering Cooperative Innovation Center of Shandong, Qingdao University of Science and Technology, Qingdao 266042, PR China
-
 ## HIGHLIGHTS
 
-## • A new strategy to improve photothermal conversion efficiency of PCMs was developed.
+## • A new strategy to improve photothermal conversion efficiency of PCMs was developed
 
 - The composites can harvest and convert visible light efficiently (η = 88.7–92.0%).
 - The composites exhibit high phase change enthalpies (166.1–177.2 J/g).

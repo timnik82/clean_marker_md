@@ -6,11 +6,6 @@ journal homepage: [http://www.elsevier.com/locate/solmat](https://http://www.els
 
 # Hydroxyl group functionalized graphene oxide nanosheets as additive for improved erythritol latent heat storage performance: A comprehensive evaluation on the benefits and challenges
 
-Xue-Feng Shao <sup>a</sup> , Jia-Cheng Lin <sup>b</sup> , Hao-Ran Teng <sup>b</sup> , Sheng Yang <sup>a</sup> , Li-Wu Fan a,c,\* , Justin NingWei Chiu <sup>b</sup> , Zi-Tao Yu a,c , Viktoria Martin <sup>b</sup>
-
-- <sup>a</sup> *Institute of Thermal Science and Power Systems, School of Energy Engineering, Zhejiang University, Hangzhou, 310027, People's Republic of China*
-- <sup>b</sup> *Department of Energy Technology, KTH Royal Institute of Technology, SE-100 44, Stockholm, Sweden*
-
 #### ARTICLE INFO
 
 *Keywords:*  Crystallization Erythritol Graphene oxide nanosheets Latent heat storage Supercooling Thermal conductivity

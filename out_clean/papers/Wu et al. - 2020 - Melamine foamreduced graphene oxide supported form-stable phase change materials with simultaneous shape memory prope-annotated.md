@@ -6,10 +6,6 @@ journal homepage: [www.elsevier.com/locate/cej](https://www.elsevier.com/locate/
 
 # Melamine foam/reduced graphene oxide supported form-stable phase change materials with simultaneous shape memory property and light-tothermal energy storage capability
 
-Hai-yan Wu, Song-tai Li, Yao-wen Shao, Xin-zheng Jin, Xiao-dong Qi[⁎](#page-0-0) , Jing-hui Yang, Zuo-wan Zhou, Yong Wang[⁎](#page-0-0)
-
-School of Materials Science and Engineering, Southwest Jiaotong University, Key Laboratory of Advanced Technologies of Materials, Ministry of Education of China, Chengdu 610031, PR China
-
 #### HIGHLIGHTS
 
 - Flexible phase change composites with simultaneous light-actuated shape variation property are prepared.

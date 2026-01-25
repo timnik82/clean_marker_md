@@ -2,16 +2,6 @@
 
 ## EDGE ARTICLE
 
-Cite this: Chem. Sci., 2026, 17, 205
-
-All publication charges for this article have been paid for by the Royal Society of Chemistry
-
-Received 8th September 2025 Accepted 15th October 2025
-
-DOI: 10.1039/d5sc06909b
-
-rsc.li/chemical-science
-
 # Graphene oxide/carbon nanotube reinforced PCM microcapsules with high thermal conductivity and high latent heat for thermal energy storage
 
 Bowei Du,ab Xinbing Jiang,ab Zhijie Zhang,ab Kai Xi[,](http://orcid.org/0009-0003-1630-2599) ab Borui Zhang,<sup>c</sup> Qinghao Yang<sup>c</sup> and Shujiang Din[g](http://orcid.org/0000-0002-5683-0973) \*ab

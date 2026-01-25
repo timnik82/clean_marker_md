@@ -4,12 +4,6 @@ journal homepage: [www.elsevier.com/locate/solener](http://www.elsevier.com/loca
 
 # Heat transfer study of phase change materials with graphene nano particle for thermal energy storage
 
-Karunesh Kant a,⇑ , A. Shukla <sup>a</sup> , Atul Sharma <sup>a</sup> , Pascal Henry Biwole b,c
-
-- <sup>a</sup> Rajiv Gandhi Institute of Petroleum Technology, Jais, Amethi, UP, India
-- <sup>b</sup>Department of Mathematics and Interactions, University of Nice Sophia-Antipolis, Nice, France
-- <sup>c</sup> Mines Paris Tech, PSL Research University, Center for Processes, Renewable Energies and Energy Systems, Sophia Antipolis, France
-
 #### article info
 
 #### Article history: Received 21 January 2017 Received in revised form 27 February 2017 Accepted 6 March 2017 Available online 14 March 2017

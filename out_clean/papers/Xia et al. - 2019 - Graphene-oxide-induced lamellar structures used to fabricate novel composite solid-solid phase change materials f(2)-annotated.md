@@ -6,12 +6,6 @@ journal homepage: [www.elsevier.com/locate/cej](https://www.elsevier.com/locate/
 
 # Graphene-oxide-induced lamellar structures used to fabricate novel composite solid-solid phase change materials for thermal energy storage
 
-Yongpeng Xia[a](#page-0-0)[,c](#page-0-1) , Huanzhi Zhan[ga](#page-0-0)[,b,](#page-0-2)[⁎](#page-0-3) , Pengru Huang[a,](#page-0-0)[b](#page-0-2) , Chaowei Huang[a,](#page-0-0)[b](#page-0-2) , Fen Xu[a,](#page-0-0)[b](#page-0-2) , Yongjin Zou[a](#page-0-0)[,b](#page-0-2) , Hailiang Chu[a](#page-0-0)[,b](#page-0-2) , Erhu Ya[na](#page-0-0)[,b](#page-0-2) , Lixian Sun[a](#page-0-0)[,b,](#page-0-2)[c,](#page-0-1)[⁎](#page-0-3)
-
-- <sup>a</sup> *School of Material Science & Engineering, Guilin University of Electronic Technology, Guilin 541004, PR China*
-- <sup>b</sup> *Guangxi Key Laboratory of Information Materials and Guangxi Collaborative Innovation Center of Structure and Property for New Energy and Materials, Guilin University of Electronic Technology, Guilin 541004, PR China*
-- <sup>c</sup> *School of Mechanical & Electrical Engineering, Guilin University of Electronic Technology, Guilin 541004, PR China*
-
 #### HIGHLIGHTS
 
 - The introduced graphene oxide induced a novel regular lamellar structure for the composite PCMs.

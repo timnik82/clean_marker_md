@@ -2,14 +2,6 @@
 
 # **Graphene–Silver Hybrid Nanoparticle based Organic Phase Change Materials for Enhanced Thermal Energy Storage**
 
-**B. Kalidasan <sup>1</sup> [,](https://orcid.org/0000-0002-4345-0445) A. K. Pandey 1,2,\* [,](https://orcid.org/0000-0001-6033-2822) Saidur Rahman 1,2, Aman Yadav <sup>3</sup> [,](https://orcid.org/0000-0002-3551-3960) M. Samykano <sup>3</sup> and V. V. Tyagi <sup>4</sup>**
-
-- <sup>1</sup> Research Centre for Nano-Materials and Energy Technology (RCNMET), School of Engineering and Technology, Sunway University, No. 5, Jalan Universiti, Bandar Sunway, Petaling Jaya 47500, Selangor Darul Ehsan, Malaysia
-- <sup>2</sup> Sunway Materials Smart Science and Engineering (SMS2E) Research Cluster, Sunway University, No. 5, Jalan Universiti, Bandar Sunway, Petaling Jaya 47500, Selangor, Malaysia
-- <sup>3</sup> College of Engineering, University Malaysia Pahang, Lebuhraya Tun Razak, Gambang, Kuantan 26300, Pahang, Malaysia
-- <sup>4</sup> School of Energy Management, Shri Mata Vaishno Devi University, Katra 182320, Jammu & Kashmir, India
-- **\*** Correspondence: adarshp@sunway.edu.my
-
 **Abstract:** Due to the intermittent nature of solar energy, researchers and scientists are working to develop thermal energy storage (TES) systems for effective utilization of solar energy. Phase change materials (PCMs) are considered to be promising materials for TES. In this study, organic paraffin RT50 and graphene silver (Gr:Ag) nanopowder are adopted as TES material and thermal property enhancers. Microstructure and morphological behavior as well as chemical, optical, and thermal stability of the prepared composite PCM are visually investigated using scanning electron microscope (SEM), energy dispersive X-ray spectroscopy (EDX), Fourier transform infrared spectroscopy (FT-IR), UV-Vis spectroscopy, thermal conductivity analyzer, differential scanning calorimeter (DSC). and thermogravimetric analyzer (TGA). Furthermore, based on the outstanding thermal performance of the composite, an extended investigation on the thermal and chemical properties are evaluated for 500 thermal cycles to ensure their reliability. Results show the thermal conductivity of RT50 improved by 53.85% when Gr:Ag nanopowder is dispersed at a weight percent of 0.8 (RT50-0.8Gr:Ag). The change in latent heat value of the composite sample is less than 3%, which is significant for effective thermal energy storage. The thermal decomposition of RT50 is slightly improved from 300 ◦C to 330 ◦C. To ensure a reliable and passive technique for thermal energy storage within solar thermal application devices, such as solar air heaters and solar photovoltaic thermal systems, using nanoparticle enhanced PCMs at the range of a 50 ◦C melting point are a current research hotspot.
 
 **Keywords:** organic PCMs; hybrid nanoparticle; graphene:silver; thermal energy storage; solar energy; thermal stability

@@ -6,35 +6,7 @@
 
 ## **1. Introduction**
 
-High-performance phase change composites (PCCs) are critically important for thermal energy harvesting, thermal
-
-Y. Chen, X. Su, J. Yang
-
-Department of Mechanical and Aerospace Engineering
-
-Hong Kong University of Science and Technology
-
-Hong Kong 999077, China E-mail: [maeyang@ust.hk](mailto:maeyang@ust.hk)
-
-M. Liao, J. Yu
-
-State Key Laboratory of Advanced Marine Materials
-
-Ningbo Institute of Materials Technology and Engineering (NIMTE)
-
-Chinese Academy of Sciences
-
-Ningbo 315201, China
-
-J. Yang
-
-HKUST Shenzhen-Hong Kong Collaborative Innovation Research Institute Futian, Shenzhen 518000, China
-
-The ORCID identification number(s) for the author(s) of this article can be found under <https://doi.org/10.1002/adfm.202518070>
-
-**DOI: 10.1002/adfm.202518070**
-
-buffering, and temperature regulation, especially in modern electronics requiring higher integration, miniaturization, and intelligence. However, a fundamental limitation of all phase change materials (PCMs) is their inherently low thermal conductivity, typically below 0.5 W m<sup>−</sup><sup>1</sup> K<sup>−</sup>1. [\[1–3\]](#page-8-0) This deficiency severely impedes their practical application in scenarios demanding rapid thermal harvesting and efficient thermal management. Furthermore, the inherent phase transition from solid to liquid poses additional challenges: it can contaminate devices during heat absorption and restricts PCM use in electronics thermal management.[\[4–6\]](#page-8-0) Therefore, developing strategies to simultaneously enhance both the thermal conductivity and leakageproof capacity of PCMs is essential to unlock their full potential for efficient heat harvesting, storage, and management across diverse fields.
+High-performance phase change composites (PCCs) are critically important for thermal energy harvesting, thermal buffering, and temperature regulation, especially in modern electronics requiring higher integration, miniaturization, and intelligence. However, a fundamental limitation of all phase change materials (PCMs) is their inherently low thermal conductivity, typically below 0.5 W m<sup>−</sup><sup>1</sup> K<sup>−</sup>1. [\[1–3\]](#page-8-0) This deficiency severely impedes their practical application in scenarios demanding rapid thermal harvesting and efficient thermal management. Furthermore, the inherent phase transition from solid to liquid poses additional challenges: it can contaminate devices during heat absorption and restricts PCM use in electronics thermal management.[\[4–6\]](#page-8-0) Therefore, developing strategies to simultaneously enhance both the thermal conductivity and leakageproof capacity of PCMs is essential to unlock their full potential for efficient heat harvesting, storage, and management across diverse fields.
 
 Despite extensive research, achieving phase change composites (PCCs) that simultaneously exhibit high thermal conductivity and large latent heat remains a significant challenge.[\[7–10\]](#page-8-0) Various strategies
 

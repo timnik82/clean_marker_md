@@ -2,10 +2,6 @@
 
 # Graphene oxide/polyurethane-based composite solid–solid phase change materials with enhanced energy storage capacity and photothermal performance
 
-Jiawei Wang1,2 | Zihua Wu1,2 | Huaqing Xie1,2 | Tingting Wang1,2 | Yuanyuan Wang1,2 | Yueming Huang1,2 | Lan Dong1,2
-
-2 Shanghai Engineering Research Center of Advanced Thermal Functional Materials, Shanghai, China
-
 #### Correspondence
 
 Zihua Wu, School of Energy and Materials, Shanghai Polytechnic University, Shanghai 201209, China. Email: [wuzihua@sspu.edu.cn](mailto:wuzihua@sspu.edu.cn)
@@ -100,6 +96,3 @@ In this study, PU/GO composites with high molecule weight PEG as soft segment we
 
 strong light absorption ability, which helps to achieve efficient photothermal conversion. The PU/GO composite doped with 89 wt% PEG and 1.72 wt% GO shows the highest heating rate and photothermal conversion efficiency is 95.3%. The 2D structure of NCO-GO can provide a new way for the solar energy storage and conversation.
 
-#### ORCID
-
-Jiawei Wang <https://orcid.org/0000-0002-9715-9944> Zihua Wu <https://orcid.org/0000-0002-0369-3151>
