@@ -15,7 +15,7 @@ from pathlib import Path
 from typing import Iterable, List, Optional, Tuple
 
 
-ABSTRACT_MIN_CHARS = 350
+ABSTRACT_MIN_CHARS = 200
 ABSTRACT_MAX_CHARS = 2200
 ABSTRACT_MAX_SENTENCES = 12
 
@@ -170,7 +170,8 @@ def extract_explicit_abstract(lines: List[str]) -> Optional[str]:
         if not in_abstract:
             inline = INLINE_ABSTRACT.match(line)
             if inline:
-                label = normalize_label(line)
+                # Only check the label part for graphical abstract
+                label = normalize_label(inline.group(0).split(':', 1)[0])
                 if not is_graphical_abstract(label):
                     in_abstract = True
                     collected.append(inline.group(3).rstrip())
@@ -256,7 +257,9 @@ def extract_abstract(text: str) -> Optional[str]:
     if explicit:
         explicit = truncate_at_boilerplate(explicit)
         if explicit:
-            return explicit
+            explicit = limit_sentences(explicit)
+            if len(explicit) >= ABSTRACT_MIN_CHARS:
+                return explicit
     return extract_fallback_abstract(lines)
 
 
