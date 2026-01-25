@@ -1,0 +1,959 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Energy Storage Materials",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          220.76199340820312,
+          86.068359375
+        ],
+        [
+          378.029296875,
+          84.517578125
+        ],
+        [
+          376.865234375,
+          100.76190185546875
+        ],
+        [
+          220.298828125,
+          100.76190185546875
+        ]
+      ]
+    },
+    {
+      "title": "High power and energy density graphene phase change composite \nmaterials for efficient thermal management of Li-ion batteries",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.541015625,
+          166.708984375
+        ],
+        [
+          440.5384216308594,
+          165.158203125
+        ],
+        [
+          440.5384216308594,
+          198.19647216796875
+        ],
+        [
+          36.376953125,
+          198.19647216796875
+        ]
+      ]
+    },
+    {
+      "title": "ARTICLE INFO",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          36.958984375,
+          300.8515625
+        ],
+        [
+          115.68936157226562,
+          299.30078125
+        ],
+        [
+          115.68936157226562,
+          309.50445556640625
+        ],
+        [
+          35.794921875,
+          309.50445556640625
+        ]
+      ]
+    },
+    {
+      "title": "Keywords:\nThermal conductivity\nHyperbolic graphene\nPhase change material\nEnergy density\nPower density",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          36.0859375,
+          321.50604248046875
+        ],
+        [
+          103.6015625,
+          320.236328125
+        ],
+        [
+          102.4375,
+          370.7407531738281
+        ],
+        [
+          34.921875,
+          371.412109375
+        ]
+      ]
+    },
+    {
+      "title": "ABSTRACT",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          201.673828125,
+          300.8515625
+        ],
+        [
+          259.294921875,
+          300.8515625
+        ],
+        [
+          259.294921875,
+          309.50445556640625
+        ],
+        [
+          201.673828125,
+          309.50445556640625
+        ]
+      ]
+    },
+    {
+      "title": "1. Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          36.66796875,
+          473.37597656249994
+        ],
+        [
+          97.83658599853516,
+          473.37597656249994
+        ],
+        [
+          97.83658599853516,
+          483.7619934082031
+        ],
+        [
+          35.50390625,
+          483.7619934082031
+        ]
+      ]
+    },
+    {
+      "title": "2. Experimental section",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          36.66796875,
+          242.69726562499997
+        ],
+        [
+          130.2222900390625,
+          242.69726562499997
+        ],
+        [
+          130.2222900390625,
+          251.716064453125
+        ],
+        [
+          35.50390625,
+          251.716064453125
+        ]
+      ]
+    },
+    {
+      "title": "2.1. Materials",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          36.376953125,
+          262.857421875
+        ],
+        [
+          87.08570861816406,
+          262.857421875
+        ],
+        [
+          87.08570861816406,
+          272.635986328125
+        ],
+        [
+          35.212890625,
+          272.635986328125
+        ]
+      ]
+    },
+    {
+      "title": "2.2. Fabrication of hyperbolic graphene-paraffin composites for LIBs",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          36.376953125,
+          337.294921875
+        ],
+        [
+          268.90985107421875,
+          335.744140625
+        ],
+        [
+          268.90985107421875,
+          346.3381042480469
+        ],
+        [
+          35.212890625,
+          346.3381042480469
+        ]
+      ]
+    },
+    {
+      "title": "2.2.1. Fabrication of hyperbolic graphene aerogels (HGAs)",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          36.66796875,
+          358.23046875
+        ],
+        [
+          237.0844268798828,
+          356.6796875
+        ],
+        [
+          237.0844268798828,
+          367.2572326660156
+        ],
+        [
+          35.50390625,
+          367.2572326660156
+        ]
+      ]
+    },
+    {
+      "title": "2.2.2. Vacuum infusion of paraffin into HGA",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          36.958984375,
+          482.68066406249994
+        ],
+        [
+          192.361328125,
+          482.68066406249994
+        ],
+        [
+          192.31558227539062,
+          492.8309631347656
+        ],
+        [
+          35.794921875,
+          492.8309631347656
+        ]
+      ]
+    },
+    {
+      "title": "2.2.3. Manufacturing of PGCs for LIB thermal management system",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          36.66796875,
+          566.810546875
+        ],
+        [
+          265.1040954589844,
+          565.259765625
+        ],
+        [
+          265.1040954589844,
+          576.509033203125
+        ],
+        [
+          35.50390625,
+          576.509033203125
+        ]
+      ]
+    },
+    {
+      "title": "2.2.4. PCM materials testing device for energy density and power density",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          35.794921875,
+          662.6482849121094
+        ],
+        [
+          288.978515625,
+          661.408203125
+        ],
+        [
+          288.978515625,
+          670.712890625
+        ],
+        [
+          35.794921875,
+          672.263671875
+        ]
+      ]
+    },
+    {
+      "title": "2.3. Characterizations",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          306.59619140625,
+          229.90332031249997
+        ],
+        [
+          383.2239074707031,
+          229.90332031249997
+        ],
+        [
+          383.2239074707031,
+          239.7552490234375
+        ],
+        [
+          306.59619140625,
+          239.7552490234375
+        ]
+      ]
+    },
+    {
+      "title": "3. Results and discussion",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          305.857421875,
+          565.6474609375
+        ],
+        [
+          405.384765625,
+          565.6474609375
+        ],
+        [
+          405.384765625,
+          576.5108032226562
+        ],
+        [
+          305.857421875,
+          576.5108032226562
+        ]
+      ]
+    },
+    {
+      "title": "3.1. Thermal runaway mechanism and PGC thermal management system",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          305.275390625,
+          587.74609375
+        ],
+        [
+          551.688232421875,
+          586.1953125
+        ],
+        [
+          551.688232421875,
+          597.429931640625
+        ],
+        [
+          305.275390625,
+          597.429931640625
+        ]
+      ]
+    },
+    {
+      "title": "3.2. Hyperbolic graphene aerogel -based phase change materials",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          37.25,
+          587.74609375
+        ],
+        [
+          254.60687255859375,
+          586.1953125
+        ],
+        [
+          254.60687255859375,
+          597.4292907714844
+        ],
+        [
+          36.0859375,
+          597.4292907714844
+        ]
+      ]
+    },
+    {
+      "title": "3.3. Thermal properties and phase change storage of PGC",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          305.275390625,
+          712.583984375
+        ],
+        [
+          503.748046875,
+          712.583984375
+        ],
+        [
+          502.80035400390625,
+          722.9485855102539
+        ],
+        [
+          304.111328125,
+          722.9485855102539
+        ]
+      ]
+    },
+    {
+      "title": "3.4. Thermal management ability for LIBs",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          305.56640625,
+          357.455078125
+        ],
+        [
+          449.98590087890625,
+          355.904296875
+        ],
+        [
+          449.98590087890625,
+          366.80499267578125
+        ],
+        [
+          305.56640625,
+          366.80499267578125
+        ]
+      ]
+    },
+    {
+      "title": "4. Conclusions",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          36.0859375,
+          619.1494140625
+        ],
+        [
+          95.51727294921875,
+          617.5986328125
+        ],
+        [
+          95.51727294921875,
+          628.7798309326172
+        ],
+        [
+          36.0859375,
+          628.7798309326172
+        ]
+      ]
+    },
+    {
+      "title": "Financial support",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          305.56640625,
+          169.810546875
+        ],
+        [
+          373.6650085449219,
+          169.810546875
+        ],
+        [
+          373.6650085449219,
+          178.9266357421875
+        ],
+        [
+          305.56640625,
+          178.9266357421875
+        ]
+      ]
+    },
+    {
+      "title": "CRediT authorship contribution statement",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          306.5926513671875,
+          326.8271484375
+        ],
+        [
+          468.5307312011719,
+          325.2763671875
+        ],
+        [
+          468.5307312011719,
+          336.4181823730469
+        ],
+        [
+          305.56640625,
+          336.4181823730469
+        ]
+      ]
+    },
+    {
+      "title": "Declaration of competing interest",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          304.693359375,
+          485.78222656249994
+        ],
+        [
+          435.1790771484375,
+          485.78222656249994
+        ],
+        [
+          435.1790771484375,
+          495.7229919433594
+        ],
+        [
+          304.693359375,
+          495.7229919433594
+        ]
+      ]
+    },
+    {
+      "title": "Supplementary materials",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          304.40234375,
+          549.3642578125
+        ],
+        [
+          402.2816467285156,
+          549.3642578125
+        ],
+        [
+          402.2816467285156,
+          559.0485992431641
+        ],
+        [
+          304.40234375,
+          559.0485992431641
+        ]
+      ]
+    },
+    {
+      "title": "Data availability",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          305.857421875,
+          602.0908203125
+        ],
+        [
+          370.462890625,
+          600.5400390625
+        ],
+        [
+          370.1015930175781,
+          611.3755035400391
+        ],
+        [
+          304.693359375,
+          611.3755035400391
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          305.857421875,
+          643.1865234375
+        ],
+        [
+          347.8060302734375,
+          643.1865234375
+        ],
+        [
+          347.8060302734375,
+          653.7812347412109
+        ],
+        [
+          304.693359375,
+          653.7812347412109
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          280
+        ],
+        [
+          "Line",
+          80
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          344
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          10
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          221
+        ],
+        [
+          "Line",
+          78
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          217
+        ],
+        [
+          "Line",
+          69
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          197
+        ],
+        [
+          "Line",
+          76
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          268
+        ],
+        [
+          "Line",
+          93
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          481
+        ],
+        [
+          "Line",
+          146
+        ],
+        [
+          "ListItem",
+          39
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Zhang et al. - 2025 - High power and energy density graphene phase change composite materials for efficient thermal management of Li-(2)-annotated"
+}

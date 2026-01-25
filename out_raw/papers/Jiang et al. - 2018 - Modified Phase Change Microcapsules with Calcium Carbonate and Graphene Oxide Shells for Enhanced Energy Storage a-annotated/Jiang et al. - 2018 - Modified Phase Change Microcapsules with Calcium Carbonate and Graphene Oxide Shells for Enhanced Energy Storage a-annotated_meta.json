@@ -1,0 +1,853 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Modified Phase Change Microcapsules with Calcium Carbonate and\nGraphene Oxide Shells for Enhanced Energy Storage and Leakage\nPrevention",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          60.491302490234375,
+          116.29913330078125
+        ],
+        [
+          563.9501953125,
+          116.29913330078125
+        ],
+        [
+          563.9501953125,
+          173.16583251953125
+        ],
+        [
+          60.491302490234375,
+          173.16583251953125
+        ]
+      ]
+    },
+    {
+      "title": "\u25a0 INTRODUCTION",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          60.491302490234375,
+          492.97467041015625
+        ],
+        [
+          147.84158325195312,
+          492.97467041015625
+        ],
+        [
+          147.84158325195312,
+          524.9746704101562
+        ],
+        [
+          60.491302490234375,
+          524.9746704101562
+        ]
+      ]
+    },
+    {
+      "title": "\u25a0 EXPERIMENTAL SECTION",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          324.4539794921875,
+          560.9496765136719
+        ],
+        [
+          452.6239013671875,
+          560.9496765136719
+        ],
+        [
+          452.6239013671875,
+          592.9496917724609
+        ],
+        [
+          324.4539794921875,
+          592.9496917724609
+        ]
+      ]
+    },
+    {
+      "title": "\u25a0 RESULTS AND DISCUSSION",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          60.2158203125,
+          699.5067977905273
+        ],
+        [
+          198.59384155273438,
+          699.5067977905273
+        ],
+        [
+          198.59384155273438,
+          731.5067977905273
+        ],
+        [
+          58.9931640625,
+          731.5067977905273
+        ]
+      ]
+    },
+    {
+      "title": "\u25a0 CONCLUSION",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          324.4539794921875,
+          593.1506805419922
+        ],
+        [
+          401.7550964355469,
+          593.1506805419922
+        ],
+        [
+          401.7550964355469,
+          625.1506805419922
+        ],
+        [
+          324.4539794921875,
+          625.1506805419922
+        ]
+      ]
+    },
+    {
+      "title": "\u25a0 ASSOCIATED CONTENT",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          60.491302490234375,
+          84.61572265625
+        ],
+        [
+          181.4650115966797,
+          84.61572265625
+        ],
+        [
+          181.4650115966797,
+          116.61572265625
+        ],
+        [
+          60.491302490234375,
+          116.61572265625
+        ]
+      ]
+    },
+    {
+      "title": "*S Supporting Information",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          60.2158203125,
+          116.37158203125
+        ],
+        [
+          173.21266174316406,
+          114.77197265625
+        ],
+        [
+          173.21266174316406,
+          129.04608154296875
+        ],
+        [
+          58.9931640625,
+          129.04608154296875
+        ]
+      ]
+    },
+    {
+      "title": "\u25a0 AUTHOR INFORMATION",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          60.491302490234375,
+          186.5496826171875
+        ],
+        [
+          184.87754821777344,
+          186.5496826171875
+        ],
+        [
+          184.87754821777344,
+          218.5496826171875
+        ],
+        [
+          59.91015625,
+          218.5496826171875
+        ]
+      ]
+    },
+    {
+      "title": "Corresponding Author",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          59.298828125,
+          219.146484375
+        ],
+        [
+          152.94149780273438,
+          217.546875
+        ],
+        [
+          152.94149780273438,
+          229.343505859375
+        ],
+        [
+          59.298828125,
+          229.343505859375
+        ]
+      ]
+    },
+    {
+      "title": "ORCID",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          59.91015625,
+          255.53759765625
+        ],
+        [
+          94.14453125,
+          253.93798828125
+        ],
+        [
+          94.14453125,
+          266.1934814453125
+        ],
+        [
+          59.91015625,
+          266.1934814453125
+        ]
+      ]
+    },
+    {
+      "title": "Notes",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          59.6044921875,
+          294.328125
+        ],
+        [
+          84.21280670166016,
+          294.328125
+        ],
+        [
+          84.21280670166016,
+          305.08551025390625
+        ],
+        [
+          58.3818359375,
+          305.08551025390625
+        ]
+      ]
+    },
+    {
+      "title": "\u25a0 ACKNOWLEDGMENTS",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          60.491302490234375,
+          312.0106506347656
+        ],
+        [
+          175.2783660888672,
+          312.0106506347656
+        ],
+        [
+          175.2783660888672,
+          344.0106506347656
+        ],
+        [
+          60.491302490234375,
+          344.0106506347656
+        ]
+      ]
+    },
+    {
+      "title": "\u25a0 ABBREVIATIONS",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          60.491302490234375,
+          437.86871337890625
+        ],
+        [
+          150.23561096191406,
+          437.86871337890625
+        ],
+        [
+          150.23561096191406,
+          469.86871337890625
+        ],
+        [
+          59.91015625,
+          469.86871337890625
+        ]
+      ]
+    },
+    {
+      "title": "\u25a0 REFERENCES",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          60.491302490234375,
+          541.7306823730469
+        ],
+        [
+          133.76095581054688,
+          541.7306823730469
+        ],
+        [
+          133.76095581054688,
+          573.7306823730469
+        ],
+        [
+          59.91015625,
+          573.7306823730469
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          299
+        ],
+        [
+          "Line",
+          78
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "PageFooter",
+          4
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Footnote",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 4949,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          209
+        ],
+        [
+          "Line",
+          60
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          323
+        ],
+        [
+          "Line",
+          86
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          117
+        ],
+        [
+          "Line",
+          28
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "FigureGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          365
+        ],
+        [
+          "Line",
+          102
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          236
+        ],
+        [
+          "Line",
+          54
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          160
+        ],
+        [
+          "Line",
+          44
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          218
+        ],
+        [
+          "Line",
+          67
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          528
+        ],
+        [
+          "Line",
+          129
+        ],
+        [
+          "ListItem",
+          24
+        ],
+        [
+          "SectionHeader",
+          9
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          139
+        ],
+        [
+          "Line",
+          27
+        ],
+        [
+          "ListItem",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Jiang et al. - 2018 - Modified Phase Change Microcapsules with Calcium Carbonate and Graphene Oxide Shells for Enhanced Energy Storage a-annotated"
+}

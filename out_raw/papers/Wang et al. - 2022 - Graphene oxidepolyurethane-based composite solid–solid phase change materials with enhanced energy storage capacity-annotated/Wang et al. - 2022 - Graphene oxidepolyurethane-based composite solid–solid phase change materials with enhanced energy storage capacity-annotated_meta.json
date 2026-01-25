@@ -1,0 +1,1208 @@
+{
+  "table_of_contents": [
+    {
+      "title": "RESEARCH ARTICLE",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          45.63779830932617,
+          71.66851806640625
+        ],
+        [
+          164.54043579101562,
+          70.72998046875
+        ],
+        [
+          164.54043579101562,
+          80.66851806640625
+        ],
+        [
+          45.63779830932617,
+          80.67041015625
+        ]
+      ]
+    },
+    {
+      "title": "Graphene oxide/polyurethane-based composite solid\u2013solid\nphase change materials with enhanced energy storage\ncapacity and photothermal performance",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          45.107421875,
+          110.49169921875
+        ],
+        [
+          533.4287719726562,
+          108.96240234375
+        ],
+        [
+          533.4287719726562,
+          175.9488525390625
+        ],
+        [
+          45.107421875,
+          175.9488525390625
+        ]
+      ]
+    },
+    {
+      "title": "Correspondence",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          45.637840270996094,
+          336.06298828125
+        ],
+        [
+          106.220703125,
+          334.53369140625
+        ],
+        [
+          106.08509063720703,
+          345.3943786621094
+        ],
+        [
+          45.107421875,
+          345.3943786621094
+        ]
+      ]
+    },
+    {
+      "title": "Funding information",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          45.63779830932617,
+          401.82275390625
+        ],
+        [
+          125.0696029663086,
+          400.29345703125
+        ],
+        [
+          125.0696029663086,
+          411.3855285644531
+        ],
+        [
+          44.525390625,
+          411.3855285644531
+        ]
+      ]
+    },
+    {
+      "title": "Summary",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          207.494140625,
+          262.2744140625
+        ],
+        [
+          255.4210662841797,
+          262.2744140625
+        ],
+        [
+          255.4210662841797,
+          273.39703369140625
+        ],
+        [
+          207.494140625,
+          273.39703369140625
+        ]
+      ]
+    },
+    {
+      "title": "KEYWORDS",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          208.076171875,
+          511.16748046875
+        ],
+        [
+          268.28546142578125,
+          511.16748046875
+        ],
+        [
+          268.28546142578125,
+          521.8799438476562
+        ],
+        [
+          206.912109375,
+          521.8799438476562
+        ]
+      ]
+    },
+    {
+      "title": "1 | INTRODUCTION",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          44.81640625,
+          595.6611328125
+        ],
+        [
+          189.16015625,
+          594.1318359375
+        ],
+        [
+          189.16015625,
+          608.6805725097656
+        ],
+        [
+          44.81640625,
+          608.6805725097656
+        ]
+      ]
+    },
+    {
+      "title": "2 | EXPERIMENTAL",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          304.111328125,
+          295.154296875
+        ],
+        [
+          452.529296875,
+          295.154296875
+        ],
+        [
+          451.7762451171875,
+          309.68231201171875
+        ],
+        [
+          302.947265625,
+          309.68231201171875
+        ]
+      ]
+    },
+    {
+      "title": "2.1 | Materials",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          303.23828125,
+          321.9169921875
+        ],
+        [
+          401.8518981933594,
+          321.9169921875
+        ],
+        [
+          401.8518981933594,
+          335.647705078125
+        ],
+        [
+          303.23828125,
+          335.647705078125
+        ]
+      ]
+    },
+    {
+      "title": "2.2 | Synthesis of PU/GO composites",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          304.693359375,
+          518.04931640625
+        ],
+        [
+          523.3809204101562,
+          516.52001953125
+        ],
+        [
+          523.3809204101562,
+          530.6711730957031
+        ],
+        [
+          304.693359375,
+          530.6711730957031
+        ]
+      ]
+    },
+    {
+      "title": "2.3 | Characterization",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          44.81640625,
+          583.4267578125
+        ],
+        [
+          181.37106323242188,
+          581.8974609375
+        ],
+        [
+          181.37106323242188,
+          595.6412811279297
+        ],
+        [
+          44.81640625,
+          595.6412811279297
+        ]
+      ]
+    },
+    {
+      "title": "3 | RESULTS AND DISCUSSION",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          304.40234375,
+          661.5748901367188
+        ],
+        [
+          523.4625244140625,
+          660.65625
+        ],
+        [
+          523.4625244140625,
+          673.6506881713867
+        ],
+        [
+          304.40234375,
+          673.6506881713867
+        ]
+      ]
+    },
+    {
+      "title": "3.1 | The chemical and structural\nanalysis of PCMs",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          304.111328125,
+          687.4189453125
+        ],
+        [
+          507.27703857421875,
+          685.8896484375
+        ],
+        [
+          507.27703857421875,
+          712.655158996582
+        ],
+        [
+          304.111328125,
+          712.655158996582
+        ]
+      ]
+    },
+    {
+      "title": "3.2 | Morphology analysis",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          305.857421875,
+          115.5655517578125
+        ],
+        [
+          464.0329895019531,
+          114.31494140625
+        ],
+        [
+          464.0329895019531,
+          127.641357421875
+        ],
+        [
+          305.857421875,
+          127.641357421875
+        ]
+      ]
+    },
+    {
+      "title": "3.3 | Thermophysical properties of PCMs",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          304.984375,
+          387.6767578125
+        ],
+        [
+          549.505859375,
+          386.1474609375
+        ],
+        [
+          549.505859375,
+          400.6744079589844
+        ],
+        [
+          304.984375,
+          400.6744079589844
+        ]
+      ]
+    },
+    {
+      "title": "3.3.1 | Thermo-physical properties of\nPU/GO",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          305.857421875,
+          414.439453125
+        ],
+        [
+          509.20782470703125,
+          412.91015625
+        ],
+        [
+          509.20782470703125,
+          439.6029968261719
+        ],
+        [
+          305.857421875,
+          439.6029968261719
+        ]
+      ]
+    },
+    {
+      "title": "3.3.2 | Thermal stability of PU/GO",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          305.857421875,
+          609.5874938964844
+        ],
+        [
+          497.3375244140625,
+          609.4248046875
+        ],
+        [
+          497.3375244140625,
+          621.5873870849609
+        ],
+        [
+          305.857421875,
+          621.6591796875
+        ]
+      ]
+    },
+    {
+      "title": "3.3.3 | Thermal conductivity of PU/GO",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          306.1484375,
+          219.4541015625
+        ],
+        [
+          519.6741333007812,
+          217.9248046875
+        ],
+        [
+          519.6741333007812,
+          231.59698486328125
+        ],
+        [
+          306.1484375,
+          231.59698486328125
+        ]
+      ]
+    },
+    {
+      "title": "3.3.4 | Thermal reliability of PU/GO",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          44.234375,
+          505.5559997558594
+        ],
+        [
+          244.4881591796875,
+          504.28564453125
+        ],
+        [
+          244.4881591796875,
+          517.555908203125
+        ],
+        [
+          44.234375,
+          517.555908203125
+        ]
+      ]
+    },
+    {
+      "title": "3.3.5 | Thermoregulation performance of\nPU/GO",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          43.943359375,
+          673.6552734375
+        ],
+        [
+          268.0943603515625,
+          672.1259765625
+        ],
+        [
+          268.0943603515625,
+          699.5965805053711
+        ],
+        [
+          43.943359375,
+          699.5965805053711
+        ]
+      ]
+    },
+    {
+      "title": "3.4 | Photothermal energy conversion",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          304.111328125,
+          622.5701904296875
+        ],
+        [
+          531.71484375,
+          622.5701904296875
+        ],
+        [
+          531.71484375,
+          634.6459808349609
+        ],
+        [
+          302.947265625,
+          634.6459808349609
+        ]
+      ]
+    },
+    {
+      "title": "4 | CONCLUSION",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          303.8203125,
+          518.04931640625
+        ],
+        [
+          431.6488342285156,
+          518.04931640625
+        ],
+        [
+          431.6488342285156,
+          530.6711730957031
+        ],
+        [
+          303.8203125,
+          530.6711730957031
+        ]
+      ]
+    },
+    {
+      "title": "ACKNOWLEDGEMENTS",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          44.81640625,
+          155.2236328125
+        ],
+        [
+          178.99813842773438,
+          153.6943359375
+        ],
+        [
+          178.99813842773438,
+          166.13525390625
+        ],
+        [
+          44.81640625,
+          166.13525390625
+        ]
+      ]
+    },
+    {
+      "title": "ORCID",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          44.81640625,
+          296.68359375
+        ],
+        [
+          82.54814910888672,
+          296.68359375
+        ],
+        [
+          82.54814910888672,
+          309.17364501953125
+        ],
+        [
+          43.65234375,
+          309.17364501953125
+        ]
+      ]
+    },
+    {
+      "title": "REFERENCES",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          45.107421875,
+          349.06201171875
+        ],
+        [
+          121.3975601196289,
+          349.06201171875
+        ],
+        [
+          121.3975601196289,
+          361.1576232910156
+        ],
+        [
+          43.943359375,
+          361.1576232910156
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          215
+        ],
+        [
+          "Line",
+          81
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          5
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          328
+        ],
+        [
+          "Line",
+          117
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          171
+        ],
+        [
+          "Line",
+          70
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          146
+        ],
+        [
+          "Line",
+          56
+        ],
+        [
+          "PageHeader",
+          4
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          256
+        ],
+        [
+          "Line",
+          92
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          17
+        ],
+        [
+          "Line",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          139
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          201
+        ],
+        [
+          "Line",
+          82
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          100
+        ],
+        [
+          "Line",
+          37
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          23
+        ],
+        [
+          "Line",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          264
+        ],
+        [
+          "Line",
+          94
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          314
+        ],
+        [
+          "Line",
+          116
+        ],
+        [
+          "ListItem",
+          26
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          294
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "ListItem",
+          26
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Wang et al. - 2022 - Graphene oxidepolyurethane-based composite solid\u2013solid phase change materials with enhanced energy storage capacity-annotated"
+}

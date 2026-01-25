@@ -1,0 +1,883 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Contents lists available at ScienceDirect",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          228.24559020996094,
+          61.25585937499999
+        ],
+        [
+          369.9206848144531,
+          61.25585937499999
+        ],
+        [
+          369.9206848144531,
+          70.05218505859375
+        ],
+        [
+          227.283203125,
+          70.05218505859375
+        ]
+      ]
+    },
+    {
+      "title": "Applied Energy",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          250.85546875,
+          86.068359375
+        ],
+        [
+          346.9327392578125,
+          86.068359375
+        ],
+        [
+          346.9327392578125,
+          101.40435791015625
+        ],
+        [
+          250.85546875,
+          101.40435791015625
+        ]
+      ]
+    },
+    {
+      "title": "Ag-graphene/PEG composite phase change materials for enhancing solar-\nthermal energy conversion and storage capacity",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          36.376953125,
+          165.5458984375
+        ],
+        [
+          480.466796875,
+          165.5458984375
+        ],
+        [
+          479.302734375,
+          196.5299072265625
+        ],
+        [
+          35.212890625,
+          196.5299072265625
+        ]
+      ]
+    },
+    {
+      "title": "HIGHLIGHTS",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.25,
+          286.89453125
+        ],
+        [
+          104.08265686035156,
+          285.34375
+        ],
+        [
+          104.08265686035156,
+          294.829833984375
+        ],
+        [
+          36.0859375,
+          294.829833984375
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 A new strategy to improve photo-\nthermal conversion efficiency of PCMs\nwas developed.",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          41.55590057373047,
+          306.1745300292969
+        ],
+        [
+          171.1171875,
+          306.1745300292969
+        ],
+        [
+          170.8350372314453,
+          335.1291198730469
+        ],
+        [
+          40.7421875,
+          335.1291198730469
+        ]
+      ]
+    },
+    {
+      "title": "GRAPHICAL ABSTRACTS",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          203.13059997558594,
+          286.119140625
+        ],
+        [
+          329.38568115234375,
+          286.119140625
+        ],
+        [
+          329.38568115234375,
+          294.829833984375
+        ],
+        [
+          203.13059997558594,
+          294.829833984375
+        ]
+      ]
+    },
+    {
+      "title": "ARTICLE INFO",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          36.66796875,
+          470.27441406249994
+        ],
+        [
+          112.33203125,
+          470.27441406249994
+        ],
+        [
+          111.84512329101562,
+          478.80371093749994
+        ],
+        [
+          35.50390625,
+          478.80371093749994
+        ]
+      ]
+    },
+    {
+      "title": "Keywords:\nAg\u2013GNS\nPhase change materials\nPhotothermal conversion\nSunlight-driven",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          36.958984375,
+          490.04687499999994
+        ],
+        [
+          109.712890625,
+          488.49609374999994
+        ],
+        [
+          108.7346420288086,
+          533.0240173339844
+        ],
+        [
+          35.794921875,
+          533.46875
+        ]
+      ]
+    },
+    {
+      "title": "ABSTRACT",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          202.837890625,
+          469.49902343749994
+        ],
+        [
+          259.294921875,
+          469.49902343749994
+        ],
+        [
+          258.130859375,
+          478.79833984375
+        ],
+        [
+          201.673828125,
+          478.79833984375
+        ]
+      ]
+    },
+    {
+      "title": "1. Introduction",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          36.958984375,
+          58.15429687499999
+        ],
+        [
+          96.908203125,
+          58.15429687499999
+        ],
+        [
+          96.908203125,
+          67.32940673828125
+        ],
+        [
+          36.958984375,
+          67.32940673828125
+        ]
+      ]
+    },
+    {
+      "title": "2. Experimental",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          304.984375,
+          236.49414062499997
+        ],
+        [
+          368.499755859375,
+          236.49414062499997
+        ],
+        [
+          368.499755859375,
+          245.11700439453125
+        ],
+        [
+          304.984375,
+          245.11700439453125
+        ]
+      ]
+    },
+    {
+      "title": "2.1. Materials",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          305.56640625,
+          255.87890624999997
+        ],
+        [
+          355.0380859375,
+          255.87890624999997
+        ],
+        [
+          355.0380859375,
+          266.0379638671875
+        ],
+        [
+          304.40234375,
+          266.0379638671875
+        ]
+      ]
+    },
+    {
+      "title": "2.2. Synthesis of Ag\u2013GNS",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          37.58740234375,
+          289.220703125
+        ],
+        [
+          125.32017517089844,
+          287.669921875
+        ],
+        [
+          125.32017517089844,
+          298.2476501464844
+        ],
+        [
+          36.66796875,
+          298.2476501464844
+        ]
+      ]
+    },
+    {
+      "title": "2.3. Synthesis of Ag\u2013GNS/PEG composites",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          36.66796875,
+          440.03417968749994
+        ],
+        [
+          182.17578125,
+          440.03417968749994
+        ],
+        [
+          181.87124633789062,
+          449.73095703125
+        ],
+        [
+          35.50390625,
+          449.73095703125
+        ]
+      ]
+    },
+    {
+      "title": "2.4. Characterization",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          36.0859375,
+          526.8779296875
+        ],
+        [
+          110.22471618652344,
+          526.8779296875
+        ],
+        [
+          110.22471618652344,
+          538.0510711669922
+        ],
+        [
+          36.0859375,
+          538.0510711669922
+        ]
+      ]
+    },
+    {
+      "title": "3. Results and discussion",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          305.275390625,
+          361.33203125
+        ],
+        [
+          404.2071838378906,
+          361.33203125
+        ],
+        [
+          404.2071838378906,
+          370.6872253417969
+        ],
+        [
+          305.275390625,
+          370.6872253417969
+        ]
+      ]
+    },
+    {
+      "title": "4. Conclusions",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          37.541015625,
+          79.08984375
+        ],
+        [
+          95.162109375,
+          79.08984375
+        ],
+        [
+          94.45797729492188,
+          88.248779296875
+        ],
+        [
+          36.376953125,
+          88.248779296875
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgements",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          36.0859375,
+          245.79882812499997
+        ],
+        [
+          111.35081481933594,
+          245.79882812499997
+        ],
+        [
+          111.35081481933594,
+          255.6038818359375
+        ],
+        [
+          36.0859375,
+          255.6038818359375
+        ]
+      ]
+    },
+    {
+      "title": "Appendix A. Supplementary material",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          36.66796875,
+          320.6240234375
+        ],
+        [
+          180.50662231445312,
+          319.0732421875
+        ],
+        [
+          180.50662231445312,
+          328.7934265136719
+        ],
+        [
+          35.50390625,
+          329.1533203125
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          36.66796875,
+          371.412109375
+        ],
+        [
+          78.75267028808594,
+          371.412109375
+        ],
+        [
+          78.75267028808594,
+          381.1217346191406
+        ],
+        [
+          35.50390625,
+          381.1217346191406
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          197
+        ],
+        [
+          "Line",
+          60
+        ],
+        [
+          "SectionHeader",
+          9
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Picture",
+          3
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          240
+        ],
+        [
+          "Line",
+          62
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          297
+        ],
+        [
+          "Line",
+          85
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          145
+        ],
+        [
+          "Line",
+          29
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          301
+        ],
+        [
+          "Line",
+          79
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          301
+        ],
+        [
+          "Line",
+          72
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          119
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Caption",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          497
+        ],
+        [
+          "Line",
+          140
+        ],
+        [
+          "ListItem",
+          43
+        ],
+        [
+          "Reference",
+          19
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Zhang et al. - 2019 - Ag-graphenePEG composite phase change materials for enhancing solar-thermal energy conversion and storage capacity-annotated"
+}

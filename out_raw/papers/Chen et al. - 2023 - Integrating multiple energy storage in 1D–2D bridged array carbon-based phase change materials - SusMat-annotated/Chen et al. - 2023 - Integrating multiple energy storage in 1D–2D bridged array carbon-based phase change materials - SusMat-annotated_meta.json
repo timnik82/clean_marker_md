@@ -1,0 +1,1114 @@
+{
+  "table_of_contents": [
+    {
+      "title": "RESEARCH ARTICLE",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          45.518951416015625,
+          68.818359375
+        ],
+        [
+          160.71206665039062,
+          67.2890625
+        ],
+        [
+          160.71206665039062,
+          78.35406494140625
+        ],
+        [
+          44.81640625,
+          78.35406494140625
+        ]
+      ]
+    },
+    {
+      "title": "Integrating multiple energy storage in 1D\u20132D bridged array\ncarbon-based phase change materials",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          45.3984375,
+          108.19775390625
+        ],
+        [
+          540.125,
+          108.19775390625
+        ],
+        [
+          539.7469482421875,
+          150.38153076171875
+        ],
+        [
+          44.234375,
+          150.38153076171875
+        ]
+      ]
+    },
+    {
+      "title": "Correspondence",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          45.107421875,
+          325.35791015625
+        ],
+        [
+          106.2454833984375,
+          323.82861328125
+        ],
+        [
+          106.2454833984375,
+          334.4284973144531
+        ],
+        [
+          43.943359375,
+          334.4284973144531
+        ]
+      ]
+    },
+    {
+      "title": "Funding information",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          44.81640625,
+          494.34521484375
+        ],
+        [
+          124.76799774169922,
+          492.81591796875
+        ],
+        [
+          124.76799774169922,
+          503.8011169433594
+        ],
+        [
+          43.65234375,
+          503.8011169433594
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          207.203125,
+          220.21875
+        ],
+        [
+          249.55706787109375,
+          220.21875
+        ],
+        [
+          249.55706787109375,
+          231.617919921875
+        ],
+        [
+          207.203125,
+          231.617919921875
+        ]
+      ]
+    },
+    {
+      "title": "KEYWORDS",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          208.94921875,
+          527.98974609375
+        ],
+        [
+          266.1401672363281,
+          527.98974609375
+        ],
+        [
+          266.1401672363281,
+          538.952880859375
+        ],
+        [
+          207.78515625,
+          538.952880859375
+        ]
+      ]
+    },
+    {
+      "title": "1 INTRODUCTION",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          43.943359375,
+          590.30859375
+        ],
+        [
+          173.16452026367188,
+          588.779296875
+        ],
+        [
+          173.16452026367188,
+          602.90087890625
+        ],
+        [
+          43.943359375,
+          602.90087890625
+        ]
+      ]
+    },
+    {
+      "title": "2 RESULTS AND DISCUSSION",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          305.56640625,
+          240.48193359375
+        ],
+        [
+          497.9703063964844,
+          238.95263671875
+        ],
+        [
+          497.9703063964844,
+          253.4490966796875
+        ],
+        [
+          304.40234375,
+          253.4490966796875
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Structural analysis of Co/TLC",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          303.23828125,
+          266.47998046875
+        ],
+        [
+          510.7464294433594,
+          264.95068359375
+        ],
+        [
+          510.7464294433594,
+          279.3510437011719
+        ],
+        [
+          303.23828125,
+          279.3510437011719
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Thermal storage properties",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          303.23828125,
+          124.6376953125
+        ],
+        [
+          497.75054931640625,
+          124.6376953125
+        ],
+        [
+          497.75054931640625,
+          136.881103515625
+        ],
+        [
+          303.23828125,
+          136.881103515625
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Photothermal conversion and\nstorage",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          43.943359375,
+          408.322265625
+        ],
+        [
+          250.97775268554688,
+          408.322265625
+        ],
+        [
+          250.97775268554688,
+          435.77996826171875
+        ],
+        [
+          43.943359375,
+          435.77996826171875
+        ]
+      ]
+    },
+    {
+      "title": "2.4 Electrothermal conversion and\nstorage",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          43.65234375,
+          382.32421875
+        ],
+        [
+          258.898193359375,
+          380.794921875
+        ],
+        [
+          258.898193359375,
+          408.8609619140625
+        ],
+        [
+          43.65234375,
+          408.8609619140625
+        ]
+      ]
+    },
+    {
+      "title": "2.5 Magnetothermal conversion and\nstorage",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          303.8203125,
+          668.302734375
+        ],
+        [
+          528.848388671875,
+          668.302734375
+        ],
+        [
+          528.848388671875,
+          693.4949798583984
+        ],
+        [
+          303.8203125,
+          693.4949798583984
+        ]
+      ]
+    },
+    {
+      "title": "3 CONCLUSION",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          44.81640625,
+          277.94970703125
+        ],
+        [
+          157.12757873535156,
+          277.94970703125
+        ],
+        [
+          157.12757873535156,
+          291.3030700683594
+        ],
+        [
+          44.81640625,
+          291.3030700683594
+        ]
+      ]
+    },
+    {
+      "title": "4 EXPERIMENTAL SECTION",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          43.943359375,
+          654.9449768066406
+        ],
+        [
+          231.1262664794922,
+          654.15673828125
+        ],
+        [
+          231.1262664794922,
+          666.9000778198242
+        ],
+        [
+          42.779296875,
+          666.9000778198242
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Materials",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          44.234375,
+          679.7724609375
+        ],
+        [
+          139.6875,
+          679.7724609375
+        ],
+        [
+          139.6875,
+          692.8020706176758
+        ],
+        [
+          44.234375,
+          692.8020706176758
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Synthesis of CoZn-ZIF",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          304.111328125,
+          124.25537109375
+        ],
+        [
+          469.248779296875,
+          122.72607421875
+        ],
+        [
+          469.248779296875,
+          136.881103515625
+        ],
+        [
+          302.947265625,
+          136.881103515625
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Synthesis of Co/TLC",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          305.56640625,
+          278.71435546875
+        ],
+        [
+          459.7243347167969,
+          277.18505859375
+        ],
+        [
+          459.7243347167969,
+          292.30206298828125
+        ],
+        [
+          304.40234375,
+          292.30206298828125
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Synthesis of Co/TLC@PEG20000",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          304.40234375,
+          395.70556640625
+        ],
+        [
+          529.7376708984375,
+          394.17626953125
+        ],
+        [
+          529.7376708984375,
+          408.8610534667969
+        ],
+        [
+          303.23828125,
+          408.8610534667969
+        ]
+      ]
+    },
+    {
+      "title": "4.5 Characterizations",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          304.984375,
+          564.310546875
+        ],
+        [
+          446.68310546875,
+          564.310546875
+        ],
+        [
+          446.68310546875,
+          577.2330627441406
+        ],
+        [
+          304.984375,
+          577.2330627441406
+        ]
+      ]
+    },
+    {
+      "title": "ACKNOWLEDGMENTS",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          43.943359375,
+          190.3974609375
+        ],
+        [
+          179.96463012695312,
+          188.8681640625
+        ],
+        [
+          179.96463012695312,
+          201.13812255859375
+        ],
+        [
+          42.779296875,
+          201.13812255859375
+        ]
+      ]
+    },
+    {
+      "title": "CONFLICT OF INTEREST STATEMENT",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          45.107421875,
+          242.01123046875
+        ],
+        [
+          278.58038330078125,
+          240.48193359375
+        ],
+        [
+          278.58038330078125,
+          252.94268798828125
+        ],
+        [
+          43.943359375,
+          252.94268798828125
+        ]
+      ]
+    },
+    {
+      "title": "ORCID",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          45.107421875,
+          280.6259765625
+        ],
+        [
+          85.267578125,
+          279.0966796875
+        ],
+        [
+          85.07582092285156,
+          291.79583740234375
+        ],
+        [
+          43.943359375,
+          291.79583740234375
+        ]
+      ]
+    },
+    {
+      "title": "REFERENCES",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          45.51955795288086,
+          319.623046875
+        ],
+        [
+          127.46484375,
+          318.09375
+        ],
+        [
+          127.27662658691406,
+          330.644775390625
+        ],
+        [
+          44.81640625,
+          330.644775390625
+        ]
+      ]
+    },
+    {
+      "title": "SUPPORTING INFORMATION",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          304.984375,
+          436.6142578125
+        ],
+        [
+          485.36444091796875,
+          436.6142578125
+        ],
+        [
+          485.36444091796875,
+          448.8150634765625
+        ],
+        [
+          304.984375,
+          448.8150634765625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          197
+        ],
+        [
+          "Line",
+          74
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          4
+        ],
+        [
+          "PageFooter",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          255
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          21
+        ],
+        [
+          "Line",
+          8
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          258
+        ],
+        [
+          "Line",
+          103
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          164
+        ],
+        [
+          "Line",
+          57
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          147
+        ],
+        [
+          "Line",
+          53
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          241
+        ],
+        [
+          "Line",
+          105
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          171
+        ],
+        [
+          "Line",
+          58
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          112
+        ],
+        [
+          "Line",
+          48
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          192
+        ],
+        [
+          "Line",
+          89
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          285
+        ],
+        [
+          "Line",
+          113
+        ],
+        [
+          "ListItem",
+          28
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          236
+        ],
+        [
+          "Line",
+          91
+        ],
+        [
+          "ListItem",
+          23
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Chen et al. - 2023 - Integrating multiple energy storage in 1D\u20132D bridged array carbon-based phase change materials - SusMat-annotated"
+}

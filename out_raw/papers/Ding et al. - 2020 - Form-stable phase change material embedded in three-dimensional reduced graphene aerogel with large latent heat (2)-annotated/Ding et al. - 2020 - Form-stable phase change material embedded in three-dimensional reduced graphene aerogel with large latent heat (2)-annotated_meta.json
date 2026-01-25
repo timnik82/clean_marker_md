@@ -1,0 +1,1011 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Contents lists available at ScienceDirect",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          227.865234375,
+          62.03124999999999
+        ],
+        [
+          369.97430419921875,
+          60.48046874999999
+        ],
+        [
+          369.97430419921875,
+          70.301025390625
+        ],
+        [
+          226.701171875,
+          70.301025390625
+        ]
+      ]
+    },
+    {
+      "title": "Applied Surface Science",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          224.08203125,
+          86.84375
+        ],
+        [
+          374.24609375,
+          85.29296875
+        ],
+        [
+          373.63885498046875,
+          101.83990478515625
+        ],
+        [
+          222.91796875,
+          101.83990478515625
+        ]
+      ]
+    },
+    {
+      "title": "Form-stable phase change material embedded in three-dimensional reduced\ngraphene aerogel with large latent heat for thermal energy management",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.541015625,
+          166.26568603515625
+        ],
+        [
+          488.9390563964844,
+          165.158203125
+        ],
+        [
+          488.9390563964844,
+          196.94940185546875
+        ],
+        [
+          36.376953125,
+          196.94940185546875
+        ]
+      ]
+    },
+    {
+      "title": "ARTICLE INFO",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          35.50390625,
+          282.6298828125
+        ],
+        [
+          111.87405395507812,
+          281.0791015625
+        ],
+        [
+          111.87405395507812,
+          290.68243408203125
+        ],
+        [
+          34.33984375,
+          290.68243408203125
+        ]
+      ]
+    },
+    {
+      "title": "Keywords:\nAerogel\nMelt infiltration\nLatent heat\nHydrothermal\nThermal energy management",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          35.50390625,
+          303.953125
+        ],
+        [
+          121.64453125,
+          302.40234375
+        ],
+        [
+          120.9083023071289,
+          353.4490051269531
+        ],
+        [
+          34.33984375,
+          353.578125
+        ]
+      ]
+    },
+    {
+      "title": "ABSTRACT",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          203.13101196289062,
+          281.466796875
+        ],
+        [
+          257.548828125,
+          281.466796875
+        ],
+        [
+          257.548828125,
+          290.68243408203125
+        ],
+        [
+          203.13101196289062,
+          290.68243408203125
+        ]
+      ]
+    },
+    {
+      "title": "1. Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.58740234375,
+          458.64355468749994
+        ],
+        [
+          96.908203125,
+          458.64355468749994
+        ],
+        [
+          96.81640625,
+          469.7590026855469
+        ],
+        [
+          36.958984375,
+          469.7590026855469
+        ]
+      ]
+    },
+    {
+      "title": "2. Experimental procedures",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          305.56640625,
+          444.29882812499994
+        ],
+        [
+          413.2956237792969,
+          444.29882812499994
+        ],
+        [
+          413.2956237792969,
+          454.61798095703125
+        ],
+        [
+          305.56640625,
+          454.61798095703125
+        ]
+      ]
+    },
+    {
+      "title": "2.1. Synthesis of the GO solution",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          304.111328125,
+          466.39746093749994
+        ],
+        [
+          418.7144775390625,
+          464.84667968749994
+        ],
+        [
+          418.7144775390625,
+          475.5378723144531
+        ],
+        [
+          304.111328125,
+          475.5378723144531
+        ]
+      ]
+    },
+    {
+      "title": "2.2. Synthesis of the PEG/rGO-HT sample",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          304.984375,
+          685.0576171875
+        ],
+        [
+          449.804443359375,
+          685.0576171875
+        ],
+        [
+          449.804443359375,
+          695.224853515625
+        ],
+        [
+          304.984375,
+          695.224853515625
+        ]
+      ]
+    },
+    {
+      "title": "2.3. Synthesis of the PEG/rGO-MI PCM composite",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          36.958984375,
+          550.9150390625
+        ],
+        [
+          208.546875,
+          550.9150390625
+        ],
+        [
+          208.546875,
+          560.6353759765625
+        ],
+        [
+          36.958984375,
+          560.6353759765625
+        ]
+      ]
+    },
+    {
+      "title": "2.4. Characterizations",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          304.693359375,
+          382.6552734375
+        ],
+        [
+          382.2010192871094,
+          382.6552734375
+        ],
+        [
+          382.2010192871094,
+          393.2799987792969
+        ],
+        [
+          304.693359375,
+          393.2799987792969
+        ]
+      ]
+    },
+    {
+      "title": "3. Results and discussion",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          306.439453125,
+          664.1220703125
+        ],
+        [
+          404.2578430175781,
+          664.1220703125
+        ],
+        [
+          404.2578430175781,
+          674.2500610351562
+        ],
+        [
+          306.439453125,
+          674.2500610351562
+        ]
+      ]
+    },
+    {
+      "title": "4. Conclusions",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          305.56640625,
+          506.71777343749994
+        ],
+        [
+          363.5023498535156,
+          506.71777343749994
+        ],
+        [
+          363.5023498535156,
+          517.3789672851562
+        ],
+        [
+          305.56640625,
+          517.3789672851562
+        ]
+      ]
+    },
+    {
+      "title": "Declaration of Competing Interest",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          36.0859375,
+          705.2177734375
+        ],
+        [
+          167.45860290527344,
+          703.6669921875
+        ],
+        [
+          167.45860290527344,
+          713.6511001586914
+        ],
+        [
+          36.0859375,
+          713.7470703125
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          305.56640625,
+          267.8974609375
+        ],
+        [
+          376.2194519042969,
+          267.8974609375
+        ],
+        [
+          376.2194519042969,
+          277.857177734375
+        ],
+        [
+          305.56640625,
+          277.857177734375
+        ]
+      ]
+    },
+    {
+      "title": "Appendix A. Supplementary material",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          304.984375,
+          446.23730468749994
+        ],
+        [
+          449.5316162109375,
+          446.23730468749994
+        ],
+        [
+          449.5316162109375,
+          455.64453125
+        ],
+        [
+          304.984375,
+          455.64453125
+        ]
+      ]
+    },
+    {
+      "title": "References:",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          306.439453125,
+          498.18847656249994
+        ],
+        [
+          350.3404846191406,
+          498.18847656249994
+        ],
+        [
+          350.3404846191406,
+          507.97222900390625
+        ],
+        [
+          305.275390625,
+          507.97222900390625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          201
+        ],
+        [
+          "Line",
+          81
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          292
+        ],
+        [
+          "Line",
+          132
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          136
+        ],
+        [
+          "Line",
+          65
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          154
+        ],
+        [
+          "Line",
+          68
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          64
+        ],
+        [
+          "Line",
+          26
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          220
+        ],
+        [
+          "Line",
+          64
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          304
+        ],
+        [
+          "Line",
+          95
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          91
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          219
+        ],
+        [
+          "Line",
+          102
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          360
+        ],
+        [
+          "Line",
+          78
+        ],
+        [
+          "ListItem",
+          11
+        ],
+        [
+          "Reference",
+          7
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          439
+        ],
+        [
+          "Line",
+          173
+        ],
+        [
+          "ListItem",
+          56
+        ],
+        [
+          "Reference",
+          40
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Ding et al. - 2020 - Form-stable phase change material embedded in three-dimensional reduced graphene aerogel with large latent heat (2)-annotated"
+}

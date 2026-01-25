@@ -1,0 +1,248 @@
+# RESEARCH ARTICLE
+
+# Stabilized multifunctional phase change materials based on carbonized Cu‐coated melamine foam/reduced graphene oxide framework for multiple energy conversion and storage
+
+Zhicong Hu1,2 | Yongjin Zou1,2 | Cuili Xiang1,2 | Lixian Sun1,2 | Fen Xu1,2 | Menghe Jiang<sup>1</sup> | Sensen Yu<sup>1</sup>
+
+1 Guangxi Key Laboratory of Information Materials, Guilin University of Electronic Technology, Guilin, Guangxi, PR China 2 Guangxi Collaborative Innovation Center of Structure and Property for New Energy Materials, Guilin, Guangxi, PR
+
+#### Correspondence
+
+China
+
+Yongjin Zou and Lixian Sun, Guangxi Key Laboratory of Information Materials, Guilin University of Electronic Technology, Guilin 541004, Guangxi, PR China.
+
+Email: [zouy@guet.edu.cn](mailto:zouy@guet.edu.cn) and [sunlx@guet.edu.cn](mailto:sunlx@guet.edu.cn)
+
+#### Funding information
+
+Scholar Foundation
+
+National Natural Science Foundation of China, Grant/Award Numbers: 51861005, 52071092, U20A20237; Guangxi Natural Science Foundation, Grant/Award Numbers: 2019GXNSFDA245023, 2019GXNSFGA245005, 2020GXNSFGA297004, 2021GXNSFFA196002; Guangxi Bagui
+
+#### Abstract
+
+The leakage of organic phase change materials (OPCMs) at temperatures above their melting point severely limits their large‐scale application. The introduction of porous supports has been identified as an efficient leakage‐ proofing method. In this study, a novel carbonized Cu‐coated melamine foam (MF)/reduced graphene oxide (rGO) framework (MF/rGO/Cu‐C) is constructed as a support for fabricating stabilized multifunctional OPCMs. MF serves as the supporting material, while rGO and Cu act as functional reinforcements. As a thermal energy storage material, polyethylene glycol (PEG) is encapsulated into MF/rGO/Cu‐C through a vacuum‐assisted impregnation method to obtain PEG@MF/rGO/Cu‐C composite with excellent comprehensive performance. PEG@MF/rGO/Cu‐C exhibits high phase change enthalpies of 148.3 J g−<sup>1</sup> (melting) and 143.9 J g−<sup>1</sup> (crystallization), corresponding to a high energy storage capability of 92.7%. Simultaneously, MF/rGO/Cu‐C endues the composite with an enhanced thermal conductivity of 0.4621 W m−<sup>1</sup> K−<sup>1</sup> , which increases by 463% compared to that of PEG@MF. Furthermore, PEG@MF/rGO/Cu‐C displays great light‐to‐thermal and electric‐to‐thermal conversion capabilities, thermal cycle stability, light‐to‐ thermal cycle stability, and shape stability, showing promising application prospects in different aspects.
+
+#### KEYWORDS
+
+Cu‐coated network, melamine foam, PEG, reduced graphene oxide, stabilized multifunctional phase change materials
+
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.
+
+© 2022 The Authors. Carbon Energy published by Wenzhou University and John Wiley & Sons Australia, Ltd.
+
+# 1 | INTRODUCTION
+
+Phase change materials (PCMs) are substances that can charge or discharge thermal energy through a phase transition. Due to their potential as clean and sustainable energy storage materials, PCMs have been widely used in different aspects, such as building air‐conditioning, device temperature controlling, and waste heat recovery[.1](#page-11-0)–<sup>4</sup> In particular, organic PCMs (OPCMs), such as polyethylene glycol (PEG) and paraffin wax (PW), exhibit high phase change enthalpies, suitable phase change temperatures, low corrosivity and toxicity, and good thermal stability, which make their use over the other types of PCMs advantageous[.5](#page-12-0) However, the large‐scale application of OPCMs has severely been limited by their low thermal conductivity and leakage above their melting point.[6](#page-12-1) Thus, numerous studies have been conducted for addressing these shortcomings to improve the comprehensive performance of OPCMs.
+
+Leakage shortens the service life of OPCMs. To prevent this, leakage‐proofing methods have been designed in numerous studies.7–[10](#page-12-2) Microencapsulation, a method where the contact of OPCMs to the external environment is completely eliminated by encapsulating them in microcapsules, has been used to prevent leakage[.11](#page-12-3) Lin et al.[12](#page-12-4) used ethyl cellulose (EC), which was reported to have good thermal stability, as a shell material for the microencapsulation of myristic acid (MA). The MA@EC composite exhibited excellent thermal cycle stability, and its melting enthalpy decreased only by 0.7% after 100 thermal cycles. Kaya et al[.13](#page-12-5) employed cellulose nanofibrils (CNFs) as a shell material for n‐hexadecane (HDE) and prepared an HDE@CNF composite. After 200 thermal cycles, approximately 99% of the phase change enthalpy of the composite was retained, thereby proving its excellent thermal stability. Therein, the use of CNF was also beneficial because it did not require the use of other reagents or catalysts for the formation of microcapsules. Nevertheless, the small encapsulation ratio of PCMs, which leads to a relatively low phase change enthalpy, achieved in microencapsulation hinders their application in fields that require high energy density[.14](#page-12-6)
+
+Encapsulating OPCMs in porous supports with a high specific area and large pore volume is also an efficient strategy that confines the liquid phase through physical forces, such as surface tension, capillary effect, and hydrogen bonding.[15](#page-12-7) Atinafu et al[.16](#page-12-8) synthesized a series of micro/mesoporous metal supramolecular gels with a large specific surface area to encapsulate PEG based on the supramolecular gelation effect. The prepared composites exhibited excellent thermal cycle stability, and the best performing sample had an encapsulation ratio as high as 90%. Chen et al.[17](#page-12-9) developed a highly graphitized three‐dimensional (3D) carbon aerogel through a one‐step calcination of carbon quantum dots. The aerogel was used as a framework for PEG, and the resulting shape‐stabilized OPCM with a high PEG content (85%) exhibited an excellent leakage‐proofing property. Yan et al.[18](#page-12-10) fabricated novel hierarchically porous hollow carbon spheres (HCSPs) through a sacrificial template method, where an SiO2 core was dissolved using a strong alkali to build the hollow structure. The produced HCSPs were used to encapsulate 1‐octadecanol (ODA), and the resulting ODA@HCSP composite had a high package ratio of 80% and a good thermal cycle stability. Moreover, the use of porous supports also provides an efficient route for the design of multifunctional PCMs as they can be easily functionalized through the incorporation of functional fillers, such as metal oxide,[19](#page-12-11) graphene[,20](#page-12-12) carbon nanotubes[,21](#page-12-13) MXene[,22](#page-12-14) and so forth.
+
+Over the recent years, melamine foam (MF) has gained considerable research attention due to its 3D‐connected porous structure, excellent flexibility, low density, and great flame retardancy, which make it a suitable material for supercapacitors[,23](#page-12-15) solar steam generators[,24](#page-12-16) electromagnetic wave absorbers[,25](#page-12-17) and so forth. However, the highly open macroporous structure of MF results in a relatively weak physical force toward OPCMs, leading to a poor encapsulation ability. Thus, the modification of MF before the impregnation of OPCMs is necessary. Xue et al[.26](#page-12-18) fabricated an MF‐based framework through a pyrolysis treatment of a precursor containing MF, reduced graphene oxide (rGO), and graphene nanoplatelets (GNPs). The obtained carbonized MF/rGO/GNP aerogel exhibited an excellent encapsulation ability, and 98.31% of PW was absorbed. Du et al[.27](#page-12-19) introduced polydopamine (PDA) into MF and fabricated a PDA‐modified MF (PMF) network. PDA contains a large number of polar hydroxyl and imine groups, which compensated for the lack of polar functional groups of MF. The PMF network was used to encapsulate PEG, and the resulting PEG@PMF composite had a PEG content as high as 98.7%. Additionally, MF can be easily altered through the incorporation of functional fillers that can confer different functions to the resulting composites, which can make it suitable for light‐to‐thermal conversion[,28](#page-12-20) electric‐to‐thermal conversion,[29](#page-12-21) light‐activated shape memory[,30](#page-12-22) and so forth. These properties of MF show its great potential as a support for OPCMs.
+
+In this study, a novel carbonized MF/rGO/Cu network was constructed for fabricating stabilized multifunctional PCMs based on the design concept shown in Figure [1.](#page-2-0) First, MF was chosen as porous support for the functional fillers and the PCMs, providing the foundation for superior stabilities. Second, rGO was introduced into MF as a pore modifier, which can enhance the encapsulation ability of the support. Besides, rGO also served as a photon harvester,
+
+<span id="page-2-0"></span>FIGURE 1 Design concept and fabrication procedure for the novel carbonized MF/rGO/Cu network and the corresponding composite PCM. MF, melamine foam; PCM, phase change material; rGO, reduced graphene oxide
+
+which can endow the composite with excellent light‐to‐ thermal conversion capability. Third, the Cu particles acted as conductive reinforcement, which can enhance the extremely low thermal conductivity of MF and confer great electric‐to‐thermal conversion ability to the composite. Thus, this study aims to produce a multifunctional PCM suitable for various applications through the outlined novel strategy.
+
+# 2 | MATERIALS AND METHODS
+
+### 2.1 | Materials
+
+Commercial MF (Figure S1A,B) was obtained from BASF Co., Ltd. GO (Figure S1C,D) was prepared through Hummer's metho[d31](#page-12-23) using crystalline flake graphite from XFNANO Materials Tech Co., Ltd. CuSO4·5H2O, glucose (GLC), NaOH, and N2H4·H2O were obtained from Xilong Scientific Co., Ltd. Polyvinylpyrrolidone (PVP) with an average molecular weight of 58000 and PEG‐6000 were purchased from Aladdin Reagent Co., Ltd.
+
+# 2.2 | Synthesis of the carbonized MF/ rGO/Cu (MF/rGO/Cu‐C) network
+
+Commercial MF was cut into rectangular pieces (3 cm × 3 cm × 1 cm) and then soaked in a GO solution with a concentration of 6 mg mL−<sup>1</sup> for 5 h. To obtain the MF/ GO, the immersed MF pieces were removed from the GO solution and dried in a vacuum oven at 60°C. Thereafter, 12.5 g of CuSO4·5H2O, 4.95 g of GLC, and 0.6 g of PVP were dissolved in 200 mL of deionized water (DI). The MF/GO samples were then immersed into the resulting solution and maintained at 60°C for 12 h in a water bath. The following solutions were then added dropwise consecutively—a solution containing 14 g of NaOH in 80 mL of DI, and a solution composed of 55 mL of N2H4·H2O and 300 mL of DI. The samples were then washed with DI several times and dried in a vacuum oven at 60°C to obtain MF/rGO/Cu. Finally, the MF/ rGO/Cu was carbonized at 600°C under an N2 atmosphere for 2 h to prepare carbonized MF/rGO/Cu network, denoted as MF/rGO/Cu‐C. For comparison, networks without Cu were also fabricated by directly reducing the MF/GO with the N2H4·H2O solution, followed by the same drying (MF/rGO) and carbonization (MF/rGO‐C) procedures.
+
+### 2.3 | Synthesis of the composite PCMs based on the MF‐based networks
+
+PEG‐6000 was loaded into MF‐based networks, including MF/rGO, MF/rGO‐C, MF/rGO/Cu, and MF/rGO/Cu‐C, through a vacuum‐assisted impregnation method performed
+
+### 2.4 | Characterizations and measurements
+
+Scanning electron microscopy (SEM; JSM‐7610F), X‐ray diffraction (XRD; SmartLab 9 kW, Cu Kα), Fourier‐ transform infrared spectroscopy (FTIR; Nicolet 6700), X‐ray photoelectron spectroscopy (XPS; ESCALAB 250xi), and Raman spectroscopy (LabRAM HR800, 533 nm) were performed to characterize the as‐ prepared MF‐based networks and the corresponding composite PCMs. Differential scanning calorimetry (DSC; DSC 250) was performed from −10°C to 110°C at a rate of 10°C min−<sup>1</sup> to study the phase change properties of the composite PCMs. Thermal conductivities of the composite PCMs were measured at 25°C using a transient plane source conductometer (DZDR‐S). The light‐to‐thermal conversion behavior of some representative samples was investigated using a xenon lamp (CEL‐ HXF300‐T3; Beijing CEAULIGHT Technology Co., Ltd) and a multichannel data recorder (Shenzhen Kailidi Technology Co., Ltd); the intensity of the light was set at 150 mW cm−<sup>2</sup> . The electric‐to‐thermal conversion behavior was evaluated through a platform composed of a DC power supply (HY3005MT; Hangzhou HYELEC Co., Ltd) and a multichannel data recorder, and a constant voltage of 2 V was applied.
+
+# 3 | RESULTS AND DISCUSSION
+
+# 3.1 | Characterizations of the MF‐based networks
+
+<span id="page-3-0"></span>Before the deposition of a coating, the surface of a substrate is typically modified using strong acid and alkali to increase its roughness and improve its wetting behavior for obtaining a high‐quality deposit.[32](#page-12-24)–<sup>34</sup> To preserve the network structure, MF was not modified using a highly acidic or alkaline solution due to its poor stability under such harsh conditions. Herein, the introduction of GO into MF can improve the hydrophilicity of the network. Moreover, instead of methods conducted in strong alkaline solution, a glucose prereduction method with relatively mild conditions was employed for the deposition of Cu. The reaction processes involved are shown in Equations (1–[3\)](#page-3-0).[35](#page-13-0)
+
+CuSO + 2NaOH Cu(OH) + Na SO 4 2 24 → ↓ , (1)
+
+→ CH OH(CHOH) CHO + 2Cu(OH) Cu O + CH OH(CHOH) COOH + 2H O, 24 2 22 4 2 (2)
+
+N24 2 2 2 2 H · H O + 2Cu O 4Cu + N + 3H O → ↑ . (3)
+
+Figure [2](#page-4-0) shows the SEM images of the MF‐based networks, namely MF/GO, MF/rGO/Cu, and MF/rGO/ Cu‐C. All the samples exhibited a porous netted structure due to the template effect of MF. In the SEM images of MF/GO (Figure [2A](#page-4-0)–C), the adhesion of GO on the MF support was clearly observed. Figure [2D](#page-4-0)–F shows the SEM images of the MF/rGO/Cu network. Unlike the MF support, the graphene sheets were densely covered with Cu particles, which is possibly due to the difference between the hydrophilicity of GO and MF. MF/rGO/Cu‐C (Figure [2G](#page-4-0)–I) exhibited a more 3D structure after carbonization, wherein the MF network can hardly be seen at low magnification. Under high magnification, it can be observed that the combination between rGO and MF support became closer compared with MF/rGO/Cu. In addition, morphologies of networks without Cu were also investigated, and the SEM images are illustrated in Figure S2. MF/rGO (Figure S2A–C) showed a similar morphology to MF/GO. After being carbonized, the rGO sheets in MF/rGO‐C (Figure S2D–F) became curly, which exhibited a different morphology from the graphene sheets in MF/rGO/Cu‐C. This indicates that the deposition of Cu particles possibly improved the stiffness of the graphene sheets, contributing to the more 3D structure of the MF/rGO/Cu‐C.
+
+Figure [3A](#page-5-0) shows the XRD patterns of the MF‐based networks. A diffraction peak at 2θ = 10°, which can be indexed to the GO absorbed on the MF support, was observed in the pattern of the MF/GO.[36](#page-13-1) Characteristic peaks at 2θ = 43.5°, 50.5°, and 74.3°,[37](#page-13-2) corresponding to Cu, were observed in the pattern of MF/rGO/Cu. This indicates the successful loading of Cu particles into the MF/rGO network, which corresponds to the energy dispersive X‐ray spectroscopy (EDS) elemental maps of MF/rGO/Cu shown in Figure S3. Meanwhile, the peak of GO was found to disappear, attributing to the reduction of most functional groups on GO. Then, a peak at 2θ = 26.3° that can be associated with rGO was observed in the pattern of MF/rGO/Cu‐C, indicating the degradation of the remaining oxygen‐containing groups of graphene sheets after carbonization.[38](#page-13-3) Similar phenomenon can be observed in the patterns of MF/rGO and MF/ rGO‐C, indicating a similar evolution procedure of graphene sheets absorbed in the network.
+
+Figure [3B](#page-5-0) shows the FTIR spectra of the MF‐based networks. In the spectrum of MF/GO, the peaks located at
+
+<span id="page-4-0"></span>FIGURE 2 SEM images of (A–C) MF/GO, (D–F) MF/rGO/Cu, and (G–I) MF/rGO/Cu‐C. MF, melamine foam; rGO, reduced graphene oxide; SEM, scanning electron microscopy
+
+3428.6, 1635.1, and 808.1 cm−<sup>1</sup> are related to the superposition of N–H and O–H stretching, the accumulation of C═N and C═O stretching, and the triazine ring bending vibration, respectively,[28,39,40](#page-12-20) demonstrating the successful adsorption of GO in MF. For MF/rGO, the intensities of the peaks at 3428.6 and 1635.1 cm−<sup>1</sup> decreased, which implies that most of the oxygen‐ containing groups on GO were reduced. After carbonization (MF/rGO‐C), the intensities of these two peaks decreased further, and the peak at 808.1 cm−<sup>1</sup> was found to disappear. These observations confirm the carbonization of the MF framework as well as the further pyrolysis of the remaining oxygen‐containing groups. Additionally, the spectra of MF/rGO/Cu and MF/rGO/Cu‐C were similar to those of the networks without Cu. This indicates that the deposition of Cu had little effect on the chemical structure of the samples. Besides, XPS (Figure [3C](#page-5-0)–F) was also conducted to confirm the chemical state of the networks, and its spectra shows great correspondence to the XRD and FTIR results, where the successful incorporation of Cu and the degradation of most of the oxygen‐containing groups were confirmed[.41,42](#page-13-4)
+
+Figure [4A](#page-5-1) shows the Raman spectra of the MF‐based networks. All networks exhibited two main peaks, including the D‐band at 1340 cm−<sup>1</sup> corresponding to amorphous carbon and the G‐band at 1596 cm−<sup>1</sup> associated with the sp2 ‐hybridization of graphitized carbon[.43](#page-13-5) To calculate the integrated intensity ratio of these two bands (ID/IG), a peak fitting process was performed, and the calculated results are shown in Figure [4B](#page-5-1)–F. MF/GO (Figure [4D](#page-5-1)) showed the highest ID/I<sup>G</sup> ratio of 2.260 due to massive surface defects related to various oxygen‐containing groups. The value of ID/I<sup>G</sup> decreased significantly after MF/GO was reduced (Figure [4B](#page-5-1)) or coated with Cu (Figure [4C](#page-5-1)). This demonstrates the successful reduction of most of the oxygen‐containing groups. Lastly, the ID/I<sup>G</sup> ratios of MF/ rGO‐C (Figure [4E\)](#page-5-1) and MF/rGO/Cu‐C (Figure [4F\)](#page-5-1) were slightly lower than those of their uncarbonized counterparts, which confirms further degradation of the remaining oxygen‐containing groups during carbonization.
+
+<span id="page-5-0"></span>FIGURE 3 (A) XRD patterns and (B) FTIR spectra of the MF‐based networks; (C) XPS survey spectra of MF/GO, MF/rGO/Cu, and MF/ rGO/Cu‐C, and C 1s spectra of (D) MF/GO, (E) MF/rGO/Cu, and (F) MF/rGO/Cu‐C. FTIR, Fourier‐transform infrared; MF, melamine foam; rGO, reduced graphene oxide; XPS, X‐ray photoelectron spectroscopy; XRD, X‐ray diffraction
+
+<span id="page-5-1"></span>FIGURE 4 (A) Raman spectra and (B–F) peak fitting results of the MF‐based networks. MF, melamine foam
+
+### 3.2 | Encapsulation ability of the MF‐based networks
+
+Figure S4 shows the maximum loading determination experiment performed to evaluate the encapsulation ability of the as‐prepared MF‐based networks, and the results are summarized in Table [1](#page-6-0). MF exhibited continuous leakage even after 96 h, which indicates its poor encapsulation ability, which can be attributed to the highly open macropore structure of the foam. The introduced rGO sheets modified the macropore structure of the MF framework, which led to short leakage time and high maximum loadings observed for MF/rGO and MF/rGO/Cu. Moreover, carbonized samples exhibited shorter leakage time and higher maximum loadings probably due to the twisting of rGO sheets in the
+
+<span id="page-6-0"></span>TABLE 1 Leakage time and maximum loading of the MF‐based networks
+
+Abbreviations: MF, melamine foam; rGO, reduced graphene oxide.
+
+MF/rGO‐C network or the optimized stack of rGO/Cu platelets in the MF/rGO/Cu‐C, both of which further improved the pore structure of the networks.
+
+#### 3.3 | Characterizations of the composite PCMs based on the MF‐based networks
+
+Figure [5](#page-6-1) shows the SEM images of the composite PCMs prepared with the MF‐based networks. In the PEG@MF (Figure [5A,D\)](#page-6-1), the MF framework can be observed clearly, and PEG was found to cover the skeleton or fill the macropores of the MF support. On the other hand, the composites fabricated using rGO‐containing networks, including PEG@MF/rGO (Figure S5A,C), PEG@MF/rGO‐C (Figure S5B,D), PEG@MF/rGO/Cu (Figure [5B,E](#page-6-1)), and PEG@MF/rGO/Cu‐C (Figure [5C,F\)](#page-6-1), exhibited a fuller distribution of PEG, which indicates the better impregnation of PEG into the supports. This observation corresponds well to the results of the maximum loading determination experiment, which showed a large enhancement in the encapsulation abilities of the MF‐based networks after the introduction of rGO into the MF support.
+
+XRD (Figure [6A\)](#page-7-0) and FTIR (Figure [6B\)](#page-7-0) were performed to further confirm the compatibility between PEG and the prepared MF‐based networks. The characteristic peaks of PEG at 2θ = 19.2° and 23.4° can be observed in the XRD patterns of all the samples, which
+
+<span id="page-6-1"></span>FIGURE 5 SEM images of (A,D) PEG@MF, (B,E) PEG@MF/rGO/Cu, and (C,F) PEG@MF/rGO/Cu‐C. MF, melamine foam; PEG, polyethylene glycol; rGO, reduced graphene oxide; SEM, scanning electron microscopy
+
+<span id="page-7-0"></span>FIGURE 6 (A) XRD patterns and (B) FTIR spectra of the composite PCMs based on the MF‐based networks. FTIR, Fourier‐transform infrared; MF, melamine foam; PCMs, phase change materials; XRD, X‐ray diffraction
+
+indicates that the introduction of the MF‐based networks did not have a considerable effect on the crystal structure of the PEG absorbed inside[.44](#page-13-6) In Figure [6B,](#page-7-0) all the composites exhibited an FTIR spectrum similar to that of pure PEG. Characteristic adsorption peaks at 3439.3, 2887.2, 1468.3, and 1107.8 cm−<sup>1</sup> , which correspond to O–H stretching, C–H stretching, C–H bending, and C–O stretching, respectively, were observed[.45](#page-13-7) Moreover, no peaks corresponding to other phases or chemical bonds were observed in the XRD patterns and FTIR spectra, which demonstrates the physical combination and good chemical compatibility between PEG and the MF‐based networks.
+
+# 3.4 | Thermophysical properties of the composite PCMs based on the MF‐based networks
+
+For PCMs, the phase change temperatures and enthalpies are important parameters that directly reflect their energy storage capacities.[16](#page-12-8) Figure [7A,B](#page-8-0) show the results of the DSC analysis carried out to measure the phase change properties of the PCMs. Table [2](#page-8-1) summarizes the corresponding thermal parameters, including the melting temperature (Tm), melting enthalpy (ΔHm), crystallization temperature (Tc), and crystallization enthalpy (ΔHc). All the composites exhibited similar melting and crystallization peaks to pure PEG, which indicates the maintenance of the crystalline behavior of PEG absorbed in supports. Compared to the sharp peaks observed in the DSC curves of pure PEG, broad peaks were observed in those of the composites, possibly due to the asynchronous phase change of PEG absorbed in pores of different sizes.[26](#page-12-18) The T<sup>m</sup> of the composites, including PEG@MF/rGO, PEG@MF/ rGO‐C, PEG@MF/rGO/Cu, and PEG@MF/rGO/Cu‐C, was slightly higher than that of pure PEG. This is possibly due to the strong interaction between PEG and the supports, which slightly delays the melting procedure of PEG.[37](#page-13-2) On the other hand, PEG@MF showed a lower T<sup>m</sup> than pure PEG, which indicates that the pristine MF may have an unignorable effect on the crystal quality of the absorbed PEG. This can also be observed in the crystallization procedure of PEG@MF, where T<sup>c</sup> had a 5.6°C decrease. This can be attributed to the highly open macroporous structure of MF, which provides little interaction with the PCMs.
+
+Among the composites, PEG@MF showed the lowest phase change enthalpies of 138.3 and 135.7 J g−<sup>1</sup> due to the poor encapsulation ability of MF, which was confirmed by the observed continuous leakage even after 96 h of heating in the maximum loading experiments. On the other hand, PEG@MF/rGO, PEG@MF/rGO‐C, PEG@MF/rGO/Cu, and PEG@MF/rGO/Cu‐C registered higher phase change enthalpies than PEG@MF, which indicates a considerable enhancement of the encapsulation ability after the modification of the MF support. Furthermore, the energy storage capability (φ) of the composite PCMs was calculated using Equation [\(4](#page-7-1)):
+
+<span id="page-7-1"></span>*φ H H RH H* <sup>=</sup> <sup>Δ</sup> <sup>+</sup><sup>Δ</sup> (Δ + Δ ) × 100%, m/comp c/comp m/PEG c/PEG (4)
+
+where R, ΔHm/comp, and ΔHc/comp represent the maximum loading (Table [1](#page-6-0)), melting enthalpy, and crystallization enthalpy of the composite PCMs, respectively; ΔHm/PEG and ΔHc/PEG correspond to the phase change enthalpies of pure PEG.[16](#page-12-8) The values of φ for all the composites, except for the PEG@MF which has no value for the maximum loading, were >90% (Table [2](#page-8-1)). This demonstrates that the composite PCMs fabricated with
+
+<span id="page-8-0"></span>FIGURE 7 (A,B) DSC curves and (C) thermal conductivities of the PCMs; (D,E) thermal response behavior of PEG@MF and PEG@MF/rGO/Cu‐C. DSC, differential scanning calorimetry; MF, melamine foam; PCMs, phase change materials; PEG, polyethylene glycol; rGO, reduced graphene oxide
+
+<span id="page-8-1"></span>TABLE 2 Thermal parameters of the composite PCMs based on the MF‐based networks.
+
+Abbreviations: MF, melamine foam; PEG, polyethylene glycol; rGO, reduced graphene oxide.
+
+prepared networks are promising candidates for energy storage applications.
+
+<span id="page-8-2"></span>In addition, to further investigate the effect of the prepared networks on the crystalline behavior of PEG, the relative crystallinity (Fc) of the composite PCMs was also calculated using Equation [\(5](#page-8-2)).
+
+*F H R H* <sup>=</sup> <sup>Δ</sup> ×Δ × 100%. <sup>c</sup> m/comp m/PEG (5)
+
+As illustrated in Table [2,](#page-8-1) the F<sup>c</sup> values of the composites, including PEG@MF/rGO, PEG@MF/rGO‐C, PEG@MF/ rGO/Cu, and PEG@MF/rGO/Cu‐C, were >90%. This indicates that the introduction of the prepared networks had little effect on the crystalline behavior of PEG.
+
+Besides enthalpy, thermal conductivity is also an important thermophysical parameter, which indicates the heat transfer rate during the energy storage process. Figure [7C](#page-8-0) summarizes the thermal conductivities of the composites prepared using different MF‐based networks. PEG@MF exhibited an extremely low thermal conductivity of 0.0820 W m−<sup>1</sup> K−<sup>1</sup> because of the high thermal resistance of MF. The introduced graphene sheets on the MF support supply a heat transfer path, and thus
+
+PEG@MF/rGO exhibited an improved thermal conductivity of 0.2530 W m−<sup>1</sup> K−<sup>1</sup> . Cu particles were also introduced into the network as thermally conductive reinforcer considering the superior heat transfer properties of metals. PEG@MF/rGO/Cu exhibited further improvement in the thermal conductivity from 0.2530 to 0.3859 W m−<sup>1</sup> K−<sup>1</sup> due to the introduction of Cu. Overall, PEG@MF/rGO/ Cu‐C registered the highest thermal conductivity of 0.4621 W m−<sup>1</sup> K−<sup>1</sup> , which increased by 463% compared with that of PEG@MF. This is probably due to the formation of the 3D‐connected thermal conductive network after carbonization.
+
+PEG@MF and PEG@MF/rGO/Cu‐C samples with the same thickness were placed on a hot stage held at 55°C to further investigate the thermal response rate during the heating process. Temperatures of the top surfaces of the samples were recorded using an infrared camera. As shown in Figure [7D,E](#page-8-0), PEG@MF/rGO/Cu‐C exhibited a much faster response rate than PEG@MF. Within 210 s, the temperature of PEG@MF/rGO/Cu‐C rapidly increased to 50.3°C, while PEG@MF only reached 32.1°C. This observation can be attributed to the difference between the thermal conductivity of the samples, corresponding well to the results of the thermal conductivity measurements.
+
+# 3.5 | Energy conversion properties of PEG@MF/rGO/Cu‐C
+
+Besides the direct storage of thermal energy, the indirect storage through energy conversion processes can increase the suitability of PCMs in a wide variety of applications. Light‐to‐thermal conversion behaviors of pure PEG and PEG@MF/rGO/Cu‐C were investigated using the platform shown in Figure [8A,](#page-9-0) and the results are illustrated in Figure [8C.](#page-9-0) A rapid temperature increase to 73.0°C, which is 13°C higher than the melting point of PEG, was achieved within 240 s of irradiation of PEG@MF/rGO/Cu‐C. Within the same time, the temperature of pure PEG only reached 48.9°C. The light‐to‐ thermal conversion efficiency ( ) *η*<sup>l</sup> of the samples was calculated using Equation [\(6](#page-9-1)):
+
+<span id="page-9-1"></span>*η m H PS t t* <sup>=</sup> <sup>×</sup> <sup>Δ</sup> × ×( − ) × 100%, <sup>l</sup> m f s (6)
+
+where m and S represent the mass and surface area of the sample, respectively; P refers to the intensity of the light; t<sup>s</sup> and t<sup>f</sup> correspond to the start and finish times of the light‐ driven melting process, respectively[.46](#page-13-8) The calculated *<sup>η</sup>*<sup>l</sup> for PEG@MF/rGO/Cu‐C was as high as 92.7%, which indicates
+
+<span id="page-9-0"></span>FIGURE 8 (A) Light‐to‐thermal and (B) electric‐to‐thermal conversion experiment platforms; (C) light‐to‐thermal conversion behavior of PEG‐6000 and PEG@MF/rGO/Cu‐C; (D) electric‐to‐thermal conversion behavior of PEG@MF/rGO/Cu‐C. MF, melamine foam; PEG, polyethylene glycol; rGO, reduced graphene oxide
+
+<span id="page-10-0"></span>FIGURE 9 (A–C) Thermal and (D) light‐to‐thermal cycle behavior of PEG@MF/rGO/Cu‐C; (E) leakage‐proofing test of PEG‐6000 and PEG@MF/rGO/Cu‐C. MF, melamine foam; PEG, polyethylene glycol; rGO, reduced graphene oxide
+
+its excellent light‐to‐thermal conversion behavior that can be attributed to the great photon harvesting property of rGO. The temperatures of the samples began to decrease after the xenon lamp was switched off (Figure [8C](#page-9-0)). A plateau corresponding to a phase change during cooling can not be observed in the cooling curve of pure PEG. On the other hand, the cooling curve of PEG@MF/rGO/Cu‐C displayed a crystalline plateau that lasted for approximately 10 min. This demonstrates the nearly complete melting of the absorbed PEG during irradiation owing to the synergistic effect of the excellent light‐to‐thermal property and the enhanced thermal conductivity.
+
+In addition, the electric‐to‐thermal conversion behavior of PEG@MF/rGO/Cu‐C was studied through the setup shown in Figure [8B](#page-9-0). On the one hand, PEG displays no electric‐to‐thermal conversion property due to its poor electrically conductive property; on the other, the composite exhibited a typical temperature‐ time curve, as depicted in Figure [8D](#page-9-0). During the switch‐ on stage, the temperature of the composite increased to 90.0°C within 600 s. This can be attributed to the generation of quantities of Joule heat, which indicates the improvement of the electrically conductive property of PEG. Moreover, plateaus corresponding to melting and crystallization processes can be observed during the switch‐on and switch‐off stages, respectively, which demonstrates that the generated Joule heat can be stored and released by the composite. Similarly, the <span id="page-11-1"></span>electric‐to‐thermal conversion efficiency ( ) *η*<sup>e</sup> was calculated using Equation [\(7](#page-11-1)):
+
+*η m H UI t t* <sup>=</sup> <sup>×</sup> <sup>Δ</sup> × ×( − ) × 100%, <sup>e</sup> m f s (7)
+
+where U and I refer to the voltage and current of the DC power supply, respectively[.29](#page-12-21) The calculated *<sup>η</sup>*<sup>e</sup> was 77.2%, which demonstrates that the electrically conductive MF/rGO/Cu‐C network confers great electric‐to‐ thermal property to the composite.
+
+# 3.6 | Thermal cycle, light‐to‐thermal cycle, and shape stability of PEG@MF/ rGO/Cu‐C
+
+Service life, which is strongly associated with stability, is a significant parameter for large‐scale applications. Herein, the thermal cycle, light‐to‐thermal cycle, and shape stability of PEG@MF/rGO/Cu‐C were studied. A thermal cycle measurement of 50 times was conducted using DSC and the results are shown in Figure [9A.](#page-10-0) The curve of the 50th cycle exhibited a good contract ratio to that of the first cycle. Figure [9B](#page-10-0) summarizes the enthalpies obtained after every 10 thermal cycles. The enthalpies of melting and crystallization obtained after 50 thermal cycles (145.82 and 144.64 J g−<sup>1</sup> ) did not change considerably compared to the initial values (145.25 and 144.65 J g−<sup>1</sup> ). Additionally, the FTIR spectra (Figure [9C](#page-10-0)) obtained before and after the thermal cycle measurement showed great similarity, which indicates the excellent thermal cycle stability of the PEG@MF/rGO/Cu‐C. Moreover, light‐to‐thermal cycle measurement was carried out using the setup shown in Figure [8A](#page-9-0), and the obtained pattern is illustrated in Figure [9D.](#page-10-0) The curves obtained after every cycle were highly similar to that of the first cycle, demonstrating that the composite also has excellent light‐to‐thermal cycle stability. Finally, the shape stability of pure PEG and PEG@MF/rGO/Cu‐C was evaluated by a leakage‐proofing test, where samples were placed on a piece of filter paper and then heated at 80°C. Figure [9E](#page-10-0) shows the digital photos of the samples taken every 10 min until PEG was completely melted. After heating for 80 min, the pure PEG sample completely melted, but no leakage was observed for the PEG@MF/rGO/Cu‐C composite. This indicates the superior shape stability and leakage‐proofing property of PEG@MF/rGO/Cu‐C, which can be attributed to the good absorption of the melted PEG in the pores of the MF/rGO/ Cu‐C network during heating. Thus, the excellent encapsulation ability of MF/rGO/Cu‐C provides great potential for the large‐scale application of the prepared PEG@MF/rGO/Cu‐C composite PCM.
+
+# 4 | CONCLUSION
+
+An MF/rGO/Cu‐C framework for fabricating stabilized multifunctional PCMs was synthesized through the carbonization of a network consisting of MF, rGO, and Cu particles. PEG was selected as a thermal energy storage material and was impregnated into the framework through a vacuum‐assisted impregnation method. The obtained PEG@MF/rGO/Cu‐C composite showed a high maximum loading (86.1%) without leakage. This revealed the great encapsulation ability of the framework, which was attributed to the optimization of the pore structure of MF brought by the introduction of rGO and the carbonization process. The phase change enthalpies for melting and crystallization of the PEG@MF/rGO/Cu‐C composite were 148.3 and 143.9 J g−<sup>1</sup> , respectively. The calculated energy storage capability was 92.7%, which demonstrated that the introduction of the MF/rGO/Cu‐C framework did not have a considerable effect on the crystalline behavior of PEG. Due to the 3D‐connected thermally conductive network composed of carbonized MF, rGO, and Cu particles, the composite had an enhanced thermal conductivity equal to 0.4621 W m−<sup>1</sup> K−<sup>1</sup> , which was 463% higher than that of PEG@MF. The composite also displayed great light‐to‐thermal and electric‐to‐thermal conversion capabilities owing to the synergistic effect of the introduction of rGO and Cu, where rGO served as a photon harvester and Cu acted as an electrically conductive reinforcer. Moreover, the framework also conferred excellent thermal cycle, light‐ to‐thermal cycle, and shape stability to the PEG@MF/ rGO/Cu‐C composite, which further demonstrated the excellent encapsulation ability of MF/rGO/Cu‐C. Thus, this study provided a promising strategy for the preparation of stabilized multifunctional PCMs that show great potential for various applications.
+
+#### ACKNOWLEDGMENTS
+
+This study was financially supported by NSFC (Grant Nos. 51861005, 52071092, U20A20237), Guangxi Natural Science Foundation (Grant Nos. 2019GXNSFDA245023, 2019GXNSFGA245005, 2020GXNSFGA297004, 2021GX NSFFA196002), and Guangxi Bagui Scholar Foundation.
+
+#### CONFLICTS OF INTEREST
+
+The authors declare no conflicts of interest.
+
+#### ORCID
+
+Yongjin Zou <https://orcid.org/0000-0002-9012-2639>
+
+#### REFERENCES
+
+<span id="page-11-0"></span>1. Tong X, Li N, Zeng M, Wang Q. Organic phase change materials confined in carbon‐based materials for thermal
+
+- properties enhancement: recent advancement and challenges. Renew Sustain Energy Rev. 2019;108:398‐422.
+- 2. Cheng F, Zhang X, Wen R, et al. Thermal conductivity enhancement of form‐stable tetradecanol/expanded perlite composite phase change materials by adding Cu powder and carbon fiber for thermal energy storage. Appl Therm Eng. 2019;156:653‐659.
+- 3. Min X, Fang M, Huang Z, et al. Enhanced thermal properties of novel shape‐stabilized PEG composite phase change materials with radial mesoporous silica sphere for thermal energy storage. Sci Rep. 2015;5:12964.
+- 4. Xia Y, Cui W, Zhang H, et al. Synthesis of three‐dimensional graphene aerogel encapsulated n‐octadecane for enhancing phase‐change behavior and thermal conductivity. J Mater Chem A. 2017;5(29):15191‐15199.
+- <span id="page-12-0"></span>5. Xue F, Qi X, Huang T, Tang C, Zhang N, Wang Y. Preparation and application of three‐dimensional filler network towards organic phase change materials with high performance and multi‐functions. Chem Eng J. 2021;419:129620.
+- <span id="page-12-1"></span>6. Chen X, Cheng P, Tang Z, Xu X, Gao H, Wang G. Carbon‐ based composite phase change materials for thermal energy storage, transfer, and conversion. Adv Sci. 2021;8(9):2001274.
+- <span id="page-12-2"></span>7. Zhao Y, Min X, Huang Z, Liu Yg, Wu X, Fang M. Honeycomb‐ like structured biological porous carbon encapsulating PEG: a shape‐stable phase change material with enhanced thermal conductivity for thermal energy storage. Energy Build. 2018; 158:1049‐1062.
+- 8. Zhao Y, Sun B, Du P, et al. Hierarchically channel‐guided porous wood‐derived shape‐stabilized thermal regulated materials with enhanced thermal conductivity for thermal energy storage. Mater Res Express. 2019;6(11):115515.
+- 9. Xia Y, Zhang H, Huang P, et al. Graphene‐oxide‐induced lamellar structures used to fabricate novel composite solid‐ solid phase change materials for thermal energy storage. Chem Eng J. 2019;362:909‐920.
+- 10. Umair MM, Zhang Y, Iqbal K, Zhang S, Tang B. Novel strategies and supporting materials applied to shape‐stabilize organic phase change materials for thermal energy storage—a review. Appl Energy. 2019;235:846‐873.
+- <span id="page-12-3"></span>11. Shchukina EM, Graham M, Zheng Z, Shchukin DG. Nanoencapsulation of phase change materials for advanced thermal energy storage systems. Chem Soc Rev. 2018;47(11):4156‐4175.
+- <span id="page-12-4"></span>12. Lin Y, Zhu C, Alva G, Fang G. Microencapsulation and thermal properties of myristic acid with ethyl cellulose shell for thermal energy storage. Appl Energy. 2018;231:494‐501.
+- <span id="page-12-5"></span>13. Kaya GB, Kim Y, Callahan K, Kundu S. Microencapsulated phase change material via pickering emulsion stabilized by cellulose nanofibrils for thermal energy storage. Carbohydr Polym. 2022;276:118745.
+- <span id="page-12-6"></span>14. Aftab W, Huang X, Wu W, Liang Z, Mahmood A, Zou R. Nanoconfined phase change materials for thermal energy applications. Energy Environ Sci. 2018;11(6):1392‐1424.
+- <span id="page-12-7"></span>15. Huang X, Chen X, Li A, et al. Shape‐stabilized phase change materials based on porous supports for thermal energy storage applications. Chem Eng J. 2019;356:641‐661.
+- <span id="page-12-8"></span>16. Atinafu DG, Dong W, Berardi U, Kim S. Phase change materials stabilized by porous metal supramolecular gels: gelation effect on loading capacity and thermal performance. Chem Eng J. 2020;394:124806.
+
+- <span id="page-12-9"></span>17. Chen X, Gao H, Yang M, et al. Highly graphitized 3D network carbon for shape‐stabilized composite PCMs with superior thermal energy harvesting. Nano Energy. 2018;49:86‐94.
+- <span id="page-12-10"></span>18. Yan C, Meng N, Lyu W, Li Y, Wang L, Liao Y. Hierarchical porous hollow carbon spheres derived from spirofluorene‐ and aniline‐linked conjugated microporous polymer for phase change energy storage. Carbon. 2021;176:178‐187.
+- <span id="page-12-11"></span>19. Liu L, Hu J, Fan X, Zhang Y, Zhang S, Tang B. Phase change materials with Fe3O4/GO three‐dimensional network structure for acoustic‐thermal energy conversion and management. Chem Eng J. 2021;426:130789.
+- <span id="page-12-12"></span>20. Yu C, Yang SH, Pak SY, Youn JR, Song YS. Graphene embedded form stable phase change materials for drawing the thermo‐electric energy harvesting. Energy Convers Manage. 2018;169:88‐96.
+- <span id="page-12-13"></span>21. Shen Z, Kwon S, Lee HL, Toivakka M, Oh K. Cellulose nanofibril/carbon nanotube composite foam‐stabilized paraffin phase change material for thermal energy storage and conversion. Carbohydr Polym. 2021;273:118585.
+- <span id="page-12-14"></span>22. Liu H, Fu R, Su X, et al. MXene confined in shape‐stabilized phase change material combining enhanced electromagnetic interference shielding and thermal management capability. Compos Sci Technol. 2021;210:108835.
+- <span id="page-12-15"></span>23. Zhang R, Jing X, Chu Y, et al. Nitrogen/oxygen CO‐doped monolithic carbon electrodes derived from melamine foam for high‐performance supercapacitors. J Mater Chem A. 2018; 6(36):17730‐17739.
+- <span id="page-12-16"></span>24. Xiao J, Guo Y, Luo W, et al. A scalable, cost‐effective and salt‐ rejecting MoS2/SA@melamine foam for continuous solar steam generation. Nano Energy. 2021;87:106213.
+- <span id="page-12-17"></span>25. Lyu L, Wang F, Zhang X, Qiao J, Liu C, Liu J. CuNi alloy/ carbon foam nanohybrids as high‐performance electromagnetic wave absorbers. Carbon. 2021;172:488‐496.
+- <span id="page-12-18"></span>26. Xue F, Lu Y, Qi X, Yang J, Wang Y. Melamine foam‐templated graphene nanoplatelet framework toward phase change materials with multiple energy conversion abilities. Chem Eng J. 2019;365:20‐29.
+- <span id="page-12-19"></span>27. Du Y, Huang H, Hu X, et al. Melamine foam/polyethylene glycol composite phase change material synergistically modified by polydopamine/MXene with enhanced solar‐to‐ thermal conversion. Renewable Energy. 2021;171:1‐10.
+- <span id="page-12-20"></span>28. Wu H, Li S, Shao Y, et al. Melamine foam/reduced graphene oxide supported form‐stable phase change materials with simultaneous shape memory property and light‐to‐thermal energy storage capability. Chem Eng J. 2020;379:122373.
+- <span id="page-12-21"></span>29. Xiao Y, Bai D, Xie Z, et al. Flexible copper foam‐based phase change materials with good stiffness‐toughness balance, electro‐to‐thermal conversion ability and shape memory function for intelligent thermal management. Compos Part A Appl Sci Manuf. 2021;146:106420.
+- <span id="page-12-22"></span>30. Wu H, Chen R, Shao Y, Qi X, Yang J, Wang Y. Novel flexible phase change materials with mussel‐inspired modification of melamine foam for simultaneous light‐actuated shape memory and light‐to‐thermal energy storage capability. ACS Sustainable Chem Eng. 2019;7(15):13532‐13542.
+- <span id="page-12-23"></span>31. Marcano DC, Kosynkin DV, Berlin JM, et al. Improved synthesis of graphene oxide. ACS Nano. 2010;4(8):4806‐4814.
+- <span id="page-12-24"></span>32. Tamayo‐Ariztondo J, Córdoba JM, Odén M, Molina‐ Aldareguia JM, Elizalde MR. Effect of heat treatment of
+
+- carbon nanofibres on electroless copper deposition. Compos Sci Technol. 2010;70(16):2269‐2275.
+- 33. Di L, Liu B, Song J, Shan D, Yang D. Effect of chemical etching on the Cu/Ni metallization of poly (ether ether ketone)/carbon fiber composites. Appl Surf Sci. 2011;257(9): 4272‐4277.
+- 34. Zuo J, Chen S, Luo C, Chen D. Preparation of electroless copper coated glass fiber and piezoresistive properties of copper coated glass fiber reinforced plastics. Appl Surf Sci. 2015;349:319‐326.
+- <span id="page-13-0"></span>35. Dong C, Wang R, Guo S. Microstructures and mechanical properties of Cu‐coated SiC particles reinforced AZ61 alloy composites. Coatings. 2019;9(12):820.
+- <span id="page-13-1"></span>36. Shamaila S, Sajjad AKL, Iqbal A. Modifications in development of graphene oxide synthetic routes. Chem Eng J. 2016; 294:458‐477.
+- <span id="page-13-2"></span>37. Liu C, Zong J, Zhang J, et al. Knitting aryl network polymers (KAPs)‐embedded copper foam enables highly efficient thermal energy storage. J Mater Chem A. 2020;8(30): 15177‐15186.
+- <span id="page-13-3"></span>38. Sohn M, Park E, Yoo BM, Han TH, Park HB, Kim H. Metal‐ assisted mechanochemical reduction of graphene oxide. Carbon. 2016;110:79‐86.
+- 39. Kumar R, Khan S, Gupta N, et al. Fullerene grafted graphene oxide with effective charge transfer interactions. Carbon. 2016; 107:765‐773.
+- 40. Stolz A, Le Floch S, Reinert L, et al. Melamine‐derived carbon sponges for oil‐water separation. Carbon. 2016;107:198‐208.
+- <span id="page-13-4"></span>41. Wu W, Zhang J, Fan W, et al. Remedying defects in carbon nitride to improve both photooxidation and H2 generation efficiencies. ACS Catal. 2016;6(5):3365‐3371.
+- 42. Al‐Gaashani R, Najjar A, Zakaria Y, Mansour S, Atieh MA. XPS and structural studies of high quality graphene oxide and reduced graphene oxide prepared by different chemical oxidation methods. Ceram Int. 2019;45(11):14439‐14448.
+
+- <span id="page-13-5"></span>43. Schuepfer DB, Badaczewski F, Guerra‐Castro JM, et al. Assessing the structural properties of graphitic and non‐ graphitic carbons by Raman spectroscopy. Carbon. 2020;161: 359‐372.
+- <span id="page-13-6"></span>44. Zhou L, Tang L, Tao X, Yang J, Yang M, Yang W. Facile fabrication of shape‐stabilized polyethylene glycol/cellulose nanocrystal phase change materials based on thiol‐ene click chemistry and solvent exchange. Chem Eng J. 2020;396: 125206.
+- <span id="page-13-7"></span>45. Deng Y, Li J, Qian T, Guan W, Li Y, Yin X. Thermal conductivity enhancement of polyethylene glycol/expanded vermiculite shape‐stabilized composite phase change materials with silver nanowire for thermal energy storage. Chem Eng J. 2016;295:427‐435.
+- <span id="page-13-8"></span>46. Yang J, Qi GQ, Bao RY, et al. Hybridizing graphene aerogel into three‐dimensional graphene foam for high‐performance composite phase change materials. Energy Storage Mater. 2018;13:88‐95.
+
+#### SUPPORTING INFORMATION
+
+Additional supporting information can be found online in the Supporting Information section at the end of this article.
+
+How to cite this article: Hu Z, Zou Y, Xiang C, et al. Stabilized multifunctional phase change materials based on carbonized Cu‐coated melamine foam/reduced graphene oxide framework for multiple energy conversion and storage. Carbon Energy. 2022;4:1214‐1227. [doi:10.1002/cey2.218](https://doi.org/10.1002/cey2.218)

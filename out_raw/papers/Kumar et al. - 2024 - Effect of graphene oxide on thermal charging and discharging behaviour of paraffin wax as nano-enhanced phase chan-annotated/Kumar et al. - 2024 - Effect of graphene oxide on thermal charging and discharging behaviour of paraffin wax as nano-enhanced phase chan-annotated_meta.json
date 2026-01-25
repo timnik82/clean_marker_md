@@ -1,0 +1,575 @@
+{
+  "table_of_contents": [
+    {
+      "title": "ORIGINAL PAPER",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          55.001953125,
+          66.02215576171875
+        ],
+        [
+          134.07896423339844,
+          64.50048828125
+        ],
+        [
+          134.07896423339844,
+          75.52215576171875
+        ],
+        [
+          53.837890625,
+          75.52215576171875
+        ]
+      ]
+    },
+    {
+      "title": "Efect of graphene oxide on thermal charging and discharging \nbehaviour of parafn wax as nano\u2011enhanced phase change materials",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.023597717285156,
+          105.8271484375
+        ],
+        [
+          491.38525390625,
+          104.2822265625
+        ],
+        [
+          491.38525390625,
+          140.238037109375
+        ],
+        [
+          51.023597717285156,
+          140.238037109375
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.345703125,
+          225.55859375
+        ],
+        [
+          89.10459899902344,
+          225.55859375
+        ],
+        [
+          89.10459899902344,
+          236.37689208984375
+        ],
+        [
+          50.345703125,
+          236.37689208984375
+        ]
+      ]
+    },
+    {
+      "title": "Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.023597717285156,
+          374.7803955078125
+        ],
+        [
+          118.66639709472656,
+          374.25732421875
+        ],
+        [
+          118.66639709472656,
+          386.7803955078125
+        ],
+        [
+          50.0546875,
+          386.7803955078125
+        ]
+      ]
+    },
+    {
+      "title": "Experimental section",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.927734375,
+          630.8110961914062
+        ],
+        [
+          163.93040466308594,
+          630.8110961914062
+        ],
+        [
+          163.93040466308594,
+          642.8110961914062
+        ],
+        [
+          49.763671875,
+          642.8110961914062
+        ]
+      ]
+    },
+    {
+      "title": "Results and discussion",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          304.40234375,
+          305.81109619140625
+        ],
+        [
+          425.7937316894531,
+          304.349609375
+        ],
+        [
+          425.7937316894531,
+          317.81109619140625
+        ],
+        [
+          304.40234375,
+          317.81109619140625
+        ]
+      ]
+    },
+    {
+      "title": "Thermal charging",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          305.56640625,
+          594.2936248779297
+        ],
+        [
+          386.8036193847656,
+          594.0224609375
+        ],
+        [
+          386.8036193847656,
+          605.2936248779297
+        ],
+        [
+          305.56640625,
+          605.2936248779297
+        ]
+      ]
+    },
+    {
+      "title": "Thermal discharging",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          49.47265625,
+          518.3206787109375
+        ],
+        [
+          145.00650024414062,
+          517.93505859375
+        ],
+        [
+          145.00650024414062,
+          529.3206787109375
+        ],
+        [
+          49.47265625,
+          529.3206787109375
+        ]
+      ]
+    },
+    {
+      "title": "Thermal efciency",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          49.47265625,
+          180.52978515625
+        ],
+        [
+          134.77650451660156,
+          179.2109375
+        ],
+        [
+          134.77650451660156,
+          191.52978515625
+        ],
+        [
+          49.47265625,
+          191.5703125
+        ]
+      ]
+    },
+    {
+      "title": "Conclusion",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.927734375,
+          478.1533203125
+        ],
+        [
+          110.05159759521484,
+          478.1533203125
+        ],
+        [
+          110.05159759521484,
+          491.5470886230469
+        ],
+        [
+          49.763671875,
+          491.5470886230469
+        ]
+      ]
+    },
+    {
+      "title": "Declarations",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          305.56640625,
+          630.6454467773438
+        ],
+        [
+          364.0622253417969,
+          630.6454467773438
+        ],
+        [
+          364.0622253417969,
+          641.6454467773438
+        ],
+        [
+          305.56640625,
+          641.6454467773438
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.345703125,
+          56.39910888671875
+        ],
+        [
+          109.8716049194336,
+          55.6171875
+        ],
+        [
+          109.8716049194336,
+          68.39910888671875
+        ],
+        [
+          50.345703125,
+          68.39910888671875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          167
+        ],
+        [
+          "Line",
+          73
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Picture",
+          3
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 5192,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          220
+        ],
+        [
+          "Line",
+          99
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          59
+        ],
+        [
+          "Line",
+          21
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          122
+        ],
+        [
+          "Line",
+          53
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          275
+        ],
+        [
+          "Line",
+          95
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          303
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "ListItem",
+          22
+        ],
+        [
+          "Reference",
+          22
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Kumar et al. - 2024 - Effect of graphene oxide on thermal charging and discharging behaviour of paraffin wax as nano-enhanced phase chan-annotated"
+}

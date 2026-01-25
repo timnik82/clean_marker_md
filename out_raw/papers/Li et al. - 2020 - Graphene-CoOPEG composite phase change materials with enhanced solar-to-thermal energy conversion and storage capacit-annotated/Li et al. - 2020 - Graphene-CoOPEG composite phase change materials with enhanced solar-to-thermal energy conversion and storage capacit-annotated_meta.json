@@ -1,0 +1,1025 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Composites Science and Technology",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          186.23599243164062,
+          85.6806640625
+        ],
+        [
+          415.36688232421875,
+          84.1298828125
+        ],
+        [
+          415.36688232421875,
+          100.76190185546875
+        ],
+        [
+          186.23599243164062,
+          100.76190185546875
+        ]
+      ]
+    },
+    {
+      "title": "Graphene-CoO/PEG composite phase change materials with enhanced \nsolar-to-thermal energy conversion and storage capacity",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          36.66796875,
+          166.3212890625
+        ],
+        [
+          462.6856994628906,
+          166.3212890625
+        ],
+        [
+          462.6856994628906,
+          198.19647216796875
+        ],
+        [
+          36.66796875,
+          198.19647216796875
+        ]
+      ]
+    },
+    {
+      "title": "ARTICLE INFO",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.58740234375,
+          270.611328125
+        ],
+        [
+          120.90568542480469,
+          270.611328125
+        ],
+        [
+          120.90568542480469,
+          279.4564208984375
+        ],
+        [
+          36.66796875,
+          279.4564208984375
+        ]
+      ]
+    },
+    {
+      "title": "Keywords: \nPhase change materials \nReduced graphene oxide \nSolar-to-thermal conversion \nCoO nanoparticles",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.25,
+          289.99609375
+        ],
+        [
+          118.3547592163086,
+          288.4453125
+        ],
+        [
+          118.3547592163086,
+          332.07647705078125
+        ],
+        [
+          36.0859375,
+          332.07647705078125
+        ]
+      ]
+    },
+    {
+      "title": "ABSTRACT",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          201.091796875,
+          270.611328125
+        ],
+        [
+          263.930419921875,
+          270.611328125
+        ],
+        [
+          263.930419921875,
+          279.4564208984375
+        ],
+        [
+          201.091796875,
+          279.4564208984375
+        ]
+      ]
+    },
+    {
+      "title": "1. Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          36.958984375,
+          452.44042968749994
+        ],
+        [
+          100.17181396484375,
+          452.44042968749994
+        ],
+        [
+          100.17181396484375,
+          463.2389831542969
+        ],
+        [
+          35.794921875,
+          463.2389831542969
+        ]
+      ]
+    },
+    {
+      "title": "2. Experimental",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          36.66796875,
+          502.84082031249994
+        ],
+        [
+          102.88345336914062,
+          502.84082031249994
+        ],
+        [
+          102.88345336914062,
+          513.1835632324219
+        ],
+        [
+          35.50390625,
+          513.1835632324219
+        ]
+      ]
+    },
+    {
+      "title": "2.1. Raw materials",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          36.66796875,
+          523.0009765625
+        ],
+        [
+          106.25559997558594,
+          523.0009765625
+        ],
+        [
+          106.25559997558594,
+          534.1034851074219
+        ],
+        [
+          35.50390625,
+          534.1034851074219
+        ]
+      ]
+    },
+    {
+      "title": "2.2. Synthesis of rGO@Co composites",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          36.66796875,
+          609.45703125
+        ],
+        [
+          169.38742065429688,
+          607.90625
+        ],
+        [
+          169.38742065429688,
+          618.3511199951172
+        ],
+        [
+          35.50390625,
+          618.76171875
+        ]
+      ]
+    },
+    {
+      "title": "2.3. Preparation of rGO@Co/PEG composites",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          304.984375,
+          222.53710937499997
+        ],
+        [
+          465.26629638671875,
+          220.98632812499997
+        ],
+        [
+          465.26629638671875,
+          230.8536376953125
+        ],
+        [
+          304.984375,
+          230.8536376953125
+        ]
+      ]
+    },
+    {
+      "title": "2.4. Characterization",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          306.439453125,
+          357.0673828125
+        ],
+        [
+          382.61126708984375,
+          357.0673828125
+        ],
+        [
+          382.61126708984375,
+          367.0303649902344
+        ],
+        [
+          306.439453125,
+          367.0303649902344
+        ]
+      ]
+    },
+    {
+      "title": "2.5. Solar-to-thermal conversion test",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          306.1484375,
+          534.6318359375
+        ],
+        [
+          433.27880859375,
+          534.6318359375
+        ],
+        [
+          433.27880859375,
+          545.0441436767578
+        ],
+        [
+          306.1484375,
+          545.0441436767578
+        ]
+      ]
+    },
+    {
+      "title": "3. Results and discussion",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          305.857421875,
+          680.4052734375
+        ],
+        [
+          407.5553283691406,
+          680.4052734375
+        ],
+        [
+          407.5553283691406,
+          691.5377807617188
+        ],
+        [
+          305.857421875,
+          691.5377807617188
+        ]
+      ]
+    },
+    {
+      "title": "3.1. Morphology and structure of prepared rGO@Co composites",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          305.275390625,
+          702.1162109375
+        ],
+        [
+          526.2659912109375,
+          702.1162109375
+        ],
+        [
+          526.2659912109375,
+          712.4568481445312
+        ],
+        [
+          305.275390625,
+          712.4568481445312
+        ]
+      ]
+    },
+    {
+      "title": "3.2. Morphology and structure of rGO@Co/PEG composite PCMs",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          304.984375,
+          650.9404296875
+        ],
+        [
+          531.922119140625,
+          650.9404296875
+        ],
+        [
+          531.922119140625,
+          660.1890106201172
+        ],
+        [
+          304.984375,
+          660.1890106201172
+        ]
+      ]
+    },
+    {
+      "title": "3.3. Thermal performance of rGO@Co/PEG composite",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          36.958984375,
+          440.80957031249994
+        ],
+        [
+          226.1917724609375,
+          440.80957031249994
+        ],
+        [
+          226.1917724609375,
+          450.70947265625
+        ],
+        [
+          35.794921875,
+          450.70947265625
+        ]
+      ]
+    },
+    {
+      "title": "4. Conclusions",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          304.693359375,
+          233.39257812499997
+        ],
+        [
+          366.8017883300781,
+          233.39257812499997
+        ],
+        [
+          366.8017883300781,
+          243.2120361328125
+        ],
+        [
+          304.693359375,
+          243.2120361328125
+        ]
+      ]
+    },
+    {
+      "title": "Declaration of competing interest",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          304.40234375,
+          412.8955078125
+        ],
+        [
+          437.5148620605469,
+          411.3447265625
+        ],
+        [
+          437.5148620605469,
+          421.05609130859375
+        ],
+        [
+          304.40234375,
+          421.4248046875
+        ]
+      ]
+    },
+    {
+      "title": "CRediT authorship contribution statement",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          304.693359375,
+          486.55761718749994
+        ],
+        [
+          470.8665466308594,
+          486.55761718749994
+        ],
+        [
+          470.8665466308594,
+          496.400634765625
+        ],
+        [
+          304.693359375,
+          496.400634765625
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgement",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          37.541015625,
+          405.9169921875
+        ],
+        [
+          110.21891784667969,
+          405.9169921875
+        ],
+        [
+          110.21891784667969,
+          415.0499572753906
+        ],
+        [
+          36.376953125,
+          415.0499572753906
+        ]
+      ]
+    },
+    {
+      "title": "Appendix A. Supplementary data",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          36.958984375,
+          479.57910156249994
+        ],
+        [
+          168.54730224609375,
+          479.57910156249994
+        ],
+        [
+          168.54730224609375,
+          489.08978271484375
+        ],
+        [
+          35.794921875,
+          489.08978271484375
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          36.66796875,
+          531.5302734375
+        ],
+        [
+          81.13603210449219,
+          531.5302734375
+        ],
+        [
+          81.13603210449219,
+          542.2104949951172
+        ],
+        [
+          36.66796875,
+          542.2104949951172
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          206
+        ],
+        [
+          "Line",
+          73
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Footnote",
+          4
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          293
+        ],
+        [
+          "Line",
+          122
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          149
+        ],
+        [
+          "Line",
+          47
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          138
+        ],
+        [
+          "Line",
+          48
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          125
+        ],
+        [
+          "Line",
+          46
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "FigureGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          166
+        ],
+        [
+          "Line",
+          64
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          88
+        ],
+        [
+          "Line",
+          40
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "FigureGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          204
+        ],
+        [
+          "Line",
+          91
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          311
+        ],
+        [
+          "Line",
+          92
+        ],
+        [
+          "ListItem",
+          23
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          290
+        ],
+        [
+          "Line",
+          84
+        ],
+        [
+          "ListItem",
+          25
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Li et al. - 2020 - Graphene-CoOPEG composite phase change materials with enhanced solar-to-thermal energy conversion and storage capacit-annotated"
+}

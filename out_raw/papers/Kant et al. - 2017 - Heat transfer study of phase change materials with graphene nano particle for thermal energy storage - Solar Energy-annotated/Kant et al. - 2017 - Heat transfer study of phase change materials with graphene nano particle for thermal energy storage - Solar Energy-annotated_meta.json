@@ -1,0 +1,928 @@
+{
+  "table_of_contents": [
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          227.865234375,
+          73.2744140625
+        ],
+        [
+          379.775390625,
+          73.2744140625
+        ],
+        [
+          378.611328125,
+          80.2529296875
+        ],
+        [
+          226.701171875,
+          80.2529296875
+        ]
+      ]
+    },
+    {
+      "title": "Solar Energy",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          260.75,
+          97.12652587890625
+        ],
+        [
+          346.2131652832031,
+          96.1484375
+        ],
+        [
+          346.2131652832031,
+          111.6319580078125
+        ],
+        [
+          260.75,
+          111.65624999999999
+        ]
+      ]
+    },
+    {
+      "title": "Heat transfer study of phase change materials with graphene nano\nparticle for thermal energy storage",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          42.48828125,
+          177.564453125
+        ],
+        [
+          463.1505126953125,
+          176.013671875
+        ],
+        [
+          463.1505126953125,
+          209.204833984375
+        ],
+        [
+          41.32421875,
+          209.204833984375
+        ]
+      ]
+    },
+    {
+      "title": "article info",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          41.615234375,
+          284.7286071777344
+        ],
+        [
+          136.97821044921875,
+          283.79296875
+        ],
+        [
+          136.97821044921875,
+          293.6949157714844
+        ],
+        [
+          40.451171875,
+          293.6949157714844
+        ]
+      ]
+    },
+    {
+      "title": "Article history:\nReceived 21 January 2017\nReceived in revised form 27 February 2017\nAccepted 6 March 2017\nAvailable online 14 March 2017",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          41.90625,
+          303.5654296875
+        ],
+        [
+          174.10964965820312,
+          303.5654296875
+        ],
+        [
+          174.10964965820312,
+          346.4812316894531
+        ],
+        [
+          40.7421875,
+          346.4812316894531
+        ]
+      ]
+    },
+    {
+      "title": "abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          204.875,
+          283.017578125
+        ],
+        [
+          272.377685546875,
+          283.017578125
+        ],
+        [
+          272.377685546875,
+          293.9783020019531
+        ],
+        [
+          204.875,
+          293.9783020019531
+        ]
+      ]
+    },
+    {
+      "title": "1. Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          40.7421875,
+          505.16699218749994
+        ],
+        [
+          102.76549530029297,
+          505.16699218749994
+        ],
+        [
+          102.76549530029297,
+          516.1679382324219
+        ],
+        [
+          40.7421875,
+          516.1679382324219
+        ]
+      ]
+    },
+    {
+      "title": "Nomenclature\nCp specific heat (Jkg1\nK1\n)\nCpg specific heat of graphene nano-particles (Jkg1\nK1\ndp diameter of nano-particles (m)\ng gravitational acceleration constant (ms2\nk thermal conductivity (Wm1\nK1\nH height of cavity (m)\nkg thermal conductivity of graphene nano-particles\n(Wm1\nK1\nLf latent heat of Fusion (Jkg1\nqw heat flux (Wm2\n)\nP pressure (Pa)\nT temperature (K)\nt time (s)\nu velocity (ms\n1\nv velocity in y direction (ms1\nW width of aluminum cavity (m)\nx distance in x direction (m)\ny distance in y direction (m)\nq density (kgm3\n)\nU volume fraction of nano-particles\nUw weight fraction of nano-particles\nDT transition temperature (K)\nm dynamic viscosity of melted PCM (Pas)\nb thermal expansion coefficient of PCM\nSubscripts\nPCM phase change materials\nNPCM nanoparticle dispersed PCM\nSolid PCM in solid state\nLiquid PCM in liquid state",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          32.01171875,
+          69.009765625
+        ],
+        [
+          552.34765625,
+          67.458984375
+        ],
+        [
+          552.34765625,
+          269.060546875
+        ],
+        [
+          32.01171875,
+          270.611328125
+        ]
+      ]
+    },
+    {
+      "title": "2. Computational model and boundary condition",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          300.91015625,
+          705.2177734375
+        ],
+        [
+          497.83123779296875,
+          703.6669921875
+        ],
+        [
+          497.83123779296875,
+          713.9116516113281
+        ],
+        [
+          300.91015625,
+          713.9116516113281
+        ]
+      ]
+    },
+    {
+      "title": "3. Mathematical formulation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          310.22265625,
+          443.13574218749994
+        ],
+        [
+          426.7809753417969,
+          443.13574218749994
+        ],
+        [
+          426.7809753417969,
+          453.6878356933594
+        ],
+        [
+          310.22265625,
+          453.6878356933594
+        ]
+      ]
+    },
+    {
+      "title": "4. Computational procedure and model validation",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          41.615234375,
+          333.255126953125
+        ],
+        [
+          242.73825073242188,
+          331.8671875
+        ],
+        [
+          242.73825073242188,
+          341.4404296875
+        ],
+        [
+          40.451171875,
+          341.4404296875
+        ]
+      ]
+    },
+    {
+      "title": "5. Results and discussion",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          311.5836486816406,
+          334.5810546875
+        ],
+        [
+          411.2380676269531,
+          334.5810546875
+        ],
+        [
+          411.2380676269531,
+          343.4222717285156
+        ],
+        [
+          311.5836486816406,
+          343.4222717285156
+        ]
+      ]
+    },
+    {
+      "title": "5.1. Isotherms and melting front",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          309.640625,
+          484.23144531249994
+        ],
+        [
+          428.481201171875,
+          484.23144531249994
+        ],
+        [
+          428.481201171875,
+          494.2239990234375
+        ],
+        [
+          309.640625,
+          494.2239990234375
+        ]
+      ]
+    },
+    {
+      "title": "5.2. Velocity and stream lines",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          30.84765625,
+          65.5205078125
+        ],
+        [
+          139.3992462158203,
+          65.5205078125
+        ],
+        [
+          139.3992462158203,
+          75.83416748046875
+        ],
+        [
+          30.84765625,
+          75.83416748046875
+        ]
+      ]
+    },
+    {
+      "title": "5.3. Melt fraction",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          42.48828125,
+          415.609375
+        ],
+        [
+          104.86827087402344,
+          415.609375
+        ],
+        [
+          104.86827087402344,
+          426.53460693359375
+        ],
+        [
+          41.32421875,
+          426.53460693359375
+        ]
+      ]
+    },
+    {
+      "title": "6. Conclusion",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          31.4296875,
+          566.4228515625
+        ],
+        [
+          86.31241607666016,
+          566.4228515625
+        ],
+        [
+          86.31241607666016,
+          577.9599151611328
+        ],
+        [
+          31.4296875,
+          577.9599151611328
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          301.4921875,
+          177.9521484375
+        ],
+        [
+          344.8795166015625,
+          177.9521484375
+        ],
+        [
+          344.8795166015625,
+          187.7364501953125
+        ],
+        [
+          301.4921875,
+          187.7364501953125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          181
+        ],
+        [
+          "Line",
+          82
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          368
+        ],
+        [
+          "Line",
+          125
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          230
+        ],
+        [
+          "Line",
+          65
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1000
+        ],
+        [
+          "Line",
+          164
+        ],
+        [
+          "Equation",
+          22
+        ],
+        [
+          "Text",
+          20
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          370
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          130
+        ],
+        [
+          "Line",
+          42
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          26
+        ],
+        [
+          "Line",
+          11
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          112
+        ],
+        [
+          "Line",
+          44
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          126
+        ],
+        [
+          "Line",
+          50
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Figure",
+          4
+        ],
+        [
+          "Caption",
+          4
+        ],
+        [
+          "FigureGroup",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          275
+        ],
+        [
+          "Line",
+          123
+        ],
+        [
+          "Text",
+          24
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          167
+        ],
+        [
+          "Line",
+          63
+        ],
+        [
+          "ListItem",
+          19
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Kant et al. - 2017 - Heat transfer study of phase change materials with graphene nano particle for thermal energy storage - Solar Energy-annotated"
+}

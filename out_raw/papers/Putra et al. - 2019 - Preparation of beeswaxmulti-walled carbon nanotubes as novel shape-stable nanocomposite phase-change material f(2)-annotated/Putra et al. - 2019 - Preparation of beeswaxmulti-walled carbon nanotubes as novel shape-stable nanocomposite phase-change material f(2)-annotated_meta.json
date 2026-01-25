@@ -1,0 +1,951 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Contents lists available at ScienceDirect",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          228.15625,
+          62.03124999999999
+        ],
+        [
+          370.171875,
+          60.48046874999999
+        ],
+        [
+          369.97430419921875,
+          70.301025390625
+        ],
+        [
+          226.9921875,
+          70.301025390625
+        ]
+      ]
+    },
+    {
+      "title": "Journal of Energy Storage",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          216.806640625,
+          86.84375
+        ],
+        [
+          380.357421875,
+          85.29296875
+        ],
+        [
+          380.282470703125,
+          101.83990478515625
+        ],
+        [
+          215.642578125,
+          101.83990478515625
+        ]
+      ]
+    },
+    {
+      "title": "Preparation of beeswax/multi-walled carbon nanotubes as novel shape-\nstable nanocomposite phase-change material for thermal energy storage",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.25,
+          165.93359375
+        ],
+        [
+          470.3479919433594,
+          164.3828125
+        ],
+        [
+          470.3479919433594,
+          196.94940185546875
+        ],
+        [
+          36.0859375,
+          196.94940185546875
+        ]
+      ]
+    },
+    {
+      "title": "ARTICLE INFO",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.541015625,
+          294.6484375
+        ],
+        [
+          112.623046875,
+          293.09765625
+        ],
+        [
+          111.87405395507812,
+          303.6084289550781
+        ],
+        [
+          36.376953125,
+          303.6084289550781
+        ]
+      ]
+    },
+    {
+      "title": "Keywords:\nBeeswax\nCarbon nanotubes\nComposite\nPhase-change material\nShape-stabilized\nThermal energy storage",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          36.958984375,
+          314.4208984375
+        ],
+        [
+          106.220703125,
+          312.8701171875
+        ],
+        [
+          105.056640625,
+          374.9926452636719
+        ],
+        [
+          35.794921875,
+          375.6767578125
+        ]
+      ]
+    },
+    {
+      "title": "ABSTRACT",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          203.12890625,
+          294.6484375
+        ],
+        [
+          257.83984375,
+          294.6484375
+        ],
+        [
+          257.83984375,
+          303.6084289550781
+        ],
+        [
+          203.12890625,
+          303.6084289550781
+        ]
+      ]
+    },
+    {
+      "title": "1. Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.25,
+          490.43457031249994
+        ],
+        [
+          96.81640625,
+          490.43457031249994
+        ],
+        [
+          96.81640625,
+          501.84698486328125
+        ],
+        [
+          36.0859375,
+          501.84698486328125
+        ]
+      ]
+    },
+    {
+      "title": "2. Material and methods",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          36.376953125,
+          674.9775390625
+        ],
+        [
+          132.81576538085938,
+          673.4267578125
+        ],
+        [
+          132.81576538085938,
+          684.7372283935547
+        ],
+        [
+          36.376953125,
+          684.7372283935547
+        ]
+      ]
+    },
+    {
+      "title": "2.1. Materials",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          36.376953125,
+          695.9130859375
+        ],
+        [
+          86.12212371826172,
+          694.3623046875
+        ],
+        [
+          86.12212371826172,
+          705.6563491821289
+        ],
+        [
+          36.376953125,
+          705.6563491821289
+        ]
+      ]
+    },
+    {
+      "title": "2.2. Methods",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          305.857421875,
+          674.9775390625
+        ],
+        [
+          353.001953125,
+          674.9775390625
+        ],
+        [
+          351.9565124511719,
+          684.7379302978516
+        ],
+        [
+          304.693359375,
+          684.7379302978516
+        ]
+      ]
+    },
+    {
+      "title": "2.2.1. Preparation of MWCNTs",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          306.595458984375,
+          695.9130859375
+        ],
+        [
+          413.9941711425781,
+          695.9130859375
+        ],
+        [
+          413.9941711425781,
+          705.6570434570312
+        ],
+        [
+          306.595458984375,
+          705.6570434570312
+        ]
+      ]
+    },
+    {
+      "title": "2.2.2. Preparation of beeswax/MWCNT composites",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          35.50390625,
+          425.30175781249994
+        ],
+        [
+          211.8927001953125,
+          423.75097656249994
+        ],
+        [
+          211.8927001953125,
+          434.3810729980469
+        ],
+        [
+          35.50390625,
+          434.3810729980469
+        ]
+      ]
+    },
+    {
+      "title": "2.2.3. Characterization",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          306.1484375,
+          122.89941406249999
+        ],
+        [
+          386.46875,
+          121.34863281249999
+        ],
+        [
+          386.46875,
+          131.020751953125
+        ],
+        [
+          306.1484375,
+          131.020751953125
+        ]
+      ]
+    },
+    {
+      "title": "3. Results and discussion",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          37.25,
+          143.0595703125
+        ],
+        [
+          135.24742126464844,
+          141.5087890625
+        ],
+        [
+          135.24742126464844,
+          151.25634765625
+        ],
+        [
+          36.0859375,
+          151.25634765625
+        ]
+      ]
+    },
+    {
+      "title": "3.1. Physical, chemical, and morphological properties",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          37.25,
+          162.4443359375
+        ],
+        [
+          218.84375,
+          160.8935546875
+        ],
+        [
+          218.2544403076172,
+          172.17626953125
+        ],
+        [
+          36.0859375,
+          172.17626953125
+        ]
+      ]
+    },
+    {
+      "title": "3.2. Thermal properties",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          36.66796875,
+          560.2197265625
+        ],
+        [
+          117.5689468383789,
+          560.2197265625
+        ],
+        [
+          117.5689468383789,
+          569.651611328125
+        ],
+        [
+          36.66796875,
+          569.651611328125
+        ]
+      ]
+    },
+    {
+      "title": "3.3. Thermal stability",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          306.5967102050781,
+          685.0576171875
+        ],
+        [
+          380.6484375,
+          685.0576171875
+        ],
+        [
+          380.6484375,
+          695.223876953125
+        ],
+        [
+          306.5967102050781,
+          695.223876953125
+        ]
+      ]
+    },
+    {
+      "title": "4. Conclusions",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          304.984375,
+          315.583984375
+        ],
+        [
+          363.5023498535156,
+          315.583984375
+        ],
+        [
+          363.5023498535156,
+          325.7060852050781
+        ],
+        [
+          304.984375,
+          325.7060852050781
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgement",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          306.5926513671875,
+          695.525390625
+        ],
+        [
+          376.8889465332031,
+          695.525390625
+        ],
+        [
+          376.8889465332031,
+          705.6574630737305
+        ],
+        [
+          306.5926513671875,
+          705.6574630737305
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          36.958984375,
+          57.76660156249999
+        ],
+        [
+          79.447265625,
+          57.76660156249999
+        ],
+        [
+          78.80078887939453,
+          67.5789794921875
+        ],
+        [
+          35.794921875,
+          67.5789794921875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          180
+        ],
+        [
+          "Line",
+          79
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          183
+        ],
+        [
+          "Line",
+          70
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          74
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          161
+        ],
+        [
+          "Line",
+          70
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "Picture",
+          5
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PictureGroup",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          225
+        ],
+        [
+          "Line",
+          81
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          357
+        ],
+        [
+          "Line",
+          98
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          252
+        ],
+        [
+          "Line",
+          77
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          305
+        ],
+        [
+          "Line",
+          115
+        ],
+        [
+          "ListItem",
+          42
+        ],
+        [
+          "Reference",
+          33
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Putra et al. - 2019 - Preparation of beeswaxmulti-walled carbon nanotubes as novel shape-stable nanocomposite phase-change material f(2)-annotated"
+}

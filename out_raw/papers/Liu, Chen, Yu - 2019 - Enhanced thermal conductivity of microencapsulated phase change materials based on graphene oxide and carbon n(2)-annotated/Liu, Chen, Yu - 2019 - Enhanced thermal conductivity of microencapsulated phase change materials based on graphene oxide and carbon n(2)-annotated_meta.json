@@ -1,0 +1,956 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Solar Energy Materials and Solar Cells",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          179.60311889648438,
+          87.2314453125
+        ],
+        [
+          419.353515625,
+          85.6806640625
+        ],
+        [
+          418.5603942871094,
+          101.40435791015625
+        ],
+        [
+          178.974609375,
+          101.40435791015625
+        ]
+      ]
+    },
+    {
+      "title": "Enhanced thermal conductivity of microencapsulated phase change\nmaterials based on graphene oxide and carbon nanotube hybrid filler",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.541015625,
+          165.5458984375
+        ],
+        [
+          458.349609375,
+          165.5458984375
+        ],
+        [
+          457.185546875,
+          196.5299072265625
+        ],
+        [
+          36.376953125,
+          196.5299072265625
+        ]
+      ]
+    },
+    {
+      "title": "ARTICLE INFO",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          36.66796875,
+          264.408203125
+        ],
+        [
+          112.33203125,
+          262.857421875
+        ],
+        [
+          111.84512329101562,
+          273.34326171875
+        ],
+        [
+          35.50390625,
+          273.34326171875
+        ]
+      ]
+    },
+    {
+      "title": "Keywords:\nMicroencapsulated phase change material\nGraphene oxide\nCarbon nanotube\nHybrid filler\nThermal conductivity\nPhoto-thermal conversion performance",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.587398529052734,
+          286.89453125
+        ],
+        [
+          156.72744750976562,
+          286.89453125
+        ],
+        [
+          156.72744750976562,
+          344.68988037109375
+        ],
+        [
+          37.541015625,
+          344.68988037109375
+        ]
+      ]
+    },
+    {
+      "title": "ABSTRACT",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          202.546875,
+          264.408203125
+        ],
+        [
+          257.2578125,
+          264.408203125
+        ],
+        [
+          257.2578125,
+          273.34326171875
+        ],
+        [
+          202.546875,
+          273.34326171875
+        ]
+      ]
+    },
+    {
+      "title": "1. Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.25,
+          433.05566406249994
+        ],
+        [
+          96.77729797363281,
+          433.05566406249994
+        ],
+        [
+          96.77729797363281,
+          442.80645751953125
+        ],
+        [
+          36.0859375,
+          442.80645751953125
+        ]
+      ]
+    },
+    {
+      "title": "2. Materials and experiments",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          37.58915710449219,
+          455.54199218749994
+        ],
+        [
+          150.463134765625,
+          455.54199218749994
+        ],
+        [
+          150.463134765625,
+          464.79974365234375
+        ],
+        [
+          36.66796875,
+          464.79974365234375
+        ]
+      ]
+    },
+    {
+      "title": "2.1. Materials",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          36.376953125,
+          474.92675781249994
+        ],
+        [
+          86.09181213378906,
+          474.92675781249994
+        ],
+        [
+          86.09181213378906,
+          485.7206726074219
+        ],
+        [
+          35.212890625,
+          485.7206726074219
+        ]
+      ]
+    },
+    {
+      "title": "2.2. Synthesis of GO aqueous dispersion",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          37.25,
+          592.0107421875
+        ],
+        [
+          173.76478576660156,
+          590.4599609375
+        ],
+        [
+          173.76478576660156,
+          600.8063201904297
+        ],
+        [
+          36.0859375,
+          600.8063201904297
+        ]
+      ]
+    },
+    {
+      "title": "2.3. Synthesis of MEPCM modified by GO and CNT",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          306.439453125,
+          58.92968749999999
+        ],
+        [
+          483.958984375,
+          57.37890624999999
+        ],
+        [
+          482.99554443359375,
+          67.3280029296875
+        ],
+        [
+          305.275390625,
+          67.3280029296875
+        ]
+      ]
+    },
+    {
+      "title": "2.4. Characterization and measurement",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          305.56640625,
+          246.96191406249997
+        ],
+        [
+          440.7279357910156,
+          245.41113281249997
+        ],
+        [
+          440.7279357910156,
+          255.6025390625
+        ],
+        [
+          304.40234375,
+          255.6025390625
+        ]
+      ]
+    },
+    {
+      "title": "3. Results and discussion",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          305.857421875,
+          633.1064453125
+        ],
+        [
+          404.220703125,
+          633.1064453125
+        ],
+        [
+          404.220703125,
+          642.6459197998047
+        ],
+        [
+          305.857421875,
+          642.6459197998047
+        ]
+      ]
+    },
+    {
+      "title": "3.1. Morphology of the microcapsules",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          304.984375,
+          654.0419921875
+        ],
+        [
+          434.1953125,
+          652.4912109375
+        ],
+        [
+          434.1953125,
+          663.5676422119141
+        ],
+        [
+          304.984375,
+          663.5676422119141
+        ]
+      ]
+    },
+    {
+      "title": "3.2. Chemical composition of the microcapsules",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          306.1484375,
+          232.61718749999997
+        ],
+        [
+          467.31744384765625,
+          231.06640624999997
+        ],
+        [
+          467.31744384765625,
+          241.42938232421875
+        ],
+        [
+          306.1484375,
+          241.42938232421875
+        ]
+      ]
+    },
+    {
+      "title": "3.3. Thermal conductivity of the microcapsules",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          305.857421875,
+          470.27441406249994
+        ],
+        [
+          465.108154296875,
+          470.27441406249994
+        ],
+        [
+          465.108154296875,
+          480.5645446777344
+        ],
+        [
+          305.857421875,
+          480.5645446777344
+        ]
+      ]
+    },
+    {
+      "title": "3.4. Thermal storage properties of the microcapsules",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          304.984375,
+          684.669921875
+        ],
+        [
+          483.25213623046875,
+          684.669921875
+        ],
+        [
+          483.25213623046875,
+          694.970947265625
+        ],
+        [
+          303.8203125,
+          694.970947265625
+        ]
+      ]
+    },
+    {
+      "title": "3.5. Thermal reliability and stability of the microcapsules",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          37.58741760253906,
+          664.509765625
+        ],
+        [
+          231.939453125,
+          662.958984375
+        ],
+        [
+          231.36050415039062,
+          674.0001831054688
+        ],
+        [
+          36.958984375,
+          674.0001831054688
+        ]
+      ]
+    },
+    {
+      "title": "3.6. Photo-thermal conversion property of the microencapsulated phase\nchange slurries",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          305.857421875,
+          58.15429687499999
+        ],
+        [
+          546.5755004882812,
+          56.60351562499999
+        ],
+        [
+          546.5755004882812,
+          77.76019287109375
+        ],
+        [
+          304.693359375,
+          78.314453125
+        ]
+      ]
+    },
+    {
+      "title": "4. Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          37.541015625,
+          215.17089843749997
+        ],
+        [
+          91.669921875,
+          213.62011718749997
+        ],
+        [
+          90.91919708251953,
+          224.19647216796875
+        ],
+        [
+          36.376953125,
+          224.19647216796875
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgements",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          37.25,
+          444.29882812499994
+        ],
+        [
+          111.35400390625,
+          444.29882812499994
+        ],
+        [
+          111.35400390625,
+          454.3662414550781
+        ],
+        [
+          36.0859375,
+          454.3662414550781
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          37.25,
+          506.71777343749994
+        ],
+        [
+          79.15625,
+          506.71777343749994
+        ],
+        [
+          78.75588989257812,
+          517.1243896484375
+        ],
+        [
+          36.0859375,
+          517.1243896484375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          311
+        ],
+        [
+          "Line",
+          82
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          365
+        ],
+        [
+          "Line",
+          121
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          198
+        ],
+        [
+          "Line",
+          49
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          100
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          187
+        ],
+        [
+          "Line",
+          56
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "FigureGroup",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          156
+        ],
+        [
+          "Line",
+          48
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "FigureGroup",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          128
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          535
+        ],
+        [
+          "Line",
+          154
+        ],
+        [
+          "ListItem",
+          41
+        ],
+        [
+          "Reference",
+          21
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          180
+        ],
+        [
+          "Line",
+          47
+        ],
+        [
+          "ListItem",
+          16
+        ],
+        [
+          "Reference",
+          9
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Liu, Chen, Yu - 2019 - Enhanced thermal conductivity of microencapsulated phase change materials based on graphene oxide and carbon n(2)-annotated"
+}
