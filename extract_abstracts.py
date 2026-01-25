@@ -61,6 +61,8 @@ def is_metadata_line(line: str) -> bool:
     normalized = line.strip()
     if not normalized:
         return False
+    if "@" in normalized and "http" not in normalized.lower():
+        return True
     if METADATA_INLINE_MARKER.search(normalized):
         return True
     return METADATA_PREFIX_MARKER.match(normalized) is not None

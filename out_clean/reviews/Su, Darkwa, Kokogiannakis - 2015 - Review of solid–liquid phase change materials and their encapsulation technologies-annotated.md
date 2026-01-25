@@ -6,11 +6,6 @@ journal homepage: <www.elsevier.com/locate/rser>
 
 # Review of solid–liquid phase change materials and their encapsulation technologies
 
-Weiguang Su a,<sup>n</sup> , Jo Darkwa <sup>b</sup> , Georgios Kokogiannakis <sup>c</sup>
-
-- <sup>a</sup> Centre for Sustainable Energy Technologies, University of Nottingham, Ningbo, China
-- <sup>b</sup> Faculty of Engineering, University of Nottingham, UK
-- <sup>c</sup> Sustainable Buildings Research Centre, University of Wollongong, Australia
 
 ## article info
 

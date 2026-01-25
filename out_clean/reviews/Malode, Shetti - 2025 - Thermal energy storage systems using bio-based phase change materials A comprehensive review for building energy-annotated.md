@@ -2,16 +2,12 @@ Contents lists available at [ScienceDirect](www.sciencedirect.com/science/journa
 
 # Journal of Energy Storage
 
-journal homepage: [www.elsevier.com/locate/est](https://www.elsevier.com/locate/est)
 
 # Research papers
 
 # Thermal energy storage systems using bio-based phase change materials: A comprehensive review for building energy efficiency
 
-Shweta J. Malode a,\* , Nagaraj P. Shetti a,b
 
-- <sup>a</sup> *Center for Energy and Environment, School of Advanced Sciences, KLE Technological University, Vidyanagar, Hubballi 580031, Karnataka, India*
-- <sup>b</sup> *University Center for Research & Development (UCRD), Chandigarh University, Gharuan, Mohali- 140413, Panjab, India*
 
 ## ARTICLE INFO
 

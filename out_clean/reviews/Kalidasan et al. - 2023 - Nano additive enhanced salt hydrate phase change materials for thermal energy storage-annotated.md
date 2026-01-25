@@ -2,9 +2,6 @@ INTERNATIONAL MATERIALS REVIEWS 2023, VOL. 68, NO. 2, 140–183 https://doi.org/
 
 # Nano additive enhanced salt hydrate phase change materials for thermal energy storage
 
-B. Kalidasana , A. K. Pandey<sup>a</sup> , R. Saidur<sup>a</sup> , M. Samykano<sup>b</sup> and V. V. Tyagic
-
-a Research Centre for Nano-Materials and Energy Technology (RCNMET), School of Engineering and Technology, Sunway University, Petaling Jaya, Selangor Darul Ehsan, Malaysia; <sup>b</sup> College of Engineering, University Malaysia Pahang, Kuantan, Pahang, Malaysia; <sup>c</sup> School of Energy Management, Shri Mata Vaishno Devi University, Katra, Jammu & Kashmir, India
 
 #### ABSTRACT
 

@@ -8,19 +8,14 @@ Contents lists available at [ScienceDirect](www.sciencedirect.com/science/journa
 
 journal homepage: [www.elsevier.com/locate/est](https://www.elsevier.com/locate/est)
 
-Image /page/0/Picture/5 description: This image is the cover of the 'Journal of Energy Storage'. The title is prominently displayed in the upper right quadrant, with 'JOURNAL OF' in small brown letters, 'Energy' in large brown letters, and 'Storage' in large green letters below it. In the top left corner is the Elsevier logo, and in the top right corner is the ISSN number '2352-152X'. The lower half of the cover features a stylized, semi-transparent 3D graphic of nested cylinders or discs in shades of green, yellow, and orange, set against a plain white background.
 
-Image /page/0/Picture/6 description: This image is a square button with a light gray gradient background. In the center of the button is a circular icon featuring a ring that is blue on the top and right and yellow on the bottom and left. Inside the ring is a red ribbon or bookmark shape. Below the icon, the text 'Check for updates' is written in a dark gray font across two lines.
+
 
 # Effects of carbon-based fillers on thermal properties of fatty acids and their eutectics as phase change materials used for thermal energy storage: A Review
 
-Amir Al-Ahmed a,\* , Mohammad A. Jafar Mazumder <sup>b</sup> , Billel Salhi <sup>d</sup> , Ahmet Sari a,c,\* , Mohammad Afzaal <sup>f</sup> , Fahad A. Al-Sulaiman <sup>a</sup>
 
-- <sup>a</sup> *Center of Research Excellence in Renewable Energy, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia*
-- <sup>b</sup> *Department of Chemistry, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia*
-- <sup>c</sup> *Department of Metallurgical and Material Engineering, Karadeniz Technical University, 61080, Trabzon, Turkey*
-- <sup>d</sup> *Center of Research Excellence in Desalination and Water Treatment, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia*
-- <sup>f</sup> *Maths and Natural Sciences Division, Higher Colleges of Technology, P.O. Box 7947, Sharjah, United Arab Emirates*
+
+
 
 #### ARTICLE INFO
 

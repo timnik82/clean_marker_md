@@ -1,12 +1,11 @@
 # **Polymer Reviews**
 
-**ISSN: 1558-3724 (Print) 1558-3716 (Online) Journal homepage: [www.tandfonline.com/journals/lmsc20](https://www.tandfonline.com/journals/lmsc20?src=pdf)**
 
 # **Recent Progress in PEG-Based Composite Phase Change Materials**
 
 **Andrew Kim, Nicole Alexandra Wert, E. Bhoje Gowd & Rajkumar Patel**
 
-**To cite this article:** Andrew Kim, Nicole Alexandra Wert, E. Bhoje Gowd & Rajkumar Patel (2023) Recent Progress in PEG-Based Composite Phase Change Materials, Polymer Reviews, 63:4, 1078-1129, DOI: [10.1080/15583724.2023.2220041](https://www.tandfonline.com/action/showCitFormats?doi=10.1080/15583724.2023.2220041)
+
 
 **To link to this article:** <https://doi.org/10.1080/15583724.2023.2220041>
 
@@ -14,9 +13,6 @@
 
 # Recent Progress in PEG-Based Composite Phase Change Materials
 
-Andrew Kima [,](http://orcid.org/0000-0003-2379-1178) Nicole Alexandra Wertb , E. Bhoje Gowdc [,](http://orcid.org/0000-0002-2878-5845) and Rajkumar Patelb
-
-a Department of Chemical Engineering, The Cooper Union for the Advancement of Science and Art, New York City, New York, USA; <sup>b</sup> Energy and Environmental Science and Engineering (EESE), Integrated Science and Engineering Division (ISED), Underwood International College, Yonsei University, Incheon, South Korea; <sup>c</sup> Materials Science and Technology Division, CSIR-National Institute for Interdisciplinary Science and Technology, Trivandrum, Kerala, India
 
 ### ABSTRACT
 

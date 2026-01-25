@@ -6,11 +6,7 @@ journal homepage: [www.elsevier.com/locate/rser](https://www.elsevier.com/locate
 
 # Nanoparticle-enhanced phase change materials for thermal energy storage: A critical review
 
-Jiaxuan Li <sup>a</sup> , Songping Mo a,b,[\\*](https://orcid.org/0000-0002-7921-4508) , Zicong Zhou <sup>a</sup> , Yanping Du <sup>c</sup> , Lisi Jia a,b , Ying Chen a,b
 
-- <sup>a</sup> *School of Materials and Energy, Guangdong University of Technology, Guangzhou, 510006, China*
-- <sup>b</sup> *Guangdong Provincial Key Laboratory on Functional Soft Condensed Matter, Guangdong University of Technology, Guangzhou, 510006, China*
-- <sup>c</sup> *School of Engineering, Lancaster University, Lancaster, LA1 4YW, UK*
 
 ## ARTICLE INFO
 

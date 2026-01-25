@@ -8,11 +8,6 @@ journal homepage: [www.elsevier.com/locate/conbuildmat](https://www.elsevier.com
 
 # Microencapsulated phase change materials for enhanced thermal energy storage performance in construction materials: A critical review
 
-Abdulmalik Ismail a,\* , Jialai Wang <sup>a</sup> , Babatunde Abiodun Salami b,\* , Lukumon O. Oyedele <sup>c</sup> , Ganiyu K. Otukogbe <sup>b</sup>
-
-- <sup>a</sup> *Department of Civil, Construction, and Environmental Engineering, The University of Alabama, Tuscaloosa, AL 35487, USA*
-- <sup>b</sup> *Cardiff School of Management, Cardiff Metropolitan University, Llandaff Campus, Cardiff CF5 2YB, United Kingdom*
-- <sup>c</sup> *Big Data Enterprise and Artificial Intelligence Laboratory (Big-DEAL) University of the West of England, Bristol, Frenchay Campus, Bristol BS16 1QY, United Kingdom*
 
 #### ARTICLE INFO
 
