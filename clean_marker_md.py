@@ -13,9 +13,17 @@ import sys
 from pathlib import Path
 
 
-ENDMATTER_KEYWORDS = [
+ENDMATTER_TRUNCATE_KEYWORDS = [
     "references",
     "bibliography",
+    "supplementary",
+    "supplementary material",
+    "supplementary materials",
+    "appendix",
+    "appendices",
+]
+
+ENDMATTER_SECTION_KEYWORDS = [
     "acknowledgements",
     "acknowledgments",
     "acknowledgment",
@@ -34,11 +42,6 @@ ENDMATTER_KEYWORDS = [
     "code availability",
     "ethics",
     "ethics statement",
-    "supplementary",
-    "supplementary material",
-    "supplementary materials",
-    "appendix",
-    "appendices",
     "disclosure",
     "disclosures",
 ]
@@ -69,6 +72,8 @@ CAPTION_CONTINUED_RE = re.compile(
     re.IGNORECASE,
 )
 LEADING_HTML_TAG_RE = re.compile(r"^(?:\s*<[^>]+>\s*)+")
+HEADING_BREAK_RE = re.compile(r"[,;:]")
+LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 
 INLINE_MATH_RE = re.compile(
     r"(?<!\\)\$(?!\$).+?(?<!\\)\$|\\\(.+?\\\)",
@@ -111,15 +116,35 @@ def is_headingish(line: str) -> bool:
     return True
 
 
-def is_endmatter_heading(line: str) -> bool:
+def is_section_heading_candidate(line: str) -> bool:
+    if HEADING_RE.match(line):
+        return True
+    if not is_headingish(line):
+        return False
+    if HEADING_BREAK_RE.search(line):
+        return False
+    if len(line.split()) > 8:
+        return False
+    return True
+
+
+def classify_endmatter_heading(line: str) -> str | None:
     match = HEADING_RE.match(line)
     if match:
         heading = normalize_heading(match.group(1))
-        return any(heading.startswith(k) for k in ENDMATTER_KEYWORDS)
+        if any(heading.startswith(k) for k in ENDMATTER_TRUNCATE_KEYWORDS):
+            return "truncate"
+        if any(heading.startswith(k) for k in ENDMATTER_SECTION_KEYWORDS):
+            return "section"
+        return None
     if not is_headingish(line):
-        return False
+        return None
     heading = normalize_heading(line)
-    return any(heading == k or heading.startswith(k) for k in ENDMATTER_KEYWORDS)
+    if any(heading == k or heading.startswith(k) for k in ENDMATTER_TRUNCATE_KEYWORDS):
+        return "truncate"
+    if any(heading == k or heading.startswith(k) for k in ENDMATTER_SECTION_KEYWORDS):
+        return "section"
+    return None
 
 
 def is_table_row(line: str) -> bool:
@@ -153,6 +178,16 @@ def remove_math_blocks(text: str) -> str:
 
 def contains_inline_math(text: str) -> bool:
     return bool(INLINE_MATH_RE.search(text))
+
+
+def strip_citation_math_escapes(text: str) -> str:
+    def replace_link(match: re.Match[str]) -> str:
+        label = match.group(1)
+        url = match.group(2)
+        label = label.replace("\\(", "(").replace("\\)", ")")
+        return f"[{label}]({url})"
+
+    return LINK_RE.sub(replace_link, text)
 
 
 def is_structured_line(line: str) -> bool:
@@ -206,17 +241,26 @@ def cleanup_text(
     drop_math: bool = True,
 ) -> str:
     text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = strip_citation_math_escapes(text)
     text = remove_math_blocks(text)
 
     lines = text.split("\n")
     filtered: list[str] = []
     in_table = False
     skip_next_blank = False
+    skip_endmatter_section = False
     i = 0
 
     while i < len(lines):
         raw_line = lines[i]
         line = EMPTY_SPAN_RE.sub("", raw_line)
+
+        if skip_endmatter_section:
+            if is_section_heading_candidate(line):
+                skip_endmatter_section = False
+                continue
+            i += 1
+            continue
 
         if skip_next_blank and line.strip() == "":
             i += 1
@@ -224,8 +268,14 @@ def cleanup_text(
         if skip_next_blank and line.strip():
             skip_next_blank = False
 
-        if drop_endmatter and is_endmatter_heading(line):
-            break
+        if drop_endmatter:
+            endmatter_type = classify_endmatter_heading(line)
+            if endmatter_type == "truncate":
+                break
+            if endmatter_type == "section":
+                skip_endmatter_section = True
+                i += 1
+                continue
 
         if drop_tables and in_table:
             if line.strip() == "":

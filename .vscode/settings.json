@@ -1,3 +1,4 @@
 {
-    "editor.accessibilitySupport": "off"
+    "editor.accessibilitySupport": "off",
+    "files.autoSave": "onFocusChange"
 }
