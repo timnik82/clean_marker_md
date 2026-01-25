@@ -382,6 +382,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--keep-images", action="store_true", help="Do not drop images")
     parser.add_argument("--keep-captions", action="store_true", help="Do not drop captions")
     parser.add_argument("--keep-math", action="store_true", help="Do not drop math sentences")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Overwrite existing output files (default: skip if output exists)",
+    )
     return parser.parse_args()
 
 
@@ -437,6 +442,9 @@ def main() -> int:
             if args.dry_run:
                 print(f"Would write: {out_path}")
             else:
+                if out_path.exists() and not args.force:
+                    print(f"Skipping existing output: {out_path}")
+                    continue
                 out_path.write_text(cleaned, encoding="utf-8")
         return 0
 
@@ -458,6 +466,9 @@ def main() -> int:
     )
     if args.dry_run:
         print(f"Would write: {args.out_file}")
+        return 0
+    if args.out_file.exists() and not args.force:
+        print(f"Skipping existing output: {args.out_file}")
         return 0
     args.out_file.parent.mkdir(parents=True, exist_ok=True)
     args.out_file.write_text(cleaned, encoding="utf-8")
