@@ -77,8 +77,10 @@ def split_issn_field(value: str) -> List[str]:
 
 def clean_doi(raw: str) -> str:
     cleaned = raw.strip()
-    cleaned = cleaned.rstrip(".).,;:]>}\"")
-    cleaned = cleaned.lstrip("(")
+    # Remove common trailing punctuation that may be attached to DOI
+    cleaned = re.sub(r"[).,\];:>}\"']*$", "", cleaned)
+    # Remove common leading punctuation
+    cleaned = re.sub(r"^[({\[<\"']*", "", cleaned)
     return cleaned
 
 
