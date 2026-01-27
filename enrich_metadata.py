@@ -488,12 +488,14 @@ def main() -> int:
         work_key = doi or normalize_text(paper_id)
         cached_entry = works_cache.get(work_key)
         work_data = cached_entry.get("data") if cached_entry else None
+        skip_work_api = False
         if args.force_refresh:
             work_data = None
         elif work_data is None and cached_entry and cached_entry.get("fetched_at") == fetched_date:
-            work_data = None
+            # Already tried and failed today, skip API call
+            skip_work_api = True
 
-        if work_data is None:
+        if work_data is None and not skip_work_api:
             if doi:
                 work_data = get_openalex_work_by_doi(doi, args.mailto)
             else:
@@ -515,11 +517,13 @@ def main() -> int:
         if source_id:
             source_cache_entry = sources_cache.get(source_id)
             source_data = source_cache_entry.get("data") if source_cache_entry else None
+            skip_source_api = False
             if args.force_refresh:
                 source_data = None
             elif source_data is None and source_cache_entry and source_cache_entry.get("fetched_at") == fetched_date:
-                source_data = None
-            if source_data is None:
+                # Already tried and failed today, skip API call
+                skip_source_api = True
+            if source_data is None and not skip_source_api:
                 url = build_openalex_url(
                     f"/sources/{quote(str(source_id), safe='')}",
                     {"mailto": args.mailto} if args.mailto else None,
@@ -534,9 +538,13 @@ def main() -> int:
         crossref_key = doi or normalize_text(paper_id)
         cached_crossref = crossref_cache.get(crossref_key)
         crossref_work = cached_crossref.get("data") if cached_crossref else None
+        skip_crossref_api = False
         if args.force_refresh:
             crossref_work = None
-        if crossref_work is None:
+        elif crossref_work is None and cached_crossref and cached_crossref.get("fetched_at") == fetched_date:
+            # Already tried and failed today, skip API call
+            skip_crossref_api = True
+        if crossref_work is None and not skip_crossref_api:
             if doi:
                 crossref_work = get_crossref_work_by_doi(doi)
             else:
