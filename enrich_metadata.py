@@ -488,12 +488,19 @@ def main() -> int:
         work_key = doi or normalize_text(paper_id)
         cached_entry = works_cache.get(work_key)
         work_data = cached_entry.get("data") if cached_entry else None
+        
+        # Determine if we should fetch from API
+        should_fetch = False
         if args.force_refresh:
-            work_data = None
+            should_fetch = True
         elif work_data is None and cached_entry and cached_entry.get("fetched_at") == fetched_date:
-            work_data = None
+            # Cached None from today means "not found" - skip refetch
+            should_fetch = False
+        elif work_data is None:
+            # No cached data or cached data is old
+            should_fetch = True
 
-        if work_data is None:
+        if should_fetch:
             if doi:
                 work_data = get_openalex_work_by_doi(doi, args.mailto)
             else:
@@ -515,11 +522,19 @@ def main() -> int:
         if source_id:
             source_cache_entry = sources_cache.get(source_id)
             source_data = source_cache_entry.get("data") if source_cache_entry else None
+            
+            # Determine if we should fetch from API
+            should_fetch_source = False
             if args.force_refresh:
-                source_data = None
+                should_fetch_source = True
             elif source_data is None and source_cache_entry and source_cache_entry.get("fetched_at") == fetched_date:
-                source_data = None
-            if source_data is None:
+                # Cached None from today means "not found" - skip refetch
+                should_fetch_source = False
+            elif source_data is None:
+                # No cached data or cached data is old
+                should_fetch_source = True
+            
+            if should_fetch_source:
                 url = build_openalex_url(
                     f"/sources/{quote(str(source_id), safe='')}",
                     {"mailto": args.mailto} if args.mailto else None,
