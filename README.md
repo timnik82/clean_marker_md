@@ -122,3 +122,20 @@ python clean_marker_md.py --in-dir ./out_raw --out-dir ./out_clean --keep-tree
   Competing/Conflict of Interest, Funding, etc.
 - The cleaner strips empty `<span ...></span>` anchors and removes figure/table
   captions; if you need to preserve these, use `--keep-captions`.
+
+## Enrich abstracts with metadata (optional)
+
+Generate an enriched abstracts index with journal metadata, citation counts,
+and optional manual JCR Impact Factor values.
+
+```bash
+python enrich_metadata.py \
+  --papers-dir out_clean/papers \
+  --input out_clean/abstracts_papers.md \
+  --output out_clean/abstracts_papers_enriched.md \
+  --cache-dir cache \
+  --jcr-map jcr_manual_map.csv \
+  --mailto you@example.com
+```
+
+Populate `jcr_manual_map.csv` if you want to display JCR Impact Factor values.
