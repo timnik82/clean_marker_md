@@ -1,0 +1,21 @@
+# Output directories
+out_clean/
+out_raw/
+
+# Secrets and Config
+.env
+gemini_config.json
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# App specific
+cache/
+
+# System and IDE
+.DS_Store
+.vscode/
+.claude/
+.kilocode/
