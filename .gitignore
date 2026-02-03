@@ -1,6 +1,7 @@
 # Output directories
 out_clean/
 out_raw/
+done/
 
 # Secrets and Config
 .env
