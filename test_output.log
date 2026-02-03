@@ -1,0 +1,37 @@
+=== Testing Marker WITHOUT custom processors ===
+Input PDF: PDFs/FAQs_Computation_Data_EN.pdf
+Output directory: ./test_output
+
+Recognizing Layout:   0%|          | 0/6 [00:00<?, ?it/s]Recognizing Layout:  17%|█▋        | 1/6 [00:38<03:10, 38.05s/it]Recognizing Layout:  33%|███▎      | 2/6 [00:38<01:04, 16.22s/it]Recognizing Layout:  50%|█████     | 3/6 [00:39<00:26,  8.95s/it]Recognizing Layout:  67%|██████▋   | 4/6 [00:39<00:11,  5.54s/it]Recognizing Layout:  83%|████████▎ | 5/6 [00:39<00:03,  3.65s/it]Recognizing Layout: 100%|██████████| 6/6 [00:40<00:00,  2.52s/it]Recognizing Layout: 100%|██████████| 6/6 [00:40<00:00,  6.70s/it]
+Running OCR Error Detection:   0%|          | 0/2 [00:00<?, ?it/s]Running OCR Error Detection:  50%|█████     | 1/2 [00:00<00:00,  3.65it/s]Running OCR Error Detection: 100%|██████████| 2/2 [00:00<00:00,  5.20it/s]Running OCR Error Detection: 100%|██████████| 2/2 [00:00<00:00,  4.89it/s]
+Detecting bboxes: 0it [00:00, ?it/s]Detecting bboxes: 0it [00:00, ?it/s]
+Recognizing tables:   0%|          | 0/1 [00:00<?, ?it/s]Recognizing tables: 100%|██████████| 1/1 [00:00<00:00,  1.79it/s]Recognizing tables: 100%|██████████| 1/1 [00:00<00:00,  1.79it/s]
+Detecting bboxes: 0it [00:00, ?it/s]Detecting bboxes: 0it [00:00, ?it/s]
+LLMTableProcessor running:   0%|          | 0/1 [00:00<?, ?it/s]Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+LLMTableProcessor running: 100%|██████████| 1/1 [00:24<00:00, 24.99s/it]LLMTableProcessor running: 100%|██████████| 1/1 [00:24<00:00, 24.99s/it]
+LLM processors running:   0%|          | 0/2 [00:00<?, ?it/s]Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2026-02-03 15:48:32,336 [ERROR] marker: APIError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+LLM processors running:  50%|█████     | 1/2 [00:29<00:29, 29.14s/it]LLM processors running: 100%|██████████| 2/2 [00:29<00:00, 14.57s/it]
+Running LLMSectionHeaderProcessor:   0%|          | 0/1 [00:00<?, ?it/s]Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2026-02-03 15:49:01,249 [ERROR] marker: APIError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+2026-02-03 15:49:01,249 [WARNING] marker: LLM did not return a valid response
+Running LLMSectionHeaderProcessor: 100%|██████████| 1/1 [00:28<00:00, 28.90s/it]Running LLMSectionHeaderProcessor: 100%|██████████| 1/1 [00:28<00:00, 28.90s/it]
+2026-02-03 15:49:01,294 [INFO] marker: Saved markdown to ./test_output/FAQs_Computation_Data_EN
+2026-02-03 15:49:01,294 [INFO] marker: Total time: 124.87900853157043
+
+=== Conversion complete ===
+Output saved to: ./test_output
+
+Checking for tables in output...
+Generated markdown: ./test_output/FAQs_Computation_Data_EN/FAQs_Computation_Data_EN.md
+
+✓ Found 6 lines with table markers (|)
+
+First few table lines:
+| Version | Status  | Section                               | Pages |
+|---------|---------|---------------------------------------|-------|
+| V2      | Updated | B. QUESTIONS RELATED TO RESEARCH DATA | 5-6   |
+| Labels                                                                                        | Values |
+|-----------------------------------------------------------------------------------------------|--------|
+| <strong>The work plan requires access to a research data repository provided by FCT?</strong> |        |

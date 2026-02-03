@@ -1,7 +1,8 @@
-# Output directories
+# Directories
 out_clean/
 out_raw/
 done/
+PDFs/
 
 # Secrets and Config
 .env
