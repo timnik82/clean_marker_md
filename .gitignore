@@ -5,7 +5,6 @@ done/
 
 # Secrets and Config
 .env
-gemini_config.json
 
 # Python
 .venv/
