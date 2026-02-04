@@ -53,7 +53,9 @@ METADATA_PREFIX_MARKER = re.compile(
     r"^\s*(?:<[^>]+>\s*)*[*_\s]*((received|accepted)\b\s*:|citation\b|academic editor\b|publisher's note\b|copyright\b|declaration of competing\b|conflict of interest\b)",
     re.IGNORECASE,
 )
-METADATA_INLINE_MARKER = re.compile(r"(corresponding author|e-?mail address(?:es)?|e-?mail)\b", re.IGNORECASE)
+METADATA_INLINE_MARKER = re.compile(
+    r"(corresponding author|e-?mail address(?:es)?|e-?mail)\b", re.IGNORECASE
+)
 
 
 def is_metadata_line(line: str) -> bool:
@@ -65,6 +67,8 @@ def is_metadata_line(line: str) -> bool:
     if METADATA_INLINE_MARKER.search(normalized):
         return True
     return METADATA_PREFIX_MARKER.match(normalized) is not None
+
+
 INLINE_ABSTRACT = re.compile(
     r"^\s*(\*\*|__)?\s*abstract\s*(\*\*|__)?\s*[:\-–—]\s*(.+)$",
     re.IGNORECASE,
@@ -116,7 +120,10 @@ def is_graphical_abstract(label: str) -> bool:
 
 def contains_boilerplate(text: str) -> bool:
     lower = text.lower()
-    return any(token in lower for token in BOILERPLATE_TOKENS if token != "©") or "©" in text
+    return (
+        any(token in lower for token in BOILERPLATE_TOKENS if token != "©")
+        or "©" in text
+    )
 
 
 def truncate_at_boilerplate(text: str) -> str:
@@ -170,7 +177,7 @@ def extract_explicit_abstract(lines: list[str]) -> str | None:
             inline = INLINE_ABSTRACT.match(line)
             if inline:
                 # Only check the label part for graphical abstract
-                label = normalize_label(inline.group(0).split(':', 1)[0])
+                label = normalize_label(inline.group(0).split(":", 1)[0])
                 if not is_graphical_abstract(label):
                     in_abstract = True
                     collected.append(inline.group(3).rstrip())
@@ -281,9 +288,15 @@ def build_output(entries: list[tuple[str, str]], failures: list[str]) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Extract abstracts from markdown papers.")
-    parser.add_argument("--input-dir", default="out_clean/papers", help="Directory with markdown papers")
-    parser.add_argument("--output", default="out_clean/abstracts.md", help="Output markdown file")
+    parser = argparse.ArgumentParser(
+        description="Extract abstracts from markdown papers."
+    )
+    parser.add_argument(
+        "--input-dir", default="out_clean/papers", help="Directory with markdown papers"
+    )
+    parser.add_argument(
+        "--output", default="out_clean/abstracts.md", help="Output markdown file"
+    )
     args = parser.parse_args()
 
     input_dir = Path(args.input_dir)

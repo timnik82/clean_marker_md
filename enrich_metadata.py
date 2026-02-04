@@ -88,7 +88,11 @@ def extract_doi(text: str) -> str | None:
     matches = [clean_doi(m) for m in DOI_REGEX.findall(text)]
     if not matches:
         return None
-    preferred = [m for m in matches if "suppl_file" not in m.lower() and not m.lower().endswith(".pdf")]
+    preferred = [
+        m
+        for m in matches
+        if "suppl_file" not in m.lower() and not m.lower().endswith(".pdf")
+    ]
     return preferred[0] if preferred else matches[0]
 
 
@@ -100,7 +104,11 @@ def parse_filename_hint(stem: str) -> tuple[str | None, int | None]:
     if year is not None:
         try:
             year_idx = parts.index(str(year))
-            title = " - ".join(parts[year_idx + 1 :]).strip() if year_idx + 1 < len(parts) else None
+            title = (
+                " - ".join(parts[year_idx + 1 :]).strip()
+                if year_idx + 1 < len(parts)
+                else None
+            )
         except ValueError:
             title = parts[-1] if len(parts) > 1 else None
     else:
@@ -135,16 +143,30 @@ def extract_journal_and_title(text: str) -> tuple[str | None, str | None]:
 def fetch_json(url: str, retries: int = 3, backoff: float = 1.5) -> dict | None:
     for attempt in range(retries):
         try:
-            req = Request(url, headers={"User-Agent": "metadata-enricher/1.0", "Accept": "application/json"})
+            req = Request(
+                url,
+                headers={
+                    "User-Agent": "metadata-enricher/1.0",
+                    "Accept": "application/json",
+                },
+            )
             with urlopen(req, timeout=30) as resp:
                 return json.loads(resp.read().decode("utf-8"))
         except Exception as exc:
             status = getattr(exc, "code", None)
-            retry_after = getattr(exc, "headers", {}).get("Retry-After") if hasattr(exc, "headers") else None
+            retry_after = (
+                getattr(exc, "headers", {}).get("Retry-After")
+                if hasattr(exc, "headers")
+                else None
+            )
             should_retry = status in {429, 500, 502, 503, 504} or status is None
             if not should_retry or attempt == retries - 1:
                 return None
-            sleep_for = float(retry_after) if retry_after and str(retry_after).isdigit() else backoff * (2**attempt)
+            sleep_for = (
+                float(retry_after)
+                if retry_after and str(retry_after).isdigit()
+                else backoff * (2**attempt)
+            )
             time.sleep(min(sleep_for, 30))
     return None
 
@@ -158,7 +180,9 @@ def get_crossref_work_by_doi(doi: str) -> dict | None:
 
 
 def search_crossref_work(query: str) -> list[dict]:
-    url = f"https://api.crossref.org/works?{urlencode({'query.title': query, 'rows': 5})}"
+    url = (
+        f"https://api.crossref.org/works?{urlencode({'query.title': query, 'rows': 5})}"
+    )
     data = fetch_json(url)
     if not data:
         return []
@@ -168,7 +192,9 @@ def search_crossref_work(query: str) -> list[dict]:
     return message.get("items", [])
 
 
-def choose_best_crossref(candidates: list[dict], title: str | None, year: int | None) -> dict | None:
+def choose_best_crossref(
+    candidates: list[dict], title: str | None, year: int | None
+) -> dict | None:
     if not candidates:
         return None
     if not title:
@@ -184,7 +210,9 @@ def choose_best_crossref(candidates: list[dict], title: str | None, year: int | 
         date_parts = issued.get("date-parts") or []
         if date_parts and isinstance(date_parts, list) and date_parts[0]:
             cand_year = date_parts[0][0]
-        ratio = SequenceMatcher(a=normalized_title, b=normalize_text(cand_title)).ratio()
+        ratio = SequenceMatcher(
+            a=normalized_title, b=normalize_text(cand_title)
+        ).ratio()
         if year and cand_year:
             if abs(int(cand_year) - int(year)) == 0:
                 ratio += 0.1
@@ -231,7 +259,9 @@ def search_openalex_work(query: str, mailto: str | None) -> list[dict]:
     return data.get("results", []) if isinstance(data, dict) else []
 
 
-def choose_best_work(candidates: list[dict], title: str | None, year: int | None) -> dict | None:
+def choose_best_work(
+    candidates: list[dict], title: str | None, year: int | None
+) -> dict | None:
     if not candidates:
         return None
     if not title:
@@ -243,7 +273,9 @@ def choose_best_work(candidates: list[dict], title: str | None, year: int | None
     for cand in candidates:
         cand_title = cand.get("title") or ""
         cand_year = cand.get("publication_year")
-        ratio = SequenceMatcher(a=normalized_title, b=normalize_text(cand_title)).ratio()
+        ratio = SequenceMatcher(
+            a=normalized_title, b=normalize_text(cand_title)
+        ).ratio()
         if year and cand_year:
             if abs(int(cand_year) - int(year)) == 0:
                 ratio += 0.1
@@ -267,9 +299,13 @@ def extract_openalex_metrics(work: dict, source: dict | None) -> OpenAlexMetrics
     if work:
         primary = work.get("primary_location") or {}
         host = work.get("host_venue") or {}
-        source_obj = primary.get("source") or host.get("source") or work.get("source") or {}
+        source_obj = (
+            primary.get("source") or host.get("source") or work.get("source") or {}
+        )
         journal_name = source_obj.get("display_name") or host.get("display_name")
-        source_id = normalize_openalex_id(source_obj.get("id") or work.get("host_venue_id"))
+        source_id = normalize_openalex_id(
+            source_obj.get("id") or work.get("host_venue_id")
+        )
 
     if source and isinstance(source, dict):
         metrics = source.get("metrics") or {}
@@ -344,7 +380,9 @@ def load_jcr_map(path: Path) -> list[dict[str, str]]:
         return [row for row in reader if row.get("active", "1") != "0"]
 
 
-def match_jcr(journal_title: str | None, issns: Iterable[str], rows: list[dict[str, str]]) -> JcrMatch | None:
+def match_jcr(
+    journal_title: str | None, issns: Iterable[str], rows: list[dict[str, str]]
+) -> JcrMatch | None:
     if not rows:
         return None
 
@@ -377,7 +415,11 @@ def match_jcr(journal_title: str | None, issns: Iterable[str], rows: list[dict[s
     title_matches: list[dict[str, str]] = []
     for row in rows:
         canonical = normalize_text(row.get("journal_canonical", ""))
-        variants = [normalize_text(v) for v in re.split(r"[;|]", row.get("title_variants", "")) if v.strip()]
+        variants = [
+            normalize_text(v)
+            for v in re.split(r"[;|]", row.get("title_variants", ""))
+            if v.strip()
+        ]
         if normalized_title == canonical or normalized_title in variants:
             title_matches.append(row)
 
@@ -411,7 +453,9 @@ def build_metadata_line(meta: PaperMetadata, fetched_date: str) -> str:
 
     parts = ["**Metadata:**"]
     parts.append(f"Journal: **{journal or 'Unknown'}**")
-    parts.append(f"Citations ({citation_source}): **{cited_by if cited_by is not None else 'n/a'}**")
+    parts.append(
+        f"Citations ({citation_source}): **{cited_by if cited_by is not None else 'n/a'}**"
+    )
 
     metrics: list[str] = []
     if mean_2yr is not None:
@@ -435,16 +479,38 @@ def build_metadata_line(meta: PaperMetadata, fetched_date: str) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Enrich abstracts with metadata.")
-    parser.add_argument("--papers-dir", default="out_clean/papers", help="Directory with cleaned paper markdowns")
-    parser.add_argument("--input", default="out_clean/abstracts_papers.md", help="Input abstracts markdown")
     parser.add_argument(
-        "--output", default="out_clean/abstracts_papers_enriched.md", help="Output enriched abstracts markdown"
+        "--papers-dir",
+        default="out_clean/papers",
+        help="Directory with cleaned paper markdowns",
     )
-    parser.add_argument("--cache-dir", default="cache", help="Cache directory for API responses")
-    parser.add_argument("--jcr-map", default="jcr_manual_map.csv", help="Manual JCR mapping CSV")
-    parser.add_argument("--mailto", default=None, help="Email for OpenAlex polite requests")
-    parser.add_argument("--sleep", type=float, default=0.5, help="Sleep between API requests in seconds")
-    parser.add_argument("--force-refresh", action="store_true", help="Ignore cached nulls and re-fetch metadata")
+    parser.add_argument(
+        "--input",
+        default="out_clean/abstracts_papers.md",
+        help="Input abstracts markdown",
+    )
+    parser.add_argument(
+        "--output",
+        default="out_clean/abstracts_papers_enriched.md",
+        help="Output enriched abstracts markdown",
+    )
+    parser.add_argument(
+        "--cache-dir", default="cache", help="Cache directory for API responses"
+    )
+    parser.add_argument(
+        "--jcr-map", default="jcr_manual_map.csv", help="Manual JCR mapping CSV"
+    )
+    parser.add_argument(
+        "--mailto", default=None, help="Email for OpenAlex polite requests"
+    )
+    parser.add_argument(
+        "--sleep", type=float, default=0.5, help="Sleep between API requests in seconds"
+    )
+    parser.add_argument(
+        "--force-refresh",
+        action="store_true",
+        help="Ignore cached nulls and re-fetch metadata",
+    )
     args = parser.parse_args()
 
     papers_dir = Path(args.papers_dir)
@@ -491,7 +557,11 @@ def main() -> int:
         skip_work_api = False
         if args.force_refresh:
             work_data = None
-        elif work_data is None and cached_entry and cached_entry.get("fetched_at") == fetched_date:
+        elif (
+            work_data is None
+            and cached_entry
+            and cached_entry.get("fetched_at") == fetched_date
+        ):
             # Already tried and failed today, skip API call
             skip_work_api = True
 
@@ -501,7 +571,9 @@ def main() -> int:
             else:
                 search_query = title_from_text or title_hint or paper_id
                 candidates = search_openalex_work(search_query, args.mailto)
-                work_data = choose_best_work(candidates, title_from_text or title_hint, year_hint)
+                work_data = choose_best_work(
+                    candidates, title_from_text or title_hint, year_hint
+                )
 
             works_cache[work_key] = {"data": work_data, "fetched_at": fetched_date}
             time.sleep(args.sleep)
@@ -512,7 +584,9 @@ def main() -> int:
             primary = work_data.get("primary_location") or {}
             host = work_data.get("host_venue") or {}
             source_obj = primary.get("source") or host.get("source") or {}
-            source_id = normalize_openalex_id(source_obj.get("id") or work_data.get("host_venue_id"))
+            source_id = normalize_openalex_id(
+                source_obj.get("id") or work_data.get("host_venue_id")
+            )
 
         if source_id:
             source_cache_entry = sources_cache.get(source_id)
@@ -520,7 +594,11 @@ def main() -> int:
             skip_source_api = False
             if args.force_refresh:
                 source_data = None
-            elif source_data is None and source_cache_entry and source_cache_entry.get("fetched_at") == fetched_date:
+            elif (
+                source_data is None
+                and source_cache_entry
+                and source_cache_entry.get("fetched_at") == fetched_date
+            ):
                 # Already tried and failed today, skip API call
                 skip_source_api = True
             if source_data is None and not skip_source_api:
@@ -529,7 +607,10 @@ def main() -> int:
                     {"mailto": args.mailto} if args.mailto else None,
                 )
                 source_data = fetch_json(url)
-                sources_cache[source_id] = {"data": source_data, "fetched_at": fetched_date}
+                sources_cache[source_id] = {
+                    "data": source_data,
+                    "fetched_at": fetched_date,
+                }
                 time.sleep(args.sleep)
 
         metrics = extract_openalex_metrics(work_data or {}, source_data)
@@ -541,7 +622,11 @@ def main() -> int:
         skip_crossref_api = False
         if args.force_refresh:
             crossref_work = None
-        elif crossref_work is None and cached_crossref and cached_crossref.get("fetched_at") == fetched_date:
+        elif (
+            crossref_work is None
+            and cached_crossref
+            and cached_crossref.get("fetched_at") == fetched_date
+        ):
             # Already tried and failed today, skip API call
             skip_crossref_api = True
         if crossref_work is None and not skip_crossref_api:
@@ -550,8 +635,13 @@ def main() -> int:
             else:
                 search_query = title_from_text or title_hint or paper_id
                 candidates = search_crossref_work(search_query)
-                crossref_work = choose_best_crossref(candidates, title_from_text or title_hint, year_hint)
-            crossref_cache[crossref_key] = {"data": crossref_work, "fetched_at": fetched_date}
+                crossref_work = choose_best_crossref(
+                    candidates, title_from_text or title_hint, year_hint
+                )
+            crossref_cache[crossref_key] = {
+                "data": crossref_work,
+                "fetched_at": fetched_date,
+            }
             time.sleep(args.sleep)
 
         crossref_journal = None
@@ -595,7 +685,9 @@ def main() -> int:
         enriched_entries.append("")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text("\n".join(enriched_entries).rstrip() + "\n", encoding="utf-8")
+    output_path.write_text(
+        "\n".join(enriched_entries).rstrip() + "\n", encoding="utf-8"
+    )
 
     save_cache(works_cache_path, works_cache)
     save_cache(sources_cache_path, sources_cache)
