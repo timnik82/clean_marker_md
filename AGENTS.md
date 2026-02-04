@@ -18,7 +18,7 @@ and end-matter (references, acknowledgements, conflict of interest, etc.).
 
 1) Convert a PDF (fast mode, no tables/math processors):
 
-```
+```bash
 ./run_marker_fast.sh "Some Paper.pdf"
 ```
 

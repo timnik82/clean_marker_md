@@ -12,7 +12,6 @@ import re
 import sys
 from pathlib import Path
 
-
 ENDMATTER_TRUNCATE_KEYWORDS = [
     "references",
     "bibliography",
@@ -48,9 +47,7 @@ ENDMATTER_SECTION_KEYWORDS = [
 
 HEADING_RE = re.compile(r"^\s{0,3}#{1,6}\s+(.+?)\s*$")
 
-TABLE_SEPARATOR_RE = re.compile(
-    r"^\s*\|?\s*:?-{3,}(:?\s*\|\s*:?-{3,})+\s*\|?\s*$"
-)
+TABLE_SEPARATOR_RE = re.compile(r"^\s*\|?\s*:?-{3,}(:?\s*\|\s*:?-{3,})+\s*\|?\s*$")
 
 IMAGE_MD_RE = re.compile(r"!\[[^\]]*\]\([^)]+\)")
 IMAGE_REF_RE = re.compile(r"!\[[^\]]*\]\[[^\]]+\]")
@@ -300,7 +297,9 @@ def cleanup_text(
             continue
 
         if drop_images and (
-            IMAGE_MD_RE.search(line) or IMAGE_REF_RE.search(line) or HTML_IMG_RE.search(line)
+            IMAGE_MD_RE.search(line)
+            or IMAGE_REF_RE.search(line)
+            or HTML_IMG_RE.search(line)
         ):
             i += 1
             continue
@@ -313,14 +312,11 @@ def cleanup_text(
             candidate = caption_candidate(line)
             prev_line_blank = not filtered or filtered[-1].strip() == ""
             next_line_blank = i + 1 < len(lines) and lines[i + 1].strip() == ""
-            if (
-                (prev_line_blank or next_line_blank)
-                and (
-                    CAPTION_RE.match(candidate)
-                    or CAPTION_TEXT_RE.match(candidate)
-                    or CAPTION_ONLY_RE.match(candidate)
-                    or CAPTION_CONTINUED_RE.match(candidate)
-                )
+            if (prev_line_blank or next_line_blank) and (
+                CAPTION_RE.match(candidate)
+                or CAPTION_TEXT_RE.match(candidate)
+                or CAPTION_ONLY_RE.match(candidate)
+                or CAPTION_CONTINUED_RE.match(candidate)
             ):
                 prev_nonempty = ""
                 for prior in reversed(filtered):
@@ -370,18 +366,28 @@ def parse_args() -> argparse.Namespace:
     group.add_argument("--in-file", type=Path, help="Single markdown file to clean")
     parser.add_argument("--out-dir", type=Path, help="Output directory (for --in-dir)")
     parser.add_argument("--out-file", type=Path, help="Output file (for --in-file)")
-    parser.add_argument("--ext", default=".md", help="File extension to process (default: .md)")
-    parser.add_argument("--dry-run", action="store_true", help="Show actions without writing files")
+    parser.add_argument(
+        "--ext", default=".md", help="File extension to process (default: .md)"
+    )
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Show actions without writing files"
+    )
     parser.add_argument(
         "--keep-tree",
         action="store_true",
         help="Preserve input subfolders instead of flattening into out-dir",
     )
-    parser.add_argument("--keep-endmatter", action="store_true", help="Do not truncate end-matter")
+    parser.add_argument(
+        "--keep-endmatter", action="store_true", help="Do not truncate end-matter"
+    )
     parser.add_argument("--keep-tables", action="store_true", help="Do not drop tables")
     parser.add_argument("--keep-images", action="store_true", help="Do not drop images")
-    parser.add_argument("--keep-captions", action="store_true", help="Do not drop captions")
-    parser.add_argument("--keep-math", action="store_true", help="Do not drop math sentences")
+    parser.add_argument(
+        "--keep-captions", action="store_true", help="Do not drop captions"
+    )
+    parser.add_argument(
+        "--keep-math", action="store_true", help="Do not drop math sentences"
+    )
     parser.add_argument(
         "--force",
         action="store_true",

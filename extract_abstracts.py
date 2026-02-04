@@ -11,9 +11,8 @@ from __future__ import annotations
 
 import argparse
 import re
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable, List, Optional, Tuple
-
 
 ABSTRACT_MIN_CHARS = 200
 ABSTRACT_MAX_CHARS = 2200
@@ -54,7 +53,9 @@ METADATA_PREFIX_MARKER = re.compile(
     r"^\s*(?:<[^>]+>\s*)*[*_\s]*((received|accepted)\b\s*:|citation\b|academic editor\b|publisher's note\b|copyright\b|declaration of competing\b|conflict of interest\b)",
     re.IGNORECASE,
 )
-METADATA_INLINE_MARKER = re.compile(r"(corresponding author|e-?mail address(?:es)?|e-?mail)\b", re.IGNORECASE)
+METADATA_INLINE_MARKER = re.compile(
+    r"(corresponding author|e-?mail address(?:es)?|e-?mail)\b", re.IGNORECASE
+)
 
 
 def is_metadata_line(line: str) -> bool:
@@ -66,6 +67,8 @@ def is_metadata_line(line: str) -> bool:
     if METADATA_INLINE_MARKER.search(normalized):
         return True
     return METADATA_PREFIX_MARKER.match(normalized) is not None
+
+
 INLINE_ABSTRACT = re.compile(
     r"^\s*(\*\*|__)?\s*abstract\s*(\*\*|__)?\s*[:\-–—]\s*(.+)$",
     re.IGNORECASE,
@@ -80,7 +83,7 @@ def normalize_label(text: str) -> str:
     return cleaned.lower()
 
 
-def is_heading(line: str) -> Optional[str]:
+def is_heading(line: str) -> str | None:
     match = re.match(r"^\s{0,3}#{1,6}\s+(.*?)\s*$", line)
     if not match:
         return None
@@ -117,12 +120,15 @@ def is_graphical_abstract(label: str) -> bool:
 
 def contains_boilerplate(text: str) -> bool:
     lower = text.lower()
-    return any(token in lower for token in BOILERPLATE_TOKENS if token != "©") or "©" in text
+    return (
+        any(token in lower for token in BOILERPLATE_TOKENS if token != "©")
+        or "©" in text
+    )
 
 
 def truncate_at_boilerplate(text: str) -> str:
     lower = text.lower()
-    cutoff: Optional[int] = None
+    cutoff: int | None = None
     for token in BOILERPLATE_TOKENS:
         idx = lower.find(token)
         if idx == -1:
@@ -141,7 +147,7 @@ def sentence_count(text: str) -> int:
 
 def limit_sentences(text: str) -> str:
     sentences = [s for s in re.split(r"(?<=[.!?])\s+", text.strip()) if s]
-    limited: List[str] = []
+    limited: list[str] = []
     total_chars = 0
     for sentence in sentences:
         if len(limited) >= ABSTRACT_MAX_SENTENCES:
@@ -153,11 +159,11 @@ def limit_sentences(text: str) -> str:
     return " ".join(limited).strip()
 
 
-def extract_explicit_abstract(lines: List[str]) -> Optional[str]:
+def extract_explicit_abstract(lines: list[str]) -> str | None:
     in_abstract = False
-    collected: List[str] = []
+    collected: list[str] = []
 
-    for idx, line in enumerate(lines):
+    for _idx, line in enumerate(lines):
         heading_text = is_heading(line)
         if not in_abstract and heading_text is not None:
             label = normalize_label(heading_text)
@@ -171,7 +177,7 @@ def extract_explicit_abstract(lines: List[str]) -> Optional[str]:
             inline = INLINE_ABSTRACT.match(line)
             if inline:
                 # Only check the label part for graphical abstract
-                label = normalize_label(inline.group(0).split(':', 1)[0])
+                label = normalize_label(inline.group(0).split(":", 1)[0])
                 if not is_graphical_abstract(label):
                     in_abstract = True
                     collected.append(inline.group(3).rstrip())
@@ -194,9 +200,9 @@ def extract_explicit_abstract(lines: List[str]) -> Optional[str]:
     return "\n".join(collected).strip()
 
 
-def paragraph_blocks(lines: Iterable[str]) -> List[str]:
-    blocks: List[str] = []
-    buffer: List[str] = []
+def paragraph_blocks(lines: Iterable[str]) -> list[str]:
+    blocks: list[str] = []
+    buffer: list[str] = []
     for line in lines:
         if is_metadata_line(line):
             if buffer:
@@ -219,7 +225,7 @@ def paragraph_blocks(lines: Iterable[str]) -> List[str]:
     return blocks
 
 
-def extract_fallback_abstract(lines: List[str]) -> Optional[str]:
+def extract_fallback_abstract(lines: list[str]) -> str | None:
     cutoff = len(lines)
     for idx, line in enumerate(lines):
         if is_metadata_line(line):
@@ -251,7 +257,7 @@ def extract_fallback_abstract(lines: List[str]) -> Optional[str]:
     return None
 
 
-def extract_abstract(text: str) -> Optional[str]:
+def extract_abstract(text: str) -> str | None:
     lines = text.splitlines()
     explicit = extract_explicit_abstract(lines)
     if explicit:
@@ -263,8 +269,8 @@ def extract_abstract(text: str) -> Optional[str]:
     return extract_fallback_abstract(lines)
 
 
-def build_output(entries: List[Tuple[str, str]], failures: List[str]) -> str:
-    parts: List[str] = ["# Abstracts", ""]
+def build_output(entries: list[tuple[str, str]], failures: list[str]) -> str:
+    parts: list[str] = ["# Abstracts", ""]
     for filename, abstract in entries:
         parts.append(f"## {filename}")
         parts.append(abstract.strip())
@@ -282,9 +288,15 @@ def build_output(entries: List[Tuple[str, str]], failures: List[str]) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Extract abstracts from markdown papers.")
-    parser.add_argument("--input-dir", default="out_clean/papers", help="Directory with markdown papers")
-    parser.add_argument("--output", default="out_clean/abstracts.md", help="Output markdown file")
+    parser = argparse.ArgumentParser(
+        description="Extract abstracts from markdown papers."
+    )
+    parser.add_argument(
+        "--input-dir", default="out_clean/papers", help="Directory with markdown papers"
+    )
+    parser.add_argument(
+        "--output", default="out_clean/abstracts.md", help="Output markdown file"
+    )
     args = parser.parse_args()
 
     input_dir = Path(args.input_dir)
@@ -293,8 +305,8 @@ def main() -> int:
     if not input_dir.exists():
         raise SystemExit(f"Input directory not found: {input_dir}")
 
-    entries: List[Tuple[str, str]] = []
-    failures: List[str] = []
+    entries: list[tuple[str, str]] = []
+    failures: list[str] = []
 
     for path in sorted(input_dir.glob("*.md"), key=lambda p: p.name.lower()):
         text = path.read_text(encoding="utf-8", errors="ignore")
