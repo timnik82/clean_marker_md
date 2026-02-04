@@ -19,7 +19,6 @@ import sys
 from pathlib import Path
 from typing import Literal, NamedTuple
 
-
 # Regex patterns
 HTML_TAG_RE = re.compile(r'</?(?:br|b|i|em|strong)(?:\s[^>]*)?>',  re.IGNORECASE)
 EMPTY_COLUMN_RE = re.compile(r'\|\s*\|')
@@ -436,7 +435,7 @@ def main() -> int:
                 print(f"  Tables: {stats['toc_removed']} ToC, {stats['complex_converted']} complex, {stats['simple_cleaned']} simple")
         
         if args.stats:
-            print(f"\nTotal Summary:")
+            print("\nTotal Summary:")
             print(f"  Files processed: {total_stats['files_processed']}")
             print(f"  ToC tables removed: {total_stats['toc_removed']}")
             print(f"  Complex tables converted: {total_stats['complex_converted']}")

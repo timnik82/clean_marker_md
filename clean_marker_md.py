@@ -12,7 +12,6 @@ import re
 import sys
 from pathlib import Path
 
-
 ENDMATTER_TRUNCATE_KEYWORDS = [
     "references",
     "bibliography",

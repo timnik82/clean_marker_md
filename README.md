@@ -1,5 +1,7 @@
 # Marker PDF -> Markdown (Text-Only) Workflow
 
+[![Lint and Quality Check](https://github.com/timnik82/clean_marker_md/actions/workflows/lint.yml/badge.svg)](https://github.com/timnik82/clean_marker_md/actions/workflows/lint.yml)
+
 This repo contains a small workflow for converting PDFs to Markdown with Marker
 and then cleaning the output to remove tables, figures, math, and end-matter.
 
@@ -19,7 +21,7 @@ source /home/timnik/coding/Reviews/.venv/bin/activate
 
 Put your key(s) in `.env`:
 
-```
+```bash
 GEMINI_API_KEY=your_key_here
 GOOGLE_API_KEY=your_key_here
 ```
@@ -139,3 +141,18 @@ python enrich_metadata.py \
 ```
 
 Populate `jcr_manual_map.csv` if you want to display JCR Impact Factor values.
+
+## Development
+
+### Linting & Formatting
+
+This project uses `ruff` for Python linting/formatting, `mypy` for static type checking, and `shellcheck` for shell scripts.
+
+To run checks locally:
+
+```bash
+pip install ruff mypy
+ruff check .
+ruff format .
+mypy .
+```

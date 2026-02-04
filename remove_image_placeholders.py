@@ -21,7 +21,6 @@ import re
 import sys
 from pathlib import Path
 
-
 # Pattern to match image placeholders like ![](_page_0_Picture_0.jpeg)
 IMAGE_PLACEHOLDER_RE = re.compile(r"^!\[[^\]]*\]\([^)]+\)\s*$")
 
