@@ -125,7 +125,7 @@ def extract_journal_and_title(text: str) -> tuple[str | None, str | None]:
     if len(h1s) >= 2:
         return (h1s[0][1], h1s[1][1])
 
-    for idx, line in enumerate(lines[:160]):
+    for _idx, line in enumerate(lines[:160]):
         if line.strip().lower().startswith("journal homepage") and h1s:
             return (h1s[0][1], None)
 

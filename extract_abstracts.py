@@ -156,7 +156,7 @@ def extract_explicit_abstract(lines: list[str]) -> str | None:
     in_abstract = False
     collected: list[str] = []
 
-    for idx, line in enumerate(lines):
+    for _idx, line in enumerate(lines):
         heading_text = is_heading(line)
         if not in_abstract and heading_text is not None:
             label = normalize_label(heading_text)

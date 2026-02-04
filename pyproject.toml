@@ -49,7 +49,7 @@ select = [
     "B",   # flake8-bugbear (common bugs)
     "C4",  # flake8-comprehensions (better list/dict comprehensions)
 ]
-ignore = []
+ignore = ["E501"]  # Disable line-too-long for script-based repo with long strings
 
 # Allow fix for all enabled rules (when `--fix`) is provided.
 fixable = ["ALL"]

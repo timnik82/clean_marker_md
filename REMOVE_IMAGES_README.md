@@ -63,7 +63,7 @@ python3 remove_image_placeholders.py \
 
 Output:
 
-```
+```text
 Found 13 image placeholders to remove
 Processed: document.md -> document.md
 Removed 13 image placeholders
