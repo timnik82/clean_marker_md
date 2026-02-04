@@ -11,6 +11,8 @@ and end-matter (references, acknowledgements, conflict of interest, etc.).
 - `README.md`: full setup + usage instructions
 - `clean_marker_md.py`: cleanup logic (drops tables/images/math/end-matter/captions/empty spans)
 - `run_marker_fast.sh`: fast conversion + cleanup wrapper
+- `remove_image_placeholders.py`: removes image placeholders and page anchors from markdown
+- `run_python.sh`: wrapper script for running Python with venv activated
 - `gemini_config.json`: Gemini model override
 - `.env`: API keys (GEMINI_API_KEY / GOOGLE_API_KEY)
 
@@ -33,3 +35,7 @@ and end-matter (references, acknowledgements, conflict of interest, etc.).
 - `clean_marker_md.py` flattens output into a single folder by default.
 - If LLM calls are slow or error, try a different model in `gemini_config.json`
   or skip LLM for a quick run.
+- Use `./run_python.sh` to run any Python scripts in this repo (automatically activates venv):
+  ```bash
+  ./run_python.sh remove_image_placeholders.py --in-file <input> --out-dir <output>
+  ```

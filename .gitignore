@@ -21,6 +21,7 @@ cache/
 .vscode/
 .claude/
 .kilocode/
+firebase-debug.log
 
 # PDFs
 *.pdf
