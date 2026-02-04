@@ -23,7 +23,7 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 from urllib.parse import quote, urlencode
 from urllib.request import Request, urlopen
 
@@ -190,7 +190,7 @@ def search_crossref_work(query: str) -> list[dict[str, Any]]:
     message = data.get("message") if isinstance(data, dict) else None
     if not message:
         return []
-    return message.get("items", [])
+    return cast(list[dict[str, Any]], message.get("items", []))
 
 
 def choose_best_crossref(
@@ -363,7 +363,7 @@ def load_cache(path: Path) -> dict[str, Any]:
     if not path.exists():
         return {}
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
+        return cast(dict[str, Any], json.loads(path.read_text(encoding="utf-8")))
     except Exception:
         return {}
 
