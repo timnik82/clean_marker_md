@@ -1,0 +1,25 @@
+{
+    "config": {
+        "default": true,
+        "MD013": false,
+        "MD033": false,
+        "MD041": false,
+        "MD024": false,
+        "MD025": false,
+        "MD029": false,
+        "MD040": false,
+        "MD001": false,
+        "MD012": false,
+        "MD032": false,
+        "MD034": false,
+        "MD031": false,
+        "MD060": false
+    },
+    "ignores": [
+        "out_raw/**",
+        "out_clean/**",
+        "out_rag_optimized/**",
+        "node_modules/**",
+        ".venv/**"
+    ]
+}
