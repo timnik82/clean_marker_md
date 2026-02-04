@@ -19,11 +19,11 @@ import json
 import re
 import time
 from collections.abc import Iterable
-from typing import Any
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from pathlib import Path
+from typing import Any
 from urllib.parse import quote, urlencode
 from urllib.request import Request, urlopen
 
