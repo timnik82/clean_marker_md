@@ -168,6 +168,12 @@ def convert_complex_table_to_text(lines: list[str], preceding_header: str = "") 
                     if value:
                         output.append(f"- {attr_name}: {value}")
             output.append("")
+    elif rows:
+        # Fallback for non-comparison tables: list each row as a bullet point
+        for row in rows:
+            values = [cell for cell in row if cell]
+            if values:
+                output.append(f"- {' | '.join(values)}")
 
     return "\n".join(output)
 
@@ -277,7 +283,8 @@ def process_markdown(content: str) -> tuple[str, dict]:
     for table in reversed(tables):
         # Find preceding header for context
         preceding_header = ""
-        for i in range(table.start_line - 1, max(0, table.start_line - 5), -1):
+        lower_bound = max(0, table.start_line - 5)
+        for i in range(table.start_line - 1, lower_bound - 1, -1):
             line = lines[i].strip()
             if line.startswith("###"):
                 preceding_header = line.replace("###", "").strip()

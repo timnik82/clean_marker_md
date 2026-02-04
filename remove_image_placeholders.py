@@ -22,7 +22,7 @@ import sys
 from pathlib import Path
 
 # Pattern to match image placeholders like ![](_page_0_Picture_0.jpeg)
-IMAGE_PLACEHOLDER_RE = re.compile(r"^!\[[^\]]*\]\([^)]+\)\s*$")
+IMAGE_PLACEHOLDER_RE = re.compile(r"^!\[[^\]]*\]\(_page_[^)]+\)\s*$")
 
 # Pattern to match page anchor spans like <span id="page-4-0"></span>
 PAGE_ANCHOR_RE = re.compile(r'<span id="page-\d+-\d+"></span>')
@@ -58,7 +58,8 @@ def remove_image_placeholders(text: str) -> str:
     output = re.sub(r"\n{3,}", "\n\n", output)
 
     # Ensure file ends with a single newline
-    output = output.strip() + "\n"
+    if not output.endswith("\n"):
+        output = output + "\n"
 
     return output
 

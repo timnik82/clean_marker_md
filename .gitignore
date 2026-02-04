@@ -1,6 +1,7 @@
 # Directories
 out_clean/
 out_raw/
+out_rag_optimized/
 done/
 PDFs/
 
