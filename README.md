@@ -117,6 +117,90 @@ To preserve the original folder tree:
 python clean_marker_md.py --in-dir ./out_raw --out-dir ./out_clean --keep-tree
 ```
 
+Additional options:
+
+- `--keep-images`: Keep image references (don't remove them)
+- `--keep-tables`: Keep tables (don't remove them)
+- `--keep-math`: Keep mathematical sentences (don't remove them)
+- `--keep-captions`: Keep figure/table captions (don't remove them)
+- `--keep-endmatter`: Don't truncate end-matter sections
+- `--force`: Overwrite existing output files
+- `--dry-run`: Show what would be done without writing files
+
+## Remove image placeholders (optional)
+
+If you want to remove image placeholders and page anchors while keeping everything else:
+
+```bash
+python remove_image_placeholders.py --in-dir ./out_raw --out-dir ./out_clean
+```
+
+Or for a single file:
+
+```bash
+python remove_image_placeholders.py --in-file paper.md --out-file paper_clean.md
+```
+
+Additional options:
+
+- `--keep-tree`: Preserve folder structure
+- `--force`: Overwrite existing files
+- `--stats`: Show statistics about removed placeholders
+- `--dry-run`: Preview changes without writing files
+
+## Extract abstracts from papers (optional)
+
+Extract abstracts from cleaned markdown papers into a consolidated file:
+
+```bash
+python extract_abstracts.py \
+  --input-dir out_clean/papers \
+  --output out_clean/abstracts.md
+```
+
+This script:
+
+- Extracts abstract sections from papers
+- Filters out boilerplate text
+- Validates abstract quality (length, sentence count)
+- Consolidates all abstracts into one file
+
+## Optimize tables for RAG (optional)
+
+Transform markdown tables to improve embedding quality for RAG systems:
+
+```bash
+python optimize_tables_for_rag.py --in-dir ./out_clean --out-dir ./out_rag_optimized
+```
+
+Additional options:
+
+- `--stats`: Print statistics about transformations
+- `--dry-run`: Preview changes without writing files
+- `--force`: Overwrite existing files
+
+This script:
+
+- Removes Table of Contents (ToC) tables
+- Converts complex tables to structured text
+- Cleans simple tables (removes HTML tags, empty columns)
+
+## Fix markdown issues (optional)
+
+Fix common markdown issues from Marker output:
+
+```bash
+python fix_markdown.py paper.md paper_fixed.md
+```
+
+This script fixes:
+
+- Page links (removes `#page-X-Y` references)
+- Citation patterns (fixes `word[suffixNumbers]` to `word suffix [numbers]`)
+- Trailing dots in citations (moves outside brackets)
+- Special minus signs (normalizes to hyphens)
+- Excessive newlines (limits to max 2)
+
 ## Notes
 
 - The cleanup rules live in `clean_marker_md.py`.
