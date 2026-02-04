@@ -19,6 +19,7 @@ import json
 import re
 import time
 from collections.abc import Iterable
+from typing import Any
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
@@ -140,7 +141,7 @@ def extract_journal_and_title(text: str) -> tuple[str | None, str | None]:
     return (None, None)
 
 
-def fetch_json(url: str, retries: int = 3, backoff: float = 1.5) -> dict | None:
+def fetch_json(url: str, retries: int = 3, backoff: float = 1.5) -> Any | None:
     for attempt in range(retries):
         try:
             req = Request(
@@ -179,7 +180,7 @@ def get_crossref_work_by_doi(doi: str) -> dict | None:
     return data.get("message") if isinstance(data, dict) else None
 
 
-def search_crossref_work(query: str) -> list[dict]:
+def search_crossref_work(query: str) -> list[dict[str, Any]]:
     url = (
         f"https://api.crossref.org/works?{urlencode({'query.title': query, 'rows': 5})}"
     )
@@ -248,7 +249,7 @@ def normalize_openalex_id(value: str | None) -> str | None:
     return value
 
 
-def search_openalex_work(query: str, mailto: str | None) -> list[dict]:
+def search_openalex_work(query: str, mailto: str | None) -> list[dict[str, Any]]:
     params = {"search": query, "per-page": "5"}
     if mailto:
         params["mailto"] = mailto
@@ -358,7 +359,7 @@ def parse_abstracts(content: str) -> tuple[list[tuple[str, str]], str]:
     return entries, "\n".join(failure_block).rstrip()
 
 
-def load_cache(path: Path) -> dict[str, dict]:
+def load_cache(path: Path) -> dict[str, Any]:
     if not path.exists():
         return {}
     try:
