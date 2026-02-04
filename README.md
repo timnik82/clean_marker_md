@@ -101,6 +101,7 @@ You can use the helper script instead:
 ```
 
 It writes raw output to `./out_raw` and cleaned output to `./out_clean`.
+Note: The script uses `--keep-images` by default when cleaning.
 
 ## Clean the output (text-only)
 
