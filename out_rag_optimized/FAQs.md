@@ -218,113 +218,85 @@ Sim, como critério de desempate entre candidaturas com o mesmo Mérito do Proje
 
 ### **A.19 Quais são os limites de caracteres (com espaços) dos vários campos do formulário?**
 
-O número limite de carateres por campo do formulário encontra-se disponível na tabela seguinte:
+O número limite de carateres por campo do formulário encontra-se disponível abaixo, organizado por secção:
 
+#### **Dados Gerais > Identificação do Projeto**
 
-****A.19 Quais são os limites de caracteres (com espaços) dos vários campos do formulário?****
+- **Título do projeto**: 255 caracteres
+- **Acrónimo do projeto**: 15 caracteres  
+- **Palavras-chave**: máximo de 4 palavras
 
+#### **Instituições**
 
-**Subsecção:**
-- Dados gerais: Identificação do projeto
-- Dados gerais: Identificação do projeto
-- Dados gerais: Identificação do projeto
-- Instituições: Instituição proponente/Instituições participantes/Instituições decolaboração
-- Equipa deinvestigação: CV narrativo do IR
-- Equipa deinvestigação: CV narrativo do IR
-- Equipa deinvestigação: CV narrativo do IR
-- Equipa deinvestigação: CV narrativo do IR
-- Equipa deinvestigação: CV narrativo do IR
-- Equipa deinvestigação: CV narrativo do IR
+- **Descrição da Instituição**: 1.500 caracteres
+  - *Aplicável a: Instituição proponente / Instituições participantes / Instituições de colaboração*
+  - *Conteúdo esperado: Descrição da Instituição e respetivas competências para o desenvolvimento deste projeto*
 
+#### **Equipa de Investigação > CV Narrativo do IR**
 
-**Nome do Campo:**
-- Dados gerais: Título do projeto
-- Dados gerais: Acrónimo do projeto
-- Dados gerais: Palavras-chave
-- Instituições: Descrição da Instituição e respetivascompetências para o desenvolvimento desteprojeto
-- Equipa deinvestigação: Carreira
-- Equipa deinvestigação: Contribuições da originalidade de ideias,ferramentas, metodologias ou conhecimento
-- Equipa deinvestigação: Contribuições para o desenvolvimento decompetências ao nível individual e/ou emequipas
-- Equipa deinvestigação: Contribuições para a Comunidade Científica epara a Sociedade
-- Equipa deinvestigação: Resultados ou/e atividades relevantes
-- Equipa deinvestigação: Que relevância atribui a este financiamentopara a fase atual da sua carreira e/ou do seupercurso de investigação?
+- **Carreira**: 4.000 caracteres
+- **Contribuições da originalidade de ideias, ferramentas, metodologias ou conhecimento**: 5.000 caracteres
+- **Contribuições para o desenvolvimento de competências ao nível individual e/ou em equipas**: 3.000 caracteres
+- **Contribuições para a Comunidade Científica e para a Sociedade**: 3.000 caracteres
+- **Resultados ou/e atividades relevantes**: 5.000 caracteres
+- **Que relevância atribui a este financiamento para a fase atual da sua carreira e/ou do seu percurso de investigação?**: 3.000 caracteres
 
+#### **Equipa de Investigação > Consultores**
 
-**Limite decaracteres/palavras:**
-- Dados gerais: 255
-- Dados gerais: 15
-- Dados gerais: máx. 4
-- Instituições: 1 500
-- Equipa deinvestigação: 4 000
-- Equipa deinvestigação: 5 000
-- Equipa deinvestigação: 3 000
-- Equipa deinvestigação: 3 000
-- Equipa deinvestigação: 5 000
-- Equipa deinvestigação: 3 000
+- **Enquadramento da sua participação no projeto**: 1.000 caracteres
 
+#### **Equipa de Investigação > Sinopse dos CV da Equipa**
 
-**Subsecção:**
-- Equipa deinvestigação: Consultores
-- Equipa deinvestigação: Sinopse dos CV daequipa
-- Plano detrabalho: Resumo
-- Plano detrabalho: Estado da arte e objetivos
-- Plano detrabalho: Plano de investigação emétodos
-- Plano detrabalho: Referências bibliográficas
-- Plano detrabalho: Publicações anteriores
-- Plano detrabalho: Adicionar tarefa
-- Plano detrabalho: Adicionar tarefa
-- Plano detrabalho: Calendarização e gestãodo projeto
-- Plano detrabalho: Calendarização e gestãodo projeto
-- Plano detrabalho: Calendarização e gestãodo projeto
-- Plano detrabalho: Questões éticas
-- Plano detrabalho: Agenda 2030
-- Plano detrabalho: Outros projetos
-- Plano detrabalho: Computação e dados
-- Plano detrabalho: Computação e dados
-- Indicadores: Divulgação
+- **Sinopse dos CV da equipa de investigação**: 10.000 caracteres
 
+#### **Plano de Trabalho > Resumo**
 
-**Nome do Campo:**
-- Equipa deinvestigação: Enquadramento da sua participação no projeto
-- Equipa deinvestigação: Sinopse dos CV da equipa de investigação
-- Plano detrabalho: Resumo em PT/EN
-- Plano detrabalho: Estado da arte e objectivos
-- Plano detrabalho: Plano de investigação e métodos
-- Plano detrabalho: Referências bibliográficas
-- Plano detrabalho: Publicação
-- Plano detrabalho: Descrição da tarefa e resultados esperados
-- Plano detrabalho: Justificação dos custos da tarefa
-- Plano detrabalho: Descrição do entregável
-- Plano detrabalho: Descrição da milestone
-- Plano detrabalho: Descrição da estrutura de gestão
-- Plano detrabalho: Fundamentação
-- Plano detrabalho: Enquadramento da candidatura nos ODS daAgenda 2030 das Nações Unidas
-- Plano detrabalho: Enuncie os principais objetivos que considerarelevantes para a candidatura que está asubmeter ao presente Concurso de Projetos deI&D
-- Plano detrabalho: Refira os recursos computacionais utilizadospreviamente
-- Plano detrabalho: Breve justificação para os recursoscomputacionais solicitados
-- Indicadores: Indicar as ações de divulgação da atividadecientífica previstas no projeto
+- **Resumo em PT/EN**: 5.000 caracteres
 
+#### **Plano de Trabalho > Estado da Arte e Objetivos**
 
-**Limite decaracteres/palavras:**
-- Equipa deinvestigação: 1 000
-- Equipa deinvestigação: 10 000
-- Plano detrabalho: 5 000
-- Plano detrabalho: 6 000
-- Plano detrabalho: 10 000
-- Plano detrabalho: 10 000
-- Plano detrabalho: 600
-- Plano detrabalho: 4 000
-- Plano detrabalho: 2 500
-- Plano detrabalho: 800
-- Plano detrabalho: 300
-- Plano detrabalho: 3 000
-- Plano detrabalho: 3 000
-- Plano detrabalho: máx. 3 ODS
-- Plano detrabalho: 2 000
-- Plano detrabalho: 400
-- Plano detrabalho: 400
-- Indicadores: 3 000
+- **Estado da arte e objetivos**: 6.000 caracteres
 
+#### **Plano de Trabalho > Plano de Investigação e Métodos**
+
+- **Plano de investigação e métodos**: 10.000 caracteres
+- **Referências bibliográficas**: 10.000 caracteres
+
+#### **Plano de Trabalho > Publicações Anteriores**
+
+- **Publicação**: 600 caracteres
+
+#### **Plano de Trabalho > Tarefas**
+
+- **Descrição da tarefa e resultados esperados**: 4.000 caracteres
+- **Justificação dos custos da tarefa**: 2.500 caracteres
+
+#### **Plano de Trabalho > Calendarização e Gestão do Projeto**
+
+- **Descrição do entregável**: 800 caracteres
+- **Descrição da milestone**: 300 caracteres
+- **Descrição da estrutura de gestão**: 3.000 caracteres
+
+#### **Plano de Trabalho > Questões Éticas**
+
+- **Fundamentação**: 3.000 caracteres
+
+#### **Plano de Trabalho > Agenda 2030**
+
+- **Enquadramento da candidatura nos ODS da Agenda 2030 das Nações Unidas**: máximo de 3 ODS
+
+#### **Plano de Trabalho > Outros Projetos**
+
+- **Enuncie os principais objetivos que considera relevantes para a candidatura que está a submeter ao presente Concurso de Projetos de I&D**: 2.000 caracteres
+
+#### **Plano de Trabalho > Computação e Dados**
+
+- **Refira os recursos computacionais utilizados previamente**: 400 caracteres
+- **Breve justificação para os recursos computacionais solicitados**: 400 caracteres
+
+#### **Indicadores > Divulgação**
+
+- **Indicar as ações de divulgação da atividade científica previstas no projeto**: 3.000 caracteres
 
 ### **A.20 Quais os documentos obrigatórios a associar à candidatura?**
 

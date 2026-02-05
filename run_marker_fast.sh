@@ -35,10 +35,11 @@ fi
 
 marker_bin="marker_single"
 if [[ -x "${venv_dir}/bin/marker_single" ]]; then
-  marker_bin="${venv_dir}/bin/marker_single"
+  marker_bin="${venv_dir}/bin/python3"
+  marker_args=("${venv_dir}/bin/marker_single")
 fi
 
-"$marker_bin" "$pdf_path" \
+"$marker_bin" "${marker_args[@]}" "$pdf_path" \
   --output_format markdown \
   --output_dir "$raw_out_dir" \
   --disable_ocr \
