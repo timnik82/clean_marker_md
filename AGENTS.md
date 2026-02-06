@@ -20,7 +20,6 @@ and end-matter (references, acknowledgements, conflict of interest, etc.).
 - `remove_image_placeholders.py`: removes image placeholders and page anchors from markdown
 - `extract_abstracts.py`: extracts abstracts from cleaned papers into consolidated file
 - `optimize_tables_for_rag.py`: optimizes tables for RAG embedding (removes ToC, converts complex tables)
-- `fix_markdown.py`: fixes markdown issues (page links, citation patterns, special chars)
 - `enrich_metadata.py`: enriches abstracts with journal metadata and citation counts via OpenAlex
 
 ### Configuration
@@ -56,12 +55,6 @@ python extract_abstracts.py --input-dir out_clean/papers --output out_clean/abst
 
 ```bash
 python optimize_tables_for_rag.py --in-dir ./out_clean --out-dir ./out_rag_optimized --stats
-```
-
-**Fix markdown issues:**
-
-```bash
-python fix_markdown.py paper.md paper_fixed.md
 ```
 
 **Enrich abstracts with metadata:**
@@ -101,6 +94,7 @@ python enrich_metadata.py \
 - `--keep-tables`: Keep tables
 - `--keep-math`: Keep math sentences
 - `--keep-captions`: Keep figure/table captions
+- `--keep-citations`: Keep numeric bracket citations (e.g., `[12]`)
 - `--force`: Overwrite existing files
 - `--dry-run`: Preview without writing
 

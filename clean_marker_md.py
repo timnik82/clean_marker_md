@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Clean Marker-generated Markdown:
-- drops tables, images, captions, math, and end-matter sections
+- drops tables, images, captions, math, numeric citations, and end-matter sections
 - flattens output into a single folder by default
 """
 
@@ -23,6 +23,8 @@ ENDMATTER_TRUNCATE_KEYWORDS = [
 ]
 
 ENDMATTER_SECTION_KEYWORDS = [
+    "keywords",
+    "key words",
     "acknowledgements",
     "acknowledgments",
     "acknowledgment",
@@ -52,6 +54,7 @@ TABLE_SEPARATOR_RE = re.compile(r"^\s*\|?\s*:?-{3,}(:?\s*\|\s*:?-{3,})+\s*\|?\s*
 IMAGE_MD_RE = re.compile(r"!\[[^\]]*\]\([^)]+\)")
 IMAGE_REF_RE = re.compile(r"!\[[^\]]*\]\[[^\]]+\]")
 HTML_IMG_RE = re.compile(r"<img\s", re.IGNORECASE)
+IMAGE_DESC_RE = re.compile(r"^Image\s+/page/\d+/", re.IGNORECASE)
 SPAN_ONLY_RE = re.compile(r"^\s*(<span\b[^>]*>\s*</span>\s*)+$", re.IGNORECASE)
 EMPTY_SPAN_RE = re.compile(r"<span\b[^>]*>\s*</span>", re.IGNORECASE)
 
@@ -71,6 +74,36 @@ CAPTION_CONTINUED_RE = re.compile(
 LEADING_HTML_TAG_RE = re.compile(r"^(?:\s*<[^>]+>\s*)+")
 HEADING_BREAK_RE = re.compile(r"[,;:]")
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+PAGE_LINK_RE = re.compile(r"\(#page-\d+-\d+\)")
+DECORATIVE_HEADING_PREFIX_RE = re.compile(r"^(?:\s*[■•▪▫◦◆◇●○◉]+)+\s*")
+WORD_SUFFIX_CITATION_RE = re.compile(
+    r"(\w+)\[([a-zA-Z]*)(\d+[0-9.,–\-\u2013\u2014]*)\]"
+)
+NUMERIC_BRACKET_TRAILING_DOT_RE = re.compile(r"\[([\d.,–\-\u2013\u2014\s]+)\.\]")
+# Conservative citation matcher: only numeric bracket tokens (up to 3 digits each item).
+# Examples matched: [151], [5,6], [61-65], [.13], [(10),]
+CITATION_BRACKET_RE = re.compile(
+    r"\[(?:\s*[.,]?\s*\\?\(?\s*\d{1,3}\s*\\?\)?\s*"
+    r"(?:[-,–\u2013\u2014]\s*[.,]?\s*\\?\(?\s*\d{1,3}\s*\\?\)?\s*)*"
+    r"[.,]?\s*)\]"
+)
+# Normalize escaped citation tokens such as "\[12\]" or "[\[12\]]".
+ESCAPED_NUMERIC_CITATION_RE = re.compile(
+    r"\\\[(\s*[0-9][0-9.,,\-–\u2013\u2014\s]*)\\\]"
+)
+NESTED_ESCAPED_NUMERIC_CITATION_RE = re.compile(
+    r"\[\s*\\\[(\s*[0-9][0-9.,,\-–\u2013\u2014\s]*)\\\]\s*\]"
+)
+# Remove citation shell leftovers while preserving meaningful non-citation brackets.
+# Examples: [], [\], [\, ], [60–], [–15\]
+CITATION_FRAGMENT_BRACKET_RE = re.compile(
+    r"\[\s*(?:(?=[^\]]*[\\,\-–\u2013\u2014])[0-9\\,\-–\u2013\u2014.\s]*"
+    r"|[\\,\-–\u2013\u2014.\s]*)\s*\]"
+)
+NESTED_CITATION_FRAGMENT_BRACKET_RE = re.compile(
+    r"\[\[\s*(?:(?=[^\]]*[\\,\-–\u2013\u2014])[0-9\\,\-–\u2013\u2014.\s]*"
+    r"|[\\,\-–\u2013\u2014.\s]*)\s*\]\]"
+)
 
 INLINE_MATH_RE = re.compile(
     r"(?<!\\)\$(?!\$).+?(?<!\\)\$|\\\(.+?\\\)",
@@ -91,8 +124,35 @@ DISPLAY_MATH_CITATION_RE = re.compile(r"^\s*[\d,\-–\s]+\s*$")
 DISPLAY_MATH_MAX_LEN = 200
 
 
+def is_wiley_download_footer(line: str) -> bool:
+    """Detect Wiley download/legal footer noise without matching normal prose."""
+    normalized = re.sub(r"\s+", " ", line).strip().lower()
+    if not normalized:
+        return False
+    # Conservative match: require multiple Wiley/legal markers on the same line.
+    return (
+        "downloaded from https://onlinelibrary.wiley.com/doi/" in normalized
+        and "wiley online library" in normalized
+        and (
+            "terms-and-conditions" in normalized
+            or "terms and conditions" in normalized
+        )
+        and "creative commons license" in normalized
+    )
+
+
 def normalize_heading(text: str) -> str:
-    cleaned = re.sub(r"[*_`]+", "", text)
+    cleaned = LEADING_HTML_TAG_RE.sub("", text)
+    cleaned = re.sub(r"[*_`]+", "", cleaned)
+    # Drop decorative heading bullets used by some publishers (e.g., "■").
+    cleaned = DECORATIVE_HEADING_PREFIX_RE.sub("", cleaned)
+    # Drop common section numbering prefixes (e.g., "6.", "2.3", "IV)").
+    cleaned = re.sub(
+        r"^(?:\d+(?:\.\d+)*|[ivxlcdm]+)\s*[.)-]?\s+",
+        "",
+        cleaned,
+        flags=re.IGNORECASE,
+    )
     cleaned = re.sub(r"[:#*]+$", "", cleaned).strip()
     cleaned = re.sub(r"\s+", " ", cleaned)
     return cleaned.lower()
@@ -187,6 +247,38 @@ def strip_citation_math_escapes(text: str) -> str:
     return LINK_RE.sub(replace_link, text)
 
 
+def normalize_citation_artifacts(text: str) -> str:
+    """Normalize malformed citation-like tokens from OCR/layout extraction."""
+    text = WORD_SUFFIX_CITATION_RE.sub(r"\1\2 [\3]", text)
+    text = NUMERIC_BRACKET_TRAILING_DOT_RE.sub(r"[\1].", text)
+    return text
+
+
+def strip_numeric_citation_brackets(text: str) -> str:
+    """
+    Remove only numeric bracket citations while preserving non-numeric bracket text.
+    """
+    text = NESTED_ESCAPED_NUMERIC_CITATION_RE.sub(r"[\1]", text)
+    text = ESCAPED_NUMERIC_CITATION_RE.sub(r"[\1]", text)
+    for _ in range(4):
+        prev = text
+        text = CITATION_BRACKET_RE.sub("", text)
+        text = NESTED_CITATION_FRAGMENT_BRACKET_RE.sub("", text)
+        text = CITATION_FRAGMENT_BRACKET_RE.sub("", text)
+        if text == prev:
+            break
+    # Cleanup punctuation artifacts caused by citation removal.
+    text = re.sub(r"\(\s*\)", "", text)
+    text = re.sub(r"\s+([,.;:])", r"\1", text)
+    text = re.sub(r"\.\s*,", ".", text)
+    text = re.sub(r"\.{2,}", ".", text)
+    text = re.sub(r"\b(Fig|Eq|Ref)\.\s*\.", r"\1.", text, flags=re.IGNORECASE)
+    text = re.sub(r",\s*,+", ", ", text)
+    text = re.sub(r"[ \t]{2,}", " ", text)
+    text = re.sub(r"[ \t]+\n", "\n", text)
+    return text
+
+
 def is_structured_line(line: str) -> bool:
     if re.match(r"^\s*#{1,6}\s+", line):
         return True
@@ -236,9 +328,17 @@ def cleanup_text(
     drop_images: bool = True,
     drop_captions: bool = True,
     drop_math: bool = True,
+    drop_image_descriptions: bool = True,
+    drop_citations: bool = True,
 ) -> str:
     text = text.replace("\r\n", "\n").replace("\r", "\n")
     text = strip_citation_math_escapes(text)
+    text = normalize_citation_artifacts(text)
+    # Remove dead internal page links emitted by Marker (e.g., "(#page-20-0)")
+    # while preserving the visible link label text (e.g., "[123]").
+    text = PAGE_LINK_RE.sub("", text)
+    if drop_citations:
+        text = strip_numeric_citation_brackets(text)
     text = remove_math_blocks(text)
 
     lines = text.split("\n")
@@ -304,7 +404,15 @@ def cleanup_text(
             i += 1
             continue
 
+        if drop_image_descriptions and IMAGE_DESC_RE.match(line):
+            i += 1
+            continue
+
         if SPAN_ONLY_RE.match(raw_line):
+            i += 1
+            continue
+
+        if is_wiley_download_footer(line):
             i += 1
             continue
 
@@ -359,7 +467,10 @@ def cleanup_text(
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Clean Marker Markdown output (drop tables, images, math, end-matter)."
+        description=(
+            "Clean Marker Markdown output "
+            "(drop tables, images, math, numeric citations, end-matter)."
+        )
     )
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--in-dir", type=Path, help="Directory containing .md files")
@@ -389,6 +500,16 @@ def parse_args() -> argparse.Namespace:
         "--keep-math", action="store_true", help="Do not drop math sentences"
     )
     parser.add_argument(
+        "--keep-image-descriptions",
+        action="store_true",
+        help="Do not drop LLM image descriptions",
+    )
+    parser.add_argument(
+        "--keep-citations",
+        action="store_true",
+        help="Do not drop numeric bracket citations like [12] or [5,6]",
+    )
+    parser.add_argument(
         "--force",
         action="store_true",
         help="Overwrite existing output files (default: skip if output exists)",
@@ -404,6 +525,8 @@ def main() -> int:
     drop_images = not args.keep_images
     drop_captions = not args.keep_captions
     drop_math = not args.keep_math
+    drop_image_descriptions = not args.keep_image_descriptions
+    drop_citations = not args.keep_citations
 
     if args.in_dir:
         if not args.out_dir:
@@ -444,6 +567,8 @@ def main() -> int:
                 drop_images=drop_images,
                 drop_captions=drop_captions,
                 drop_math=drop_math,
+                drop_image_descriptions=drop_image_descriptions,
+                drop_citations=drop_citations,
             )
             if args.dry_run:
                 print(f"Would write: {out_path}")
@@ -469,6 +594,8 @@ def main() -> int:
         drop_images=drop_images,
         drop_captions=drop_captions,
         drop_math=drop_math,
+        drop_image_descriptions=drop_image_descriptions,
+        drop_citations=drop_citations,
     )
     if args.dry_run:
         print(f"Would write: {args.out_file}")

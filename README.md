@@ -101,7 +101,10 @@ You can use the helper script instead:
 ```
 
 It writes raw output to `./out_raw` and cleaned output to `./out_clean`.
-Note: The script uses `--keep-images` by default when cleaning.
+Any extra output-directory arguments are ignored by design for a stable workflow.
+By default, cleaning drops images/tables/math/captions, numeric citations, and end-matter.
+If you need to keep numeric citations, run the cleaner separately with
+`--keep-citations` after conversion.
 
 ## Clean the output (text-only)
 
@@ -124,6 +127,7 @@ Additional options:
 - `--keep-tables`: Keep tables (don't remove them)
 - `--keep-math`: Keep mathematical sentences (don't remove them)
 - `--keep-captions`: Keep figure/table captions (don't remove them)
+- `--keep-citations`: Keep numeric bracket citations like `[12]` and `[5,6]`
 - `--keep-endmatter`: Don't truncate end-matter sections
 - `--force`: Overwrite existing output files
 - `--dry-run`: Show what would be done without writing files
@@ -186,22 +190,6 @@ This script:
 - Converts complex tables to structured text
 - Cleans simple tables (removes HTML tags, empty columns)
 
-## Fix markdown issues (optional)
-
-Fix common markdown issues from Marker output:
-
-```bash
-python fix_markdown.py paper.md paper_fixed.md
-```
-
-This script fixes:
-
-- Page links (removes `#page-X-Y` references)
-- Citation patterns (fixes `word[suffixNumbers]` to `word suffix [numbers]`)
-- Trailing dots in citations (moves outside brackets)
-- Special minus signs (normalizes to hyphens)
-- Excessive newlines (limits to max 2)
-
 ## Notes
 
 - The cleanup rules live in `clean_marker_md.py`.
@@ -209,6 +197,8 @@ This script fixes:
   Competing/Conflict of Interest, Funding, etc.
 - The cleaner strips empty `<span ...></span>` anchors and removes figure/table
   captions; if you need to preserve these, use `--keep-captions`.
+- The cleaner removes `(#page-X-Y)` links and numeric bracket citations by
+  default; use `--keep-citations` to retain numeric citations.
 
 ## Enrich abstracts with metadata (optional)
 
