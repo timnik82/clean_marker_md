@@ -153,6 +153,31 @@ Additional options:
 - `--stats`: Show statistics about removed placeholders
 - `--dry-run`: Preview changes without writing files
 
+## Reflow reading order (optional, two-column fixes)
+
+For some two-column PDFs, Marker output can contain local reading-order
+interruptions (for example, metadata/caption blocks inserted between two halves
+of one sentence). This optional script applies conservative paragraph stitching.
+
+Run it manually only for files that still show ordering artifacts:
+
+```bash
+python reflow_reading_order.py --in-file out_clean/paper.md --out-file out_clean/paper.md --force --stats
+```
+
+Or batch process:
+
+```bash
+python reflow_reading_order.py --in-dir ./out_clean --out-dir ./out_reflow --stats
+```
+
+Additional options:
+
+- `--passes`: Maximum reflow passes (default: 2)
+- `--keep-tree`: Preserve folder structure
+- `--force`: Overwrite existing files
+- `--dry-run`: Preview changes without writing files
+
 ## Extract abstracts from papers (optional)
 
 Extract abstracts from cleaned markdown papers into a consolidated file:
@@ -199,6 +224,8 @@ This script:
   captions; if you need to preserve these, use `--keep-captions`.
 - The cleaner removes `(#page-X-Y)` links and numeric bracket citations by
   default; use `--keep-citations` to retain numeric citations.
+- Reading-order reflow is intentionally separate (`reflow_reading_order.py`) and
+  should be run manually for affected two-column papers.
 
 ## Enrich abstracts with metadata (optional)
 

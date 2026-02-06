@@ -25,6 +25,15 @@ ENDMATTER_TRUNCATE_KEYWORDS = [
 ENDMATTER_SECTION_KEYWORDS = [
     "keywords",
     "key words",
+    "author information",
+    "corresponding authors",
+    "authors",
+    "author contributions",
+    "notes",
+    "biography",
+    "biographies",
+    "associated content",
+    "supporting information",
     "acknowledgements",
     "acknowledgments",
     "acknowledgment",
@@ -38,7 +47,6 @@ ENDMATTER_SECTION_KEYWORDS = [
     "declaration of interests",
     "declarations",
     "funding",
-    "author contributions",
     "data availability",
     "code availability",
     "ethics",
@@ -80,19 +88,21 @@ WORD_SUFFIX_CITATION_RE = re.compile(
     r"(\w+)\[([a-zA-Z]*)(\d+[0-9.,–\-\u2013\u2014]*)\]"
 )
 NUMERIC_BRACKET_TRAILING_DOT_RE = re.compile(r"\[([\d.,–\-\u2013\u2014\s]+)\.\]")
-# Conservative citation matcher: only numeric bracket tokens (up to 3 digits each item).
-# Examples matched: [151], [5,6], [61-65], [.13], [(10),]
+# Conservative citation matcher: numeric/alphanumeric citation tokens
+# (up to 3 digits with optional lowercase suffix per item).
+# Examples matched: [151], [5,6], [61-65], [.13], [(10),], [47g]
 CITATION_BRACKET_RE = re.compile(
-    r"\[(?:\s*[.,]?\s*\\?\(?\s*\d{1,3}\s*\\?\)?\s*"
-    r"(?:[-,–\u2013\u2014]\s*[.,]?\s*\\?\(?\s*\d{1,3}\s*\\?\)?\s*)*"
+    r"\[(?:\s*[.,]?\s*\\?\(?\s*\d{1,3}[a-z]?\s*\\?\)?\s*"
+    r"(?:[-,–\u2013\u2014]\s*[.,]?\s*\\?\(?\s*\d{1,3}[a-z]?\s*\\?\)?\s*)*"
     r"[.,]?\s*)\]"
 )
-# Normalize escaped citation tokens such as "\[12\]" or "[\[12\]]".
+# Normalize escaped citation tokens such as "\[12\]" / "\[61e\]"
+# or "[\[12\]]" / "[\[61e\]]".
 ESCAPED_NUMERIC_CITATION_RE = re.compile(
-    r"\\\[(\s*[0-9][0-9.,,\-–\u2013\u2014\s]*)\\\]"
+    r"\\\[(\s*[0-9][0-9a-z.,,\-–\u2013\u2014\s]*)\\\]"
 )
 NESTED_ESCAPED_NUMERIC_CITATION_RE = re.compile(
-    r"\[\s*\\\[(\s*[0-9][0-9.,,\-–\u2013\u2014\s]*)\\\]\s*\]"
+    r"\[\s*\\\[(\s*[0-9][0-9a-z.,,\-–\u2013\u2014\s]*)\\\]\s*\]"
 )
 # Remove citation shell leftovers while preserving meaningful non-citation brackets.
 # Examples: [], [\], [\, ], [60–], [–15\]
@@ -103,6 +113,10 @@ CITATION_FRAGMENT_BRACKET_RE = re.compile(
 NESTED_CITATION_FRAGMENT_BRACKET_RE = re.compile(
     r"\[\[\s*(?:(?=[^\]]*[\\,\-–\u2013\u2014])[0-9\\,\-–\u2013\u2014.\s]*"
     r"|[\\,\-–\u2013\u2014.\s]*)\s*\]\]"
+)
+NON_CITATION_LABEL_CONTEXT_RE = re.compile(
+    r"(?:fig(?:ure)?|eq(?:uation)?|table|tab|scheme|sec(?:tion)?)\.?\s*$",
+    re.IGNORECASE,
 )
 
 INLINE_MATH_RE = re.compile(
@@ -134,8 +148,7 @@ def is_wiley_download_footer(line: str) -> bool:
         "downloaded from https://onlinelibrary.wiley.com/doi/" in normalized
         and "wiley online library" in normalized
         and (
-            "terms-and-conditions" in normalized
-            or "terms and conditions" in normalized
+            "terms-and-conditions" in normalized or "terms and conditions" in normalized
         )
         and "creative commons license" in normalized
     )
@@ -258,11 +271,22 @@ def strip_numeric_citation_brackets(text: str) -> str:
     """
     Remove only numeric bracket citations while preserving non-numeric bracket text.
     """
+
+    def strip_line_citations(line: str) -> str:
+        def replace_citation(match: re.Match[str]) -> str:
+            left_context = line[max(0, match.start() - 32) : match.start()]
+            if NON_CITATION_LABEL_CONTEXT_RE.search(left_context):
+                return match.group(0)
+            return ""
+
+        return CITATION_BRACKET_RE.sub(replace_citation, line)
+
     text = NESTED_ESCAPED_NUMERIC_CITATION_RE.sub(r"[\1]", text)
     text = ESCAPED_NUMERIC_CITATION_RE.sub(r"[\1]", text)
     for _ in range(4):
         prev = text
-        text = CITATION_BRACKET_RE.sub("", text)
+        lines = text.split("\n")
+        text = "\n".join(strip_line_citations(line) for line in lines)
         text = NESTED_CITATION_FRAGMENT_BRACKET_RE.sub("", text)
         text = CITATION_FRAGMENT_BRACKET_RE.sub("", text)
         if text == prev:

@@ -20,6 +20,7 @@ and end-matter (references, acknowledgements, conflict of interest, etc.).
 - `remove_image_placeholders.py`: removes image placeholders and page anchors from markdown
 - `extract_abstracts.py`: extracts abstracts from cleaned papers into consolidated file
 - `optimize_tables_for_rag.py`: optimizes tables for RAG embedding (removes ToC, converts complex tables)
+- `reflow_reading_order.py`: optional conservative reflow for local two-column reading-order interruptions
 - `enrich_metadata.py`: enriches abstracts with journal metadata and citation counts via OpenAlex
 
 ### Configuration
@@ -55,6 +56,12 @@ python extract_abstracts.py --input-dir out_clean/papers --output out_clean/abst
 
 ```bash
 python optimize_tables_for_rag.py --in-dir ./out_clean --out-dir ./out_rag_optimized --stats
+```
+
+**Reflow reading order (manual, optional for problematic two-column files):**
+
+```bash
+python reflow_reading_order.py --in-file out_clean/paper.md --out-file out_clean/paper.md --force --stats
 ```
 
 **Enrich abstracts with metadata:**
@@ -114,3 +121,8 @@ python enrich_metadata.py \
 - Removes ToC tables
 - Converts complex tables to text
 - Cleans HTML tags from tables
+
+**reflow_reading_order.py:**
+
+- Conservative paragraph stitching around metadata/caption interruption blocks
+- Intended as manual post-step only for files with obvious reading-order artifacts

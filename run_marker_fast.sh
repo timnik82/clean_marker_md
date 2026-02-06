@@ -40,8 +40,7 @@ fi
 marker_bin="marker_single"
 marker_args=()
 if [[ -x "${venv_dir}/bin/marker_single" ]]; then
-  marker_bin="${venv_dir}/bin/python3"
-  marker_args=("${venv_dir}/bin/marker_single")
+  marker_bin="${venv_dir}/bin/marker_single"
 fi
 
 fast_processors=(
@@ -68,13 +67,18 @@ fast_processors=(
 )
 fast_processors_csv="$(IFS=,; echo "${fast_processors[*]}")"
 
+gemini_args=(--use_llm)
+if [[ -n "${GEMINI_API_KEY:-}" ]]; then
+  gemini_args+=(--gemini_api_key "$GEMINI_API_KEY")
+fi
+
 "$marker_bin" "${marker_args[@]}" "$pdf_path" \
   --output_format markdown \
   --output_dir "$raw_out_dir" \
   --disable_ocr \
   --disable_image_extraction \
   "${config_arg[@]}" \
-  --use_llm --gemini_api_key "${GEMINI_API_KEY:-}" \
+  "${gemini_args[@]}" \
   --processors "$fast_processors_csv"
 
 python_bin="python"

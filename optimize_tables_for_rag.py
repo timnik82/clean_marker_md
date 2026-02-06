@@ -333,13 +333,17 @@ def process_markdown(content: str) -> tuple[str, dict]:
             stats["toc_removed"] += 1
 
         elif table.table_type == "form":
-            # Keep form tables as tables, just clean HTML
+            # Keep form tables as tables, just clean HTML and empty columns
             original_html_count = len(HTML_TAG_RE.findall("\n".join(table.lines)))
+            cleaned_lines = [remove_html_tags(line) for line in table.lines]
+            empty_cols = detect_empty_columns(cleaned_lines)
             cleaned = clean_simple_table(table.lines)
             lines[table.start_line : table.end_line + 1] = cleaned
             stats["form_cleaned"] += 1
             if original_html_count > 0:
                 stats["html_tags_removed"] += original_html_count
+            if empty_cols:
+                stats["empty_cols_removed"] += len(empty_cols)
 
         elif table.table_type == "complex":
             # Convert to structured text

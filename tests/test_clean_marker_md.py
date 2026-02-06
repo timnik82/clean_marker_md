@@ -47,6 +47,16 @@ class HeadingNormalizationTests(unittest.TestCase):
             classify_endmatter_heading("# ■ **ACKNOWLEDGMENTS**"), "section"
         )
 
+    def test_acs_endmatter_headings_classify_as_section(self) -> None:
+        self.assertEqual(
+            classify_endmatter_heading("# ■ **AUTHOR INFORMATION**"), "section"
+        )
+        self.assertEqual(
+            classify_endmatter_heading("#### **Corresponding Authors**"), "section"
+        )
+        self.assertEqual(classify_endmatter_heading("### **Notes**"), "section")
+        self.assertEqual(classify_endmatter_heading("#### **Biographies**"), "section")
+
 
 class CleanupBehaviorTests(unittest.TestCase):
     def test_cleanup_strips_page_targets_and_numeric_citations(self) -> None:
@@ -119,6 +129,40 @@ class CleanupBehaviorTests(unittest.TestCase):
         )
         self.assertIn("[1.5.0]", out)
         self.assertNotIn("[12]", out)
+
+    def test_cleanup_strips_alphanumeric_citation_labels(self) -> None:
+        text = (
+            "A [47g](#page-1-0) B [\\[61e\\]](#page-2-0) "
+            "C [[63a\\]](#page-3-0) D [74g](#page-4-0)."
+        )
+        out = cleanup_text(
+            text,
+            drop_endmatter=False,
+            drop_tables=False,
+            drop_images=False,
+            drop_captions=False,
+            drop_math=False,
+            drop_image_descriptions=False,
+        )
+        self.assertNotIn("[47g]", out)
+        self.assertNotIn("[61e]", out)
+        self.assertNotIn("[63a]", out)
+        self.assertNotIn("[74g]", out)
+        self.assertNotIn("[]", out)
+
+    def test_cleanup_keeps_figure_style_labels(self) -> None:
+        text = "see Fig. [2A](#page-2-0) and Figure [2a](#page-2-0) for details."
+        out = cleanup_text(
+            text,
+            drop_endmatter=False,
+            drop_tables=False,
+            drop_images=False,
+            drop_captions=False,
+            drop_math=False,
+            drop_image_descriptions=False,
+        )
+        self.assertIn("Fig. [2A]", out)
+        self.assertIn("Figure [2a]", out)
 
 
 if __name__ == "__main__":
