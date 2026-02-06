@@ -2,13 +2,17 @@
 set -euo pipefail
 
 if [[ $# -lt 1 ]]; then
-  echo "Usage: $0 <pdf_path> [raw_out_dir] [clean_out_dir]" >&2
+  echo "Usage: $0 <pdf_path>" >&2
   exit 2
 fi
 
 pdf_path="$1"
-raw_out_dir="${2:-./out_raw}"
-clean_out_dir="${3:-./out_clean}"
+raw_out_dir="./out_raw"
+clean_out_dir="./out_clean"
+
+if [[ $# -ge 2 ]]; then
+  echo "Ignoring custom output directories. Using: $raw_out_dir and $clean_out_dir"
+fi
 
 venv_dir="./.venv"
 if [[ -x "${venv_dir}/bin/activate" ]]; then
@@ -34,16 +38,48 @@ if [[ -f "$config_json" ]]; then
 fi
 
 marker_bin="marker_single"
+marker_args=()
 if [[ -x "${venv_dir}/bin/marker_single" ]]; then
   marker_bin="${venv_dir}/bin/marker_single"
 fi
 
-"$marker_bin" "$pdf_path" \
+fast_processors=(
+  "marker.processors.order.OrderProcessor"
+  "marker.processors.block_relabel.BlockRelabelProcessor"
+  "marker.processors.line_merge.LineMergeProcessor"
+  "marker.processors.blockquote.BlockquoteProcessor"
+  "marker.processors.code.CodeProcessor"
+  "marker.processors.document_toc.DocumentTOCProcessor"
+  "marker.processors.footnote.FootnoteProcessor"
+  "marker.processors.ignoretext.IgnoreTextProcessor"
+  "marker.processors.line_numbers.LineNumbersProcessor"
+  "marker.processors.list.ListProcessor"
+  "marker.processors.page_header.PageHeaderProcessor"
+  "marker.processors.sectionheader.SectionHeaderProcessor"
+  "marker.processors.llm.llm_form.LLMFormProcessor"
+  "marker.processors.text.TextProcessor"
+  "marker.processors.llm.llm_complex.LLMComplexRegionProcessor"
+  "marker.processors.llm.llm_sectionheader.LLMSectionHeaderProcessor"
+  "marker.processors.llm.llm_page_correction.LLMPageCorrectionProcessor"
+  "marker.processors.reference.ReferenceProcessor"
+  "marker.processors.blank_page.BlankPageProcessor"
+  "marker.processors.debug.DebugProcessor"
+)
+fast_processors_csv="$(IFS=,; echo "${fast_processors[*]}")"
+
+gemini_args=(--use_llm)
+if [[ -n "${GEMINI_API_KEY:-}" ]]; then
+  gemini_args+=(--gemini_api_key "$GEMINI_API_KEY")
+fi
+
+"$marker_bin" "${marker_args[@]}" "$pdf_path" \
   --output_format markdown \
   --output_dir "$raw_out_dir" \
   --disable_ocr \
+  --disable_image_extraction \
   "${config_arg[@]}" \
-  --use_llm --gemini_api_key "${GEMINI_API_KEY:-}"
+  "${gemini_args[@]}" \
+  --processors "$fast_processors_csv"
 
 python_bin="python"
 if [[ -x "${venv_dir}/bin/python" ]]; then
@@ -51,5 +87,5 @@ if [[ -x "${venv_dir}/bin/python" ]]; then
 fi
 
 echo "Cleaning markdown into: $clean_out_dir"
-"$python_bin" clean_marker_md.py --in-dir "$raw_out_dir" --out-dir "$clean_out_dir" --keep-images
+"$python_bin" clean_marker_md.py --in-dir "$raw_out_dir" --out-dir "$clean_out_dir"
 echo "Done. Cleaned files are in: $clean_out_dir"

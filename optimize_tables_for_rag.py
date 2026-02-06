@@ -31,7 +31,7 @@ class TableInfo(NamedTuple):
 
     start_line: int
     end_line: int
-    table_type: Literal["toc", "complex", "simple"]
+    table_type: Literal["toc", "form", "complex", "simple"]
     lines: list[str]
 
 
@@ -107,10 +107,43 @@ def detect_empty_columns(lines: list[str]) -> set[int]:
     return empty_cols
 
 
-def classify_table(lines: list[str]) -> Literal["toc", "complex", "simple"]:
+def is_form_table(lines: list[str]) -> bool:
+    """
+    Detect if table describes form fields/specifications.
+
+    Form tables typically have:
+    - Column headers like "Campo"/"Field"/"Nome"
+    - Column headers like "Limite"/"Limit"/"Caracteres"
+    - Many rows with field specifications
+    """
+    if len(lines) < 3:
+        return False
+
+    # Check header for form-related keywords
+    header = lines[0].lower()
+    form_keywords = [
+        "campo",
+        "field",
+        "limite",
+        "limit",
+        "caracteres",
+        "characters",
+        "subsecção",
+        "subsection",
+    ]
+
+    keyword_count = sum(1 for keyword in form_keywords if keyword in header)
+
+    # If 2+ form keywords in header, likely a form table
+    return keyword_count >= 2
+
+
+def classify_table(lines: list[str]) -> Literal["toc", "form", "complex", "simple"]:
     """Classify table type based on content."""
     if is_toc_table(lines):
         return "toc"
+    elif is_form_table(lines):
+        return "form"
     elif has_html_tags(lines):
         return "complex"
     else:
@@ -273,6 +306,7 @@ def process_markdown(content: str) -> tuple[str, dict]:
     # Statistics
     stats = {
         "toc_removed": 0,
+        "form_cleaned": 0,
         "complex_converted": 0,
         "simple_cleaned": 0,
         "html_tags_removed": 0,
@@ -297,6 +331,19 @@ def process_markdown(content: str) -> tuple[str, dict]:
             # Remove ToC table completely
             del lines[table.start_line : table.end_line + 1]
             stats["toc_removed"] += 1
+
+        elif table.table_type == "form":
+            # Keep form tables as tables, just clean HTML and empty columns
+            original_html_count = len(HTML_TAG_RE.findall("\n".join(table.lines)))
+            cleaned_lines = [remove_html_tags(line) for line in table.lines]
+            empty_cols = detect_empty_columns(cleaned_lines)
+            cleaned = clean_simple_table(table.lines)
+            lines[table.start_line : table.end_line + 1] = cleaned
+            stats["form_cleaned"] += 1
+            if original_html_count > 0:
+                stats["html_tags_removed"] += original_html_count
+            if empty_cols:
+                stats["empty_cols_removed"] += len(empty_cols)
 
         elif table.table_type == "complex":
             # Convert to structured text
@@ -379,6 +426,7 @@ def main() -> int:
             print(f"Would write: {out_file}")
             if args.stats:
                 print(f"  ToC tables removed: {stats['toc_removed']}")
+                print(f"  Form tables cleaned: {stats['form_cleaned']}")
                 print(f"  Complex tables converted: {stats['complex_converted']}")
                 print(f"  Simple tables cleaned: {stats['simple_cleaned']}")
                 print(f"  HTML tags removed: {stats['html_tags_removed']}")
@@ -395,6 +443,7 @@ def main() -> int:
 
         if args.stats:
             print(f"  ToC tables removed: {stats['toc_removed']}")
+            print(f"  Form tables cleaned: {stats['form_cleaned']}")
             print(f"  Complex tables converted: {stats['complex_converted']}")
             print(f"  Simple tables cleaned: {stats['simple_cleaned']}")
             print(f"  HTML tags removed: {stats['html_tags_removed']}")
@@ -413,6 +462,7 @@ def main() -> int:
 
         total_stats = {
             "toc_removed": 0,
+            "form_cleaned": 0,
             "complex_converted": 0,
             "simple_cleaned": 0,
             "html_tags_removed": 0,
@@ -445,13 +495,14 @@ def main() -> int:
 
             if args.stats and not args.dry_run:
                 print(
-                    f"  Tables: {stats['toc_removed']} ToC, {stats['complex_converted']} complex, {stats['simple_cleaned']} simple"
+                    f"  Tables: {stats['toc_removed']} ToC, {stats['form_cleaned']} form, {stats['complex_converted']} complex, {stats['simple_cleaned']} simple"
                 )
 
         if args.stats:
             print("\nTotal Summary:")
             print(f"  Files processed: {total_stats['files_processed']}")
             print(f"  ToC tables removed: {total_stats['toc_removed']}")
+            print(f"  Form tables cleaned: {total_stats['form_cleaned']}")
             print(f"  Complex tables converted: {total_stats['complex_converted']}")
             print(f"  Simple tables cleaned: {total_stats['simple_cleaned']}")
             print(f"  HTML tags removed: {total_stats['html_tags_removed']}")
