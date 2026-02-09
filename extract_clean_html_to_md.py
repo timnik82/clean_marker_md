@@ -247,17 +247,22 @@ def main() -> int:
             return 0
 
         written = 0
+        errors = 0
         for in_file in html_files:
             out_file = output_path_for_file(in_file, args.out_dir, base_dir=args.in_dir)
-            process_one_file(
-                in_file=in_file,
-                out_file=out_file,
-                keep_endmatter=args.keep_endmatter,
-                force=args.force,
-            )
-            written += 1
-        print(f"[ok] wrote {written} file(s) to {args.out_dir}")
-        return 0
+            try:
+                process_one_file(
+                    in_file=in_file,
+                    out_file=out_file,
+                    keep_endmatter=args.keep_endmatter,
+                    force=args.force,
+                )
+                written += 1
+            except Exception as exc:  # noqa: BLE001
+                print(f"[error] {in_file}: {exc}")
+                errors += 1
+        print(f"[ok] wrote {written} file(s) to {args.out_dir}; errors {errors}")
+        return 1 if errors else 0
 
     raise SystemExit("Provide either --in-file or --in-dir")
 

@@ -109,14 +109,19 @@ def main() -> int:
             print(f"[info] no .md files in {args.in_dir}")
             return 0
         changed_count = 0
+        errors = 0
         for in_file in files:
             rel = in_file.relative_to(args.in_dir)
             out_file = out_dir / rel
-            changed = process_file(in_file, out_file, force=args.force)
-            if changed:
-                changed_count += 1
-        print(f"[ok] processed {len(files)} files; changed {changed_count}")
-        return 0
+            try:
+                changed = process_file(in_file, out_file, force=args.force)
+                if changed:
+                    changed_count += 1
+            except Exception as exc:  # noqa: BLE001
+                print(f"[error] {in_file}: {exc}")
+                errors += 1
+        print(f"[ok] processed {len(files)} files; changed {changed_count}; errors {errors}")
+        return 1 if errors else 0
 
     raise SystemExit("Provide either --in-file or --in-dir")
 
