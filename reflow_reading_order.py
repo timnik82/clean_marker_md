@@ -283,9 +283,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--llm-model",
-        help=(
-            "Override Gemini model name (defaults to gemini_config.json if present)"
-        ),
+        help=("Override Gemini model name (defaults to gemini_config.json if present)"),
     )
     parser.add_argument(
         "--llm-strict",
@@ -302,10 +300,7 @@ def parse_args() -> argparse.Namespace:
         "--llm-max-calls",
         type=int,
         default=0,
-        help=(
-            "Maximum Gemini calls to allow (0 = no limit). "
-            "Useful for quick tests"
-        ),
+        help=("Maximum Gemini calls to allow (0 = no limit). Useful for quick tests"),
     )
     parser.add_argument(
         "--llm-debug",
@@ -469,15 +464,11 @@ def build_gemini_decider(
         from google import genai
         from google.genai import types
     except Exception as exc:  # pragma: no cover - optional dependency
-        raise RuntimeError(
-            "google-genai is required for --llm-stitch"
-        ) from exc
+        raise RuntimeError("google-genai is required for --llm-stitch") from exc
 
     api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
     if not api_key:
-        raise RuntimeError(
-            "Set GEMINI_API_KEY or GOOGLE_API_KEY to use --llm-stitch"
-        )
+        raise RuntimeError("Set GEMINI_API_KEY or GOOGLE_API_KEY to use --llm-stitch")
 
     model_name = model_override or load_gemini_model_name()
     if not model_name:

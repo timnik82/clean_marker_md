@@ -22,33 +22,28 @@ from pathlib import Path
 # Matches: *journal name* **year**, *volume*, issue/article number X of Y
 # Handles variants like: *Biosensors* **<sup>2023</sup>**, *<sup>13</sup>*, 328 16 of 37
 JOURNAL_FOOTER_PATTERN = re.compile(
-    r'\*[A-Za-z\s&\-]+\*\s+\*\*<sup>?\d{4}</sup>?\*\*,?\s+\*<sup>?\d+</sup>?\*,\s*\d+\s+\d+\s+of\s+\d+',
-    re.IGNORECASE
+    r"\*[A-Za-z\s&\-]+\*\s+\*\*<sup>?\d{4}</sup>?\*\*,?\s+\*<sup>?\d+</sup>?\*,\s*\d+\s+\d+\s+of\s+\d+",
+    re.IGNORECASE,
 )
 
 # More lenient pattern for incomplete or variant footers
 FOOTER_PATTERN_LENIENT = re.compile(
-    r'\*[A-Za-z\s&\-]+\*\s+\*\*<sup>?\d{4}</sup>?\*\*.*?\d+\s+of\s+\d+',
-    re.IGNORECASE
+    r"\*[A-Za-z\s&\-]+\*\s+\*\*<sup>?\d{4}</sup>?\*\*.*?\d+\s+of\s+\d+", re.IGNORECASE
 )
 
 # Pattern for embedded footers (where footer appears mid-line)
 EMBEDDED_FOOTER_PATTERN = re.compile(
-    r'\s+\*[A-Za-z\s&\-]+\*\s+\*\*<sup>?\d{4}</sup>?\*\*.*?\d+\s+of\s+\d+(?:\s|$)',
-    re.IGNORECASE
+    r"\s+\*[A-Za-z\s&\-]+\*\s+\*\*<sup>?\d{4}</sup>?\*\*.*?\d+\s+of\s+\d+(?:\s|$)",
+    re.IGNORECASE,
 )
 
 # Pattern for standalone page numbers: "X of Y" or "<sup>X</sup> of <sup>Y</sup>"
 PAGE_NUMBER_PATTERN = re.compile(
-    r'<sup>?\d+</sup>?\s+of\s+<sup>?\d+</sup>?',
-    re.IGNORECASE
+    r"<sup>?\d+</sup>?\s+of\s+<sup>?\d+</sup>?", re.IGNORECASE
 )
 
 # Pattern for "FOR PEER REVIEW" text
-PEER_REVIEW_PATTERN = re.compile(
-    r'x?\s+FOR\s+PEER\s+REVIEW',
-    re.IGNORECASE
-)
+PEER_REVIEW_PATTERN = re.compile(r"x?\s+FOR\s+PEER\s+REVIEW", re.IGNORECASE)
 
 
 def remove_journal_footers(text: str, lenient: bool = False) -> str:
@@ -62,7 +57,7 @@ def remove_journal_footers(text: str, lenient: bool = False) -> str:
     Returns:
         Text with journal footers removed
     """
-    lines = text.split('\n')
+    lines = text.split("\n")
     cleaned_lines = []
 
     for line in lines:
@@ -76,10 +71,10 @@ def remove_journal_footers(text: str, lenient: bool = False) -> str:
 
         # Remove embedded footers from lines
         # (footer appears in the middle of text)
-        cleaned_line = EMBEDDED_FOOTER_PATTERN.sub(' ', line)
+        cleaned_line = EMBEDDED_FOOTER_PATTERN.sub(" ", line)
 
         # Remove "FOR PEER REVIEW" text
-        cleaned_line = PEER_REVIEW_PATTERN.sub('', cleaned_line)
+        cleaned_line = PEER_REVIEW_PATTERN.sub("", cleaned_line)
 
         # Remove standalone page numbers (X of Y) that are not part of proper content
         # Be conservative: only remove if it's on a line by itself or appears isolated
@@ -88,13 +83,13 @@ def remove_journal_footers(text: str, lenient: bool = False) -> str:
             continue
 
         # Clean up multiple spaces that might result from footer removal
-        cleaned_line = re.sub(r'\s{2,}', ' ', cleaned_line).strip()
+        cleaned_line = re.sub(r"\s{2,}", " ", cleaned_line).strip()
 
         if cleaned_line or not stripped:
             # Keep non-empty lines or preserve blank lines for structure
-            cleaned_lines.append(cleaned_line if cleaned_line else '')
+            cleaned_lines.append(cleaned_line if cleaned_line else "")
 
-    return '\n'.join(cleaned_lines)
+    return "\n".join(cleaned_lines)
 
 
 def parse_args() -> argparse.Namespace:
@@ -113,22 +108,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--lenient",
         action="store_true",
-        help="Use lenient pattern matching for footers"
+        help="Use lenient pattern matching for footers",
     )
     parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Show actions without writing files"
+        "--dry-run", action="store_true", help="Show actions without writing files"
     )
     parser.add_argument(
-        "--force",
-        action="store_true",
-        help="Overwrite existing output files"
+        "--force", action="store_true", help="Overwrite existing output files"
     )
     parser.add_argument(
         "--keep-tree",
         action="store_true",
-        help="Preserve input subfolders for --in-dir (default: flatten)"
+        help="Preserve input subfolders for --in-dir (default: flatten)",
     )
 
     return parser.parse_args()
@@ -145,7 +136,7 @@ def main() -> int:
             print(f"Error: Input file not found: {args.in_file}", file=sys.stderr)
             return 2
 
-        content = args.in_file.read_text(encoding='utf-8', errors='ignore')
+        content = args.in_file.read_text(encoding="utf-8", errors="ignore")
         cleaned = remove_journal_footers(content, lenient=args.lenient)
 
         if args.dry_run:
@@ -155,7 +146,7 @@ def main() -> int:
                 print(f"Skipping existing output: {args.out_file}")
                 return 0
             args.out_file.parent.mkdir(parents=True, exist_ok=True)
-            args.out_file.write_text(cleaned, encoding='utf-8')
+            args.out_file.write_text(cleaned, encoding="utf-8")
             print(f"Cleaned: {args.in_file} -> {args.out_file}")
 
         return 0
@@ -182,7 +173,7 @@ def main() -> int:
             if not args.dry_run:
                 out_path.parent.mkdir(parents=True, exist_ok=True)
 
-            content = path.read_text(encoding='utf-8', errors='ignore')
+            content = path.read_text(encoding="utf-8", errors="ignore")
             cleaned = remove_journal_footers(content, lenient=args.lenient)
 
             if args.dry_run:
@@ -191,7 +182,7 @@ def main() -> int:
                 if out_path.exists() and not args.force:
                     print(f"Skipping existing: {out_path}")
                     continue
-                out_path.write_text(cleaned, encoding='utf-8')
+                out_path.write_text(cleaned, encoding="utf-8")
                 print(f"Cleaned: {path.name}")
 
             processed += 1
