@@ -163,7 +163,13 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
     return clean_text(markdown)
 
 
-def output_path_for_file(in_file: Path, out_dir: Path) -> Path:
+def output_path_for_file(
+    in_file: Path, out_dir: Path, base_dir: Path | None = None
+) -> Path:
+    """Build output path, preserving relative directory structure when *base_dir* is given."""
+    if base_dir is not None:
+        rel = in_file.relative_to(base_dir)
+        return out_dir / rel.with_suffix(".md")
     return out_dir / f"{in_file.stem}.md"
 
 
@@ -242,7 +248,7 @@ def main() -> int:
 
         written = 0
         for in_file in html_files:
-            out_file = output_path_for_file(in_file, args.out_dir)
+            out_file = output_path_for_file(in_file, args.out_dir, base_dir=args.in_dir)
             process_one_file(
                 in_file=in_file,
                 out_file=out_file,
