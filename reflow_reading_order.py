@@ -17,7 +17,7 @@ import json
 import os
 import re
 import sys
-from typing import Callable
+from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -301,9 +301,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--llm-max-calls",
         type=int,
-        default=None,
+        default=0,
         help=(
-            "Maximum Gemini calls to allow (None = no limit). "
+            "Maximum Gemini calls to allow (0 = no limit). "
             "Useful for quick tests"
         ),
     )
@@ -465,9 +465,9 @@ def build_gemini_decider(
     debug: bool,
 ) -> Callable[[str, str], bool]:
     try:
+        import httpx
         from google import genai
         from google.genai import types
-        import httpx
     except Exception as exc:  # pragma: no cover - optional dependency
         raise RuntimeError(
             "google-genai is required for --llm-stitch"

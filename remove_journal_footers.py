@@ -18,7 +18,6 @@ import re
 import sys
 from pathlib import Path
 
-
 # Pattern to detect journal footer lines with optional <sup> tags
 # Matches: *journal name* **year**, *volume*, issue/article number X of Y
 # Handles variants like: *Biosensors* **<sup>2023</sup>**, *<sup>13</sup>*, 328 16 of 37
