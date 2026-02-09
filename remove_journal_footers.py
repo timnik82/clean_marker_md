@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import sys
 from pathlib import Path
 
 
@@ -139,10 +140,10 @@ def main() -> int:
 
     if args.in_file:
         if not args.out_file:
-            print("Error: --out-file is required with --in-file", file=__import__('sys').stderr)
+            print("Error: --out-file is required with --in-file", file=sys.stderr)
             return 2
         if not args.in_file.exists():
-            print(f"Error: Input file not found: {args.in_file}", file=__import__('sys').stderr)
+            print(f"Error: Input file not found: {args.in_file}", file=sys.stderr)
             return 2
 
         content = args.in_file.read_text(encoding='utf-8', errors='ignore')
@@ -162,10 +163,10 @@ def main() -> int:
 
     if args.in_dir:
         if not args.out_dir:
-            print("Error: --out-dir is required with --in-dir", file=__import__('sys').stderr)
+            print("Error: --out-dir is required with --in-dir", file=sys.stderr)
             return 2
         if not args.in_dir.exists():
-            print(f"Error: Input directory not found: {args.in_dir}", file=__import__('sys').stderr)
+            print(f"Error: Input directory not found: {args.in_dir}", file=sys.stderr)
             return 2
 
         if not args.dry_run:
