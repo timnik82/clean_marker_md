@@ -53,6 +53,11 @@ def process_file(in_file: Path, out_file: Path, force: bool = False) -> bool:
     return changed
 
 
+def _default_output_path(in_file: Path) -> Path:
+    """Return a safe default output path that won't overwrite the input."""
+    return in_file.with_stem(in_file.stem + "_cleaned")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Clean extraction artifacts in markdown files."
@@ -63,7 +68,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--out-dir",
         type=Path,
-        help="Output directory for cleaned .md files (default: in-dir)",
+        help="Output directory for cleaned .md files (default: <in-dir>_cleaned)",
     )
     parser.add_argument(
         "--in-place",
@@ -82,13 +87,23 @@ def main() -> int:
     args = parse_args()
 
     if args.in_file:
-        out_file = args.in_file if args.in_place else (args.out_file or args.in_file)
+        if args.in_place:
+            out_file = args.in_file
+        elif args.out_file:
+            out_file = args.out_file
+        else:
+            out_file = _default_output_path(args.in_file)
         changed = process_file(args.in_file, out_file, force=args.force)
         print(f"[ok] {args.in_file} -> {out_file} ({'changed' if changed else 'no-op'})")
         return 0
 
     if args.in_dir:
-        out_dir = args.in_dir if args.in_place else (args.out_dir or args.in_dir)
+        if args.in_place:
+            out_dir = args.in_dir
+        elif args.out_dir:
+            out_dir = args.out_dir
+        else:
+            out_dir = args.in_dir.parent / (args.in_dir.name + "_cleaned")
         files = sorted(args.in_dir.rglob("*.md"))
         if not files:
             print(f"[info] no .md files in {args.in_dir}")
