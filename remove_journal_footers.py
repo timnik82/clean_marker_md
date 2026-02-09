@@ -190,6 +190,9 @@ def main() -> int:
         print(f"\nProcessed {processed} file(s)")
         return 0
 
+    print("Error: specify either --in-file or --in-dir", file=sys.stderr)
+    return 2
+
 
 if __name__ == "__main__":
     raise SystemExit(main())

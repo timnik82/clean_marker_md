@@ -552,7 +552,10 @@ def load_gemini_model_name() -> str | None:
         data = json.loads(DEFAULT_GEMINI_CONFIG.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError):
         return None
-    return data.get("gemini_model_name")
+    if not isinstance(data, dict):
+        return None
+    model_name = data.get("gemini_model_name")
+    return model_name if isinstance(model_name, str) else None
 
 
 def last_sentence(text: str) -> str:
