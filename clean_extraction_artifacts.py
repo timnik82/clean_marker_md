@@ -37,7 +37,9 @@ def clean_text(text: str) -> str:
     return text.strip() + "\n"
 
 
-def process_file(in_file: Path, out_file: Path, force: bool = False) -> bool:
+def process_file(
+    in_file: Path, out_file: Path, force: bool = False, dry_run: bool = False
+) -> bool:
     """Process one markdown file. Returns True if content changed."""
     if not in_file.exists():
         raise FileNotFoundError(f"Input file not found: {in_file}")
@@ -48,8 +50,9 @@ def process_file(in_file: Path, out_file: Path, force: bool = False) -> bool:
     cleaned = clean_text(original)
     changed = cleaned != original
 
-    out_file.parent.mkdir(parents=True, exist_ok=True)
-    out_file.write_text(cleaned, encoding="utf-8")
+    if not dry_run:
+        out_file.parent.mkdir(parents=True, exist_ok=True)
+        out_file.write_text(cleaned, encoding="utf-8")
     return changed
 
 
@@ -80,6 +83,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Overwrite output file(s) if they exist",
     )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Preview what would change without writing any files",
+    )
     return parser.parse_args()
 
 
@@ -93,8 +101,9 @@ def main() -> int:
             out_file = args.out_file
         else:
             out_file = _default_output_path(args.in_file)
-        changed = process_file(args.in_file, out_file, force=args.force)
-        print(f"[ok] {args.in_file} -> {out_file} ({'changed' if changed else 'no-op'})")
+        changed = process_file(args.in_file, out_file, force=args.force, dry_run=args.dry_run)
+        tag = "dry-run" if args.dry_run else "ok"
+        print(f"[{tag}] {args.in_file} -> {out_file} ({'changed' if changed else 'no-op'})")
         return 0
 
     if args.in_dir:
@@ -114,13 +123,14 @@ def main() -> int:
             rel = in_file.relative_to(args.in_dir)
             out_file = out_dir / rel
             try:
-                changed = process_file(in_file, out_file, force=args.force)
+                changed = process_file(in_file, out_file, force=args.force, dry_run=args.dry_run)
                 if changed:
                     changed_count += 1
             except Exception as exc:  # noqa: BLE001
                 print(f"[error] {in_file}: {exc}")
                 errors += 1
-        print(f"[ok] processed {len(files)} files; changed {changed_count}; errors {errors}")
+        tag = "dry-run" if args.dry_run else "ok"
+        print(f"[{tag}] processed {len(files)} files; changed {changed_count}; errors {errors}")
         return 1 if errors else 0
 
     raise SystemExit("Provide either --in-file or --in-dir")
