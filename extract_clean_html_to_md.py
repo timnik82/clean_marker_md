@@ -10,12 +10,15 @@ should be dropped.
 from __future__ import annotations
 
 import argparse
+import logging
 import re
 from pathlib import Path
 
 from bs4 import BeautifulSoup
 
 from clean_extraction_artifacts import clean_text
+
+logger = logging.getLogger(__name__)
 
 
 ENDMATTER_HEADING_RE = re.compile(
@@ -225,6 +228,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> int:
+    logging.basicConfig(format="%(levelname)s: %(message)s", level=logging.INFO)
     args = parse_args()
 
     if args.in_file:
@@ -237,13 +241,13 @@ def main() -> int:
             keep_endmatter=args.keep_endmatter,
             force=args.force,
         )
-        print(f"[ok] {args.in_file} -> {out_file}")
+        logger.info("%s -> %s", args.in_file, out_file)
         return 0
 
     if args.in_dir:
         html_files = sorted(args.in_dir.rglob(args.glob))
         if not html_files:
-            print(f"[info] no files matched '{args.glob}' in {args.in_dir}")
+            logger.info("no files matched '%s' in %s", args.glob, args.in_dir)
             return 0
 
         written = 0
@@ -259,9 +263,9 @@ def main() -> int:
                 )
                 written += 1
             except Exception as exc:  # noqa: BLE001
-                print(f"[error] {in_file}: {exc}")
+                logger.error("%s: %s", in_file, exc)
                 errors += 1
-        print(f"[ok] wrote {written} file(s) to {args.out_dir}; errors {errors}")
+        logger.info("wrote %d file(s) to %s; errors %d", written, args.out_dir, errors)
         return 1 if errors else 0
 
     raise SystemExit("Provide either --in-file or --in-dir")

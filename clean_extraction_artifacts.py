@@ -11,8 +11,11 @@ Targets patterns such as:
 from __future__ import annotations
 
 import argparse
+import logging
 import re
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 
 EMPTY_BRACKETS_RE = re.compile(r"\(\s*\)|\[\s*\]|\{\s*\}")
@@ -92,6 +95,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> int:
+    logging.basicConfig(format="%(levelname)s: %(message)s", level=logging.INFO)
     args = parse_args()
 
     if args.in_file:
@@ -103,7 +107,7 @@ def main() -> int:
             out_file = _default_output_path(args.in_file)
         changed = process_file(args.in_file, out_file, force=args.force, dry_run=args.dry_run)
         tag = "dry-run" if args.dry_run else "ok"
-        print(f"[{tag}] {args.in_file} -> {out_file} ({'changed' if changed else 'no-op'})")
+        logger.info("[%s] %s -> %s (%s)", tag, args.in_file, out_file, "changed" if changed else "no-op")
         return 0
 
     if args.in_dir:
@@ -115,7 +119,7 @@ def main() -> int:
             out_dir = args.in_dir.parent / (args.in_dir.name + "_cleaned")
         files = sorted(args.in_dir.rglob("*.md"))
         if not files:
-            print(f"[info] no .md files in {args.in_dir}")
+            logger.info("no .md files in %s", args.in_dir)
             return 0
         changed_count = 0
         errors = 0
@@ -127,10 +131,10 @@ def main() -> int:
                 if changed:
                     changed_count += 1
             except Exception as exc:  # noqa: BLE001
-                print(f"[error] {in_file}: {exc}")
+                logger.error("%s: %s", in_file, exc)
                 errors += 1
         tag = "dry-run" if args.dry_run else "ok"
-        print(f"[{tag}] processed {len(files)} files; changed {changed_count}; errors {errors}")
+        logger.info("[%s] processed %d files; changed %d; errors %d", tag, len(files), changed_count, errors)
         return 1 if errors else 0
 
     raise SystemExit("Provide either --in-file or --in-dir")
