@@ -301,9 +301,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--llm-max-calls",
         type=int,
-        default=0,
+        default=None,
         help=(
-            "Maximum Gemini calls to allow (0 = no limit). "
+            "Maximum Gemini calls to allow (None = no limit). "
             "Useful for quick tests"
         ),
     )
@@ -501,12 +501,12 @@ def build_gemini_decider(
         key = (prev_sentence, next_sentence)
         if key in cache:
             return cache[key]
-        if remaining_calls == 0:
+        if remaining_calls is not None and remaining_calls == 0:
             if debug:
                 print("LLM stitch: skipped (max calls reached)", file=sys.stderr)
             cache[key] = False
             return False
-        if remaining_calls > 0:
+        if remaining_calls is not None and remaining_calls > 0:
             remaining_calls -= 1
 
         prompt = (
@@ -537,7 +537,7 @@ def build_gemini_decider(
                     + next_sentence[:120],
                     file=sys.stderr,
                 )
-        except Exception as exc:
+        except (httpx.RequestError, httpx.HTTPStatusError, ValueError) as exc:
             if debug:
                 print(
                     "LLM stitch: error=" + str(exc),
@@ -556,7 +556,7 @@ def load_gemini_model_name() -> str | None:
         return None
     try:
         data = json.loads(DEFAULT_GEMINI_CONFIG.read_text(encoding="utf-8"))
-    except Exception:
+    except (json.JSONDecodeError, OSError):
         return None
     return data.get("gemini_model_name")
 

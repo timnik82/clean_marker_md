@@ -26,6 +26,7 @@ from pathlib import Path
 from typing import Any, cast
 from urllib.parse import quote, urlencode
 from urllib.request import Request, urlopen
+from urllib.error import URLError, HTTPError
 
 OPENALEX_BASE = "https://api.openalex.org"
 
@@ -153,7 +154,7 @@ def fetch_json(url: str, retries: int = 3, backoff: float = 1.5) -> Any | None:
             )
             with urlopen(req, timeout=30) as resp:
                 return json.loads(resp.read().decode("utf-8"))
-        except Exception as exc:
+        except (URLError, HTTPError, json.JSONDecodeError, ValueError) as exc:
             status = getattr(exc, "code", None)
             retry_after = (
                 getattr(exc, "headers", {}).get("Retry-After")
@@ -364,7 +365,7 @@ def load_cache(path: Path) -> dict[str, Any]:
         return {}
     try:
         return cast(dict[str, Any], json.loads(path.read_text(encoding="utf-8")))
-    except Exception:
+    except (json.JSONDecodeError, OSError):
         return {}
 
 
