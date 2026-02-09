@@ -22,12 +22,19 @@ and end-matter (references, acknowledgements, conflict of interest, etc.).
 - `optimize_tables_for_rag.py`: optimizes tables for RAG embedding (removes ToC, converts complex tables)
 - `reflow_reading_order.py`: optional conservative reflow for local two-column reading-order interruptions
 - `enrich_metadata.py`: enriches abstracts with journal metadata and citation counts via OpenAlex
+- `remove_journal_footers.py`: removes journal page footers and pagination from academic papers
+- `clean_extraction_artifacts.py`: cleans text artifacts (empty brackets, broken references, extra whitespace)
+- `extract_clean_html_to_md.py`: extracts clean article text from scientific HTML files
 
 ### Configuration
 
 - `gemini_config.json`: Gemini model override
 - `.env`: API keys (GEMINI_API_KEY / GOOGLE_API_KEY)
 - `jcr_manual_map.csv`: manual JCR Impact Factor mappings
+
+### Testing Scripts
+
+- `test_marker_tables.sh`: test Marker with default processors to verify table extraction
 
 ## Default Workflow
 
@@ -74,6 +81,24 @@ python enrich_metadata.py \
   --cache-dir cache \
   --jcr-map jcr_manual_map.csv \
   --mailto you@example.com
+```
+
+**Remove journal footers:**
+
+```bash
+python remove_journal_footers.py --in-dir ./out_clean --out-dir ./out_no_footers
+```
+
+**Clean extraction artifacts:**
+
+```bash
+python clean_extraction_artifacts.py --in-dir ./out_clean --out-dir ./out_final
+```
+
+**Extract clean text from HTML:**
+
+```bash
+python extract_clean_html_to_md.py --in-dir ./html_files --out-dir ./markdown_files
 ```
 
 ## Notes
@@ -126,3 +151,21 @@ python enrich_metadata.py \
 
 - Conservative paragraph stitching around metadata/caption interruption blocks
 - Intended as manual post-step only for files with obvious reading-order artifacts
+
+**remove_journal_footers.py:**
+
+- Removes journal footers like "*Biosensors* **2023**, *13*, 328 2 of 37"
+- Removes standalone page numbers and "FOR PEER REVIEW" text
+- `--lenient`: Use more lenient pattern matching
+
+**clean_extraction_artifacts.py:**
+
+- Cleans empty brackets, broken figure references
+- Removes extra whitespace and punctuation debris
+- Applied automatically by `extract_clean_html_to_md.py`
+
+**extract_clean_html_to_md.py:**
+
+- Extracts semantic HTML content to markdown
+- Drops figures, captions, references, navigation
+- Automatically cleans extraction artifacts

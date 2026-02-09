@@ -153,6 +153,85 @@ Additional options:
 - `--stats`: Show statistics about removed placeholders
 - `--dry-run`: Preview changes without writing files
 
+## Remove journal footers (optional)
+
+Remove journal page footers from academic papers:
+
+```bash
+python remove_journal_footers.py --in-file paper.md --out-file paper_clean.md
+```
+
+Or batch process a directory:
+
+```bash
+python remove_journal_footers.py --in-dir ./out_clean --out-dir ./out_no_footers
+```
+
+This removes patterns like:
+- `*Biosensors* **2023**, *13*, 328 2 of 37`
+- `*Nature* **2024**, *15*, 1234 5 of 20`
+- Standalone page numbers: "X of Y"
+- "FOR PEER REVIEW" text
+
+Additional options:
+
+- `--lenient`: Use more lenient pattern matching for footers
+- `--force`: Overwrite existing files
+- `--dry-run`: Preview changes without writing files
+- `--stats`: Show statistics about removed footers
+
+## Clean extraction artifacts (optional)
+
+Clean common text artifacts left after HTML/figure/citation stripping:
+
+```bash
+python clean_extraction_artifacts.py --in-file paper.md --out-file paper_clean.md
+```
+
+Or batch process:
+
+```bash
+python clean_extraction_artifacts.py --in-dir ./out_clean --out-dir ./out_final
+```
+
+This removes:
+- Empty brackets: `()`, `[]`, `{}`
+- Broken figure references: "as shown in ."
+- Extra whitespace and punctuation debris
+- Multiple consecutive blank lines
+
+Additional options:
+
+- `--force`: Overwrite existing files
+- `--dry-run`: Preview changes without writing files
+- `--stats`: Show statistics about cleaned artifacts
+
+## Extract clean HTML to Markdown (optional)
+
+Extract clean article text from scientific HTML files:
+
+```bash
+python extract_clean_html_to_md.py --in-file article.html --out-file article.md
+```
+
+Or batch process:
+
+```bash
+python extract_clean_html_to_md.py --in-dir ./html_files --out-dir ./markdown_files
+```
+
+This script:
+- Extracts headings and body text from semantic HTML tags
+- Drops figures, captions, references, and navigation boilerplate
+- Cleans up extraction artifacts automatically
+- Stops at end-matter sections (References, Acknowledgements, etc.)
+
+Additional options:
+
+- `--force`: Overwrite existing files
+- `--dry-run`: Preview changes without writing files
+- `--keep-tree`: Preserve folder structure
+
 ## Reflow reading order (optional, two-column fixes)
 
 For some two-column PDFs, Marker output can contain local reading-order
@@ -243,6 +322,19 @@ python enrich_metadata.py \
 ```
 
 Populate `jcr_manual_map.csv` if you want to display JCR Impact Factor values.
+
+## Testing Marker with Tables
+
+Test Marker's table extraction with default processors:
+
+```bash
+./test_marker_tables.sh "Some Paper.pdf" ./test_output
+```
+
+This script:
+- Runs Marker with default processors (includes table extraction)
+- Checks for table markers in the output
+- Useful for verifying table extraction capabilities
 
 ## Development
 
