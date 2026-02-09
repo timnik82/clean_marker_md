@@ -105,9 +105,17 @@ def main() -> int:
             out_file = args.out_file
         else:
             out_file = _default_output_path(args.in_file)
-        changed = process_file(args.in_file, out_file, force=args.force, dry_run=args.dry_run)
+        changed = process_file(
+            args.in_file, out_file, force=args.force, dry_run=args.dry_run
+        )
         tag = "dry-run" if args.dry_run else "ok"
-        logger.info("[%s] %s -> %s (%s)", tag, args.in_file, out_file, "changed" if changed else "no-op")
+        logger.info(
+            "[%s] %s -> %s (%s)",
+            tag,
+            args.in_file,
+            out_file,
+            "changed" if changed else "no-op",
+        )
         return 0
 
     if args.in_dir:
@@ -127,14 +135,22 @@ def main() -> int:
             rel = in_file.relative_to(args.in_dir)
             out_file = out_dir / rel
             try:
-                changed = process_file(in_file, out_file, force=args.force, dry_run=args.dry_run)
+                changed = process_file(
+                    in_file, out_file, force=args.force, dry_run=args.dry_run
+                )
                 if changed:
                     changed_count += 1
             except Exception as exc:  # noqa: BLE001
                 logger.error("%s: %s", in_file, exc)
                 errors += 1
         tag = "dry-run" if args.dry_run else "ok"
-        logger.info("[%s] processed %d files; changed %d; errors %d", tag, len(files), changed_count, errors)
+        logger.info(
+            "[%s] processed %d files; changed %d; errors %d",
+            tag,
+            len(files),
+            changed_count,
+            errors,
+        )
         return 1 if errors else 0
 
     raise SystemExit("Provide either --in-file or --in-dir")

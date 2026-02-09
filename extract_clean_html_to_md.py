@@ -32,6 +32,15 @@ def normalize(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def _attr_text(value: object) -> str:
+    """Normalize BeautifulSoup attribute values to plain text."""
+    if isinstance(value, str):
+        return value
+    if isinstance(value, (list, tuple)):
+        return " ".join(str(item) for item in value)
+    return ""
+
+
 def _drop_global_noise(soup: BeautifulSoup) -> None:
     selectors = [
         "script",
@@ -59,8 +68,8 @@ def _drop_global_noise(soup: BeautifulSoup) -> None:
 
 def _drop_navigation_links(soup: BeautifulSoup) -> None:
     for a_tag in soup.find_all("a"):
-        href = (a_tag.get("href") or "").strip()
-        title = (a_tag.get("title") or "").lower()
+        href = _attr_text(a_tag.get("href")).strip()
+        title = _attr_text(a_tag.get("title")).lower()
 
         if href.startswith("#") and any(
             href.startswith(prefix) for prefix in ("#cit", "#img", "#tbl", "#fn")
