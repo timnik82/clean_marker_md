@@ -204,7 +204,7 @@ Additional options:
 
 - `--force`: Overwrite existing files
 - `--dry-run`: Preview changes without writing files
-- `--stats`: Show statistics about cleaned artifacts
+- `--in-place`: Rewrite input file(s) in place
 
 ## Extract clean HTML to Markdown (optional)
 
