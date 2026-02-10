@@ -178,7 +178,7 @@ Additional options:
 - `--lenient`: Use more lenient pattern matching for footers
 - `--force`: Overwrite existing files
 - `--dry-run`: Preview changes without writing files
-- `--stats`: Show statistics about removed footers
+- `--keep-tree`: Preserve folder structure
 
 ## Clean extraction artifacts (optional)
 
