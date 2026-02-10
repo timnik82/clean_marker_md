@@ -198,7 +198,7 @@ This removes:
 - Empty brackets: `()`, `[]`, `{}`
 - Broken figure references: "as shown in ."
 - Extra whitespace and punctuation debris
-- Multiple consecutive blank lines
+- Reduces multiple consecutive blank lines to a single one
 
 Additional options:
 
