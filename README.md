@@ -229,8 +229,8 @@ This script:
 Additional options:
 
 - `--force`: Overwrite existing files
-- `--dry-run`: Preview changes without writing files
-- `--keep-tree`: Preserve folder structure
+- `--keep-endmatter`: Keep references/acknowledgements/conflicts sections
+- `--glob`: File glob for --in-dir mode (default: *.html)
 
 ## Reflow reading order (optional, two-column fixes)
 
