@@ -157,15 +157,26 @@ python extract_clean_html_to_md.py --in-dir ./html_files --out-dir ./markdown_fi
 - Removes journal footers like "*Biosensors* **2023**, *13*, 328 2 of 37"
 - Removes standalone page numbers and "FOR PEER REVIEW" text
 - `--lenient`: Use more lenient pattern matching
+- `--force`: Overwrite existing files
+- `--dry-run`: Preview changes without writing files
+- `--keep-tree`: Preserve folder structure
 
 **clean_extraction_artifacts.py:**
 
 - Cleans empty brackets, broken figure references
 - Removes extra whitespace and punctuation debris
+- Reduces multiple consecutive blank lines to a single one
 - Applied automatically by `extract_clean_html_to_md.py`
+- `--in-place`: Rewrite input file(s) in place
+- `--force`: Overwrite existing files
+- `--dry-run`: Preview changes without writing files
 
 **extract_clean_html_to_md.py:**
 
 - Extracts semantic HTML content to markdown
 - Drops figures, captions, references, navigation
 - Automatically cleans extraction artifacts
+- Stops at end-matter sections (References, Acknowledgements, etc.)
+- `--keep-endmatter`: Keep references/acknowledgements/conflicts sections
+- `--force`: Overwrite existing files
+- `--glob`: File glob for --in-dir mode (default: *.html)
