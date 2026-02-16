@@ -314,8 +314,8 @@ and optional manual JCR Impact Factor values.
 ```bash
 python enrich_metadata.py \
   --papers-dir out_clean/papers \
-  --input out_clean/abstracts_papers.md \
-  --output out_clean/abstracts_papers_enriched.md \
+  --input out_clean/abstracts.md \
+  --output out_clean/abstracts_enriched.md \
   --cache-dir cache \
   --jcr-map jcr_manual_map.csv \
   --mailto you@example.com
