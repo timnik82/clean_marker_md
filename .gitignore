@@ -1,10 +1,9 @@
 # Directories
-out_clean/
 out_raw/
 out_rag_optimized/
 done/
 PDFs/
-out_clean_no_images/
+out_clean_no_images
 HTML/
 
 # Secrets and Config
