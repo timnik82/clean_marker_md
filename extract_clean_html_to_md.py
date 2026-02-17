@@ -104,18 +104,27 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
         if title:
             lines.append(f"# {title}")
 
-    abstract = soup.select_one("div.abstract")
+    abstract = (
+        soup.select_one("div.abstract")
+        or soup.select_one("div.hlFld-Abstract")
+    )
     if abstract:
         abstract_paras = []
-        for p_tag in abstract.find_all("p"):
-            text = normalize(p_tag.get_text(" ", strip=True))
+        for node in abstract.find_all(["p", "div"]):
+            if node.name == "div" and "NLM_p" not in (node.get("class") or []):
+                continue
+            text = normalize(node.get_text(" ", strip=True))
             if len(text) >= 40:
                 abstract_paras.append(text)
         if abstract_paras:
             lines.append("## Abstract")
             lines.extend(abstract_paras)
 
-    start = soup.find("h2", id=re.compile(r"^sect\d+$")) or soup.find("h2")
+    start = (
+        soup.find("h2", id=re.compile(r"^sect\d+$"))
+        or soup.find("h2", id=re.compile(r"^_i\d+$"))
+        or soup.find("h2")
+    )
     current = start
     while current:
         tag_name = current.name
@@ -127,10 +136,14 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
                 continue
             if not keep_endmatter and ENDMATTER_HEADING_RE.match(heading):
                 break
-            prefix = "##" if tag_name == "h2" else "###"
+            level_map = {"h2": "##", "h3": "###", "h4": "####"}
+            prefix = level_map.get(tag_name, "###")
             lines.append(f"{prefix} {heading}")
 
-        elif tag_name in ("p", "span", "li"):
+        elif (
+            tag_name in ("p", "span", "li")
+            or (tag_name == "div" and "NLM_p" in (current.get("class") or []))
+        ):
             if current.find_parent(("h1", "h2", "h3", "h4", "h5", "h6")):
                 current = current.find_next()
                 continue
