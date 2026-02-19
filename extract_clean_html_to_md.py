@@ -178,6 +178,14 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
             tag_name in ("p", "span", "li")
             or (tag_name == "div" and "NLM_p" in (current.get("class") or []))
         ):
+            if (
+                tag_name == "div"
+                and "NLM_p" in (current.get("class") or [])
+                and current.find(["p", "span", "li"])
+            ):
+                # Prefer structured descendants over wrapper-level flattened text.
+                current = current.find_next()
+                continue
             if current.find_parent(("h1", "h2", "h3", "h4", "h5", "h6")):
                 current = current.find_next()
                 continue
