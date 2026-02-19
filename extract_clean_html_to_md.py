@@ -105,7 +105,9 @@ def _is_descendant_or_self(node: Tag, container: Tag | None) -> bool:
 
 
 def _first_h2_outside_container(
-    soup: BeautifulSoup, container: Tag | None, id_pattern: re.Pattern[str] | None = None
+    soup: BeautifulSoup,
+    container: Tag | None,
+    id_pattern: re.Pattern[str] | None = None,
 ) -> Tag | None:
     query = {"id": id_pattern} if id_pattern is not None else {}
     for heading in soup.find_all("h2", **query):
@@ -128,10 +130,7 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
         if title:
             lines.append(f"# {title}")
 
-    abstract = (
-        soup.select_one("div.abstract")
-        or soup.select_one("div.hlFld-Abstract")
-    )
+    abstract = soup.select_one("div.abstract") or soup.select_one("div.hlFld-Abstract")
     if abstract:
         abstract_paras: list[str] = []
         seen_abstract_paras: set[str] = set()
@@ -174,9 +173,8 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
             prefix = HEADING_LEVEL_MAP.get(tag_name, "###")
             lines.append(f"{prefix} {heading}")
 
-        elif (
-            tag_name in ("p", "span", "li")
-            or (tag_name == "div" and "NLM_p" in (current.get("class") or []))
+        elif tag_name in ("p", "span", "li") or (
+            tag_name == "div" and "NLM_p" in (current.get("class") or [])
         ):
             if (
                 tag_name == "div"
