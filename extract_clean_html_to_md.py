@@ -14,7 +14,7 @@ import logging
 import re
 from pathlib import Path
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 
 from clean_extraction_artifacts import clean_text
 
@@ -26,6 +26,14 @@ ENDMATTER_HEADING_RE = re.compile(
     r"author contributions?|data availability)\b",
     flags=re.IGNORECASE,
 )
+
+SECTION_H2_ID_PATTERNS = (
+    re.compile(r"^sect\d+$"),
+    re.compile(r"^_i\d+$"),
+)
+
+HEADING_LEVEL_MAP = {"h2": "##", "h3": "###", "h4": "####"}
+DEDUP_HEADING_PREFIXES = ("## ", "### ", "#### ")
 
 
 def normalize(text: str) -> str:
@@ -90,6 +98,24 @@ def _drop_navigation_links(soup: BeautifulSoup) -> None:
             a_tag.decompose()
 
 
+def _is_descendant_or_self(node: Tag, container: Tag | None) -> bool:
+    if container is None:
+        return False
+    return node is container or container in node.parents
+
+
+def _first_h2_outside_container(
+    soup: BeautifulSoup,
+    container: Tag | None,
+    id_pattern: re.Pattern[str] | None = None,
+) -> Tag | None:
+    query = {"id": id_pattern} if id_pattern is not None else {}
+    for heading in soup.find_all("h2", **query):
+        if not _is_descendant_or_self(heading, container):
+            return heading
+    return None
+
+
 def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
     soup = BeautifulSoup(html, "html.parser")
 
@@ -104,20 +130,37 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
         if title:
             lines.append(f"# {title}")
 
-    abstract = soup.select_one("div.abstract")
+    abstract = soup.select_one("div.abstract") or soup.select_one("div.hlFld-Abstract")
     if abstract:
-        abstract_paras = []
-        for p_tag in abstract.find_all("p"):
-            text = normalize(p_tag.get_text(" ", strip=True))
-            if len(text) >= 40:
+        abstract_paras: list[str] = []
+        seen_abstract_paras: set[str] = set()
+        for node in abstract.find_all(["p", "div"]):
+            if node.name == "div":
+                if "NLM_p" not in (node.get("class") or []):
+                    continue
+                # Skip NLM container divs when they wrap <p> children to avoid duplicates.
+                if node.find("p"):
+                    continue
+            text = normalize(node.get_text(" ", strip=True))
+            if len(text) >= 40 and text not in seen_abstract_paras:
+                seen_abstract_paras.add(text)
                 abstract_paras.append(text)
         if abstract_paras:
             lines.append("## Abstract")
             lines.extend(abstract_paras)
 
-    start = soup.find("h2", id=re.compile(r"^sect\d+$")) or soup.find("h2")
+    start = None
+    for pattern in (*SECTION_H2_ID_PATTERNS, None):
+        start = _first_h2_outside_container(soup, abstract, id_pattern=pattern)
+        if start:
+            break
+
     current = start
     while current:
+        if abstract and _is_descendant_or_self(current, abstract):
+            current = current.find_next()
+            continue
+
         tag_name = current.name
 
         if tag_name in ("h2", "h3", "h4"):
@@ -127,14 +170,21 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
                 continue
             if not keep_endmatter and ENDMATTER_HEADING_RE.match(heading):
                 break
-            prefix = "##" if tag_name == "h2" else "###"
+            prefix = HEADING_LEVEL_MAP.get(tag_name, "###")
             lines.append(f"{prefix} {heading}")
 
-        elif tag_name in ("p", "span", "li"):
-            if current.find_parent(("h1", "h2", "h3", "h4", "h5", "h6")):
+        elif tag_name in ("p", "span", "li") or (
+            tag_name == "div" and "NLM_p" in (current.get("class") or [])
+        ):
+            if (
+                tag_name == "div"
+                and "NLM_p" in (current.get("class") or [])
+                and current.find(["p", "span", "li"])
+            ):
+                # Prefer structured descendants over wrapper-level flattened text.
                 current = current.find_next()
                 continue
-            if abstract and current.find_parent("div", class_="abstract"):
+            if current.find_parent(("h1", "h2", "h3", "h4", "h5", "h6")):
                 current = current.find_next()
                 continue
 
@@ -165,7 +215,7 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
     for line in lines:
         if deduped and deduped[-1] == line:
             continue
-        if deduped and deduped[-1].startswith(("## ", "### ")):
+        if deduped and deduped[-1].startswith(DEDUP_HEADING_PREFIXES):
             previous_heading_text = deduped[-1].split(" ", 1)[1]
             if line == previous_heading_text:
                 continue
