@@ -28,14 +28,15 @@ SPACE_BEFORE_PUNCT_RE = re.compile(r"\s+([,.;:!?])")
 MULTI_SPACE_RE = re.compile(r"[ \t]{2,}")
 MULTI_BLANK_LINES_RE = re.compile(r"\n{3,}")
 CITATION_BRACKET_RE = re.compile(
-    r"\[\s*(?:\d{1,3}(?:\s*[–-]\s*\d{1,3})?)"
-    r"(?:\s*[,;]\s*\d{1,3}(?:\s*[–-]\s*\d{1,3})?)*\s*\]"
+    r"\[\s*(?:\d{1,3}(?:\s*[-–]\s*\d{1,3})?)"
+    r"(?:\s*[,;]\s*\d{1,3}(?:\s*[-–]\s*\d{1,3})?)*\s*\]"
 )
 
 
-def clean_text(text: str) -> str:
+def clean_text(text: str, drop_citations: bool = False) -> str:
     """Apply artifact cleanup rules to extracted markdown text."""
-    text = CITATION_BRACKET_RE.sub("", text)
+    if drop_citations:
+        text = CITATION_BRACKET_RE.sub("", text)
     text = EMPTY_BRACKETS_RE.sub("", text)
     text = BROKEN_FIGURE_REF_RE.sub("", text)
     text = BROKEN_PARENTHESES_SENTENCE_RE.sub(".", text)
@@ -46,7 +47,11 @@ def clean_text(text: str) -> str:
 
 
 def process_file(
-    in_file: Path, out_file: Path, force: bool = False, dry_run: bool = False
+    in_file: Path,
+    out_file: Path,
+    force: bool = False,
+    dry_run: bool = False,
+    drop_citations: bool = False,
 ) -> bool:
     """Process one markdown file. Returns True if content changed."""
     if not in_file.exists():
@@ -55,7 +60,7 @@ def process_file(
         raise FileExistsError(f"Output file exists (use --force): {out_file}")
 
     original = in_file.read_text(encoding="utf-8")
-    cleaned = clean_text(original)
+    cleaned = clean_text(original, drop_citations=drop_citations)
     changed = cleaned != original
 
     if not dry_run:
@@ -96,6 +101,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Preview what would change without writing any files",
     )
+    parser.add_argument(
+        "--drop-citations",
+        action="store_true",
+        help="Drop numeric bracket citations like [12] and [3,4]",
+    )
     return parser.parse_args()
 
 
@@ -111,7 +121,11 @@ def main() -> int:
         else:
             out_file = _default_output_path(args.in_file)
         changed = process_file(
-            args.in_file, out_file, force=args.force, dry_run=args.dry_run
+            args.in_file,
+            out_file,
+            force=args.force,
+            dry_run=args.dry_run,
+            drop_citations=args.drop_citations,
         )
         tag = "dry-run" if args.dry_run else "ok"
         logger.info(
@@ -141,7 +155,11 @@ def main() -> int:
             out_file = out_dir / rel
             try:
                 changed = process_file(
-                    in_file, out_file, force=args.force, dry_run=args.dry_run
+                    in_file,
+                    out_file,
+                    force=args.force,
+                    dry_run=args.dry_run,
+                    drop_citations=args.drop_citations,
                 )
                 if changed:
                     changed_count += 1

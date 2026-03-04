@@ -125,12 +125,12 @@ INLINE_MATH_RE = re.compile(
     re.DOTALL,
 )
 UNIT_NEG_EXP_SPACING_RE = re.compile(r"([A-Za-zµμ°%])\s*([−-])\s+(\d)")
-OPEN_PAREN_SPACE_RE = re.compile(r"\(\s+")
-CLOSE_PAREN_SPACE_RE = re.compile(r"\s+\)")
+OPEN_PAREN_SPACE_RE = re.compile(r"\([ \t]+")
+CLOSE_PAREN_SPACE_RE = re.compile(r"[ \t]+\)")
 REPLACEMENT_TEMP_UNIT_RE = re.compile(r"�\s*([CFK])\b")
 REPLACEMENT_PLUS_MINUS_RE = re.compile(r"(?<!\w)�\s*(\d)")
 REPLACEMENT_NUMERIC_DEGREE_RE = re.compile(r"(?<=\d)\s*�(?=\s|[),.;:/]|$)")
-FIG_LABEL = r"(?:fig(?:ure)?s?|tab(?:le)?s?|scheme|eq(?:uation)?s?)"
+FIG_LABEL = r"(?:fig(?:ure)?s?|tab(?:le)?s?|schemes?|eq(?:uation)?s?)"
 FIG_LINK_RE = re.compile(
     rf"\[\s*\(?\s*{FIG_LABEL}\.?\s*[^\]]*?\]\([^)]+\)", re.IGNORECASE
 )
@@ -143,7 +143,7 @@ FIG_INLINE_REF_RE = re.compile(
     rf"\b{FIG_LABEL}\.?\s*\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?(?:\s*\([a-z]\))?",
     re.IGNORECASE,
 )
-ORPHANED_FIG_PARENS_RE = re.compile(r"\(\s*(?:[a-z]|[ivx]+)\s*\)", re.IGNORECASE)
+ORPHANED_BRACKET_TOKEN_RE = re.compile(r"(?:(?<=\s)|^)[\[\]()]{1,3}(?=\s|$)")
 
 MATH_BLOCK_PATTERNS = [
     re.compile(r"\$\$.*?\$\$", re.DOTALL),
@@ -392,8 +392,8 @@ def strip_figure_references(text: str) -> str:
     text = FIG_LINK_RE.sub("", text)
     text = FIG_PAREN_REF_RE.sub("", text)
     text = FIG_INLINE_REF_RE.sub("", text)
-    # Clean simple orphaned panel markers left by broken links, e.g. "(f)".
-    text = ORPHANED_FIG_PARENS_RE.sub("", text)
+    # Remove standalone bracket tokens left by malformed figure links, e.g. ")".
+    text = ORPHANED_BRACKET_TOKEN_RE.sub("", text)
     # Cleanup local punctuation/spacing artifacts caused by ref removal.
     text = re.sub(r"\[\s*\]", "", text)
     text = re.sub(r"\(\s*\)", "", text)
