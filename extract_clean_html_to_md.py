@@ -34,6 +34,10 @@ SECTION_H2_ID_PATTERNS = (
 
 HEADING_LEVEL_MAP = {"h2": "##", "h3": "###", "h4": "####"}
 DEDUP_HEADING_PREFIXES = ("## ", "### ", "#### ")
+CITATION_BRACKET_RE = re.compile(
+    r"\[\s*(?:\d{1,3}(?:\s*[–-]\s*\d{1,3})?)"
+    r"(?:\s*[,;]\s*\d{1,3}(?:\s*[–-]\s*\d{1,3})?)*\s*\]"
+)
 
 
 def normalize(text: str) -> str:
@@ -200,11 +204,7 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
                 continue
 
             # Drop in-text numeric citation brackets.
-            text = re.sub(
-                r"\[(?:\d+|\d+\s*[–-]\s*\d+)(?:\s*,\s*(?:\d+|\d+\s*[–-]\s*\d+))*\]",
-                "",
-                text,
-            )
+            text = CITATION_BRACKET_RE.sub("", text)
             text = normalize(text)
             if text:
                 lines.append(text)

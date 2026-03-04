@@ -27,10 +27,15 @@ BROKEN_PARENTHESES_SENTENCE_RE = re.compile(r"\(\s*\)\s*\.")
 SPACE_BEFORE_PUNCT_RE = re.compile(r"\s+([,.;:!?])")
 MULTI_SPACE_RE = re.compile(r"[ \t]{2,}")
 MULTI_BLANK_LINES_RE = re.compile(r"\n{3,}")
+CITATION_BRACKET_RE = re.compile(
+    r"\[\s*(?:\d{1,3}(?:\s*[–-]\s*\d{1,3})?)"
+    r"(?:\s*[,;]\s*\d{1,3}(?:\s*[–-]\s*\d{1,3})?)*\s*\]"
+)
 
 
 def clean_text(text: str) -> str:
     """Apply artifact cleanup rules to extracted markdown text."""
+    text = CITATION_BRACKET_RE.sub("", text)
     text = EMPTY_BRACKETS_RE.sub("", text)
     text = BROKEN_FIGURE_REF_RE.sub("", text)
     text = BROKEN_PARENTHESES_SENTENCE_RE.sub(".", text)
