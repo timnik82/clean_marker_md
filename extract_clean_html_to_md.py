@@ -23,7 +23,8 @@ logger = logging.getLogger(__name__)
 
 ENDMATTER_HEADING_RE = re.compile(
     r"^(references?|acknowledg(e)?ments?|conflicts? of interest|"
-    r"author contributions?|data availability)\b",
+    r"author contributions?|author information|supporting information|"
+    r"terms? (and|&) conditions|data availability)\b",
     flags=re.IGNORECASE,
 )
 
@@ -270,7 +271,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--keep-endmatter",
         action="store_true",
-        help="Keep references/acknowledgements/conflicts sections",
+        help=(
+            "Keep end-matter sections such as references, acknowledgements, "
+            "author information, supporting information, and terms & conditions"
+        ),
     )
     parser.add_argument(
         "--force",

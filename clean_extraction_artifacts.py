@@ -23,13 +23,23 @@ BROKEN_FIGURE_REF_RE = re.compile(
     r"\b(?:as\s+)?(?:is\s+)?shown\s+in\s*\.",
     flags=re.IGNORECASE,
 )
+PAREN_FIGURE_REF_RE = re.compile(
+    r"\(\s*(?:fig(?:ure)?|tab(?:le)?|scheme|eq(?:uation)?)s?\.?\s*"
+    r"\d+[a-z]?(?:\s*[-–−]\s*\d+[a-z]?)*"
+    r"(?:\s*[a-z](?:\s*[,/]\s*[a-z])*)?\s*\)",
+    flags=re.IGNORECASE,
+)
 BROKEN_PARENTHESES_SENTENCE_RE = re.compile(r"\(\s*\)\s*\.")
 SPACE_BEFORE_PUNCT_RE = re.compile(r"\s+([,.;:!?])")
 MULTI_SPACE_RE = re.compile(r"[ \t]{2,}")
 MULTI_BLANK_LINES_RE = re.compile(r"\n{3,}")
 CITATION_BRACKET_RE = re.compile(
-    r"\[\s*(?:\d{1,3}(?:\s*[-–]\s*\d{1,3})?)"
-    r"(?:\s*[,;]\s*\d{1,3}(?:\s*[-–]\s*\d{1,3})?)*\s*\]"
+    r"\[\s*(?:\d{1,3}(?:\s*[-–−]\s*\d{1,3})?)"
+    r"(?:\s*[,;]\s*\d{1,3}(?:\s*[-–−]\s*\d{1,3})?)*\s*\]"
+)
+PAREN_CITATION_RE = re.compile(
+    r"\(\s*(?:\d{1,3}(?:\s*[-–−]\s*\d{1,3})?)"
+    r"(?:\s*[,;]\s*\d{1,3}(?:\s*[-–−]\s*\d{1,3})?)*\s*\)"
 )
 
 
@@ -37,6 +47,8 @@ def clean_text(text: str, drop_citations: bool = False) -> str:
     """Apply artifact cleanup rules to extracted markdown text."""
     if drop_citations:
         text = CITATION_BRACKET_RE.sub("", text)
+        text = PAREN_CITATION_RE.sub("", text)
+    text = PAREN_FIGURE_REF_RE.sub("", text)
     text = EMPTY_BRACKETS_RE.sub("", text)
     text = BROKEN_FIGURE_REF_RE.sub("", text)
     text = BROKEN_PARENTHESES_SENTENCE_RE.sub(".", text)
