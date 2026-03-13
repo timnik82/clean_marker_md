@@ -135,8 +135,10 @@ FIG_LINK_RE = re.compile(
     rf"\[\s*\(?\s*{FIG_LABEL}\.?\s*[^\]]*?\]\([^)]+\)", re.IGNORECASE
 )
 # A single figure/table/eq reference with optional panel letter: "Fig. 5a", "Figs. 1-3(b)"
+# Require either a dot (with optional space) or at least one space between label and
+# number so compact tokens like "eq1" or "fig1" are not stripped.
 _FIG_SINGLE_REF = (
-    rf"{FIG_LABEL}\.?\s*\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?(?:\s*\([a-z]\))?"
+    rf"{FIG_LABEL}(?:\.\s*|\s+)\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?(?:\s*\([a-z]\))?"
 )
 # A continuation ref after a comma may omit the label: "Figs. 1, 2" or "Fig. 1, Table 2"
 _FIG_CONTINUATION = (

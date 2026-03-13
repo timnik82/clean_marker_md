@@ -7,7 +7,7 @@ description: Fetch, analyze, and fix PR review feedback from automated bots (cub
 
 Fetch all PR review feedback (from automated bots), analyze and categorize it, and provide a prioritized fix plan.
 
-## Tool: `.agent/skills/pr-feedback/scripts/fetch_pr_comments.py`
+## Tool: `.agents/skills/pr-feedback/scripts/fetch_pr_comments.py`
 
 Located in the skill's `scripts/` directory. Uses GitHub REST API via `gh api`.
 
@@ -15,16 +15,16 @@ Located in the skill's `scripts/` directory. Uses GitHub REST API via `gh api`.
 
 ```bash
 # Actionable items only (skip raw comment dumps) — saves ~50% tokens vs full output
-python3 .agent/skills/pr-feedback/scripts/fetch_pr_comments.py --actionable-only --stdout --no-write
+python3 .agents/skills/pr-feedback/scripts/fetch_pr_comments.py --actionable-only --stdout --no-write
 
 # Write full report to file for selective reading
-python3 .agent/skills/pr-feedback/scripts/fetch_pr_comments.py --actionable-only
+python3 .agents/skills/pr-feedback/scripts/fetch_pr_comments.py --actionable-only
 
 # After a push, only show feedback since last commit
-python3 .agent/skills/pr-feedback/scripts/fetch_pr_comments.py --actionable-only --since-commit HEAD~1 --stdout --no-write
+python3 .agents/skills/pr-feedback/scripts/fetch_pr_comments.py --actionable-only --since-commit HEAD~1 --stdout --no-write
 
 # Full report (all 3 comment types, raw + actionable) — only when deep-diving
-python3 .agent/skills/pr-feedback/scripts/fetch_pr_comments.py --stdout --no-write
+python3 .agents/skills/pr-feedback/scripts/fetch_pr_comments.py --stdout --no-write
 ```
 
 > **Always use `--actionable-only`** unless you need to investigate a specific raw comment.
@@ -41,7 +41,7 @@ The script automatically:
 
 ### Configuring ignored bots
 
-Edit `IGNORED_BOTS` in `.agent/skills/pr-feedback/scripts/fetch_pr_comments.py` to skip bots that don't produce useful feedback:
+Edit `IGNORED_BOTS` in `.agents/skills/pr-feedback/scripts/fetch_pr_comments.py` to skip bots that don't produce useful feedback:
 ```python
 IGNORED_BOTS: set[str] = {
     "vercel[bot]",
@@ -53,7 +53,7 @@ IGNORED_BOTS: set[str] = {
 ### Step 1: Fetch and read
 
 ```bash
-python3 .agent/skills/pr-feedback/scripts/fetch_pr_comments.py --actionable-only --stdout --no-write
+python3 .agents/skills/pr-feedback/scripts/fetch_pr_comments.py --actionable-only --stdout --no-write
 ```
 
 ### Step 2: Categorize into priority tiers
@@ -86,7 +86,7 @@ Multiple bots often flag the **same underlying issue**. Group duplicates and not
 git add -A && git commit -m "fix: address PR review feedback" && git push
 
 # Re-fetch to see if bots posted new comments on updated code
-python3 .agent/skills/pr-feedback/scripts/fetch_pr_comments.py --actionable-only --since-commit HEAD~1 --stdout --no-write
+python3 .agents/skills/pr-feedback/scripts/fetch_pr_comments.py --actionable-only --since-commit HEAD~1 --stdout --no-write
 ```
 
 ## Bot reference: where each bot writes feedback

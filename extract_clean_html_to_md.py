@@ -225,7 +225,19 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
                 # Prefer structured descendants over wrapper-level flattened text.
                 current = current.find_next()
                 continue
+            # Skip tags whose text is already captured by a containing block element:
+            # - anything inside a heading (handled separately as '## heading')
+            # - p/li inside another p/li (outer block's get_text() already includes it)
+            # - spans inside a p or li (prevents duplicating inline text)
             if current.find_parent(("h1", "h2", "h3", "h4", "h5", "h6", "p", "li")):
+                current = current.find_next()
+                continue
+            # Skip spans that are children of a div.NLM_p — their text was already
+            # emitted as lead-in text when the div was processed above.
+            if tag_name == "span" and current.find_parent(
+                lambda tag: isinstance(tag, Tag)
+                and "NLM_p" in (tag.get("class") or [])
+            ):
                 current = current.find_next()
                 continue
 

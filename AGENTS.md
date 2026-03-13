@@ -127,6 +127,8 @@ python extract_clean_html_to_md.py --in-dir ./html_files --out-dir ./markdown_fi
 - `--keep-math`: Keep math sentences
 - `--keep-captions`: Keep figure/table captions
 - `--keep-citations`: Keep numeric bracket citations (e.g., `[12]`)
+- `--keep-superscripts`: Keep unit exponent notation as-is (e.g., `cm –1`); default normalises to `cm-1`
+- `--keep-figure-refs`: Keep figure/table/equation reference text; default strips them
 - `--force`: Overwrite existing files
 - `--dry-run`: Preview without writing
 
