@@ -13,16 +13,16 @@ Also prints an "actionable feedback" section grouped with inferred severity.
 from __future__ import annotations
 
 import argparse
-from difflib import SequenceMatcher
 import json
 import re
 import subprocess
 import sys
+from collections.abc import Iterable, Sequence
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
+from difflib import SequenceMatcher
 from pathlib import Path
-from typing import Any, Iterable, List, Sequence
-
+from typing import Any
 
 # Bots that never produce actionable feedback — skip entirely.
 IGNORED_BOTS: set[str] = {
@@ -53,7 +53,7 @@ HTML_TAG_PATTERN = re.compile(r"</?[^>]+>")
 URL_PATTERN = re.compile(r"https?://\S+")
 
 STATUS_NOISE_PATTERNS = [
-    re.compile(r"^@[\w\-\[\]]+ (?:review|re-review|help|pause|resume)\b", re.IGNORECASE),  # command pings only
+    re.compile(r"^@[\w\-\[\]]+:?\s+(?:re-?review|review|help|pause|resume)\b", re.IGNORECASE),  # command pings only
     re.compile(r"codeant ai is running the review", re.IGNORECASE),
     re.compile(r"codeant ai finished running the review", re.IGNORECASE),
     re.compile(r"skipping pr review because a bot author is detected", re.IGNORECASE),
@@ -122,7 +122,7 @@ class ActionableItem:
     also_reported_by: list[str] = field(default_factory=list)
 
 
-def run(cmd: List[str]) -> str:
+def run(cmd: list[str]) -> str:
     proc = subprocess.run(cmd, capture_output=True, text=True)
     if proc.returncode != 0:
         stderr = proc.stderr.strip() or proc.stdout.strip()
@@ -152,8 +152,8 @@ def filter_since(
     filtered: list[dict[str, Any]] = []
     for item in items:
         candidate_ts: datetime | None = None
-        for field in timestamp_fields:
-            raw = item.get(field)
+        for ts_field in timestamp_fields:
+            raw = item.get(ts_field)
             if not raw:
                 continue
             try:
@@ -180,7 +180,7 @@ def gh_api(endpoint: str, paginate: bool = False) -> Any:
     # `gh api --paginate` prints one JSON page per line. Parse all pages robustly.
     decoder = json.JSONDecoder()
     idx = 0
-    pages: List[Any] = []
+    pages: list[Any] = []
     while idx < len(raw):
         while idx < len(raw) and raw[idx].isspace():
             idx += 1
@@ -190,7 +190,7 @@ def gh_api(endpoint: str, paginate: bool = False) -> Any:
         pages.append(page)
         idx = consumed
 
-    merged: List[Any] = []
+    merged: list[Any] = []
     for page in pages:
         if isinstance(page, list):
             merged.extend(page)
@@ -427,11 +427,11 @@ def build_actionable_items(
     issue_comments: Iterable[dict[str, Any]],
     review_comments: Iterable[dict[str, Any]],
     reviews: Iterable[dict[str, Any]],
-) -> List[ActionableItem]:
+) -> list[ActionableItem]:
     review_comments = list(review_comments)
     issue_comments = list(issue_comments)
     reviews = list(reviews)
-    items: List[ActionableItem] = []
+    items: list[ActionableItem] = []
     actionable_inline_reviewers: set[str] = set()
 
     for c in review_comments:
@@ -543,7 +543,7 @@ def render_markdown(
     additions = pr_details.get("additions", "n/a")
     deletions = pr_details.get("deletions", "n/a")
 
-    lines: List[str] = []
+    lines: list[str] = []
     lines.append(f"# PR Feedback Report: #{number}")
     lines.append("")
     lines.append("## PR Details")

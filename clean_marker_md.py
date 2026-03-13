@@ -151,7 +151,7 @@ FIG_PAREN_REF_RE = re.compile(
 # Require at least one space between label and number to avoid matching chemistry
 # notation like "eq1" or compact abbreviations with no separator.
 FIG_INLINE_REF_RE = re.compile(
-    rf"\b{FIG_LABEL}\.?\s+\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?(?:\s*\([a-z]\))?",
+    rf"\b{FIG_LABEL}(?:\.\s*|\s+)\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?(?:\s*\([a-z]\))?",
     re.IGNORECASE,
 )
 ORPHANED_BRACKET_TOKEN_RE = re.compile(r"(?:(?<=\s)|^)[\[\]()]{1,3}(?=\s|$)")

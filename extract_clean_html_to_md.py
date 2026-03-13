@@ -110,12 +110,17 @@ def _first_h2_outside_container(
     container: Tag | None,
     id_pattern: re.Pattern[str] | None = None,
 ) -> Tag | None:
-    headings: list[Tag] = soup.find_all("h2")
-    for heading in headings:
-        if id_pattern is not None and not id_pattern.match(_attr_text(heading.get("id"))):
-            continue
-        if not _is_descendant_or_self(heading, container):
-            return heading
+    headings_outside = [
+        h for h in soup.find_all("h2") if not _is_descendant_or_self(h, container)
+    ]
+    if not headings_outside:
+        return None
+    if id_pattern is None:
+        return headings_outside[0]
+    # Use id_pattern only to confirm the document uses this layout; always start
+    # from the very first section heading to avoid dropping earlier content.
+    if any(id_pattern.match(_attr_text(h.get("id"))) for h in headings_outside):
+        return headings_outside[0]
     return None
 
 
@@ -144,7 +149,7 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
                 # Skip NLM container divs when they wrap structured children to avoid
                 # duplicates. But first emit any lead-in text (e.g. intro sentence
                 # before a list or paragraph child), including text in inline tags.
-                if node.find(["p", "ul", "li", "span"]):
+                if node.find(["p", "ul", "li"]):
                     block_tags = frozenset(("p", "ul", "ol", "li", "table", "blockquote", "div"))
                     abs_parts: list[str] = []
                     for _child in node.children:
@@ -201,7 +206,7 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
             if (
                 tag_name == "div"
                 and "NLM_p" in (current.get("class") or [])
-                and current.find(["p", "span", "li"])
+                and current.find(["p", "ul", "li"])
             ):
                 # Emit lead-in text before the first structural child (e.g. an intro
                 # sentence before a <ul>). Collect text from NavigableString nodes
