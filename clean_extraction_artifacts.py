@@ -36,6 +36,9 @@ MULTI_BLANK_LINES_RE = re.compile(r"\n{3,}")
 # Superscript exponents flattened by HTML serialisation: "cm –1" → "cm-1".
 # Matches a letter (unit abbreviation) + space + any minus/dash char + 1–2 digits.
 SUPERSCRIPT_MINUS_RE = re.compile(r"([A-Za-z])\s[–−-](\d{1,2})\b")
+# Subscript digits flattened by HTML serialisation: "CH 2" → "CH2".
+# Matches 1–3 uppercase letters (chemical abbreviation) + space + digits.
+SUBSCRIPT_DIGIT_RE = re.compile(r"([A-Z]{1,3})\s(\d+)\b")
 
 CITATION_BRACKET_RE = re.compile(
     r"\[\s*(?:\d{1,3}(?:\s*[-–−]\s*\d{1,3})?)"
@@ -50,6 +53,7 @@ PAREN_CITATION_RE = re.compile(
 def clean_text(text: str, drop_citations: bool = False) -> str:
     """Apply artifact cleanup rules to extracted markdown text."""
     text = SUPERSCRIPT_MINUS_RE.sub(r"\1-\2", text)
+    text = SUBSCRIPT_DIGIT_RE.sub(r"\1\2", text)
     if drop_citations:
         text = CITATION_BRACKET_RE.sub("", text)
         text = PAREN_CITATION_RE.sub("", text)
