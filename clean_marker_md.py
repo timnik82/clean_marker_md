@@ -83,6 +83,7 @@ LEADING_HTML_TAG_RE = re.compile(r"^(?:\s*<[^>]+>\s*)+")
 HEADING_BREAK_RE = re.compile(r"[,;:]")
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 PAGE_LINK_RE = re.compile(r"\(#page-\d+-\d+\)")
+SUP_TAG_RE = re.compile(r"<sup\b[^>]*>\s*(.*?)\s*</sup>", re.IGNORECASE | re.DOTALL)
 DECORATIVE_HEADING_PREFIX_RE = re.compile(r"^(?:\s*[■•▪▫◦◆◇●○◉]+)+\s*")
 WORD_SUFFIX_CITATION_RE = re.compile(
     r"(\w+)\[([a-zA-Z]*)(\d+[0-9.,–\-\u2013\u2014]*)\]"
@@ -123,6 +124,37 @@ INLINE_MATH_RE = re.compile(
     r"(?<!\\)\$(?!\$).+?(?<!\\)\$|\\\(.+?\\\)",
     re.DOTALL,
 )
+UNIT_NEG_EXP_SPACING_RE = re.compile(r"([A-Za-zµμ°%])\s+([–−-])\s*(\d)")
+OPEN_PAREN_SPACE_RE = re.compile(r"\([ \t]+")
+CLOSE_PAREN_SPACE_RE = re.compile(r"[ \t]+\)")
+REPLACEMENT_TEMP_UNIT_RE = re.compile(r"�\s*([CFK])\b")
+REPLACEMENT_PLUS_MINUS_RE = re.compile(r"(?<!\w)�\s*(\d)")
+REPLACEMENT_NUMERIC_DEGREE_RE = re.compile(r"(?<=\d)\s*�(?=\s|[),.;:/]|$)")
+FIG_LABEL = r"(?:fig(?:ure)?s?|tab(?:le)?s?|schemes?|eq(?:uation)?s?)"
+FIG_LINK_RE = re.compile(
+    rf"\[\s*\(?\s*{FIG_LABEL}\.?\s*[^\]]*?\]\([^)]+\)", re.IGNORECASE
+)
+# A single figure/table/eq reference with optional panel letter: "Fig. 5a", "Figs. 1-3(b)"
+# Require either a dot (with optional space) or at least one space between label and
+# number so compact tokens like "eq1" or "fig1" are not stripped.
+_FIG_SINGLE_REF = (
+    rf"{FIG_LABEL}(?:\.\s*|\s+)\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?(?:\s*\([a-z]\))?"
+)
+# A continuation ref after a comma may omit the label: "Figs. 1, 2" or "Fig. 1, Table 2"
+_FIG_CONTINUATION = (
+    rf"(?:{FIG_LABEL}\.?\s*)?\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?(?:\s*\([a-z]\))?"
+)
+FIG_PAREN_REF_RE = re.compile(
+    rf"\(\s*{_FIG_SINGLE_REF}(?:\s*[,;]\s*{_FIG_CONTINUATION})*\s*\)",
+    re.IGNORECASE,
+)
+# Require at least one space between label and number to avoid matching chemistry
+# notation like "eq1" or compact abbreviations with no separator.
+FIG_INLINE_REF_RE = re.compile(
+    rf"\b{FIG_LABEL}(?:\.\s*|\s+)\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?(?:\s*\([a-z]\))?",
+    re.IGNORECASE,
+)
+ORPHANED_BRACKET_TOKEN_RE = re.compile(r"(?:(?<=\s)|^)[\[\]()]{1,3}(?=\s|$)")
 
 MATH_BLOCK_PATTERNS = [
     re.compile(r"\$\$.*?\$\$", re.DOTALL),
@@ -345,6 +377,43 @@ def clean_paragraph(paragraph: str, drop_math: bool) -> str:
     return " ".join(kept).strip()
 
 
+def normalize_spacing_artifacts(text: str) -> str:
+    """Normalize extraction spacing artifacts useful for RAG token quality."""
+    # Fix unit exponents like "m− 1" -> "m−1" and "K- 1" -> "K-1".
+    text = UNIT_NEG_EXP_SPACING_RE.sub(r"\1-\3", text)
+    # Trim redundant spaces just inside parentheses.
+    text = OPEN_PAREN_SPACE_RE.sub("(", text)
+    text = CLOSE_PAREN_SPACE_RE.sub(")", text)
+    return text
+
+
+def normalize_replacement_char_artifacts(text: str) -> str:
+    """Repair common decode artifacts represented by Unicode replacement char."""
+    # Typical OCR/PDF decode artifacts in scientific texts.
+    text = REPLACEMENT_PLUS_MINUS_RE.sub(r"±\1", text)
+    text = REPLACEMENT_TEMP_UNIT_RE.sub(r"°\1", text)
+    text = REPLACEMENT_NUMERIC_DEGREE_RE.sub("°", text)
+    # Drop unresolved replacement glyphs (noise for RAG).
+    text = text.replace("�", "")
+    return text
+
+
+def strip_figure_references(text: str) -> str:
+    """Remove figure/table/scheme/equation references while keeping prose."""
+    text = FIG_LINK_RE.sub("", text)
+    text = FIG_PAREN_REF_RE.sub("", text)
+    text = FIG_INLINE_REF_RE.sub("", text)
+    # Remove standalone bracket tokens left by malformed figure links, e.g. ")".
+    text = ORPHANED_BRACKET_TOKEN_RE.sub("", text)
+    # Cleanup local punctuation/spacing artifacts caused by ref removal.
+    text = re.sub(r"\[\s*\]", "", text)
+    text = re.sub(r"\(\s*\)", "", text)
+    text = re.sub(r"\s+([,.;:])", r"\1", text)
+    text = re.sub(r",\s*,+", ", ", text)
+    text = re.sub(r"[ \t]{2,}", " ", text)
+    return text
+
+
 def cleanup_text(
     text: str,
     drop_endmatter: bool = True,
@@ -354,6 +423,8 @@ def cleanup_text(
     drop_math: bool = True,
     drop_image_descriptions: bool = True,
     drop_citations: bool = True,
+    drop_superscripts: bool = True,
+    drop_figure_refs: bool = True,
 ) -> str:
     text = text.replace("\r\n", "\n").replace("\r", "\n")
     text = strip_citation_math_escapes(text)
@@ -363,6 +434,12 @@ def cleanup_text(
     text = PAGE_LINK_RE.sub("", text)
     if drop_citations:
         text = strip_numeric_citation_brackets(text)
+    if drop_superscripts:
+        # Superscript tags are mostly extraction/layout artifacts in RAG corpora.
+        text = SUP_TAG_RE.sub(r"\1", text)
+    text = normalize_replacement_char_artifacts(text)
+    if drop_figure_refs:
+        text = strip_figure_references(text)
     text = remove_math_blocks(text)
 
     lines = text.split("\n")
@@ -484,6 +561,7 @@ def cleanup_text(
             cleaned_paragraphs.append(cleaned)
 
     output = "\n\n".join(cleaned_paragraphs)
+    output = normalize_spacing_artifacts(output)
     output = re.sub(r"[ \t]+$", "", output, flags=re.MULTILINE)
     output = re.sub(r"\n{3,}", "\n\n", output).strip() + "\n"
     return output
@@ -534,6 +612,16 @@ def parse_args() -> argparse.Namespace:
         help="Do not drop numeric bracket citations like [12] or [5,6]",
     )
     parser.add_argument(
+        "--keep-superscripts",
+        action="store_true",
+        help="Do not strip HTML superscript tags like <sup>...</sup>",
+    )
+    parser.add_argument(
+        "--keep-figure-refs",
+        action="store_true",
+        help="Do not strip figure/table/scheme/equation references",
+    )
+    parser.add_argument(
         "--force",
         action="store_true",
         help="Overwrite existing output files (default: skip if output exists)",
@@ -551,6 +639,8 @@ def main() -> int:
     drop_math = not args.keep_math
     drop_image_descriptions = not args.keep_image_descriptions
     drop_citations = not args.keep_citations
+    drop_superscripts = not args.keep_superscripts
+    drop_figure_refs = not args.keep_figure_refs
 
     if args.in_dir:
         if not args.out_dir:
@@ -593,6 +683,8 @@ def main() -> int:
                 drop_math=drop_math,
                 drop_image_descriptions=drop_image_descriptions,
                 drop_citations=drop_citations,
+                drop_superscripts=drop_superscripts,
+                drop_figure_refs=drop_figure_refs,
             )
             if args.dry_run:
                 print(f"Would write: {out_path}")
@@ -620,6 +712,8 @@ def main() -> int:
         drop_math=drop_math,
         drop_image_descriptions=drop_image_descriptions,
         drop_citations=drop_citations,
+        drop_superscripts=drop_superscripts,
+        drop_figure_refs=drop_figure_refs,
     )
     if args.dry_run:
         print(f"Would write: {args.out_file}")

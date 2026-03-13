@@ -14,7 +14,7 @@ import logging
 import re
 from pathlib import Path
 
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup, NavigableString, Tag
 
 from clean_extraction_artifacts import clean_text
 
@@ -23,7 +23,8 @@ logger = logging.getLogger(__name__)
 
 ENDMATTER_HEADING_RE = re.compile(
     r"^(references?|acknowledg(e)?ments?|conflicts? of interest|"
-    r"author contributions?|data availability)\b",
+    r"author contributions?|author information|supporting information|"
+    r"terms? (and|&) conditions|data availability)\b",
     flags=re.IGNORECASE,
 )
 
@@ -74,7 +75,7 @@ def _drop_global_noise(soup: BeautifulSoup) -> None:
             node.decompose()
 
 
-def _drop_navigation_links(soup: BeautifulSoup) -> None:
+def _drop_navigation_links(soup: BeautifulSoup, drop_citations: bool = True) -> None:
     for a_tag in soup.find_all("a"):
         href = _attr_text(a_tag.get("href")).strip()
         title = _attr_text(a_tag.get("title")).lower()
@@ -82,7 +83,10 @@ def _drop_navigation_links(soup: BeautifulSoup) -> None:
         if href.startswith("#") and any(
             href.startswith(prefix) for prefix in ("#cit", "#img", "#tbl", "#fn")
         ):
-            a_tag.decompose()
+            if href.startswith("#cit") and not drop_citations:
+                a_tag.unwrap()  # keep citation text (e.g. "[12]") when preserving citations
+            else:
+                a_tag.decompose()
             continue
 
         if any(
@@ -109,18 +113,43 @@ def _first_h2_outside_container(
     container: Tag | None,
     id_pattern: re.Pattern[str] | None = None,
 ) -> Tag | None:
-    query = {"id": id_pattern} if id_pattern is not None else {}
-    for heading in soup.find_all("h2", **query):
-        if not _is_descendant_or_self(heading, container):
-            return heading
-    return None
+    headings_outside = [
+        h for h in soup.find_all("h2") if not _is_descendant_or_self(h, container)
+    ]
+    if not headings_outside:
+        return None
+    if id_pattern is None:
+        return headings_outside[0]
+    # Find the first heading that matches the id_pattern (confirms document layout).
+    first_match_idx = next(
+        (
+            i
+            for i, h in enumerate(headings_outside)
+            if id_pattern.match(_attr_text(h.get("id")))
+        ),
+        None,
+    )
+    if first_match_idx is None:
+        return None
+    # If there are non-endmatter headings before the first pattern match, start there
+    # to avoid skipping earlier body sections that happen to lack the id pattern.
+    # Headings that ARE endmatter (e.g. a sidebar "References") are ignored.
+    for h in headings_outside[:first_match_idx]:
+        heading_text = normalize(h.get_text(" ", strip=True))
+        if not ENDMATTER_HEADING_RE.match(heading_text) and (
+            container is None or heading_text.lower() != "abstract"
+        ):
+            return h
+    return headings_outside[first_match_idx]
 
 
-def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
+def extract_html_to_markdown(
+    html: str, keep_endmatter: bool = False, drop_citations: bool = True
+) -> str:
     soup = BeautifulSoup(html, "html.parser")
 
     _drop_global_noise(soup)
-    _drop_navigation_links(soup)
+    _drop_navigation_links(soup, drop_citations=drop_citations)
 
     lines: list[str] = []
 
@@ -138,8 +167,33 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
             if node.name == "div":
                 if "NLM_p" not in (node.get("class") or []):
                     continue
-                # Skip NLM container divs when they wrap <p> children to avoid duplicates.
-                if node.find("p"):
+                # Skip NLM container divs when they wrap structured children to avoid
+                # duplicates. But first emit any lead-in text (e.g. intro sentence
+                # before a list or paragraph child), including text in inline tags.
+                if node.find(["p", "ul", "li"]):
+                    block_tags = frozenset(
+                        ("p", "ul", "ol", "li", "table", "blockquote", "div")
+                    )
+                    abs_parts: list[str] = []
+                    for _child in node.children:
+                        if isinstance(_child, Tag) and _child.name in block_tags:
+                            break
+                        if isinstance(_child, NavigableString):
+                            t = str(_child).strip()
+                        elif isinstance(_child, Tag):
+                            t = _child.get_text(" ", strip=True)
+                        else:
+                            continue
+                        if t:
+                            abs_parts.append(t)
+                    direct_text = normalize(" ".join(abs_parts))
+                    if (
+                        direct_text
+                        and len(direct_text) >= 40
+                        and direct_text not in seen_abstract_paras
+                    ):
+                        seen_abstract_paras.add(direct_text)
+                        abstract_paras.append(direct_text)
                     continue
             text = normalize(node.get_text(" ", strip=True))
             if len(text) >= 40 and text not in seen_abstract_paras:
@@ -179,12 +233,44 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
             if (
                 tag_name == "div"
                 and "NLM_p" in (current.get("class") or [])
-                and current.find(["p", "span", "li"])
+                and current.find(["p", "ul", "li"])
             ):
+                # Emit lead-in text before the first structural child (e.g. an intro
+                # sentence before a <ul>). Collect text from NavigableString nodes
+                # AND inline tags (strong, em, a, sup, …); stop at block-level tags.
+                block_tags = frozenset(
+                    ("p", "ul", "ol", "li", "table", "blockquote", "div")
+                )
+                parts: list[str] = []
+                for _child in current.children:
+                    if isinstance(_child, Tag) and _child.name in block_tags:
+                        break
+                    if isinstance(_child, NavigableString):
+                        t = str(_child).strip()
+                    elif isinstance(_child, Tag):
+                        t = _child.get_text(" ", strip=True)
+                    else:
+                        continue
+                    if t:
+                        parts.append(t)
+                direct_text = normalize(" ".join(parts))
+                if direct_text:
+                    lines.append(direct_text)
                 # Prefer structured descendants over wrapper-level flattened text.
                 current = current.find_next()
                 continue
-            if current.find_parent(("h1", "h2", "h3", "h4", "h5", "h6")):
+            # Skip tags whose text is already captured by a containing block element:
+            # - anything inside a heading (handled separately as '## heading')
+            # - p/li inside another p/li (outer block's get_text() already includes it)
+            # - spans inside a p or li (prevents duplicating inline text)
+            if current.find_parent(("h1", "h2", "h3", "h4", "h5", "h6", "p", "li")):
+                current = current.find_next()
+                continue
+            # Skip spans that are children of a div.NLM_p — their text was already
+            # emitted as lead-in text when the div was processed above.
+            if tag_name == "span" and current.find_parent(
+                lambda tag: isinstance(tag, Tag) and "NLM_p" in (tag.get("class") or [])
+            ):
                 current = current.find_next()
                 continue
 
@@ -199,12 +285,6 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
                 current = current.find_next()
                 continue
 
-            # Drop in-text numeric citation brackets.
-            text = re.sub(
-                r"\[(?:\d+|\d+\s*[–-]\s*\d+)(?:\s*,\s*(?:\d+|\d+\s*[–-]\s*\d+))*\]",
-                "",
-                text,
-            )
             text = normalize(text)
             if text:
                 lines.append(text)
@@ -222,7 +302,7 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
         deduped.append(line)
 
     markdown = "\n\n".join(deduped)
-    return clean_text(markdown)
+    return clean_text(markdown, drop_citations=drop_citations)
 
 
 def output_path_for_file(
@@ -239,6 +319,7 @@ def process_one_file(
     in_file: Path,
     out_file: Path,
     keep_endmatter: bool = False,
+    drop_citations: bool = True,
     force: bool = False,
 ) -> bool:
     if not in_file.exists():
@@ -247,7 +328,9 @@ def process_one_file(
         raise FileExistsError(f"Output file exists (use --force): {out_file}")
 
     html = in_file.read_text(encoding="utf-8", errors="ignore")
-    cleaned_md = extract_html_to_markdown(html, keep_endmatter=keep_endmatter)
+    cleaned_md = extract_html_to_markdown(
+        html, keep_endmatter=keep_endmatter, drop_citations=drop_citations
+    )
 
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(cleaned_md, encoding="utf-8")
@@ -276,7 +359,15 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--keep-endmatter",
         action="store_true",
-        help="Keep references/acknowledgements/conflicts sections",
+        help=(
+            "Keep end-matter sections such as references, acknowledgements, "
+            "author information, supporting information, and terms & conditions"
+        ),
+    )
+    parser.add_argument(
+        "--keep-citations",
+        action="store_true",
+        help="Preserve inline citation brackets like [12] and (3,4) in the output",
     )
     parser.add_argument(
         "--force",
@@ -298,6 +389,7 @@ def main() -> int:
             in_file=args.in_file,
             out_file=out_file,
             keep_endmatter=args.keep_endmatter,
+            drop_citations=not args.keep_citations,
             force=args.force,
         )
         logger.info("%s -> %s", args.in_file, out_file)
@@ -318,6 +410,7 @@ def main() -> int:
                     in_file=in_file,
                     out_file=out_file,
                     keep_endmatter=args.keep_endmatter,
+                    drop_citations=not args.keep_citations,
                     force=args.force,
                 )
                 written += 1
