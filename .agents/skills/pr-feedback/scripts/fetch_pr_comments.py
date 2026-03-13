@@ -53,7 +53,10 @@ HTML_TAG_PATTERN = re.compile(r"</?[^>]+>")
 URL_PATTERN = re.compile(r"https?://\S+")
 
 STATUS_NOISE_PATTERNS = [
-    re.compile(r"^@\w+(?:\s+\w+)*\s+(?:re\s*review|review|help|pause|resume)\s*$", re.IGNORECASE),  # command pings only (applied to normalized text)
+    re.compile(
+        r"^@\w+(?:\s+\w+)*\s+(?:re\s*review|review|help|pause|resume)\s*$",
+        re.IGNORECASE,
+    ),  # command pings only (applied to normalized text)
     re.compile(r"codeant ai is running the review", re.IGNORECASE),
     re.compile(r"codeant ai finished running the review", re.IGNORECASE),
     re.compile(r"skipping pr review because a bot author is detected", re.IGNORECASE),
@@ -204,7 +207,9 @@ def get_current_branch() -> str:
 
 
 def get_repo_slug() -> str:
-    slug = run(["gh", "repo", "view", "--json", "nameWithOwner", "-q", ".nameWithOwner"]).strip()
+    slug = run(
+        ["gh", "repo", "view", "--json", "nameWithOwner", "-q", ".nameWithOwner"]
+    ).strip()
     if not slug or "/" not in slug:
         raise RuntimeError("Could not determine GitHub repo slug from `gh repo view`.")
     return slug
@@ -215,7 +220,9 @@ def parse_repo_slug(slug: str) -> tuple[str, str]:
     return owner, repo
 
 
-def resolve_pr(owner: str, repo: str, branch: str, pr_number: int | None) -> dict[str, Any]:
+def resolve_pr(
+    owner: str, repo: str, branch: str, pr_number: int | None
+) -> dict[str, Any]:
     if pr_number is not None:
         return gh_api(f"repos/{owner}/{repo}/pulls/{pr_number}")
 
@@ -281,7 +288,13 @@ def infer_severity(body: str) -> str:
         return "high"
     if "p2" in text or "medium" in text or "warning" in text:
         return "medium"
-    if "p3" in text or "low" in text or "info" in text or "suggestion" in text or "nit" in text:
+    if (
+        "p3" in text
+        or "low" in text
+        or "info" in text
+        or "suggestion" in text
+        or "nit" in text
+    ):
         return "low"
     return "medium"
 
@@ -314,9 +327,8 @@ def is_broad_bot_issue_comment(body: str) -> bool:
     has_checklist = "- [ ]" in text or "- [x]" in text
     has_multiple_bullets = text.count("\n- ") >= 2
     return (
-        ("nitpicks" in normalized or "recommended areas for review" in normalized)
-        and (has_checklist or has_multiple_bullets)
-    )
+        "nitpicks" in normalized or "recommended areas for review" in normalized
+    ) and (has_checklist or has_multiple_bullets)
 
 
 def shorten(text: str, max_len: int = 220) -> str:
@@ -499,16 +511,30 @@ def build_actionable_items(
     severity_rank = {"critical": 0, "high": 1, "medium": 2, "low": 3}
 
     clustered: list[ActionableItem] = []
-    precluster_items = sorted(unique.values(), key=lambda i: i.created_at or "", reverse=True)
-    precluster_items = sorted(precluster_items, key=lambda i: severity_rank.get(i.severity, 9))
+    precluster_items = sorted(
+        unique.values(), key=lambda i: i.created_at or "", reverse=True
+    )
+    precluster_items = sorted(
+        precluster_items, key=lambda i: severity_rank.get(i.severity, 9)
+    )
 
     for item in precluster_items:
-        duplicate = next((existing for existing in clustered if items_are_duplicates(existing, item)), None)
+        duplicate = next(
+            (
+                existing
+                for existing in clustered
+                if items_are_duplicates(existing, item)
+            ),
+            None,
+        )
         if duplicate is None:
             clustered.append(item)
             continue
 
-        if item.reviewer != duplicate.reviewer and item.reviewer not in duplicate.also_reported_by:
+        if (
+            item.reviewer != duplicate.reviewer
+            and item.reviewer not in duplicate.also_reported_by
+        ):
             duplicate.also_reported_by.append(item.reviewer)
 
     for item in clustered:
@@ -553,7 +579,9 @@ def render_markdown(
     lines.append(f"- URL: {pr_url}")
     lines.append(f"- State: {state}")
     lines.append(f"- Author: @{author}")
-    lines.append(f"- Stats: +{additions} / -{deletions}, files changed: {changed_files}")
+    lines.append(
+        f"- Stats: +{additions} / -{deletions}, files changed: {changed_files}"
+    )
     lines.append("")
     lines.append("## Counts")
     if pre_filter_counts:
@@ -567,9 +595,7 @@ def render_markdown(
         lines.append(
             f"- Review comments (inline): {len(review_comments)} (from {review_comment_total} total)"
         )
-        lines.append(
-            f"- Review summaries: {len(reviews)} (from {review_total} total)"
-        )
+        lines.append(f"- Review summaries: {len(reviews)} (from {review_total} total)")
     else:
         lines.append(f"- General comments: {len(issue_comments)}")
         lines.append(f"- Review comments (inline): {len(review_comments)}")
@@ -587,7 +613,9 @@ def render_markdown(
             )
             lines.append(f"   - {shorten(item.body)}")
             if item.also_reported_by:
-                also_reported_by = ", ".join(f"@{reviewer}" for reviewer in item.also_reported_by)
+                also_reported_by = ", ".join(
+                    f"@{reviewer}" for reviewer in item.also_reported_by
+                )
                 lines.append(f"   - Also reported by {also_reported_by}")
             lines.append(f"   - {item.url}")
     if not only_actionable:
@@ -609,7 +637,9 @@ def render_markdown(
                 continue
             path = c.get("path", "n/a")
             line = c.get("line", "n/a")
-            lines.append(f"{idx}. @{reviewer} - {path}:{line} - {c.get('html_url', '')}")
+            lines.append(
+                f"{idx}. @{reviewer} - {path}:{line} - {c.get('html_url', '')}"
+            )
             lines.append(f"   - {shorten(body, 300)}")
         lines.append("")
         lines.append("## Raw: Review Summaries")
@@ -641,7 +671,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Fetch PR feedback with gh api.")
     parser.add_argument("--repo", help="owner/repo slug (default: current gh repo)")
     parser.add_argument("--branch", help="branch name (default: current git branch)")
-    parser.add_argument("--pr", type=int, help="PR number (default: resolve from branch)")
+    parser.add_argument(
+        "--pr", type=int, help="PR number (default: resolve from branch)"
+    )
     parser.add_argument(
         "--since-commit",
         help="Only include feedback created after this commit timestamp (e.g. HEAD, HEAD~1, <sha>)",
@@ -682,9 +714,15 @@ def main() -> int:
         pr_number = int(pr["number"])
 
         pr_details = gh_api(f"repos/{owner}/{repo}/pulls/{pr_number}")
-        issue_comments = gh_api(f"repos/{owner}/{repo}/issues/{pr_number}/comments", paginate=True)
-        review_comments = gh_api(f"repos/{owner}/{repo}/pulls/{pr_number}/comments", paginate=True)
-        reviews = gh_api(f"repos/{owner}/{repo}/pulls/{pr_number}/reviews", paginate=True)
+        issue_comments = gh_api(
+            f"repos/{owner}/{repo}/issues/{pr_number}/comments", paginate=True
+        )
+        review_comments = gh_api(
+            f"repos/{owner}/{repo}/pulls/{pr_number}/comments", paginate=True
+        )
+        reviews = gh_api(
+            f"repos/{owner}/{repo}/pulls/{pr_number}/reviews", paginate=True
+        )
 
         pre_filter_counts: tuple[int, int, int] | None = None
         since_timestamp: str | None = None
@@ -698,14 +736,18 @@ def main() -> int:
             since_timestamp = since_dt.isoformat()
             issue_comments = filter_since(issue_comments, since_dt, ("created_at",))
             review_comments = filter_since(review_comments, since_dt, ("created_at",))
-            reviews = filter_since(reviews, since_dt, ("submitted_at", "submittedAt", "created_at"))
+            reviews = filter_since(
+                reviews, since_dt, ("submitted_at", "submittedAt", "created_at")
+            )
 
         # Filter out bots that never produce actionable feedback.
         issue_comments = filter_ignored_bots(issue_comments)
         review_comments = filter_ignored_bots(review_comments)
         reviews = filter_ignored_bots(reviews)
 
-        actionable_items = build_actionable_items(issue_comments, review_comments, reviews)
+        actionable_items = build_actionable_items(
+            issue_comments, review_comments, reviews
+        )
         report = render_markdown(
             repo_slug=repo_slug,
             branch=branch,

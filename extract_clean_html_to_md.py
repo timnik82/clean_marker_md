@@ -122,7 +122,11 @@ def _first_h2_outside_container(
         return headings_outside[0]
     # Find the first heading that matches the id_pattern (confirms document layout).
     first_match_idx = next(
-        (i for i, h in enumerate(headings_outside) if id_pattern.match(_attr_text(h.get("id")))),
+        (
+            i
+            for i, h in enumerate(headings_outside)
+            if id_pattern.match(_attr_text(h.get("id")))
+        ),
         None,
     )
     if first_match_idx is None:
@@ -132,12 +136,17 @@ def _first_h2_outside_container(
     # Headings that ARE endmatter (e.g. a sidebar "References") are ignored.
     for h in headings_outside[:first_match_idx]:
         heading_text = normalize(h.get_text(" ", strip=True))
-        if not ENDMATTER_HEADING_RE.match(heading_text) and heading_text.lower() != "abstract":
+        if (
+            not ENDMATTER_HEADING_RE.match(heading_text)
+            and heading_text.lower() != "abstract"
+        ):
             return h
     return headings_outside[first_match_idx]
 
 
-def extract_html_to_markdown(html: str, keep_endmatter: bool = False, drop_citations: bool = True) -> str:
+def extract_html_to_markdown(
+    html: str, keep_endmatter: bool = False, drop_citations: bool = True
+) -> str:
     soup = BeautifulSoup(html, "html.parser")
 
     _drop_global_noise(soup)
@@ -163,7 +172,9 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False, drop_citat
                 # duplicates. But first emit any lead-in text (e.g. intro sentence
                 # before a list or paragraph child), including text in inline tags.
                 if node.find(["p", "ul", "li"]):
-                    block_tags = frozenset(("p", "ul", "ol", "li", "table", "blockquote", "div"))
+                    block_tags = frozenset(
+                        ("p", "ul", "ol", "li", "table", "blockquote", "div")
+                    )
                     abs_parts: list[str] = []
                     for _child in node.children:
                         if isinstance(_child, Tag) and _child.name in block_tags:
@@ -177,7 +188,11 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False, drop_citat
                         if t:
                             abs_parts.append(t)
                     direct_text = normalize(" ".join(abs_parts))
-                    if direct_text and len(direct_text) >= 40 and direct_text not in seen_abstract_paras:
+                    if (
+                        direct_text
+                        and len(direct_text) >= 40
+                        and direct_text not in seen_abstract_paras
+                    ):
                         seen_abstract_paras.add(direct_text)
                         abstract_paras.append(direct_text)
                     continue
@@ -224,7 +239,9 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False, drop_citat
                 # Emit lead-in text before the first structural child (e.g. an intro
                 # sentence before a <ul>). Collect text from NavigableString nodes
                 # AND inline tags (strong, em, a, sup, …); stop at block-level tags.
-                block_tags = frozenset(("p", "ul", "ol", "li", "table", "blockquote", "div"))
+                block_tags = frozenset(
+                    ("p", "ul", "ol", "li", "table", "blockquote", "div")
+                )
                 parts: list[str] = []
                 for _child in current.children:
                     if isinstance(_child, Tag) and _child.name in block_tags:
@@ -253,8 +270,7 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False, drop_citat
             # Skip spans that are children of a div.NLM_p — their text was already
             # emitted as lead-in text when the div was processed above.
             if tag_name == "span" and current.find_parent(
-                lambda tag: isinstance(tag, Tag)
-                and "NLM_p" in (tag.get("class") or [])
+                lambda tag: isinstance(tag, Tag) and "NLM_p" in (tag.get("class") or [])
             ):
                 current = current.find_next()
                 continue
@@ -313,7 +329,9 @@ def process_one_file(
         raise FileExistsError(f"Output file exists (use --force): {out_file}")
 
     html = in_file.read_text(encoding="utf-8", errors="ignore")
-    cleaned_md = extract_html_to_markdown(html, keep_endmatter=keep_endmatter, drop_citations=drop_citations)
+    cleaned_md = extract_html_to_markdown(
+        html, keep_endmatter=keep_endmatter, drop_citations=drop_citations
+    )
 
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(cleaned_md, encoding="utf-8")
