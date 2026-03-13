@@ -110,8 +110,10 @@ def _first_h2_outside_container(
     container: Tag | None,
     id_pattern: re.Pattern[str] | None = None,
 ) -> Tag | None:
-    query = {"id": id_pattern} if id_pattern is not None else {}
-    for heading in soup.find_all("h2", **query):
+    headings: list[Tag] = soup.find_all("h2")
+    for heading in headings:
+        if id_pattern is not None and not id_pattern.match(_attr_text(heading.get("id"))):
+            continue
         if not _is_descendant_or_self(heading, container):
             return heading
     return None
