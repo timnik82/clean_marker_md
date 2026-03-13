@@ -37,16 +37,19 @@ MULTI_BLANK_LINES_RE = re.compile(r"\n{3,}")
 # Matches a letter (unit abbreviation) + space + any minus/dash char + 1–2 digits.
 SUPERSCRIPT_MINUS_RE = re.compile(r"([A-Za-z])\s[–−-](\d{1,2})\b")
 # Subscript digits flattened by HTML serialisation: "CH 2" → "CH2".
-# Matches 1–3 uppercase letters (chemical abbreviation) + space + digits.
-SUBSCRIPT_DIGIT_RE = re.compile(r"([A-Z]{1,3})\s(\d+)\b")
+# Restricted to 1–2 uppercase letters and 1–2 digits to avoid merging
+# common acronyms with following numbers (e.g. "EU 27", "API 3").
+SUBSCRIPT_DIGIT_RE = re.compile(r"([A-Z]{1,2})\s(\d{1,2})\b")
 
 CITATION_BRACKET_RE = re.compile(
     r"\[\s*(?:\d{1,3}(?:\s*[-–−]\s*\d{1,3})?)"
     r"(?:\s*[,;]\s*\d{1,3}(?:\s*[-–−]\s*\d{1,3})?)*\s*\]"
 )
 PAREN_CITATION_RE = re.compile(
-    r"\(\s*(?:\d{1,3}(?:\s*[-–−]\s*\d{1,3})?)"
-    r"(?:\s*[,;]\s*\d{1,3}(?:\s*[-–−]\s*\d{1,3})?)*\s*\)"
+    r"\(\s*\d{1,3}"
+    r"(?:\s*[-–−]\s*\d{1,3}|\s*[,;]\s*\d{1,3}(?:\s*[-–−]\s*\d{1,3})?)"
+    r"(?:\s*[,;]\s*\d{1,3}(?:\s*[-–−]\s*\d{1,3})?)*"
+    r"\s*\)"
 )
 
 

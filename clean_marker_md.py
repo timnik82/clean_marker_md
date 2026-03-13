@@ -134,13 +134,22 @@ FIG_LABEL = r"(?:fig(?:ure)?s?|tab(?:le)?s?|schemes?|eq(?:uation)?s?)"
 FIG_LINK_RE = re.compile(
     rf"\[\s*\(?\s*{FIG_LABEL}\.?\s*[^\]]*?\]\([^)]+\)", re.IGNORECASE
 )
+# A single figure/table/eq reference with optional panel letter: "Fig. 5a", "Figs. 1-3(b)"
+_FIG_SINGLE_REF = (
+    rf"{FIG_LABEL}\.?\s*\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?(?:\s*\([a-z]\))?"
+)
+# A continuation ref after a comma may omit the label: "Figs. 1, 2" or "Fig. 1, Table 2"
+_FIG_CONTINUATION = (
+    rf"(?:{FIG_LABEL}\.?\s*)?\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?(?:\s*\([a-z]\))?"
+)
 FIG_PAREN_REF_RE = re.compile(
-    rf"\(\s*{FIG_LABEL}\.?\s*\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?"
-    rf"(?:\s*\([a-z]\))?\s*\)",
+    rf"\(\s*{_FIG_SINGLE_REF}(?:\s*[,;]\s*{_FIG_CONTINUATION})*\s*\)",
     re.IGNORECASE,
 )
+# Require at least one space between label and number to avoid matching chemistry
+# notation like "eq1" or compact abbreviations with no separator.
 FIG_INLINE_REF_RE = re.compile(
-    rf"\b{FIG_LABEL}\.?\s*\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?(?:\s*\([a-z]\))?",
+    rf"\b{FIG_LABEL}\.?\s+\d+[a-z]?(?:\s*[-–]\s*\d+[a-z]?)?(?:\s*\([a-z]\))?",
     re.IGNORECASE,
 )
 ORPHANED_BRACKET_TOKEN_RE = re.compile(r"(?:(?<=\s)|^)[\[\]()]{1,3}(?=\s|$)")

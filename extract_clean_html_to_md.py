@@ -141,18 +141,25 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
             if node.name == "div":
                 if "NLM_p" not in (node.get("class") or []):
                     continue
-                # Skip NLM container divs when they wrap <p> children to avoid duplicates.
-                # But first emit any direct text-node content (e.g. intro sentence
-                # before a list or paragraph child).
-                if node.find("p"):
-                    direct_text = normalize(
-                        " ".join(
-                            str(child).strip()
-                            for child in node.children
-                            if isinstance(child, NavigableString) and str(child).strip()
-                        )
-                    )
-                    if len(direct_text) >= 40 and direct_text not in seen_abstract_paras:
+                # Skip NLM container divs when they wrap structured children to avoid
+                # duplicates. But first emit any lead-in text (e.g. intro sentence
+                # before a list or paragraph child), including text in inline tags.
+                if node.find(["p", "ul", "li", "span"]):
+                    block_tags = frozenset(("p", "ul", "ol", "li", "table", "blockquote", "div"))
+                    abs_parts: list[str] = []
+                    for _child in node.children:
+                        if isinstance(_child, Tag) and _child.name in block_tags:
+                            break
+                        if isinstance(_child, NavigableString):
+                            t = str(_child).strip()
+                        elif isinstance(_child, Tag):
+                            t = _child.get_text(" ", strip=True)
+                        else:
+                            continue
+                        if t:
+                            abs_parts.append(t)
+                    direct_text = normalize(" ".join(abs_parts))
+                    if direct_text and len(direct_text) >= 40 and direct_text not in seen_abstract_paras:
                         seen_abstract_paras.add(direct_text)
                         abstract_paras.append(direct_text)
                     continue
@@ -196,16 +203,24 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
                 and "NLM_p" in (current.get("class") or [])
                 and current.find(["p", "span", "li"])
             ):
-                # Emit any direct text-node content before skipping (e.g. an intro
-                # sentence that precedes a <ul> inside the same NLM_p div).
-                direct_text = normalize(
-                    " ".join(
-                        str(child).strip()
-                        for child in current.children
-                        if isinstance(child, NavigableString) and str(child).strip()
-                    )
-                )
-                if len(direct_text) >= 45:
+                # Emit lead-in text before the first structural child (e.g. an intro
+                # sentence before a <ul>). Collect text from NavigableString nodes
+                # AND inline tags (strong, em, a, sup, …); stop at block-level tags.
+                block_tags = frozenset(("p", "ul", "ol", "li", "table", "blockquote", "div"))
+                parts: list[str] = []
+                for _child in current.children:
+                    if isinstance(_child, Tag) and _child.name in block_tags:
+                        break
+                    if isinstance(_child, NavigableString):
+                        t = str(_child).strip()
+                    elif isinstance(_child, Tag):
+                        t = _child.get_text(" ", strip=True)
+                    else:
+                        continue
+                    if t:
+                        parts.append(t)
+                direct_text = normalize(" ".join(parts))
+                if direct_text:
                     lines.append(direct_text)
                 # Prefer structured descendants over wrapper-level flattened text.
                 current = current.find_next()
