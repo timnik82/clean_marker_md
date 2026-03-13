@@ -380,7 +380,7 @@ def clean_paragraph(paragraph: str, drop_math: bool) -> str:
 def normalize_spacing_artifacts(text: str) -> str:
     """Normalize extraction spacing artifacts useful for RAG token quality."""
     # Fix unit exponents like "m− 1" -> "m−1" and "K- 1" -> "K-1".
-    text = UNIT_NEG_EXP_SPACING_RE.sub(r"\1\2\3", text)
+    text = UNIT_NEG_EXP_SPACING_RE.sub(r"\1-\3", text)
     # Trim redundant spaces just inside parentheses.
     text = OPEN_PAREN_SPACE_RE.sub("(", text)
     text = CLOSE_PAREN_SPACE_RE.sub(")", text)

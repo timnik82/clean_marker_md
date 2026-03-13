@@ -75,7 +75,7 @@ def _drop_global_noise(soup: BeautifulSoup) -> None:
             node.decompose()
 
 
-def _drop_navigation_links(soup: BeautifulSoup) -> None:
+def _drop_navigation_links(soup: BeautifulSoup, drop_citations: bool = True) -> None:
     for a_tag in soup.find_all("a"):
         href = _attr_text(a_tag.get("href")).strip()
         title = _attr_text(a_tag.get("title")).lower()
@@ -83,7 +83,10 @@ def _drop_navigation_links(soup: BeautifulSoup) -> None:
         if href.startswith("#") and any(
             href.startswith(prefix) for prefix in ("#cit", "#img", "#tbl", "#fn")
         ):
-            a_tag.decompose()
+            if href.startswith("#cit") and not drop_citations:
+                a_tag.unwrap()  # keep citation text (e.g. "[12]") when preserving citations
+            else:
+                a_tag.decompose()
             continue
 
         if any(
@@ -129,7 +132,7 @@ def _first_h2_outside_container(
     # Headings that ARE endmatter (e.g. a sidebar "References") are ignored.
     for h in headings_outside[:first_match_idx]:
         heading_text = normalize(h.get_text(" ", strip=True))
-        if not ENDMATTER_HEADING_RE.match(heading_text):
+        if not ENDMATTER_HEADING_RE.match(heading_text) and heading_text.lower() != "abstract":
             return h
     return headings_outside[first_match_idx]
 
@@ -138,7 +141,7 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False, drop_citat
     soup = BeautifulSoup(html, "html.parser")
 
     _drop_global_noise(soup)
-    _drop_navigation_links(soup)
+    _drop_navigation_links(soup, drop_citations=drop_citations)
 
     lines: list[str] = []
 
