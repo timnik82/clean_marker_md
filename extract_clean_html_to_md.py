@@ -14,7 +14,7 @@ import logging
 import re
 from pathlib import Path
 
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup, NavigableString, Tag
 
 from clean_extraction_artifacts import clean_text
 
@@ -140,7 +140,19 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
                 if "NLM_p" not in (node.get("class") or []):
                     continue
                 # Skip NLM container divs when they wrap <p> children to avoid duplicates.
+                # But first emit any direct text-node content (e.g. intro sentence
+                # before a list or paragraph child).
                 if node.find("p"):
+                    direct_text = normalize(
+                        " ".join(
+                            str(child).strip()
+                            for child in node.children
+                            if isinstance(child, NavigableString) and str(child).strip()
+                        )
+                    )
+                    if len(direct_text) >= 40 and direct_text not in seen_abstract_paras:
+                        seen_abstract_paras.add(direct_text)
+                        abstract_paras.append(direct_text)
                     continue
             text = normalize(node.get_text(" ", strip=True))
             if len(text) >= 40 and text not in seen_abstract_paras:
@@ -182,10 +194,21 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
                 and "NLM_p" in (current.get("class") or [])
                 and current.find(["p", "span", "li"])
             ):
+                # Emit any direct text-node content before skipping (e.g. an intro
+                # sentence that precedes a <ul> inside the same NLM_p div).
+                direct_text = normalize(
+                    " ".join(
+                        str(child).strip()
+                        for child in current.children
+                        if isinstance(child, NavigableString) and str(child).strip()
+                    )
+                )
+                if len(direct_text) >= 45:
+                    lines.append(direct_text)
                 # Prefer structured descendants over wrapper-level flattened text.
                 current = current.find_next()
                 continue
-            if current.find_parent(("h1", "h2", "h3", "h4", "h5", "h6")):
+            if current.find_parent(("h1", "h2", "h3", "h4", "h5", "h6", "p", "li")):
                 current = current.find_next()
                 continue
 
