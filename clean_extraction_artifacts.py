@@ -39,7 +39,8 @@ SUPERSCRIPT_MINUS_RE = re.compile(r"([A-Za-z])\s[–−-](\d{1,2})\b")
 # Subscript digits flattened by HTML serialisation: "CH 2" → "CH2".
 # Restricted to 1–2 uppercase letters and 1–2 digits; \b before the group
 # prevents matching the tail of longer words (e.g. "PI 3" inside "API 3").
-SUBSCRIPT_DIGIT_RE = re.compile(r"\b([A-Z]{1,2})\s(\d{1,2})\b")
+# Negative lookahead prevents merging geopolitical codes ("EU 27 countries").
+SUBSCRIPT_DIGIT_RE = re.compile(r"\b([A-Z]{1,2})\s(\d{1,2})\b(?!\s+[a-z])")
 
 CITATION_BRACKET_RE = re.compile(
     r"\[\s*(?:\d{1,3}(?:\s*[-–−]\s*\d{1,3})?)"

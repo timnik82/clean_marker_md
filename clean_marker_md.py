@@ -124,7 +124,7 @@ INLINE_MATH_RE = re.compile(
     r"(?<!\\)\$(?!\$).+?(?<!\\)\$|\\\(.+?\\\)",
     re.DOTALL,
 )
-UNIT_NEG_EXP_SPACING_RE = re.compile(r"([A-Za-zµμ°%])\s*([−-])\s+(\d)")
+UNIT_NEG_EXP_SPACING_RE = re.compile(r"([A-Za-zµμ°%])\s+([–−-])\s*(\d)")
 OPEN_PAREN_SPACE_RE = re.compile(r"\([ \t]+")
 CLOSE_PAREN_SPACE_RE = re.compile(r"[ \t]+\)")
 REPLACEMENT_TEMP_UNIT_RE = re.compile(r"�\s*([CFK])\b")

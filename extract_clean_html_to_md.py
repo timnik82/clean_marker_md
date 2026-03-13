@@ -117,14 +117,24 @@ def _first_h2_outside_container(
         return None
     if id_pattern is None:
         return headings_outside[0]
-    # Use id_pattern only to confirm the document uses this layout; always start
-    # from the very first section heading to avoid dropping earlier content.
-    if any(id_pattern.match(_attr_text(h.get("id"))) for h in headings_outside):
-        return headings_outside[0]
-    return None
+    # Find the first heading that matches the id_pattern (confirms document layout).
+    first_match_idx = next(
+        (i for i, h in enumerate(headings_outside) if id_pattern.match(_attr_text(h.get("id")))),
+        None,
+    )
+    if first_match_idx is None:
+        return None
+    # If there are non-endmatter headings before the first pattern match, start there
+    # to avoid skipping earlier body sections that happen to lack the id pattern.
+    # Headings that ARE endmatter (e.g. a sidebar "References") are ignored.
+    for h in headings_outside[:first_match_idx]:
+        heading_text = normalize(h.get_text(" ", strip=True))
+        if not ENDMATTER_HEADING_RE.match(heading_text):
+            return h
+    return headings_outside[first_match_idx]
 
 
-def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
+def extract_html_to_markdown(html: str, keep_endmatter: bool = False, drop_citations: bool = True) -> str:
     soup = BeautifulSoup(html, "html.parser")
 
     _drop_global_noise(soup)
@@ -274,7 +284,7 @@ def extract_html_to_markdown(html: str, keep_endmatter: bool = False) -> str:
         deduped.append(line)
 
     markdown = "\n\n".join(deduped)
-    return clean_text(markdown, drop_citations=True)
+    return clean_text(markdown, drop_citations=drop_citations)
 
 
 def output_path_for_file(
@@ -291,6 +301,7 @@ def process_one_file(
     in_file: Path,
     out_file: Path,
     keep_endmatter: bool = False,
+    drop_citations: bool = True,
     force: bool = False,
 ) -> bool:
     if not in_file.exists():
@@ -299,7 +310,7 @@ def process_one_file(
         raise FileExistsError(f"Output file exists (use --force): {out_file}")
 
     html = in_file.read_text(encoding="utf-8", errors="ignore")
-    cleaned_md = extract_html_to_markdown(html, keep_endmatter=keep_endmatter)
+    cleaned_md = extract_html_to_markdown(html, keep_endmatter=keep_endmatter, drop_citations=drop_citations)
 
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(cleaned_md, encoding="utf-8")
@@ -334,6 +345,11 @@ def parse_args() -> argparse.Namespace:
         ),
     )
     parser.add_argument(
+        "--keep-citations",
+        action="store_true",
+        help="Preserve inline citation brackets like [12] and (3,4) in the output",
+    )
+    parser.add_argument(
         "--force",
         action="store_true",
         help="Overwrite output files if they exist",
@@ -353,6 +369,7 @@ def main() -> int:
             in_file=args.in_file,
             out_file=out_file,
             keep_endmatter=args.keep_endmatter,
+            drop_citations=not args.keep_citations,
             force=args.force,
         )
         logger.info("%s -> %s", args.in_file, out_file)
@@ -373,6 +390,7 @@ def main() -> int:
                     in_file=in_file,
                     out_file=out_file,
                     keep_endmatter=args.keep_endmatter,
+                    drop_citations=not args.keep_citations,
                     force=args.force,
                 )
                 written += 1

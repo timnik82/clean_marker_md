@@ -53,7 +53,7 @@ HTML_TAG_PATTERN = re.compile(r"</?[^>]+>")
 URL_PATTERN = re.compile(r"https?://\S+")
 
 STATUS_NOISE_PATTERNS = [
-    re.compile(r"^@[\w\-\[\]]+:?\s+(?:re-?review|review|help|pause|resume)\b", re.IGNORECASE),  # command pings only
+    re.compile(r"^@\w+(?:\s+\w+)*\s+(?:re\s*review|review|help|pause|resume)\s*$", re.IGNORECASE),  # command pings only (applied to normalized text)
     re.compile(r"codeant ai is running the review", re.IGNORECASE),
     re.compile(r"codeant ai finished running the review", re.IGNORECASE),
     re.compile(r"skipping pr review because a bot author is detected", re.IGNORECASE),
