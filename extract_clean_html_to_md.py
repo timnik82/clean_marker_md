@@ -136,9 +136,8 @@ def _first_h2_outside_container(
     # Headings that ARE endmatter (e.g. a sidebar "References") are ignored.
     for h in headings_outside[:first_match_idx]:
         heading_text = normalize(h.get_text(" ", strip=True))
-        if (
-            not ENDMATTER_HEADING_RE.match(heading_text)
-            and heading_text.lower() != "abstract"
+        if not ENDMATTER_HEADING_RE.match(heading_text) and (
+            container is None or heading_text.lower() != "abstract"
         ):
             return h
     return headings_outside[first_match_idx]
